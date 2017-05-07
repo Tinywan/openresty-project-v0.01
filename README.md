@@ -80,8 +80,8 @@ http {
     include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/nginx.conf";
 }
 ```
-##  :date: Update record
-#### :tm:  :two: :zero: :one: :seven: :small_orange_diamond: :zero: :five: :small_orange_diamond: :seven:
+##  :date: Update
+#### :two: :zero: :one: :seven: :small_orange_diamond: :zero: :five: :small_orange_diamond: :seven:
 +   创建项目、项目架构搭建、目录结构调整
 +   添加新功能
     - [x] 简单的Redis数据库操作 
@@ -97,4 +97,5 @@ http {
 +   根据IP地址，获取具体IP地址的城市详细信息
 +   直接运行curl:`curl http://127.0.0.1/test_ip_location?ip='122.228.95.112'`
 ####    lua-resty-shell 库
-+   发生大幅度    
++   执行shell命令
++   获取Linux的CPU信息：`curl http://127.0.0.1/shell_test`    
