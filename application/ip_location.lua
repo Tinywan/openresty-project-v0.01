@@ -36,7 +36,7 @@ if not ok then
 end
 
 -- use location database
-local ipdetail, err = require("vendor.ip_location"):new(ip_address,"/home/tinywan/Openresty_Protect/First_Protect/public/data/17monipdb.dat")
+local ipdetail, err = require("vendor.ip_location"):new(ip_address,"/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/public/data/location_ip_db.dat")
 if not ipdetail then
     ngx.log(ngx.ERR, err)
     ngx.say(failure(err))

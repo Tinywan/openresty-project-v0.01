@@ -1,33 +1,63 @@
 # 一个简单的Lua 项目
 使用Lua编写一个完整的项目
 
-##  项目结构
+##  Project structure
 ```javascript
-└── ProjectName
-    ├── conf                    -- 配置文件
-    │   └── nginx.conf          
-    ├── logs                    -- 日志文件
-    │   └── error.log           
-    ├── lua                     -- lua脚本文件
-    │   ├── functions.lua
-    │   └── test.lua
-    ├── lualib                  -- lua库文件
-    │   ├── cjson.so
-    │   ├── ngx
-    │   │   └── ssl.lua
-    │   ├── rds
-    │   │   └── parser.so
-    │   ├── redis
-    │   │   └── parser.so
-    │   ├── resty
-    │   │   ├── redis.lua
-    │   │   ├── upstream
-    │   │   └── websocket
-    │   └── vendor              -- 第三方、自定义库/lua文件
-    │       └── ip_location.lua
-    └── public                  -- 静态资源文件
-        └── data
-            └── 17monipdb.dat
+.
+├── application
+│   ├── get_redis_iresty.lua
+│   ├── ip_location.lua
+│   └── test.lua
+├── conf
+│   └── nginx.conf
+├── logs
+│   └── error.log
+├── lualib
+│   ├── cjson.so
+│   ├── ngx
+│   │   ├── balancer.lua
+│   │   ├── ocsp.lua
+│   │   ├── semaphore.lua
+│   │   ├── ssl
+│   │   └── ssl.lua
+│   ├── rds
+│   │   └── parser.so
+│   ├── redis
+│   │   └── parser.so
+│   ├── resty
+│   │   ├── aes.lua
+│   │   ├── core
+│   │   ├── core.lua
+│   │   ├── dns
+│   │   ├── http_headers.lua
+│   │   ├── http.lua
+│   │   ├── lock.lua
+│   │   ├── lrucache
+│   │   ├── lrucache.lua
+│   │   ├── md5.lua
+│   │   ├── memcached.lua
+│   │   ├── mysql.lua
+│   │   ├── random.lua
+│   │   ├── redis_iresty.lua
+│   │   ├── redis.lua
+│   │   ├── sha1.lua
+│   │   ├── sha224.lua
+│   │   ├── sha256.lua
+│   │   ├── sha384.lua
+│   │   ├── sha512.lua
+│   │   ├── sha.lua
+│   │   ├── shell.lua
+│   │   ├── string.lua
+│   │   ├── upload.lua
+│   │   ├── upstream
+│   │   └── websocket
+│   └── vendor
+│       ├── ip_check.lua
+│       └── ip_location.lua
+├── public
+│   └── data
+│       └── location_ip_db.dat
+└── README.md
 ```
 ## nginx.conf, the Nginx web server configuration
 
@@ -35,7 +65,6 @@
 user  www www;
 worker_processes  8;
 
-error_log  logs/error.log;
 pid        logs/nginx.pid;
 
 events {
@@ -45,10 +74,10 @@ events {
 
 http {
     include       mime.types;
-    default_type  text/html;
-    lua_package_path app;  #lua 模块  
-    lua_package_cpath "/home/tinywan/Openresty_Protect/ProjectName/lualib/?.so;;";  #c模块  
-    include /home/tinywan/Openresty_Protect/ProjectName/conf/nginx.conf;
+    default_type  "text/html";
+    lua_package_path "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/lualib/?.lua;;";   
+    lua_package_cpath "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/lualib/?.so;;";  
+    include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/nginx.conf";
 }
 
 ```
