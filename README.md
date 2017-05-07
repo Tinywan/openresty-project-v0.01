@@ -81,8 +81,7 @@ http {
 }
 ```
 ##  :date: Update record
-#### :two: :zero: :one: :seven: :small_orange_diamond: :zero: :five: :small_orange_diamond: :seven:
-#### :clock12: 2017年05月07日 星期日 
+#### :tm:  :two: :zero: :one: :seven: :small_orange_diamond: :zero: :five: :small_orange_diamond: :seven:
 +   创建项目、项目架构搭建、目录结构调整
 +   添加新功能
     - [x] 简单的Redis数据库操作 
