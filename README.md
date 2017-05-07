@@ -80,8 +80,8 @@ http {
     include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/nginx.conf";
 }
 ```
-## :clock12: 更新记录
-#### 2017年05月07日 星期日 
+##  :date: 更新记录
+#### :clock12: 2017年05月07日 星期日 
 +   创建项目、项目架构搭建、目录结构调整
 +   添加新功能
     - [x] 简单的Redis数据库操作 
