@@ -80,10 +80,10 @@ http {
     include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/nginx.conf";
 }
 ```
-## 更新记录
+## :clock12: 更新记录
 #### 2017年05月07日 星期日 
-+   创建项目
-+   添加功能
++   创建项目、项目架构搭建、目录结构调整
++   添加新功能
     - [x] 简单的Redis数据库操作 
     - [x] 根据IP地址获取具体城市信息(@icowan)
     - [x] lua-resty-shell库的使用
@@ -91,8 +91,10 @@ http {
     
 ## 功能目录
 ####    简单的Redis数据库操作  
-+   `curl http://127.0.0.1/get_redis_iresty`
++   通过引入已经封装好的Redis类操作Redis数据
++   直接运行curl:`curl http://127.0.0.1/get_redis_iresty`
 ####    根据IP地址获取具体城市信息
-+   `curl http://127.0.0.1/test_ip_location?ip='122.228.95.112'`
++   根据IP地址，获取具体IP地址的城市详细信息
++   直接运行curl:`curl http://127.0.0.1/test_ip_location?ip='122.228.95.112'`
 ####    lua-resty-shell 库
 +   发生大幅度    
