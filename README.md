@@ -80,7 +80,8 @@ http {
     include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/nginx.conf";
 }
 ```
-##  :date: 更新记录
+##  :date: Update record
+#### :clock12: :two: :zero: :one: :seven:-:zero: :five:-:seven:
 #### :clock12: 2017年05月07日 星期日 
 +   创建项目、项目架构搭建、目录结构调整
 +   添加新功能
