@@ -39,3 +39,5 @@ coroutine 0:
 	...Linux-Share/Lua/lua_project_v0.01/lualib/resty/shell.lua: in function 'execute'
 	content_by_lua(nginx.conf:54):6: in function <content_by_lua(nginx.conf:54):1>, client: 127.0.0.1, server: localhost, request: "GET /shell_websocket HTTP/1.1", host: "127.0.0.1"
 2017/05/08 23:50:34 [error] 117059#0: *49 lua tcp socket read timed out, client: 127.0.0.1, server: localhost, request: "GET /shell_websocket HTTP/1.1", host: "127.0.0.1"
+2017/05/08 23:52:48 [error] 117165#0: *57 lua tcp socket read timed out, client: 127.0.0.1, server: localhost, request: "GET /shell_websocket HTTP/1.1", host: "127.0.0.1"
+2017/05/08 23:54:58 [error] 117239#0: *59 lua tcp socket read timed out, client: 127.0.0.1, server: localhost, request: "GET /shell_websocket HTTP/1.1", host: "127.0.0.1"
