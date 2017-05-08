@@ -90,6 +90,7 @@ http {
 +   创建项目
 
 ####    2017年05月08日 星期一
++   添加新功能：lua-resty-websocket 官方测试案例
 +   添加新功能：WebSocket系统负载统计
         
 ## 功能列表
@@ -101,7 +102,27 @@ http {
 +   直接运行curl:`curl http://127.0.0.1/test_ip_location?ip='122.228.95.112'`
 ####    lua-resty-shell 库
 +   执行shell命令
-+   获取Linux的CPU信息：`curl http://127.0.0.1/shell_test`     
++   获取Linux的CPU信息：`curl http://127.0.0.1/shell_test`   
+####    lua-resty-websocket 官方测试案例
++   服务端文件`lua_websocket_server.lua`,客户端接受文件`public/index_default.html`,JS代码`public/static/stats_default.js`
++   服务端配置location
+    ```lua
+       location /lua_websocket_server {
+           default_type text/html;
+           content_by_lua_file /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/application/lua_websocket_server.lua;
+       }
+    ```
++   客户端，通过js`console.log(e.data)` 打印接收到的数据，这类我们可以接受到服务端发送的消息
+   ```lua
+   -- 服务端发送文本
+   bytes, err = wb:send_text("Hello world Tinywan")
+   
+   --客户端接受数据，通过浏览器Console 可以看到以下数据
+   Hello world Tinywan
+   stats_default.js:70 Blob {size: 17, type: ""}
+   stats_default.js:65 disconnect
+   stats_default.js:60 connect
+   ```
 ####    websocket系统负载统计
 +   基于lua-resty-websocket实现系统负载监控
 +   使用第三方编写的websocket_shell.lua(原本叫shell.lua) 一个库文件
