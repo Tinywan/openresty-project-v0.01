@@ -88,8 +88,11 @@ http {
     - [x] 根据IP地址获取具体城市信息(@icowan)
     - [x] lua-resty-shell库的使用
 +   创建项目
-    
-## 功能目录
+
+####    2017年05月08日 星期一
++   添加新功能：WebSocket系统负载统计
+        
+## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据
 +   直接运行curl:`curl http://127.0.0.1/get_redis_iresty`
@@ -99,3 +102,10 @@ http {
 ####    lua-resty-shell 库
 +   执行shell命令
 +   获取Linux的CPU信息：`curl http://127.0.0.1/shell_test`     
+####    websocket系统负载统计
++   基于lua-resty-websocket实现系统负载监控
++   使用第三方编写的websocket_shell.lua(原本叫shell.lua) 一个库文件
++   第三方库或者文件引入：`local shell = require 'vendor.websocket_shell'`
++   注意：在这里并没有用到`lua-resty-shell` 库，有时间整合到一起去
++   效果预览图：
+    ![websocket_shell](https://github.com/Tinywan/Lua-Nginx-Redis/blob/master/Images/Nginx-Phase.png)
