@@ -106,6 +106,6 @@ http {
 +   基于lua-resty-websocket实现系统负载监控
 +   使用第三方编写的websocket_shell.lua(原本叫shell.lua) 一个库文件
 +   第三方库或者文件引入：`local shell = require 'vendor.websocket_shell'`
-+   注意：在这里并没有用到`lua-resty-shell` 库，有时间整合到一起去
++   注意：在这里并没有用到`lua-resty-shell` 库，有时间整合到一起去 
 +   效果预览图：
-    ![websocket_shell](https://github.com/Tinywan/Lua-Nginx-Redis/blob/master/Images/Nginx-Phase.png)
+    ![websocket_shell](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/WebSocket_shell.jpg)
