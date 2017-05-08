@@ -55,20 +55,26 @@ var descriptions = {
 
 var num = 0;
 function streamStats() {
-    var ws = new ReconnectingWebSocket('ws://' + location.host + '/lua_websocket_server');
-    ws.onopen = function() {
-        console.log('connect');
-        ws.send('hello');
-    };
+    console.log(location.host);
+    // var ws = new ReconnectingWebSocket('ws://' + location.host + '/lua_websocket_server');
+    var ws = new WebSocket('ws://192.168.18.12:8080/');
 
-    ws.onclose = function() {
-        console.log('disconnect');
+    ws.onmessage = function(event) {
+        console.log('Count is: ' + event.data);
     };
-
-    ws.onmessage = function(e) {
-        // receiveStats(JSON.parse(e.data));
-        console.log(e.data);
-    };
+    // ws.onopen = function() {
+    //     console.log('connect');
+    //     ws.send('hello');
+    // };
+    //
+    // ws.onclose = function() {
+    //     console.log('disconnect');
+    // };
+    //
+    // ws.onmessage = function(e) {
+    //     // receiveStats(JSON.parse(e.data));
+    //     console.log(e.data);
+    // };
 }
 
 function initCharts() {
@@ -151,6 +157,6 @@ function receiveStats(stats) {
 }
 
 $(function() {
-    initCharts();
+    // initCharts();
     streamStats();
 });
