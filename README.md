@@ -92,6 +92,7 @@ http {
 ####    2017年05月08日 星期一
 +   添加新功能：lua-resty-websocket 官方测试案例
 +   添加新功能：WebSocket系统负载统计
++   Mysql 管理待做...
         
 ## 功能列表
 ####    简单的Redis数据库操作  
