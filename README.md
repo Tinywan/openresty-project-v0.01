@@ -90,6 +90,8 @@ http {
 +   创建项目
 
 ####    2017年05月08日 星期一
++   [Redis授权登录使用短连接(5000)和长连接(500W) 使用连接池AB压力测试结果](http://www.cnblogs.com/tinywan/p/6838630.html)
+####    2017年05月08日 星期一
 +   添加新功能：lua-resty-websocket 官方测试案例
 +   添加新功能：WebSocket系统负载统计
 +   Mysql 管理待做...
