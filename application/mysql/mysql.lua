@@ -56,7 +56,7 @@ ngx.say("table tb_ngx_test created.")
 
 res, err, errcode, sqlstate =
 db:query("insert into tb_ngx_test (name,address,age) "
-        .. "values (\'tinywan\',\'中国、杭州、西湖\',24)")
+        .. "values (\'tinywan\',\'China\',24)")
 if not res then
     ngx.say("bad result: ", err, ": ", errcode, ": ", sqlstate, ".")
     return
