@@ -91,7 +91,9 @@ http {
 ####    2017年05月08日 星期一
 +   添加新功能：lua-resty-websocket 官方测试案例
 +   添加新功能：WebSocket系统负载统计
-+   Mysql 管理待做...
+####    2017年05月11日 星期四
++   Mysql 数据库添加
+    +   错误提示：`bad result: Data too long for column 'name' at row 1: 1406: 22001.`,插入字段超过表定义大小
 ####    2017年05月10日 星期三
 +   [Redis授权登录使用短连接(5000)和长连接(500W) 使用连接池AB压力测试结果](http://www.cnblogs.com/tinywan/p/6838630.html)        
 ## 功能列表
