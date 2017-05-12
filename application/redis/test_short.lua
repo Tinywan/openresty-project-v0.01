@@ -30,15 +30,15 @@ if not res then
     return
 end
 
-ok, err = red:set("dog_test_short", "an animal dog_test_short"..ngx.time())
+ok, err = red:set("redis_test_short", "redis_test_short"..ngx.time())
 if not ok then
     ngx.say("failed to set dog: ", err)
     return
 end
 
-ngx.say("set result: ", ok)
+ngx.say("Tinywan redis_test_short set result: ", ok)
 
-local res, err = red:get("dog_test_short")
+local res, err = red:get("redis_test_short")
 if not res then
     ngx.say("failed to get dog: ", err)
     return
@@ -49,5 +49,5 @@ if res == ngx.null then
     return
 end
 
-ngx.say("dog_test_short: ", res)
+ngx.say("redis_test_short result: ", res)
 

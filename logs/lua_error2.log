@@ -1,0 +1,11 @@
+2017/05/11 10:22:49 [error] 128153#0: *2007300 lua entry thread aborted: runtime error: ...ua_project_v0.01/application/redis/redis_iresty_long.lua:15: attempt to call method 'connect' (a nil value)
+stack traceback:
+coroutine 0:
+	...ua_project_v0.01/application/redis/redis_iresty_long.lua: in function <...ua_project_v0.01/application/redis/redis_iresty_long.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /redis_iresty_long HTTP/1.1", host: "127.0.0.1"
+2017/05/11 10:28:31 [error] 128198#0: *2007301 lua entry thread aborted: runtime error: ...hare/Lua/lua_project_v0.01/lualib/resty/redis_iresty.lua:98: attempt to call method 'set_timeout' (a nil value)
+stack traceback:
+coroutine 0:
+	...hare/Lua/lua_project_v0.01/lualib/resty/redis_iresty.lua: in function 'connect_mod'
+	...ua_project_v0.01/application/redis/redis_iresty_long.lua:15: in function <...ua_project_v0.01/application/redis/redis_iresty_long.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /redis_iresty_long HTTP/1.1", host: "127.0.0.1"
+2017/05/11 12:33:09 [error] 128200#0: *2014678 open() "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/public/websocket/public/favicon.ico" failed (2: No such file or directory), client: 192.168.18.73, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.18.120"
+2017/05/11 13:13:37 [error] 128798#0: *2014903 open() "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/public/websocket/public/favicon.ico" failed (2: No such file or directory), client: 192.168.18.73, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.18.120", referrer: "http://192.168.18.120/test_redis_short"
