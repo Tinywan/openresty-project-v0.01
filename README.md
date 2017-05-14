@@ -96,6 +96,10 @@ http {
 ####    2017年05月11日 星期四
 +   Mysql 数据库添加
     +   错误提示：`bad result: Data too long for column 'name' at row 1: 1406: 22001.`,插入字段超过表定义大小
+####    2017年05月14日 星期日
++   Swoole WebSocket 测试
+    +   开启服务：`php /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/application/swoole/websocket-server.php`
+    +   客户端测试：`http://127.0.0.1/clinet.html`
 
 ## 功能列表
 ####    简单的Redis数据库操作  
