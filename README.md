@@ -53,11 +53,11 @@ events {
 }
 
 http {
-    include       mime.types;
-    default_type  "text/html";
-    lua_package_path "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/lualib/?.lua;;";   
-    lua_package_cpath "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/lualib/?.so;;";  
-    include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/nginx.conf";
+    include       /opt/openresty/nginx/conf/mime.types;
+    default_type  text/html;
+    lua_package_path "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/lualib/?.lua;;";  #lua 模块
+    lua_package_cpath "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/lualib/?.so;;";  #c模块
+    include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/domains/*";
 }
 ```
 ##  :date:

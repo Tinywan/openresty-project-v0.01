@@ -4,6 +4,7 @@
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/nginx.conf" afterPath="$PROJECT_DIR$/conf/nginx.conf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +19,8 @@
       <file leaf-file-name="nginx.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/nginx.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="20">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="20" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -68,13 +69,13 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="600">
-                <caret line="33" column="46" lean-forward="false" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="40">
+                <caret line="41" column="3" lean-forward="false" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="49" />
                 <folding>
-                  <marker date="1494858980372" expanded="true" signature="1067:1074" ph="..." />
-                  <marker date="1494858980372" expanded="true" signature="1122:1133" ph="..." />
-                  <marker date="1494858980372" expanded="true" signature="3022:3045" ph="..." />
+                  <marker date="1494859154907" expanded="true" signature="1067:1074" ph="..." />
+                  <marker date="1494859154907" expanded="true" signature="1122:1194" ph="..." />
+                  <marker date="1494859154907" expanded="true" signature="3055:3078" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -102,9 +103,9 @@
         <option value="$PROJECT_DIR$/logs/lua_error2.log" />
         <option value="$PROJECT_DIR$/application/redis/test_short.lua" />
         <option value="$PROJECT_DIR$/conf/domains/nginx_product.conf" />
-        <option value="$PROJECT_DIR$/conf/nginx.conf" />
         <option value="$PROJECT_DIR$/bin/stop.sh" />
         <option value="$PROJECT_DIR$/bin/start.sh" />
+        <option value="$PROJECT_DIR$/conf/nginx.conf" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -314,7 +315,7 @@
       <workItem from="1494580637178" duration="17000" />
       <workItem from="1494685710361" duration="48000" />
       <workItem from="1494852690586" duration="168000" />
-      <workItem from="1494852878587" duration="6110000" />
+      <workItem from="1494852878587" duration="6259000" />
     </task>
     <task id="LOCAL-00001" summary="添加Nginx 启动脚本">
       <created>1494858373915</created>
@@ -337,11 +338,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494858905981</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update readme 贰萬">
+      <created>1494859026015</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1494859026015</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13036000" />
+    <option name="totallyTimeSpent" value="13185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -377,7 +385,8 @@
     <MESSAGE value="添加Nginx 启动脚本" />
     <MESSAGE value="添加Nginx 启动、停止脚本" />
     <MESSAGE value="update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
+    <MESSAGE value="update readme 贰萬" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme 贰萬" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -674,14 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/nginx.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/stop.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -690,15 +691,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/conf/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="600">
-            <caret line="33" column="46" lean-forward="false" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="40">
+            <caret line="41" column="3" lean-forward="false" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="49" />
             <folding>
-              <marker date="1494858980372" expanded="true" signature="1067:1074" ph="..." />
-              <marker date="1494858980372" expanded="true" signature="1122:1133" ph="..." />
-              <marker date="1494858980372" expanded="true" signature="3022:3045" ph="..." />
+              <marker date="1494859154907" expanded="true" signature="1067:1074" ph="..." />
+              <marker date="1494859154907" expanded="true" signature="1122:1194" ph="..." />
+              <marker date="1494859154907" expanded="true" signature="3055:3078" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
