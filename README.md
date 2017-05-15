@@ -1,6 +1,5 @@
-# 一个简单的Lua 项目
-使用Lua编写一个完整的项目
-
+![Markdown](https://github.com/Tinywan/Lua-Nginx-Redis/blob/master/Images/Nginx-Phase.png)
+~~~~~
 ##  Project structure
 ```javascript
 .
