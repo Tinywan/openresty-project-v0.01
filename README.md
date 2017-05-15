@@ -100,6 +100,13 @@ http {
 +   Swoole WebSocket 测试
     +   开启服务：`php /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/application/swoole/websocket-server.php`
     +   客户端测试：`http://127.0.0.1/clinet.html`
+####    2017年05月15日 星期一
++   添加Nginx 启动脚本：`start.sh`
+    +   开启Nginx：'/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/bin/start.sh'
+    +   如果已经开始Nginx，则执行`start.sh `可以重新加载配置文件
++   添加Nginx 停止脚本：`stop.sh`
+    +   停止Nginx：`/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/bin/stop.sh`
+
 
 ## 功能列表
 ####    简单的Redis数据库操作  
