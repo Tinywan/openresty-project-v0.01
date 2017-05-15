@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/tinywan_title.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -70,12 +69,12 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="20">
-                <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+              <first_editor relative-caret-position="720">
+                <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
                 <folding>
-                  <marker date="1494859899916" expanded="true" signature="1134:1141" ph="..." />
-                  <marker date="1494859899916" expanded="true" signature="1189:1261" ph="..." />
-                  <marker date="1494859899916" expanded="true" signature="3122:3145" ph="..." />
+                  <marker date="1494860000310" expanded="true" signature="1145:1152" ph="..." />
+                  <marker date="1494860000310" expanded="true" signature="1200:1272" ph="..." />
+                  <marker date="1494860000310" expanded="true" signature="3133:3156" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -342,7 +341,7 @@
       <workItem from="1494580637178" duration="17000" />
       <workItem from="1494685710361" duration="48000" />
       <workItem from="1494852690586" duration="168000" />
-      <workItem from="1494852878587" duration="7044000" />
+      <workItem from="1494852878587" duration="7137000" />
     </task>
     <task id="LOCAL-00001" summary="添加Nginx 启动脚本">
       <created>1494858373915</created>
@@ -379,11 +378,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494859169594</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update readme 贰萬 nginx.conf, the Nginx web server configuration">
+      <created>1494859952063</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1494859952063</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13970000" />
+    <option name="totallyTimeSpent" value="14063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -737,12 +743,12 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="20">
-            <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          <first_editor relative-caret-position="720">
+            <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
             <folding>
-              <marker date="1494859899916" expanded="true" signature="1134:1141" ph="..." />
-              <marker date="1494859899916" expanded="true" signature="1189:1261" ph="..." />
-              <marker date="1494859899916" expanded="true" signature="3122:3145" ph="..." />
+              <marker date="1494860000310" expanded="true" signature="1145:1152" ph="..." />
+              <marker date="1494860000310" expanded="true" signature="1200:1272" ph="..." />
+              <marker date="1494860000310" expanded="true" signature="3133:3156" ph="..." />
             </folding>
           </first_editor>
           <second_editor />

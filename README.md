@@ -1,4 +1,4 @@
-![Markdown](https://github.com/Tinywan/Lua-Nginx-Redis/blob/master/Images/Nginx-Phase.png)
+![Markdown](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/tinywan_title.png)
 ~~~~~
 ##  Project structure
 ```javascript
