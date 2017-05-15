@@ -4,60 +4,40 @@
 ##  Project structure
 ```javascript
 .
-├── application
+├── application                      -- 业务代码
 │   ├── get_redis_iresty.lua
 │   ├── ip_location.lua
-│   └── test.lua
-├── conf
-│   └── nginx.conf
-├── logs
-│   └── error.log
-├── lualib
+│   ├── lua_websocket_server.lua
+│   ├── mysql
+│   ├── mysql.lua
+│   ├── redis
+│   ├── swoole
+│   ├── test.lua
+│   ├── websocket_server_test.lua
+│   └── zabbix
+├── bin                             -- 脚本文件
+│   ├── start.sh
+│   └── stop.sh
+├── conf                            -- 配置文件
+│   ├── domains
+│   ├── nginx.conf
+│   └── nginx.conf.default
+├── logs                            -- 日志文件 
+│   ├── lua2_error.log
+│   └── lua_error2.log
+├── lualib                          -- 公共Lua库
 │   ├── cjson.so
 │   ├── ngx
-│   │   ├── balancer.lua
-│   │   ├── ocsp.lua
-│   │   ├── semaphore.lua
-│   │   ├── ssl
-│   │   └── ssl.lua
 │   ├── rds
-│   │   └── parser.so
 │   ├── redis
-│   │   └── parser.so
 │   ├── resty
-│   │   ├── aes.lua
-│   │   ├── core
-│   │   ├── core.lua
-│   │   ├── dns
-│   │   ├── http_headers.lua
-│   │   ├── http.lua
-│   │   ├── lock.lua
-│   │   ├── lrucache
-│   │   ├── lrucache.lua
-│   │   ├── md5.lua
-│   │   ├── memcached.lua
-│   │   ├── mysql.lua
-│   │   ├── random.lua
-│   │   ├── redis_iresty.lua
-│   │   ├── redis.lua
-│   │   ├── sha1.lua
-│   │   ├── sha224.lua
-│   │   ├── sha256.lua
-│   │   ├── sha384.lua
-│   │   ├── sha512.lua
-│   │   ├── sha.lua
-│   │   ├── shell.lua
-│   │   ├── string.lua
-│   │   ├── upload.lua
-│   │   ├── upstream
-│   │   └── websocket
 │   └── vendor
-│       ├── ip_check.lua
-│       └── ip_location.lua
-├── public
-│   └── data
-│       └── location_ip_db.dat
-└── README.md
+├── public                          -- 公共静态文件
+│   ├── data
+│   ├── images
+│   └── websocket
+├── README.md                      
+└── template                        -- 模板
 ```
 ## nginx.conf, the Nginx web server configuration
 
@@ -102,7 +82,7 @@ http {
     +   客户端测试：`http://127.0.0.1/clinet.html`
 ####    2017年05月15日 星期一
 +   添加Nginx 启动脚本：`start.sh`
-    +   开启Nginx：'/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/bin/start.sh'
+    +   开启Nginx：`/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/bin/start.sh`
     +   如果已经开始Nginx，则执行`start.sh `可以重新加载配置文件
 +   添加Nginx 停止脚本：`stop.sh`
     +   停止Nginx：`/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/bin/stop.sh`
