@@ -31,7 +31,7 @@
 │   ├── rds
 │   ├── redis
 │   ├── resty
-│   └── vendor
+│   └── vendor                      -- 第三方Lua库
 ├── public                          -- 公共静态文件
 │   ├── data
 │   ├── images
