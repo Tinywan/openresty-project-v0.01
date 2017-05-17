@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="add waf directory and fastcgi_params file">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/waf/README.md" afterPath="" />
+    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bin/waf/init.lua" afterPath="$PROJECT_DIR$/application/waf/init.lua" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bin/waf/install.sh" afterPath="$PROJECT_DIR$/application/waf/install.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bin/waf/waf.lua" afterPath="$PROJECT_DIR$/application/waf/waf.lua" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bin/waf/wafconf/args" afterPath="$PROJECT_DIR$/application/waf/wafconf/args" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bin/waf/wafconf/cookie" afterPath="$PROJECT_DIR$/application/waf/wafconf/cookie" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bin/waf/wafconf/post" afterPath="$PROJECT_DIR$/application/waf/wafconf/post" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bin/waf/wafconf/url" afterPath="$PROJECT_DIR$/application/waf/wafconf/url" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bin/waf/wafconf/user-agent" afterPath="$PROJECT_DIR$/application/waf/wafconf/user-agent" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bin/waf/wafconf/whiteurl" afterPath="$PROJECT_DIR$/application/waf/wafconf/whiteurl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,15 +29,15 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="462">
-                <caret line="149" column="4" lean-forward="false" selection-start-line="149" selection-start-column="4" selection-end-line="149" selection-end-column="4" />
+              <first_editor relative-caret-position="322">
+                <caret line="148" column="13" lean-forward="false" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
                 <folding>
-                  <marker date="1495038543226" expanded="true" signature="1146:1153" ph="..." />
-                  <marker date="1495038543226" expanded="true" signature="1201:1273" ph="..." />
-                  <marker date="1495038543226" expanded="true" signature="3376:3402" ph="..." />
-                  <marker date="1495038543226" expanded="true" signature="3910:3943" ph="..." />
-                  <marker date="1495038543226" expanded="true" signature="4052:4088" ph="..." />
-                  <marker date="1495038543226" expanded="true" signature="6546:6569" ph="..." />
+                  <marker date="1495038717986" expanded="true" signature="1146:1153" ph="..." />
+                  <marker date="1495038717986" expanded="true" signature="1201:1273" ph="..." />
+                  <marker date="1495038717986" expanded="true" signature="3376:3402" ph="..." />
+                  <marker date="1495038717986" expanded="true" signature="3910:3943" ph="..." />
+                  <marker date="1495038717986" expanded="true" signature="4052:4088" ph="..." />
+                  <marker date="1495038717986" expanded="true" signature="6560:6583" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -516,7 +506,7 @@
       <workItem from="1494852690586" duration="168000" />
       <workItem from="1494852878587" duration="8067000" />
       <workItem from="1494929212439" duration="3000" />
-      <workItem from="1495031750867" duration="6792000" />
+      <workItem from="1495031750867" duration="6965000" />
     </task>
     <task id="LOCAL-00001" summary="添加Nginx 启动脚本">
       <created>1494858373915</created>
@@ -658,11 +648,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495038341222</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add waf directory and fastcgi_params file">
+      <created>1495038552331</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1495038552331</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29649000" />
+    <option name="totallyTimeSpent" value="29822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -1078,15 +1075,15 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="462">
-            <caret line="149" column="4" lean-forward="false" selection-start-line="149" selection-start-column="4" selection-end-line="149" selection-end-column="4" />
+          <first_editor relative-caret-position="322">
+            <caret line="148" column="13" lean-forward="false" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
             <folding>
-              <marker date="1495038543226" expanded="true" signature="1146:1153" ph="..." />
-              <marker date="1495038543226" expanded="true" signature="1201:1273" ph="..." />
-              <marker date="1495038543226" expanded="true" signature="3376:3402" ph="..." />
-              <marker date="1495038543226" expanded="true" signature="3910:3943" ph="..." />
-              <marker date="1495038543226" expanded="true" signature="4052:4088" ph="..." />
-              <marker date="1495038543226" expanded="true" signature="6546:6569" ph="..." />
+              <marker date="1495038717986" expanded="true" signature="1146:1153" ph="..." />
+              <marker date="1495038717986" expanded="true" signature="1201:1273" ph="..." />
+              <marker date="1495038717986" expanded="true" signature="3376:3402" ph="..." />
+              <marker date="1495038717986" expanded="true" signature="3910:3943" ph="..." />
+              <marker date="1495038717986" expanded="true" signature="4052:4088" ph="..." />
+              <marker date="1495038717986" expanded="true" signature="6560:6583" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
