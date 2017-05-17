@@ -134,17 +134,17 @@ http {
                  >  解决：`cp fastcgi_params /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/fastcgi_params`
             -   [2]`FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream`
                  >  解决：查看`waf.conf`配置信息是否正确 
-+   测试...
-    1.  修改文件：`config.lua`
-        ```lua
-        black_fileExt={"php","jsp"}
-        ipWhitelist={"127.0.0.1"}
-        --ipBlocklist={"1.0.0.1"}
-        ipBlocklist={"192.168.127.133"}
-        ```  
-    2.  测试一：`http://127.0.0.1:8082/waf.php?id=../etc/passwd&name=Tinywan`
+
++   修改文件：`config.lua`
+    ```lua
+    black_fileExt={"php","jsp"}
+    ipWhitelist={"127.0.0.1"}
+    --ipBlocklist={"1.0.0.1"}
+    ipBlocklist={"192.168.127.133"}
+    ```  
++   测试一：`http://127.0.0.1:8082/waf.php?id=../etc/passwd&name=Tinywan`
     ![websocket_shell](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/waf_ip_blaklist3.png)
-    3.  测试二：`http://192.168.127.133:8082/waf.php?id=../etc/passwd&name=Tinywan`
++   测试二：`http://192.168.127.133:8082/waf.php?id=../etc/passwd&name=Tinywan`
     ![websocket_shell](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/waf_ip_blaklist2.png)
     
 ## 功能列表
