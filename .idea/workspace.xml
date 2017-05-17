@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/hack/localhost_2017-05-17_sec.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/product_access.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/product_error.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/waf_access.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/waf_error.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/waf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -510,7 +506,7 @@
       <workItem from="1494852690586" duration="168000" />
       <workItem from="1494852878587" duration="8067000" />
       <workItem from="1494929212439" duration="3000" />
-      <workItem from="1495031750867" duration="5462000" />
+      <workItem from="1495031750867" duration="5559000" />
     </task>
     <task id="LOCAL-00001" summary="添加Nginx 启动脚本">
       <created>1494858373915</created>
@@ -624,11 +620,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495037009526</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update logs">
+      <created>1495037227872</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1495037227872</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28319000" />
+    <option name="totallyTimeSpent" value="28416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -672,7 +675,8 @@
     <MESSAGE value="ngx_lua_waf install test success" />
     <MESSAGE value="ngx_lua_waf install test success OK" />
     <MESSAGE value="update config.lua file" />
-    <option name="LAST_COMMIT_MESSAGE" value="update config.lua file" />
+    <MESSAGE value="update logs" />
+    <option name="LAST_COMMIT_MESSAGE" value="update logs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -859,6 +863,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -866,6 +871,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
