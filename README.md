@@ -142,10 +142,10 @@ http {
     --ipBlocklist={"1.0.0.1"}
     ipBlocklist={"192.168.127.133"}
     ```  
-+   测试一：`http://127.0.0.1:8082/waf.php?id=../etc/passwd&name=Tinywan`
++   测试一：`http://127.0.0.1:8082/waf.php?id=../etc/passwd&name=Tinywan`  
     ![waf_ip_blaklist3](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/waf_ip_blaklist3.png)
     
-+   测试二：`http://192.168.127.133:8082/waf.php?id=../etc/passwd&name=Tinywan`
++   测试二：`http://192.168.127.133:8082/waf.php?id=../etc/passwd&name=Tinywan`  
     ![waf_ip_blaklist2](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/waf_ip_blaklist2.png)
     
 ## 功能列表
