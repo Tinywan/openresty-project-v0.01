@@ -1,4 +1,3 @@
---RulePath = "/usr/local/nginx/conf/waf/wafconf/"
 RulePath = "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/application/waf/wafconf/"
 attacklog = "on"
 --logdir = "/usr/local/nginx/logs/hack/"
