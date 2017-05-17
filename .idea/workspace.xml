@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="ngx_lua_waf install test success OK">
+    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -39,15 +39,15 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="362">
-                <caret line="147" column="77" lean-forward="false" selection-start-line="147" selection-start-column="77" selection-end-line="147" selection-end-column="77" />
+              <first_editor relative-caret-position="342">
+                <caret line="146" column="78" lean-forward="false" selection-start-line="146" selection-start-column="78" selection-end-line="146" selection-end-column="78" />
                 <folding>
-                  <marker date="1495036824573" expanded="true" signature="1146:1153" ph="..." />
-                  <marker date="1495036824573" expanded="true" signature="1201:1273" ph="..." />
-                  <marker date="1495036824573" expanded="true" signature="3376:3402" ph="..." />
-                  <marker date="1495036824573" expanded="true" signature="3910:3943" ph="..." />
-                  <marker date="1495036824573" expanded="true" signature="4052:4088" ph="..." />
-                  <marker date="1495036824573" expanded="true" signature="6400:6423" ph="..." />
+                  <marker date="1495036920283" expanded="true" signature="1146:1153" ph="..." />
+                  <marker date="1495036920283" expanded="true" signature="1201:1273" ph="..." />
+                  <marker date="1495036920283" expanded="true" signature="3376:3402" ph="..." />
+                  <marker date="1495036920283" expanded="true" signature="3910:3943" ph="..." />
+                  <marker date="1495036920283" expanded="true" signature="4052:4088" ph="..." />
+                  <marker date="1495036920283" expanded="true" signature="6409:6432" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -536,7 +536,7 @@
       <workItem from="1494852690586" duration="168000" />
       <workItem from="1494852878587" duration="8067000" />
       <workItem from="1494929212439" duration="3000" />
-      <workItem from="1495031750867" duration="5071000" />
+      <workItem from="1495031750867" duration="5167000" />
     </task>
     <task id="LOCAL-00001" summary="添加Nginx 启动脚本">
       <created>1494858373915</created>
@@ -629,11 +629,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495036750605</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="ngx_lua_waf install test success OK">
+      <created>1495036829127</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1495036829127</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27928000" />
+    <option name="totallyTimeSpent" value="28024000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -1033,15 +1040,15 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="362">
-            <caret line="147" column="77" lean-forward="false" selection-start-line="147" selection-start-column="77" selection-end-line="147" selection-end-column="77" />
+          <first_editor relative-caret-position="342">
+            <caret line="146" column="78" lean-forward="false" selection-start-line="146" selection-start-column="78" selection-end-line="146" selection-end-column="78" />
             <folding>
-              <marker date="1495036824573" expanded="true" signature="1146:1153" ph="..." />
-              <marker date="1495036824573" expanded="true" signature="1201:1273" ph="..." />
-              <marker date="1495036824573" expanded="true" signature="3376:3402" ph="..." />
-              <marker date="1495036824573" expanded="true" signature="3910:3943" ph="..." />
-              <marker date="1495036824573" expanded="true" signature="4052:4088" ph="..." />
-              <marker date="1495036824573" expanded="true" signature="6400:6423" ph="..." />
+              <marker date="1495036920283" expanded="true" signature="1146:1153" ph="..." />
+              <marker date="1495036920283" expanded="true" signature="1201:1273" ph="..." />
+              <marker date="1495036920283" expanded="true" signature="3376:3402" ph="..." />
+              <marker date="1495036920283" expanded="true" signature="3910:3943" ph="..." />
+              <marker date="1495036920283" expanded="true" signature="4052:4088" ph="..." />
+              <marker date="1495036920283" expanded="true" signature="6409:6432" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
