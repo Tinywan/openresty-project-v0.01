@@ -85,7 +85,35 @@ http {
     +   如果已经开始Nginx，则执行`start.sh `可以重新加载配置文件
 +   添加Nginx 停止脚本：`stop.sh`
     +   停止Nginx：`/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/bin/stop.sh`
-
+####    2017年05月17日 星期三
++   ngx_lua_waf 安装使用(ngx_lua_waf是一个基于lua-nginx-module(openresty)的web应用防火墙) 
+    +   [ngx_lua_waf github 地址](https://github.com/loveshell/ngx_lua_waf)
+    +   安装步骤
+        1.  下载源码到某一目录：复制目录到`application`下面，同时重命名`waf`
+        2.  命令：`cp -R ngx_lua_waf /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/application/waf`
+        3.  移动源文件目录中的`config.lua`文件到`../lualib/vendor`下
+        4.  在`domains` 新建文件`waf.conf`,添加以下内容
+            ```lua
+            lua_shared_dict limit 10m;
+            init_by_lua_file  "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/application/waf/init.lua";
+            access_by_lua_file "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/application/waf/waf.lua";
+            
+            server {
+                listen       8082;
+                server_name  localhost;
+                index  index.html index.htm;
+                access_log  /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/logs/waf_access.log;
+                error_log /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/logs/waf_error.log error;
+            
+                set $web_root /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/public/websocket;
+            
+                location /waf_test {
+                    resolver 8.8.8.8; # dns
+                    root $web_root/public;
+                }
+            }
+            ```
+        5.  重启Nginx即可    
 
 ## 功能列表
 ####    简单的Redis数据库操作  

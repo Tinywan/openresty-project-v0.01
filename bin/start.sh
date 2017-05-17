@@ -1,7 +1,6 @@
 #!/bin/bash
 # get Nginx Pid
 PID=$(ps -aef | grep nginx | grep -v grep | grep master |awk '{print $2}')
-echo $PID "\n"
 if [[ $? == 0 && -n $PID ]]
 then
     echo -e "\033[35m [ Nginx running ] \033[0m"
