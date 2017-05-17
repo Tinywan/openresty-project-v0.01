@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/github/waf_ip_blaklist3.png" afterPath="$PROJECT_DIR$/public/images/github/waf_ip_blaklist3.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -39,15 +40,15 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="522">
-                <caret line="142" column="35" lean-forward="true" selection-start-line="142" selection-start-column="35" selection-end-line="142" selection-end-column="35" />
+              <first_editor relative-caret-position="342">
+                <caret line="146" column="4" lean-forward="false" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
                 <folding>
-                  <marker date="1495036589823" expanded="true" signature="1146:1153" ph="..." />
-                  <marker date="1495036589823" expanded="true" signature="1201:1273" ph="..." />
-                  <marker date="1495036589823" expanded="true" signature="3376:3402" ph="..." />
-                  <marker date="1495036589823" expanded="true" signature="3910:3943" ph="..." />
-                  <marker date="1495036589823" expanded="true" signature="4052:4088" ph="..." />
-                  <marker date="1495036589823" expanded="true" signature="6389:6412" ph="..." />
+                  <marker date="1495036742252" expanded="true" signature="1146:1153" ph="..." />
+                  <marker date="1495036742252" expanded="true" signature="1201:1273" ph="..." />
+                  <marker date="1495036742252" expanded="true" signature="3376:3402" ph="..." />
+                  <marker date="1495036742252" expanded="true" signature="3910:3943" ph="..." />
+                  <marker date="1495036742252" expanded="true" signature="4052:4088" ph="..." />
+                  <marker date="1495036742252" expanded="true" signature="6396:6419" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -536,7 +537,7 @@
       <workItem from="1494852690586" duration="168000" />
       <workItem from="1494852878587" duration="8067000" />
       <workItem from="1494929212439" duration="3000" />
-      <workItem from="1495031750867" duration="4850000" />
+      <workItem from="1495031750867" duration="4988000" />
     </task>
     <task id="LOCAL-00001" summary="添加Nginx 启动脚本">
       <created>1494858373915</created>
@@ -615,11 +616,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495036473980</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ngx_lua_waf install test success">
+      <created>1495036619651</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1495036619651</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27707000" />
+    <option name="totallyTimeSpent" value="27845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -661,7 +669,8 @@
     <MESSAGE value="add underline" />
     <MESSAGE value="ngx_lua_waf 安装使用(ngx_lua_waf是一个基于lua-nginx-module(openresty)的web应用防火墙)" />
     <MESSAGE value="ngx_lua_waf 安装使用测试完毕" />
-    <option name="LAST_COMMIT_MESSAGE" value="ngx_lua_waf 安装使用测试完毕" />
+    <MESSAGE value="ngx_lua_waf install test success" />
+    <option name="LAST_COMMIT_MESSAGE" value="ngx_lua_waf install test success" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1020,15 +1029,15 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="522">
-            <caret line="142" column="35" lean-forward="true" selection-start-line="142" selection-start-column="35" selection-end-line="142" selection-end-column="35" />
+          <first_editor relative-caret-position="342">
+            <caret line="146" column="4" lean-forward="false" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
             <folding>
-              <marker date="1495036589823" expanded="true" signature="1146:1153" ph="..." />
-              <marker date="1495036589823" expanded="true" signature="1201:1273" ph="..." />
-              <marker date="1495036589823" expanded="true" signature="3376:3402" ph="..." />
-              <marker date="1495036589823" expanded="true" signature="3910:3943" ph="..." />
-              <marker date="1495036589823" expanded="true" signature="4052:4088" ph="..." />
-              <marker date="1495036589823" expanded="true" signature="6389:6412" ph="..." />
+              <marker date="1495036742252" expanded="true" signature="1146:1153" ph="..." />
+              <marker date="1495036742252" expanded="true" signature="1201:1273" ph="..." />
+              <marker date="1495036742252" expanded="true" signature="3376:3402" ph="..." />
+              <marker date="1495036742252" expanded="true" signature="3910:3943" ph="..." />
+              <marker date="1495036742252" expanded="true" signature="4052:4088" ph="..." />
+              <marker date="1495036742252" expanded="true" signature="6396:6419" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
