@@ -146,6 +146,8 @@ http {
     -   ![waf_ip_blaklist3](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/waf_ip_blaklist3.png)
 +   测试二：`http://192.168.127.133:8082/waf.php?id=../etc/passwd&name=Tinywan`     
     -   ![waf_ip_blaklist2](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/waf_ip_blaklist2.png)
++   坑：在提交代码的时候`waf`目录一直提交不了，提示:`modified: xxx(modified content, untracked content)`,
+    原来在`waf`目录下有个.git 目录,删除.git目录,重新git add 就可以了   
     
 ## 功能列表
 ####    简单的Redis数据库操作  
