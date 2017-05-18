@@ -66,10 +66,9 @@ http {
     - [x] 简单的Redis数据库操作 
     - [x] 根据IP地址获取具体城市信息(@icowan)
     - [x] lua-resty-shell库的使用
-+   创建项目
 ####    2017年05月08日 星期一
-+   添加新功能：lua-resty-websocket 官方测试案例
-+   添加新功能：WebSocket系统负载统计
++   添加功能：lua-resty-websocket 官方测试案例
++   添加功能：WebSocket系统负载统计
 ####    2017年05月10日 星期三
 +   [Redis授权登录使用短连接(5000)和长连接(500W) 使用连接池AB压力测试结果](http://www.cnblogs.com/tinywan/p/6838630.html)        
 ####    2017年05月11日 星期四
@@ -85,6 +84,11 @@ http {
     +   如果已经开始Nginx，则执行`start.sh `可以重新加载配置文件
 +   添加Nginx 停止脚本：`stop.sh`
     +   停止Nginx：`/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/bin/stop.sh`
++   脚本运行错误：
+    +   提示错误：` /bin/bash^M: 解释器错误: 没有那个文件或目录`
+    +   解决办法：`sed -i 's/\r$//' ../lua_project_v0.01/bin/start.sh`
+    +   [解决 linux下编译make文件报错“/bin/bash^M: 坏的解释器：没有那个文件或目录” 问题](http://blog.csdn.net/liuqiyao_01/article/details/41542101#comments)
+    
 ####    2017年05月17日 星期三
 +   ngx_lua_waf 安装使用(ngx_lua_waf是一个基于lua-nginx-module(openresty)的web应用防火墙) 
     +   [ngx_lua_waf github 地址](https://github.com/loveshell/ngx_lua_waf)
