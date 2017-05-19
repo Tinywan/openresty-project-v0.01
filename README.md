@@ -195,14 +195,16 @@ http {
         }
     }
     ```
-2. 当我们访问页面：`http://127.0.0.1:8082/13669361192.html` 将交给`lua_project_v0.01/application/controller/ProductController.lua`处理
-```html
-curl -k http://127.0.0.1:8082/13669361192.html
-Hello ProductController.lua
-uri = /13669361192.html
-```
+2. 当我们访问页面：`http://127.0.0.1:8082/13669361192.html`  
+   将交给`lua_project_v0.01/application/controller/ProductController.lua`处理
+    ```html
+    curl -k http://127.0.0.1:8082/13669361192.html
+    Hello ProductController.lua
+    uri = /13669361192.html
+    ```
 3. 项目入口搞定 :hibiscus: :hibiscus: :hibiscus: :hibiscus:        
-        
+ 
+* lua-resty-template 的使用 
       
 ## 功能列表
 ####    简单的Redis数据库操作  

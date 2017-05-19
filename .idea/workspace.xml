@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lualib/resty/template.lua" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lualib/resty/template/html.lua" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lualib/resty/template/microbenchmark.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -29,15 +32,15 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="660">
-                <caret line="203" column="3" lean-forward="false" selection-start-line="203" selection-start-column="3" selection-end-line="203" selection-end-column="3" />
+              <first_editor relative-caret-position="780">
+                <caret line="206" column="2" lean-forward="false" selection-start-line="206" selection-start-column="2" selection-end-line="206" selection-end-column="20" />
                 <folding>
-                  <marker date="1495207004667" expanded="true" signature="1146:1153" ph="..." />
-                  <marker date="1495207004667" expanded="true" signature="1201:1273" ph="..." />
-                  <marker date="1495207004667" expanded="true" signature="3639:3665" ph="..." />
-                  <marker date="1495207004667" expanded="true" signature="4173:4206" ph="..." />
-                  <marker date="1495207004667" expanded="true" signature="4315:4351" ph="..." />
-                  <marker date="1495207004667" expanded="true" signature="8524:8547" ph="..." />
+                  <marker date="1495207262743" expanded="true" signature="1146:1153" ph="..." />
+                  <marker date="1495207262743" expanded="true" signature="1201:1273" ph="..." />
+                  <marker date="1495207262743" expanded="true" signature="3639:3665" ph="..." />
+                  <marker date="1495207262743" expanded="true" signature="4173:4206" ph="..." />
+                  <marker date="1495207262743" expanded="true" signature="4315:4351" ph="..." />
+                  <marker date="1495207262743" expanded="true" signature="8568:8591" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -301,11 +304,11 @@
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\lualib\vendor" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\lualib\resty" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\conf\domains" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\public\images\github" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\public\upstream\html8083" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\public\images" />
-      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application\redis" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -738,11 +741,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495206870894</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary=":fallen_leaf: 第一个简单的 mvc 模式的文件路径访问">
+      <created>1495207056953</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1495207056953</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37859000" />
+    <option name="totallyTimeSpent" value="38101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -812,14 +822,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/redis/test_short.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1150,18 +1152,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lualib/resty/template/html.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="660">
-            <caret line="203" column="3" lean-forward="false" selection-start-line="203" selection-start-column="3" selection-end-line="203" selection-end-column="3" />
+          <first_editor relative-caret-position="780">
+            <caret line="206" column="2" lean-forward="false" selection-start-line="206" selection-start-column="2" selection-end-line="206" selection-end-column="20" />
             <folding>
-              <marker date="1495207004667" expanded="true" signature="1146:1153" ph="..." />
-              <marker date="1495207004667" expanded="true" signature="1201:1273" ph="..." />
-              <marker date="1495207004667" expanded="true" signature="3639:3665" ph="..." />
-              <marker date="1495207004667" expanded="true" signature="4173:4206" ph="..." />
-              <marker date="1495207004667" expanded="true" signature="4315:4351" ph="..." />
-              <marker date="1495207004667" expanded="true" signature="8524:8547" ph="..." />
+              <marker date="1495207262743" expanded="true" signature="1146:1153" ph="..." />
+              <marker date="1495207262743" expanded="true" signature="1201:1273" ph="..." />
+              <marker date="1495207262743" expanded="true" signature="3639:3665" ph="..." />
+              <marker date="1495207262743" expanded="true" signature="4173:4206" ph="..." />
+              <marker date="1495207262743" expanded="true" signature="4315:4351" ph="..." />
+              <marker date="1495207262743" expanded="true" signature="8568:8591" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
