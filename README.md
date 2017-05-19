@@ -205,6 +205,19 @@ http {
 3. 项目入口搞定 :hibiscus: :hibiscus: :hibiscus: :hibiscus:        
  
 * lua-resty-template 的使用 
+    ```lua
+        #加载模板文件
+        set $template_root "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/template/product";
+      
+        location /template_test {
+           default_type 'text/html';
+           content_by_lua '
+                local template = require "resty.template"
+                template.render("index.html", { message = "Hello, World!" })
+           ';
+        }
+    ```
+
       
 ## 功能列表
 ####    简单的Redis数据库操作  
