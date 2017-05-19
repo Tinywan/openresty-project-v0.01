@@ -89,7 +89,7 @@ http {
     +   解决办法：`sed -i 's/\r$//' ../lua_project_v0.01/bin/start.sh`
     +   [解决 linux下编译make文件报错“/bin/bash^M: 坏的解释器：没有那个文件或目录” 问题](http://blog.csdn.net/liuqiyao_01/article/details/41542101#comments)
     
-####    2017年05月17日 星期三
+####    :fallen_leaf: 2017年05月17日 星期三
 +   ngx_lua_waf 安装使用(ngx_lua_waf是一个基于lua-nginx-module(openresty)的web应用防火墙) 
     +   [ngx_lua_waf github 地址](https://github.com/loveshell/ngx_lua_waf)
     +   安装步骤
@@ -152,7 +152,7 @@ http {
     -   ![waf_ip_blaklist2](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/waf_ip_blaklist2.png)
 +   :poop: 坑 :poop: 在提交代码的时候`waf`目录一直提交不了，提示:`modified: xxx(modified content, untracked content)`,
     原来在`waf`目录下有个.git 目录,删除.git目录,重新git add 就可以了   
-####    2017年05月19日 星期五
+####    :hibiscus: 2017年05月19日 星期五
 +   第一版采用单模块设计
 +   简单的MVC模式，目录、命名约定（Phalcon MVC）
     +   Model（模型）负责在数据库中存取数据 
@@ -205,7 +205,7 @@ http {
         Hello ProductController.lua
         uri = /13669361192.html
         ```
-    3.  项目入口搞定        
+    3.  项目入口搞定 :hibiscus: :hibiscus: :hibiscus: :hibiscus:        
         
       
 ## 功能列表
