@@ -159,7 +159,7 @@ http {
     +   View（视图）是应用程序中处理数据显示的部分     
     +   Controller（控制器）通常控制器负责从视图读取数据，控制用户输入，并向模型发送数据   
 * 第一个简单的 mvc 模式的文件路径访问
-1. 配置文件：`nginx_product.conf`
+1. 配置文件：`nginx_product.conf`  
     ```bash
     #upstream
     upstream item_http_upstream {
@@ -196,7 +196,7 @@ http {
     }
     ```
 2. 当我们访问页面：`http://127.0.0.1:8082/13669361192.html`  
-   将交给`lua_project_v0.01/application/controller/ProductController.lua`处理
+   将交给`lua_project_v0.01/application/controller/ProductController.lua`处理   
     ```html
     curl -k http://127.0.0.1:8082/13669361192.html
     Hello ProductController.lua
@@ -204,7 +204,7 @@ http {
     ```
 3. 项目入口搞定 :hibiscus: :hibiscus: :hibiscus: :hibiscus:        
  
-* :bouquet: lua-resty-template 的使用 
+* :bouquet: lua-resty-template 的使用    
     ```lua
         #加载模板文件
         set $template_root "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/template/product";
@@ -217,7 +217,7 @@ http {
            ';
         }
     ```
-* :blossom: `resty.template`渲染模板,通过`ngx API`输出内容到指定的`html`页面
+* :blossom: `resty.template`渲染模板,通过`ngx API`输出内容到指定的`html`页面  
 ![Markdown](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/lua-resty-template.png)
       
 ## 功能列表

@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment=":hibiscus: :hibiscus: :hibiscus: websocketd">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/github/lua-resty-template.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/product/product_list.html" />
+    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controller/ProductController.lua" afterPath="$PROJECT_DIR$/application/controller/ProductController.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_product.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_product.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/product_access.log" afterPath="$PROJECT_DIR$/logs/product_access.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,16 +19,16 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="362">
-                <caret line="219" column="2" lean-forward="false" selection-start-line="219" selection-start-column="2" selection-end-line="219" selection-end-column="60" />
+              <first_editor relative-caret-position="1682">
+                <caret line="219" column="62" lean-forward="false" selection-start-line="219" selection-start-column="62" selection-end-line="219" selection-end-column="62" />
                 <folding>
-                  <marker date="1495212520983" expanded="true" signature="1146:1153" ph="..." />
-                  <marker date="1495212520983" expanded="true" signature="1201:1273" ph="..." />
-                  <marker date="1495212520983" expanded="true" signature="3639:3665" ph="..." />
-                  <marker date="1495212520983" expanded="true" signature="4173:4206" ph="..." />
-                  <marker date="1495212520983" expanded="true" signature="4315:4351" ph="..." />
-                  <marker date="1495212520983" expanded="true" signature="8132:8196" ph="..." />
-                  <marker date="1495212520983" expanded="true" signature="9144:9167" ph="..." />
+                  <marker date="1495212646511" expanded="true" signature="1146:1153" ph="..." />
+                  <marker date="1495212646511" expanded="true" signature="1201:1273" ph="..." />
+                  <marker date="1495212646511" expanded="true" signature="3639:3665" ph="..." />
+                  <marker date="1495212646511" expanded="true" signature="4173:4206" ph="..." />
+                  <marker date="1495212646511" expanded="true" signature="4315:4351" ph="..." />
+                  <marker date="1495212646511" expanded="true" signature="8140:8204" ph="..." />
+                  <marker date="1495212646511" expanded="true" signature="9154:9177" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -801,11 +796,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495211377671</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="`resty.template`渲染模板,通过`ngx API`输出内容到指定的`html`页面 :blossom:  :blossom:  :blossom:">
+      <created>1495212549942</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1495212549942</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42851000" />
+    <option name="totallyTimeSpent" value="42984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -873,7 +875,8 @@
     <MESSAGE value=":leaves: :leaves: :leaves: lua-resty-template use" />
     <MESSAGE value=":bouquet: :bouquet: :bouquet: echo $PID &quot;doc2unix&quot;" />
     <MESSAGE value=":hibiscus: :hibiscus: :hibiscus: websocketd" />
-    <option name="LAST_COMMIT_MESSAGE" value=":hibiscus: :hibiscus: :hibiscus: websocketd" />
+    <MESSAGE value="`resty.template`渲染模板,通过`ngx API`输出内容到指定的`html`页面 :blossom:  :blossom:  :blossom:" />
+    <option name="LAST_COMMIT_MESSAGE" value="`resty.template`渲染模板,通过`ngx API`输出内容到指定的`html`页面 :blossom:  :blossom:  :blossom:" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1235,16 +1238,16 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="362">
-            <caret line="219" column="2" lean-forward="false" selection-start-line="219" selection-start-column="2" selection-end-line="219" selection-end-column="60" />
+          <first_editor relative-caret-position="1682">
+            <caret line="219" column="62" lean-forward="false" selection-start-line="219" selection-start-column="62" selection-end-line="219" selection-end-column="62" />
             <folding>
-              <marker date="1495212520983" expanded="true" signature="1146:1153" ph="..." />
-              <marker date="1495212520983" expanded="true" signature="1201:1273" ph="..." />
-              <marker date="1495212520983" expanded="true" signature="3639:3665" ph="..." />
-              <marker date="1495212520983" expanded="true" signature="4173:4206" ph="..." />
-              <marker date="1495212520983" expanded="true" signature="4315:4351" ph="..." />
-              <marker date="1495212520983" expanded="true" signature="8132:8196" ph="..." />
-              <marker date="1495212520983" expanded="true" signature="9144:9167" ph="..." />
+              <marker date="1495212646511" expanded="true" signature="1146:1153" ph="..." />
+              <marker date="1495212646511" expanded="true" signature="1201:1273" ph="..." />
+              <marker date="1495212646511" expanded="true" signature="3639:3665" ph="..." />
+              <marker date="1495212646511" expanded="true" signature="4173:4206" ph="..." />
+              <marker date="1495212646511" expanded="true" signature="4315:4351" ph="..." />
+              <marker date="1495212646511" expanded="true" signature="8140:8204" ph="..." />
+              <marker date="1495212646511" expanded="true" signature="9154:9177" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
