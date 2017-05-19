@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="doc2unix.sh study">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controller/IndexController.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controller/ProductController.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/model/Products.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conf/domains/nginx_demo.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/product/index.html" />
+    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_product.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_product.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/product_access.log" afterPath="$PROJECT_DIR$/logs/product_access.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,15 +30,15 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="502">
-                <caret line="156" column="20" lean-forward="true" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="20" />
+              <first_editor relative-caret-position="180">
+                <caret line="164" column="4" lean-forward="false" selection-start-line="164" selection-start-column="4" selection-end-line="164" selection-end-column="24" />
                 <folding>
-                  <marker date="1495204310161" expanded="true" signature="1146:1153" ph="..." />
-                  <marker date="1495204310161" expanded="true" signature="1201:1273" ph="..." />
-                  <marker date="1495204310161" expanded="true" signature="3625:3651" ph="..." />
-                  <marker date="1495204310161" expanded="true" signature="4159:4192" ph="..." />
-                  <marker date="1495204310161" expanded="true" signature="4301:4337" ph="..." />
-                  <marker date="1495204310161" expanded="true" signature="7142:7165" ph="..." />
+                  <marker date="1495206486396" expanded="true" signature="1146:1153" ph="..." />
+                  <marker date="1495206486396" expanded="true" signature="1201:1273" ph="..." />
+                  <marker date="1495206486396" expanded="true" signature="3625:3651" ph="..." />
+                  <marker date="1495206486396" expanded="true" signature="4159:4192" ph="..." />
+                  <marker date="1495206486396" expanded="true" signature="4301:4337" ph="..." />
+                  <marker date="1495206486396" expanded="true" signature="8775:8798" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -55,8 +49,8 @@
       <file leaf-file-name="nginx_product.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/domains/nginx_product.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+            <state relative-caret-position="640">
+              <caret line="32" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -127,13 +121,13 @@
         <option value="$PROJECT_DIR$/lualib/vendor/config.lua" />
         <option value="$PROJECT_DIR$/conf/nginx.conf" />
         <option value="$PROJECT_DIR$/bin/doc2unix.sh" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/application/controller/IndexController.lua" />
         <option value="$PROJECT_DIR$/application/controller/ProductsController.lua" />
         <option value="$PROJECT_DIR$/template/product/index.html" />
         <option value="$PROJECT_DIR$/conf/domains/nginx_demo.conf" />
         <option value="$PROJECT_DIR$/application/controller/ProductController.lua" />
         <option value="$PROJECT_DIR$/conf/domains/nginx_product.conf" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -685,11 +679,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495073455436</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="简单的MVC模式，目录、命名约定">
+      <created>1495205989196</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1495205989196</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36790000" />
+    <option name="totallyTimeSpent" value="37312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -749,7 +750,8 @@
     <MESSAGE value="add waf directory and fastcgi_params file" />
     <MESSAGE value="nginx start script error problem is OK！" />
     <MESSAGE value="doc2unix.sh study" />
-    <option name="LAST_COMMIT_MESSAGE" value="doc2unix.sh study" />
+    <MESSAGE value="简单的MVC模式，目录、命名约定" />
+    <option name="LAST_COMMIT_MESSAGE" value="简单的MVC模式，目录、命名约定" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1017,13 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/nginx.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/doc2unix.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1085,10 +1080,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/conf/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/conf/domains/nginx_product.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        <state relative-caret-position="640">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1096,15 +1099,15 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="502">
-            <caret line="156" column="20" lean-forward="true" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="20" />
+          <first_editor relative-caret-position="180">
+            <caret line="164" column="4" lean-forward="false" selection-start-line="164" selection-start-column="4" selection-end-line="164" selection-end-column="24" />
             <folding>
-              <marker date="1495204310161" expanded="true" signature="1146:1153" ph="..." />
-              <marker date="1495204310161" expanded="true" signature="1201:1273" ph="..." />
-              <marker date="1495204310161" expanded="true" signature="3625:3651" ph="..." />
-              <marker date="1495204310161" expanded="true" signature="4159:4192" ph="..." />
-              <marker date="1495204310161" expanded="true" signature="4301:4337" ph="..." />
-              <marker date="1495204310161" expanded="true" signature="7142:7165" ph="..." />
+              <marker date="1495206486396" expanded="true" signature="1146:1153" ph="..." />
+              <marker date="1495206486396" expanded="true" signature="1201:1273" ph="..." />
+              <marker date="1495206486396" expanded="true" signature="3625:3651" ph="..." />
+              <marker date="1495206486396" expanded="true" signature="4159:4192" ph="..." />
+              <marker date="1495206486396" expanded="true" signature="4301:4337" ph="..." />
+              <marker date="1495206486396" expanded="true" signature="8775:8798" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
