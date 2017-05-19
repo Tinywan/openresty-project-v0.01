@@ -19,16 +19,16 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="1682">
-                <caret line="219" column="62" lean-forward="false" selection-start-line="219" selection-start-column="62" selection-end-line="219" selection-end-column="62" />
+              <first_editor relative-caret-position="622">
+                <caret line="223" column="4" lean-forward="false" selection-start-line="223" selection-start-column="4" selection-end-line="223" selection-end-column="4" />
                 <folding>
-                  <marker date="1495212646511" expanded="true" signature="1146:1153" ph="..." />
-                  <marker date="1495212646511" expanded="true" signature="1201:1273" ph="..." />
-                  <marker date="1495212646511" expanded="true" signature="3639:3665" ph="..." />
-                  <marker date="1495212646511" expanded="true" signature="4173:4206" ph="..." />
-                  <marker date="1495212646511" expanded="true" signature="4315:4351" ph="..." />
-                  <marker date="1495212646511" expanded="true" signature="8140:8204" ph="..." />
-                  <marker date="1495212646511" expanded="true" signature="9154:9177" ph="..." />
+                  <marker date="1495212823703" expanded="true" signature="1146:1153" ph="..." />
+                  <marker date="1495212823703" expanded="true" signature="1201:1273" ph="..." />
+                  <marker date="1495212823703" expanded="true" signature="3639:3665" ph="..." />
+                  <marker date="1495212823703" expanded="true" signature="4173:4206" ph="..." />
+                  <marker date="1495212823703" expanded="true" signature="4315:4351" ph="..." />
+                  <marker date="1495212823703" expanded="true" signature="8146:8210" ph="..." />
+                  <marker date="1495212823703" expanded="true" signature="9167:9190" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -803,11 +803,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495212549942</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="`resty.template`渲染模板,输出内容到`html`页面 :sunflower: :sunflower: :sunflower:">
+      <created>1495212704007</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1495212704007</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42984000" />
+    <option name="totallyTimeSpent" value="43153000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -876,7 +883,8 @@
     <MESSAGE value=":bouquet: :bouquet: :bouquet: echo $PID &quot;doc2unix&quot;" />
     <MESSAGE value=":hibiscus: :hibiscus: :hibiscus: websocketd" />
     <MESSAGE value="`resty.template`渲染模板,通过`ngx API`输出内容到指定的`html`页面 :blossom:  :blossom:  :blossom:" />
-    <option name="LAST_COMMIT_MESSAGE" value="`resty.template`渲染模板,通过`ngx API`输出内容到指定的`html`页面 :blossom:  :blossom:  :blossom:" />
+    <MESSAGE value="`resty.template`渲染模板,输出内容到`html`页面 :sunflower: :sunflower: :sunflower:" />
+    <option name="LAST_COMMIT_MESSAGE" value="`resty.template`渲染模板,输出内容到`html`页面 :sunflower: :sunflower: :sunflower:" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1238,16 +1246,16 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="1682">
-            <caret line="219" column="62" lean-forward="false" selection-start-line="219" selection-start-column="62" selection-end-line="219" selection-end-column="62" />
+          <first_editor relative-caret-position="622">
+            <caret line="223" column="4" lean-forward="false" selection-start-line="223" selection-start-column="4" selection-end-line="223" selection-end-column="4" />
             <folding>
-              <marker date="1495212646511" expanded="true" signature="1146:1153" ph="..." />
-              <marker date="1495212646511" expanded="true" signature="1201:1273" ph="..." />
-              <marker date="1495212646511" expanded="true" signature="3639:3665" ph="..." />
-              <marker date="1495212646511" expanded="true" signature="4173:4206" ph="..." />
-              <marker date="1495212646511" expanded="true" signature="4315:4351" ph="..." />
-              <marker date="1495212646511" expanded="true" signature="8140:8204" ph="..." />
-              <marker date="1495212646511" expanded="true" signature="9154:9177" ph="..." />
+              <marker date="1495212823703" expanded="true" signature="1146:1153" ph="..." />
+              <marker date="1495212823703" expanded="true" signature="1201:1273" ph="..." />
+              <marker date="1495212823703" expanded="true" signature="3639:3665" ph="..." />
+              <marker date="1495212823703" expanded="true" signature="4173:4206" ph="..." />
+              <marker date="1495212823703" expanded="true" signature="4315:4351" ph="..." />
+              <marker date="1495212823703" expanded="true" signature="8146:8210" ph="..." />
+              <marker date="1495212823703" expanded="true" signature="9167:9190" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
