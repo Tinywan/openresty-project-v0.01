@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/doc2unix.sh" afterPath="$PROJECT_DIR$/bin/doc2unix.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/websocket/public/clinet.html" afterPath="$PROJECT_DIR$/public/websocket/public/clinet.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,15 +21,15 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="222">
-                <caret line="206" column="2" lean-forward="false" selection-start-line="206" selection-start-column="2" selection-end-line="206" selection-end-column="24" />
+                <caret line="206" column="12" lean-forward="false" selection-start-line="206" selection-start-column="12" selection-end-line="206" selection-end-column="12" />
                 <folding>
-                  <marker date="1495211134658" expanded="true" signature="1146:1153" ph="..." />
-                  <marker date="1495211134658" expanded="true" signature="1201:1273" ph="..." />
-                  <marker date="1495211134658" expanded="true" signature="3639:3665" ph="..." />
-                  <marker date="1495211134658" expanded="true" signature="4173:4206" ph="..." />
-                  <marker date="1495211134658" expanded="true" signature="4315:4351" ph="..." />
-                  <marker date="1495211134658" expanded="true" signature="8122:8186" ph="..." />
-                  <marker date="1495211134658" expanded="true" signature="8960:8983" ph="..." />
+                  <marker date="1495211295065" expanded="true" signature="1146:1153" ph="..." />
+                  <marker date="1495211295065" expanded="true" signature="1201:1273" ph="..." />
+                  <marker date="1495211295065" expanded="true" signature="3639:3665" ph="..." />
+                  <marker date="1495211295065" expanded="true" signature="4173:4206" ph="..." />
+                  <marker date="1495211295065" expanded="true" signature="4315:4351" ph="..." />
+                  <marker date="1495211295065" expanded="true" signature="8132:8196" ph="..." />
+                  <marker date="1495211295065" expanded="true" signature="8970:8993" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -36,7 +37,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="doc2unix.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="clinet.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/websocket/public/clinet.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doc2unix.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/doc2unix.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -159,8 +170,9 @@
         <option value="$PROJECT_DIR$/logs/product_access.log" />
         <option value="$PROJECT_DIR$/conf/domains/nginx_product.conf" />
         <option value="$PROJECT_DIR$/template/product/index.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/bin/doc2unix.sh" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/public/websocket/public/clinet.html" />
       </list>
     </option>
   </component>
@@ -247,7 +259,15 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lualib" />
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="websocket" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -261,11 +281,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lualib" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resty" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -807,11 +823,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495211180099</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary=":bouquet: :bouquet: :bouquet: echo $PID &quot;doc2unix&quot;">
+      <created>1495211270412</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1495211270412</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41560000" />
+    <option name="totallyTimeSpent" value="41673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -877,21 +900,14 @@
     <MESSAGE value="add lua-resty-template" />
     <MESSAGE value=":four_leaf_clover: :four_leaf_clover: :four_leaf_clover: add lua-resty-template" />
     <MESSAGE value=":leaves: :leaves: :leaves: lua-resty-template use" />
-    <option name="LAST_COMMIT_MESSAGE" value=":leaves: :leaves: :leaves: lua-resty-template use" />
+    <MESSAGE value=":bouquet: :bouquet: :bouquet: echo $PID &quot;doc2unix&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value=":bouquet: :bouquet: :bouquet: echo $PID &quot;doc2unix&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/redis/redis_iresty_long.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/redis/test_short.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1225,29 +1241,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bin/doc2unix.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="222">
-            <caret line="206" column="2" lean-forward="false" selection-start-line="206" selection-start-column="2" selection-end-line="206" selection-end-column="24" />
+            <caret line="206" column="12" lean-forward="false" selection-start-line="206" selection-start-column="12" selection-end-line="206" selection-end-column="12" />
             <folding>
-              <marker date="1495211134658" expanded="true" signature="1146:1153" ph="..." />
-              <marker date="1495211134658" expanded="true" signature="1201:1273" ph="..." />
-              <marker date="1495211134658" expanded="true" signature="3639:3665" ph="..." />
-              <marker date="1495211134658" expanded="true" signature="4173:4206" ph="..." />
-              <marker date="1495211134658" expanded="true" signature="4315:4351" ph="..." />
-              <marker date="1495211134658" expanded="true" signature="8122:8186" ph="..." />
-              <marker date="1495211134658" expanded="true" signature="8960:8983" ph="..." />
+              <marker date="1495211295065" expanded="true" signature="1146:1153" ph="..." />
+              <marker date="1495211295065" expanded="true" signature="1201:1273" ph="..." />
+              <marker date="1495211295065" expanded="true" signature="3639:3665" ph="..." />
+              <marker date="1495211295065" expanded="true" signature="4173:4206" ph="..." />
+              <marker date="1495211295065" expanded="true" signature="4315:4351" ph="..." />
+              <marker date="1495211295065" expanded="true" signature="8132:8196" ph="..." />
+              <marker date="1495211295065" expanded="true" signature="8970:8993" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/doc2unix.sh">
+    <entry file="file://$PROJECT_DIR$/public/websocket/public/clinet.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="20" />
+        <state relative-caret-position="200">
+          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding />
         </state>
       </provider>
