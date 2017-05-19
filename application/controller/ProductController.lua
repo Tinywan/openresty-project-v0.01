@@ -1,23 +1,18 @@
---
--- Created by IntelliJ IDEA.
--- User: tinywan
--- Date: 2017/5/19
--- Time: 22:34
--- To change this template use File | Settings | File Templates.
---
+--[[-----------------------------------------------------------------------
+* |  Copyright (C) Shaobo Wan (Tinywan)
+* |  Github: https://github.com/Tinywan
+* |  Blog: http://www.cnblogs.com/Tinywan
+* |------------------------------------------------------------------------
+* |  Date: 2017/5/19 23:25
+* |  Function: To change this template use File | Settings | File Templates.
+* |------------------------------------------------------------------------
+--]]
 
 --加载Lua模块库
 local template = require("resty.template")
---1、获取请求参数中的商品ID
-local skuId = ngx.req.get_uri_args()["skuId"];
-ngx.say(skuId)
-----2、调用相应的服务获取数据
---local data = api.getData(skuId)
---
-----3、渲染模板
-local func = template.compile("product.html")
-local world    = func{ message = "Hello, World!" }
-local universe = func{ message = "Hello, Universe!" }
-print(world, universe)
+--获取请求参数
+local name = ngx.req.get_uri_args()["name"];
+--渲染模板
+template.render("product_list.html", { message = "Hello, World!  " .. name })
 
 

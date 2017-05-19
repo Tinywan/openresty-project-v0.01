@@ -217,7 +217,8 @@ http {
            ';
         }
     ```
-
+* :blossom: `resty.template`渲染模板,通过`ngx API`输出内容到指定的`html`页面
+![Markdown](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/lua-resty-template.png)
       
 ## 功能列表
 ####    简单的Redis数据库操作  
