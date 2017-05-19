@@ -152,7 +152,18 @@ http {
     -   ![waf_ip_blaklist2](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/waf_ip_blaklist2.png)
 +   :poop: 坑 :poop: 在提交代码的时候`waf`目录一直提交不了，提示:`modified: xxx(modified content, untracked content)`,
     原来在`waf`目录下有个.git 目录,删除.git目录,重新git add 就可以了   
-    
+####    2017年05月19日 星期五
++   第一版采用单模块设计
++   简单的MVC模式，目录、命名约定（Phalcon MVC）
+    +   Model（模型）负责在数据库中存取数据 
+    +   View（视图）是应用程序中处理数据显示的部分     
+    +   Controller（控制器）通常控制器负责从视图读取数据，控制用户输入，并向模型发送数据   
++   本项目MVC 模式对应：
+    +   model 全部存放数据库的lua代码      
+    +   controller 全部存放控制器lua代码      
+    +   template 全部存放html等静态代码     
+        
+      
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据
