@@ -153,59 +153,55 @@ http {
 +   :poop: 坑 :poop: 在提交代码的时候`waf`目录一直提交不了，提示:`modified: xxx(modified content, untracked content)`,
     原来在`waf`目录下有个.git 目录,删除.git目录,重新git add 就可以了   
 ####    :hibiscus: 2017年05月19日 星期五
-+   第一版采用单模块设计
-+   简单的MVC模式，目录、命名约定（Phalcon MVC）
+*  第一版采用单模块设计
+*  简单的MVC模式，目录、命名约定（Phalcon MVC）
     +   Model（模型）负责在数据库中存取数据 
     +   View（视图）是应用程序中处理数据显示的部分     
     +   Controller（控制器）通常控制器负责从视图读取数据，控制用户输入，并向模型发送数据   
-+   本项目MVC 模式对应：
-    +   model 全部存放数据库的lua代码      
-    +   controller 全部存放控制器lua代码      
-    +   template 全部存放html等静态代码 
-+   第一个简单的 mvc 模式的文件路径访问
-    1.  配置文件：`nginx_product.conf`
-        ```bash
-        #upstream
-        upstream item_http_upstream {
-            server 192.168.1.1 max_fails=2 fail_timeout=30s weight=5;
-            server 192.168.1.2 max_fails=2 fail_timeout=30s weight=5;
+* 第一个简单的 mvc 模式的文件路径访问
+1.配置文件：`nginx_product.conf`
+    ```bash
+    #upstream
+    upstream item_http_upstream {
+        server 192.168.1.1 max_fails=2 fail_timeout=30s weight=5;
+        server 192.168.1.2 max_fails=2 fail_timeout=30s weight=5;
+    }
+    
+    #缓存 共享字典配置
+    lua_shared_dict item_local_shop_cache 600m;
+    
+    # server product
+    server {
+        listen       8082;
+        server_name  127.0.0.1;
+        charset gbk;
+        index  index.html index.htm;
+        access_log  /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/logs/product_access.log;
+        error_log /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/logs/product_error.log error;
+    
+        #加载模板文件
+        set $template_root /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/template;
+    
+        #url映射
+        location ~* "^/product/(\d+)\.html$" {
+            rewrite /product/(.*)    http://127.0.0.1:8082/$1 permanent;
         }
-        
-        #缓存 共享字典配置
-        lua_shared_dict item_local_shop_cache 600m;
-        
-        # server product
-        server {
-            listen       8082;
-            server_name  127.0.0.1;
-            charset gbk;
-            index  index.html index.htm;
-            access_log  /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/logs/product_access.log;
-            error_log /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/logs/product_error.log error;
-        
-            #加载模板文件
-            set $template_root /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/template;
-        
-            #url映射
-            location ~* "^/product/(\d+)\.html$" {
-                rewrite /product/(.*)    http://127.0.0.1:8082/$1 permanent;
-            }
-        
-            # chapter
-            location ~* "^/(\d{6,12})\.html$" {
-                default_type text/html;
-                lua_code_cache on;
-                content_by_lua_file "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/application/controller/ProductController.lua";
-            }
+    
+        # chapter
+        location ~* "^/(\d{6,12})\.html$" {
+            default_type text/html;
+            lua_code_cache on;
+            content_by_lua_file "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/application/controller/ProductController.lua";
         }
-        ```
-    2.  当我们访问页面：`http://127.0.0.1:8082/13669361192.html` 将交给`lua_project_v0.01/application/controller/ProductController.lua`处理
-        ```html
-        curl -k http://127.0.0.1:8082/13669361192.html
-        Hello ProductController.lua
-        uri = /13669361192.html
-        ```
-    3.  项目入口搞定 :hibiscus: :hibiscus: :hibiscus: :hibiscus:        
+    }
+    ```
+2.当我们访问页面：`http://127.0.0.1:8082/13669361192.html` 将交给`lua_project_v0.01/application/controller/ProductController.lua`处理
+    ```html
+    curl -k http://127.0.0.1:8082/13669361192.html
+    Hello ProductController.lua
+    uri = /13669361192.html
+    ```
+3.项目入口搞定 :hibiscus: :hibiscus: :hibiscus: :hibiscus:        
         
       
 ## 功能列表
