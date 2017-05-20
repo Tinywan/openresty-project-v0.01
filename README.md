@@ -260,7 +260,7 @@ http {
     +   Lua 文件：`LiveRedisCacheController.lua` 
     +   `http://127.0.0.1:8088/ad/133456` 有缓存返回：`{"content":"Redis Cache Data"}`
     +   `http://127.0.0.1:8088/ad/13345` 没有缓存返回：`{"content":"MYSQL DATA \n"}`
-         
++   发布一个V0.01 版本         
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据

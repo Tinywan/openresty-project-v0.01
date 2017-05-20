@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,18 +19,18 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="482">
-                <caret line="255" column="20" lean-forward="false" selection-start-line="255" selection-start-column="20" selection-end-line="255" selection-end-column="20" />
+              <first_editor relative-caret-position="622">
+                <caret line="262" column="16" lean-forward="false" selection-start-line="262" selection-start-column="16" selection-end-line="262" selection-end-column="16" />
                 <folding>
-                  <marker date="1495271089049" expanded="true" signature="1146:1153" ph="..." />
-                  <marker date="1495271089049" expanded="true" signature="1201:1273" ph="..." />
-                  <marker date="1495271089049" expanded="true" signature="3639:3665" ph="..." />
-                  <marker date="1495271089049" expanded="true" signature="4173:4206" ph="..." />
-                  <marker date="1495271089049" expanded="true" signature="4315:4351" ph="..." />
-                  <marker date="1495271089049" expanded="true" signature="8146:8210" ph="..." />
-                  <marker date="1495271089049" expanded="true" signature="9128:9278" ph="..." />
-                  <marker date="1495271089049" expanded="true" signature="9128:9286" ph="..." />
-                  <marker date="1495271089049" expanded="true" signature="10404:10427" ph="..." />
+                  <marker date="1495272474631" expanded="true" signature="1146:1153" ph="..." />
+                  <marker date="1495272474631" expanded="true" signature="1201:1273" ph="..." />
+                  <marker date="1495272474631" expanded="true" signature="3639:3665" ph="..." />
+                  <marker date="1495272474631" expanded="true" signature="4173:4206" ph="..." />
+                  <marker date="1495272474631" expanded="true" signature="4315:4351" ph="..." />
+                  <marker date="1495272474631" expanded="true" signature="8146:8210" ph="..." />
+                  <marker date="1495272474631" expanded="true" signature="9128:9278" ph="..." />
+                  <marker date="1495272474631" expanded="true" signature="9128:9286" ph="..." />
+                  <marker date="1495272474631" expanded="true" signature="10420:10443" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -477,7 +478,7 @@
       <workItem from="1495031750867" duration="6965000" />
       <workItem from="1495091915080" duration="652000" />
       <workItem from="1495102103604" duration="3000" />
-      <workItem from="1495235315851" duration="18581000" />
+      <workItem from="1495235315851" duration="19224000" />
     </task>
     <task id="LOCAL-00001" summary="添加Nginx 启动脚本">
       <created>1494858373915</created>
@@ -766,11 +767,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495271094425</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="v0.01">
+      <created>1495271729698</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1495271729698</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61775000" />
+    <option name="totallyTimeSpent" value="62418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -804,7 +812,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ngx_lua_waf 安装使用(ngx_lua_waf是一个基于lua-nginx-module(openresty)的web应用防火墙)" />
     <MESSAGE value="ngx_lua_waf 安装使用测试完毕" />
     <MESSAGE value="ngx_lua_waf install test success" />
     <MESSAGE value="ngx_lua_waf install test success OK" />
@@ -829,7 +836,8 @@
     <MESSAGE value=":dizzy: :dizzy: :dizzy: 很高兴我们引入了dkjson库" />
     <MESSAGE value=":cherry_blossom: :cherry_blossom: :cherry_blossom: 获取Redis数据库数据渲染到html模板页面显示 :cherry_blossom: :cherry_blossom: :cherry_blossom:" />
     <MESSAGE value=":paw_prints: :paw_prints: :paw_prints: Nginx+Lua逻辑开发 Redis 做为页面缓存" />
-    <option name="LAST_COMMIT_MESSAGE" value=":paw_prints: :paw_prints: :paw_prints: Nginx+Lua逻辑开发 Redis 做为页面缓存" />
+    <MESSAGE value="v0.01" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.01" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1225,18 +1233,18 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="482">
-            <caret line="255" column="20" lean-forward="false" selection-start-line="255" selection-start-column="20" selection-end-line="255" selection-end-column="20" />
+          <first_editor relative-caret-position="622">
+            <caret line="262" column="16" lean-forward="false" selection-start-line="262" selection-start-column="16" selection-end-line="262" selection-end-column="16" />
             <folding>
-              <marker date="1495271089049" expanded="true" signature="1146:1153" ph="..." />
-              <marker date="1495271089049" expanded="true" signature="1201:1273" ph="..." />
-              <marker date="1495271089049" expanded="true" signature="3639:3665" ph="..." />
-              <marker date="1495271089049" expanded="true" signature="4173:4206" ph="..." />
-              <marker date="1495271089049" expanded="true" signature="4315:4351" ph="..." />
-              <marker date="1495271089049" expanded="true" signature="8146:8210" ph="..." />
-              <marker date="1495271089049" expanded="true" signature="9128:9278" ph="..." />
-              <marker date="1495271089049" expanded="true" signature="9128:9286" ph="..." />
-              <marker date="1495271089049" expanded="true" signature="10404:10427" ph="..." />
+              <marker date="1495272474631" expanded="true" signature="1146:1153" ph="..." />
+              <marker date="1495272474631" expanded="true" signature="1201:1273" ph="..." />
+              <marker date="1495272474631" expanded="true" signature="3639:3665" ph="..." />
+              <marker date="1495272474631" expanded="true" signature="4173:4206" ph="..." />
+              <marker date="1495272474631" expanded="true" signature="4315:4351" ph="..." />
+              <marker date="1495272474631" expanded="true" signature="8146:8210" ph="..." />
+              <marker date="1495272474631" expanded="true" signature="9128:9278" ph="..." />
+              <marker date="1495272474631" expanded="true" signature="9128:9286" ph="..." />
+              <marker date="1495272474631" expanded="true" signature="10420:10443" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
