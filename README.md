@@ -224,8 +224,8 @@ http {
     -  ![Markdown](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/lua-resty-template.png)
 
       
-####　
-+   helper 类的封装
+#### 　:deciduous_tree: 2017年05月20日 星期六
++   :white_check_mark: helper类的封装
     + Example
       ```lua
       local helper = require 'vendor.helper'
@@ -235,7 +235,7 @@ http {
         ngx.say(key, value)
       end
       ```     
-+   dkjson库的加入   
++   :white_check_mark: dkjson 库的加入 :clap: :clap: :clap:  
     +   [常用Lua开发库2-JSON库、编码转换、字符串处理](http://jinnianshilongnian.iteye.com/blog/2187643)
     +   Example 
         ```lua
@@ -251,6 +251,7 @@ http {
         local str = dkjson.encode(obj, {indent = true})
         ngx.say(str, "<br/>")
         ```
+        
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据
