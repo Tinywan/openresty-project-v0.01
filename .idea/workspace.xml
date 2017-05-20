@@ -1,62 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment=":dizzy: :dizzy: :dizzy: 很高兴我们引入了dkjson库">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/font/fontello.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/font/fontello.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/font/fontello.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/Do-you-like-me.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/anotherhome.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/aplayer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/dstore.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/head - 副本.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/head.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/jCarrousel.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/jilin1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/jilin2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/jilin3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/mlk1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/mlk2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/mlk3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/nginrtmp1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/nginrtmp2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/nginrtmp3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/qr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/resume.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/task0001.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/task0002.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/task0003.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/task0004.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/version1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/version2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/version3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/version4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/yzw1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/yzw2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/yzw3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/jwplayer/jwplayer.flash.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/wanshaobopdf.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controller/InfoController.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controller/RedisController.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/index/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/dist/css/fontello.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/dist/css/print.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/dist/css/style.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/font/fontello.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/jwplayer/facebook/facebook.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/jwplayer/jwplayer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/jwplayer/ping.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/src/css/fontello.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/src/css/print.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/src/css/style.scss" />
+    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conf/domains/nginx_live.conf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controller/ProductController.lua" afterPath="$PROJECT_DIR$/application/controller/ProductController.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_index.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_index.conf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,18 +21,18 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="302">
-                <caret line="253" column="4" lean-forward="true" selection-start-line="253" selection-start-column="4" selection-end-line="253" selection-end-column="46" />
+              <first_editor relative-caret-position="522">
+                <caret line="257" column="4" lean-forward="false" selection-start-line="257" selection-start-column="4" selection-end-line="257" selection-end-column="49" />
                 <folding>
-                  <marker date="1495260389648" expanded="true" signature="1146:1153" ph="..." />
-                  <marker date="1495260389648" expanded="true" signature="1201:1273" ph="..." />
-                  <marker date="1495260389648" expanded="true" signature="3639:3665" ph="..." />
-                  <marker date="1495260389648" expanded="true" signature="4173:4206" ph="..." />
-                  <marker date="1495260389648" expanded="true" signature="4315:4351" ph="..." />
-                  <marker date="1495260389648" expanded="true" signature="8146:8210" ph="..." />
-                  <marker date="1495260389648" expanded="true" signature="9128:9278" ph="..." />
-                  <marker date="1495260389648" expanded="true" signature="9128:9286" ph="..." />
-                  <marker date="1495260389648" expanded="true" signature="10091:10114" ph="..." />
+                  <marker date="1495270880120" expanded="true" signature="1146:1153" ph="..." />
+                  <marker date="1495270880120" expanded="true" signature="1201:1273" ph="..." />
+                  <marker date="1495270880120" expanded="true" signature="3639:3665" ph="..." />
+                  <marker date="1495270880120" expanded="true" signature="4173:4206" ph="..." />
+                  <marker date="1495270880120" expanded="true" signature="4315:4351" ph="..." />
+                  <marker date="1495270880120" expanded="true" signature="8146:8210" ph="..." />
+                  <marker date="1495270880120" expanded="true" signature="9128:9278" ph="..." />
+                  <marker date="1495270880120" expanded="true" signature="9128:9286" ph="..." />
+                  <marker date="1495270880120" expanded="true" signature="10397:10420" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -91,31 +40,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InfoController.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controller/InfoController.lua">
+      <file leaf-file-name="LiveRedisCacheController.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="30" />
+            <state relative-caret-position="756">
+              <caret line="114" column="6" lean-forward="false" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nginx_index.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/domains/nginx_index.conf">
+      <file leaf-file-name="live_error.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/live_error.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="81" lean-forward="false" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
+            <state relative-caret-position="-398">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductController.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controller/ProductController.lua">
+      <file leaf-file-name="nginx_live.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/domains/nginx_live.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="36" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="576">
+              <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -187,6 +136,10 @@
         <option value="$PROJECT_DIR$/conf/domains/nginx_index.conf" />
         <option value="$PROJECT_DIR$/template/info/index.html" />
         <option value="$PROJECT_DIR$/logs/index_access.log" />
+        <option value="$PROJECT_DIR$/application/controller/RedisCacheController.lua" />
+        <option value="$PROJECT_DIR$/logs/live_error.log" />
+        <option value="$PROJECT_DIR$/conf/domains/nginx_live.conf" />
+        <option value="$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -244,24 +197,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lua_project_v0.01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lua_project_v0.01" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="info" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -405,9 +340,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\conf\domains" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application\controller" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\template\info" />
-      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\conf\domains" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\public\images\github" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\lualib\resty" />
     </key>
@@ -545,7 +480,7 @@
       <workItem from="1495031750867" duration="6965000" />
       <workItem from="1495091915080" duration="652000" />
       <workItem from="1495102103604" duration="3000" />
-      <workItem from="1495235315851" duration="13463000" />
+      <workItem from="1495235315851" duration="17749000" />
     </task>
     <task id="LOCAL-00001" summary="添加Nginx 启动脚本">
       <created>1494858373915</created>
@@ -813,11 +748,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495247696221</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary=":cherry_blossom: :cherry_blossom: :cherry_blossom: 获取Redis数据库数据渲染到html模板页面显示 :cherry_blossom: :cherry_blossom: :cherry_blossom:">
+      <created>1495260437526</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1495260437526</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56657000" />
+    <option name="totallyTimeSpent" value="60943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -851,7 +793,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update readme 贰萬 nginx.conf, the Nginx web server configuration" />
     <MESSAGE value="add underline" />
     <MESSAGE value="ngx_lua_waf 安装使用(ngx_lua_waf是一个基于lua-nginx-module(openresty)的web应用防火墙)" />
     <MESSAGE value="ngx_lua_waf 安装使用测试完毕" />
@@ -876,34 +817,14 @@
     <MESSAGE value="字符串分割函数封装 :sunflower: :sunflower: :sunflower:" />
     <MESSAGE value="很高兴我们引入了dkjson库 :clap: :clap: :clap:" />
     <MESSAGE value=":dizzy: :dizzy: :dizzy: 很高兴我们引入了dkjson库" />
-    <option name="LAST_COMMIT_MESSAGE" value=":dizzy: :dizzy: :dizzy: 很高兴我们引入了dkjson库" />
+    <MESSAGE value=":cherry_blossom: :cherry_blossom: :cherry_blossom: 获取Redis数据库数据渲染到html模板页面显示 :cherry_blossom: :cherry_blossom: :cherry_blossom:" />
+    <option name="LAST_COMMIT_MESSAGE" value=":cherry_blossom: :cherry_blossom: :cherry_blossom: 获取Redis数据库数据渲染到html模板页面显示 :cherry_blossom: :cherry_blossom: :cherry_blossom:" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/waf/wafconf/args">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/waf/wafconf/post">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/waf/wafconf/cookie">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/waf/wafconf/whiteurl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -990,6 +911,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,6 +935,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,26 +1042,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/redis/test_long.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/redis/redis_iresty_short.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="26" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/domains/nginx_demo.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="102" lean-forward="true" selection-start-line="21" selection-start-column="102" selection-end-line="21" selection-end-column="102" />
           <folding />
         </state>
       </provider>
@@ -1191,14 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/domains/nginx_product.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controller/ProductController.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -1211,14 +1110,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-758">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controller/InfoController.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1250,16 +1141,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controller/RedisController.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="11" />
+        <state relative-caret-position="666">
+          <caret line="40" column="58" lean-forward="true" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/domains/nginx_product.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/domains/nginx_index.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="81" lean-forward="false" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
+        <state relative-caret-position="80">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controller/InfoController.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/redis/test_long.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="34" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/domains/nginx_demo.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="102" lean-forward="true" selection-start-line="21" selection-start-column="102" selection-end-line="21" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/live_error.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-398">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/domains/nginx_live.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="114" column="6" lean-forward="false" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1267,18 +1214,18 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="302">
-            <caret line="253" column="4" lean-forward="true" selection-start-line="253" selection-start-column="4" selection-end-line="253" selection-end-column="46" />
+          <first_editor relative-caret-position="522">
+            <caret line="257" column="4" lean-forward="false" selection-start-line="257" selection-start-column="4" selection-end-line="257" selection-end-column="49" />
             <folding>
-              <marker date="1495260389648" expanded="true" signature="1146:1153" ph="..." />
-              <marker date="1495260389648" expanded="true" signature="1201:1273" ph="..." />
-              <marker date="1495260389648" expanded="true" signature="3639:3665" ph="..." />
-              <marker date="1495260389648" expanded="true" signature="4173:4206" ph="..." />
-              <marker date="1495260389648" expanded="true" signature="4315:4351" ph="..." />
-              <marker date="1495260389648" expanded="true" signature="8146:8210" ph="..." />
-              <marker date="1495260389648" expanded="true" signature="9128:9278" ph="..." />
-              <marker date="1495260389648" expanded="true" signature="9128:9286" ph="..." />
-              <marker date="1495260389648" expanded="true" signature="10091:10114" ph="..." />
+              <marker date="1495270880120" expanded="true" signature="1146:1153" ph="..." />
+              <marker date="1495270880120" expanded="true" signature="1201:1273" ph="..." />
+              <marker date="1495270880120" expanded="true" signature="3639:3665" ph="..." />
+              <marker date="1495270880120" expanded="true" signature="4173:4206" ph="..." />
+              <marker date="1495270880120" expanded="true" signature="4315:4351" ph="..." />
+              <marker date="1495270880120" expanded="true" signature="8146:8210" ph="..." />
+              <marker date="1495270880120" expanded="true" signature="9128:9278" ph="..." />
+              <marker date="1495270880120" expanded="true" signature="9128:9286" ph="..." />
+              <marker date="1495270880120" expanded="true" signature="10397:10420" ph="..." />
             </folding>
           </first_editor>
           <second_editor />

@@ -251,10 +251,16 @@ http {
         local str = dkjson.encode(obj, {indent = true})
         ngx.say(str, "<br/>")
         ```
-+   :cherry_blossom: 获取Redis数据库数据渲染到html模板页面显示
++   :white_check_mark: 获取Redis数据库数据渲染到html模板页面显示
     +   数据显示、文件加载都合适
     +   问题：JS、CSS样式文件路径不合适？？？？？ 
-      
+ 
++   :white_check_mark: Nginx+Lua逻辑开发 Redis 做为页面缓存
+    +   Nginx 配置文件：`nginx_live.conf`      
+    +   Lua 文件：`LiveRedisCacheController.lua` 
+    +   `http://127.0.0.1:8088/ad/133456` 有缓存返回：`{"content":"Redis Cache Data"}`
+    +   `http://127.0.0.1:8088/ad/13345` 没有缓存返回：`{"content":"MYSQL DATA \n"}`
+         
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据
