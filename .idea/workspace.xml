@@ -1,9 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
+    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment=":dizzy: :dizzy: :dizzy: 很高兴我们引入了dkjson库">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/font/fontello.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/font/fontello.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/font/fontello.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/Do-you-like-me.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/anotherhome.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/aplayer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/dstore.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/head - 副本.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/head.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/jCarrousel.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/jilin1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/jilin2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/jilin3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/mlk1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/mlk2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/mlk3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/nginrtmp1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/nginrtmp2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/nginrtmp3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/qr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/resume.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/task0001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/task0002.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/task0003.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/task0004.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/version1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/version2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/version3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/version4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/yzw1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/yzw2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/img/yzw3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/jwplayer/jwplayer.flash.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/wanshaobopdf.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controller/InfoController.lua" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controller/RedisController.lua" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/index/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/dist/css/fontello.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/dist/css/print.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/dist/css/style.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/font/fontello.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/jwplayer/facebook/facebook.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/jwplayer/jwplayer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/jwplayer/ping.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/src/css/fontello.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/src/css/print.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/info/src/css/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controller/ProductController.lua" afterPath="$PROJECT_DIR$/application/controller/ProductController.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_index.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_index.conf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,18 +72,18 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="342">
-                <caret line="237" column="55" lean-forward="false" selection-start-line="237" selection-start-column="55" selection-end-line="237" selection-end-column="55" />
+              <first_editor relative-caret-position="302">
+                <caret line="253" column="4" lean-forward="true" selection-start-line="253" selection-start-column="4" selection-end-line="253" selection-end-column="46" />
                 <folding>
-                  <marker date="1495247667635" expanded="true" signature="1146:1153" ph="..." />
-                  <marker date="1495247667635" expanded="true" signature="1201:1273" ph="..." />
-                  <marker date="1495247667635" expanded="true" signature="3639:3665" ph="..." />
-                  <marker date="1495247667635" expanded="true" signature="4173:4206" ph="..." />
-                  <marker date="1495247667635" expanded="true" signature="4315:4351" ph="..." />
-                  <marker date="1495247667635" expanded="true" signature="8146:8210" ph="..." />
-                  <marker date="1495247667635" expanded="true" signature="9128:9278" ph="..." />
-                  <marker date="1495247667635" expanded="true" signature="9128:9286" ph="..." />
-                  <marker date="1495247667635" expanded="true" signature="9992:10015" ph="..." />
+                  <marker date="1495260389648" expanded="true" signature="1146:1153" ph="..." />
+                  <marker date="1495260389648" expanded="true" signature="1201:1273" ph="..." />
+                  <marker date="1495260389648" expanded="true" signature="3639:3665" ph="..." />
+                  <marker date="1495260389648" expanded="true" signature="4173:4206" ph="..." />
+                  <marker date="1495260389648" expanded="true" signature="4315:4351" ph="..." />
+                  <marker date="1495260389648" expanded="true" signature="8146:8210" ph="..." />
+                  <marker date="1495260389648" expanded="true" signature="9128:9278" ph="..." />
+                  <marker date="1495260389648" expanded="true" signature="9128:9286" ph="..." />
+                  <marker date="1495260389648" expanded="true" signature="10091:10114" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -38,21 +91,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nginx_index.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/domains/nginx_index.conf">
+      <file leaf-file-name="InfoController.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controller/InfoController.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="38" selection-end-column="33" />
+            <state relative-caret-position="720">
+              <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_error.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/index_error.log">
+      <file leaf-file-name="nginx_index.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/domains/nginx_index.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="11" column="81" lean-forward="false" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductController.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controller/ProductController.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="36" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,11 +177,16 @@
         <option value="$PROJECT_DIR$/template/product/header.html" />
         <option value="$PROJECT_DIR$/template/product/footer.html" />
         <option value="$PROJECT_DIR$/template/product/index.html" />
-        <option value="$PROJECT_DIR$/application/controller/ProductController.lua" />
         <option value="$PROJECT_DIR$/application/controller/IndexController.lua" />
         <option value="$PROJECT_DIR$/lualib/vendor/helper.lua" />
+        <option value="$PROJECT_DIR$/application/controller/ProductController.lua" />
+        <option value="$PROJECT_DIR$/template/index/index.html" />
+        <option value="$PROJECT_DIR$/application/controller/RedisController.lua" />
+        <option value="$PROJECT_DIR$/application/controller/InfoController.lua" />
         <option value="$PROJECT_DIR$/logs/index_error.log" />
         <option value="$PROJECT_DIR$/conf/domains/nginx_index.conf" />
+        <option value="$PROJECT_DIR$/template/info/index.html" />
+        <option value="$PROJECT_DIR$/logs/index_access.log" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -176,6 +244,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="info" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -267,6 +353,42 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="redis" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysql" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -277,17 +399,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Git/Tinywan.github.io" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application\controller" />
+      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\template\info" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\conf\domains" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\public\images\github" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\lualib\resty" />
-      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\public\upstream\html8083" />
-      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\public\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application" />
@@ -423,7 +545,7 @@
       <workItem from="1495031750867" duration="6965000" />
       <workItem from="1495091915080" duration="652000" />
       <workItem from="1495102103604" duration="3000" />
-      <workItem from="1495235315851" duration="6042000" />
+      <workItem from="1495235315851" duration="13463000" />
     </task>
     <task id="LOCAL-00001" summary="添加Nginx 启动脚本">
       <created>1494858373915</created>
@@ -684,11 +806,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495247440627</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary=":dizzy: :dizzy: :dizzy: 很高兴我们引入了dkjson库">
+      <created>1495247696221</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1495247696221</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49236000" />
+    <option name="totallyTimeSpent" value="56657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -699,6 +828,7 @@
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -711,7 +841,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -722,7 +851,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update readme 贰萬" />
     <MESSAGE value="update readme 贰萬 nginx.conf, the Nginx web server configuration" />
     <MESSAGE value="add underline" />
     <MESSAGE value="ngx_lua_waf 安装使用(ngx_lua_waf是一个基于lua-nginx-module(openresty)的web应用防火墙)" />
@@ -747,71 +875,14 @@
     <MESSAGE value=":sunflower: :sunflower: :sunflower:" />
     <MESSAGE value="字符串分割函数封装 :sunflower: :sunflower: :sunflower:" />
     <MESSAGE value="很高兴我们引入了dkjson库 :clap: :clap: :clap:" />
-    <option name="LAST_COMMIT_MESSAGE" value="很高兴我们引入了dkjson库 :clap: :clap: :clap:" />
+    <MESSAGE value=":dizzy: :dizzy: :dizzy: 很高兴我们引入了dkjson库" />
+    <option name="LAST_COMMIT_MESSAGE" value=":dizzy: :dizzy: :dizzy: 很高兴我们引入了dkjson库" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lualib/vendor/ip_check.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lualib/vendor/ip_location.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1920">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/redis/redis_iresty_long.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/waf_error.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="125" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/waf_access.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1938">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/waf/waf.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/github/waf_ip_blaklist3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/waf/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/application/waf/wafconf/url">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="50" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/waf/wafconf/args">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -915,13 +986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/domains/nginx_demo.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="106" column="19" lean-forward="false" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -956,6 +1020,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -990,29 +1055,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/product/product_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h3#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/product/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/product/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1029,14 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="34" column="39" lean-forward="false" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controller/ProductController.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1081,6 +1119,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/redis/test_long.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/redis/redis_iresty_short.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="26" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/domains/nginx_demo.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="21" column="102" lean-forward="true" selection-start-line="21" selection-start-column="102" selection-end-line="21" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/mysql/mysql.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-64">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controller/IndexController.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1089,7 +1159,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/index_error.log">
+    <entry file="file://$PROJECT_DIR$/template/product/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/product/product_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/info/dist/css/print.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1099,16 +1193,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/domains/nginx_product.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="31" />
+        <state relative-caret-position="516">
+          <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controller/ProductController.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="36" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/index_error.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-758">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controller/InfoController.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/index_access.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89638">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/info/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#dd#1;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#dd#2;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#dd#3;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#dd#4;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#dd#5;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#dd#6;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#dd#7;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controller/RedisController.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/domains/nginx_index.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="38" selection-end-column="33" />
+        <state relative-caret-position="220">
+          <caret line="11" column="81" lean-forward="false" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
           <folding />
         </state>
       </provider>
@@ -1116,18 +1267,18 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="342">
-            <caret line="237" column="55" lean-forward="false" selection-start-line="237" selection-start-column="55" selection-end-line="237" selection-end-column="55" />
+          <first_editor relative-caret-position="302">
+            <caret line="253" column="4" lean-forward="true" selection-start-line="253" selection-start-column="4" selection-end-line="253" selection-end-column="46" />
             <folding>
-              <marker date="1495247667635" expanded="true" signature="1146:1153" ph="..." />
-              <marker date="1495247667635" expanded="true" signature="1201:1273" ph="..." />
-              <marker date="1495247667635" expanded="true" signature="3639:3665" ph="..." />
-              <marker date="1495247667635" expanded="true" signature="4173:4206" ph="..." />
-              <marker date="1495247667635" expanded="true" signature="4315:4351" ph="..." />
-              <marker date="1495247667635" expanded="true" signature="8146:8210" ph="..." />
-              <marker date="1495247667635" expanded="true" signature="9128:9278" ph="..." />
-              <marker date="1495247667635" expanded="true" signature="9128:9286" ph="..." />
-              <marker date="1495247667635" expanded="true" signature="9992:10015" ph="..." />
+              <marker date="1495260389648" expanded="true" signature="1146:1153" ph="..." />
+              <marker date="1495260389648" expanded="true" signature="1201:1273" ph="..." />
+              <marker date="1495260389648" expanded="true" signature="3639:3665" ph="..." />
+              <marker date="1495260389648" expanded="true" signature="4173:4206" ph="..." />
+              <marker date="1495260389648" expanded="true" signature="4315:4351" ph="..." />
+              <marker date="1495260389648" expanded="true" signature="8146:8210" ph="..." />
+              <marker date="1495260389648" expanded="true" signature="9128:9278" ph="..." />
+              <marker date="1495260389648" expanded="true" signature="9128:9286" ph="..." />
+              <marker date="1495260389648" expanded="true" signature="10091:10114" ph="..." />
             </folding>
           </first_editor>
           <second_editor />

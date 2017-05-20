@@ -21,7 +21,7 @@ if not res then
 end
 
 -- get redis data
-local res, err = red:get("2017_list")
+local res, err = red:get("2017TinywanInfo")
 if not res then
     ngx.say("failed to get decode_redis: ", err)
     return
@@ -34,20 +34,14 @@ end
 
 local obj, pos, err = dkjson.decode(res, 1, nil)
 
---ngx.say(obj.title, "<br/>")
---ngx.say(obj.age, "<br/>")
---ngx.say(obj.age == nil, "<br/>")
---ngx.say(obj.hobby[1], "<br/>")
+--ngx.say(obj.Personal['name'], "<br/>")
+--ngx.say(obj.Personal['age'], "<br/>")
+--ngx.say(obj.Personal['max'], "<br/>")
+--ngx.say(obj.GitHub, "<br/>")
 
 --渲染模板
 template.render("index.html",obj)
 
---template.render("index.html", {
---    title = "Testing lua-resty-template",
---    message = "Hello, World!",
---    names = { "James", "Tinywan", "Anne" },
---    jquery = '<script src="js/jquery.min.js"></script>'
---})
 
 
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{ title }}</h1>
+<h1>姓名：{* string.upper(name) *}</h1>
+<h1>年龄：{* age + 1 *}</h1>
+<h1>描述：{{ description }}</h1>
+<h2>考试成绩1</h2>
+<ul>
+    {% for i = 1, #score2 do local t = score2[i] %}
+        {% if i > 1 then %} {% end %}
+        <li>{* t.name *} = {* t.score *}</li>
+    {% end %}
+</ul>
+<h2>爱好</h2>
+<ul>
+    {% for _, name in ipairs(hobby) do %}
+    <li>{{name}}</li>
+    {% end %}
+</ul>
+</body>
+</html>

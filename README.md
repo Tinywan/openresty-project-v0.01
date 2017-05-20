@@ -251,7 +251,10 @@ http {
         local str = dkjson.encode(obj, {indent = true})
         ngx.say(str, "<br/>")
         ```
-        
++   :cherry_blossom: 获取Redis数据库数据渲染到html模板页面显示
+    +   数据显示、文件加载都合适
+    +   问题：JS、CSS样式文件路径不合适？？？？？ 
+      
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据
