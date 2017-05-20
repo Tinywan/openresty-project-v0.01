@@ -5,6 +5,7 @@
 -- Time: 22:31
 -- To change this template use File | Settings | File Templates.
 --
-local name = 'IndexController'
+local helper = require 'vendor.helper'
+local name = helper.GetName()
 ngx.say('Hello ' .. name)
 

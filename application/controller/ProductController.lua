@@ -13,6 +13,11 @@ local template = require("resty.template")
 --获取请求参数
 local name = ngx.req.get_uri_args()["name"];
 --渲染模板
-template.render("product_list.html", { message = "Hello, World!  " .. name })
+template.render("index.html", {
+    title = "Testing lua-resty-template",
+    message = "Hello, World!",
+    names = { "James", "Tinywan", "Anne" },
+    jquery = '<script src="js/jquery.min.js"></script>'
+})
 
 
