@@ -253,7 +253,7 @@ http {
         ```
 +   :white_check_mark: 获取Redis数据库数据渲染到html模板页面显示
     +   数据显示、文件加载都合适
-    +   问题：JS、CSS样式文件路径不合适？？？？？ 
+    +   :x: :x: :x: 问题：JS、CSS样式文件路径不合适 
  
 +   :white_check_mark: Nginx+Lua逻辑开发 Redis 做为页面缓存
     +   Nginx 配置文件：`nginx_live.conf`      
