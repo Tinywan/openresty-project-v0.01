@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conf/domains/nginx_index.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lualib/vendor/helper.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/product/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/product/header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lualib/vendor/dkjson.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controller/IndexController.lua" afterPath="$PROJECT_DIR$/application/controller/IndexController.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controller/ProductController.lua" afterPath="$PROJECT_DIR$/application/controller/ProductController.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/product_access.log" afterPath="$PROJECT_DIR$/logs/product_access.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/product_error.log" afterPath="$PROJECT_DIR$/logs/product_error.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/product/index.html" afterPath="$PROJECT_DIR$/template/product/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/product/product_list.html" afterPath="$PROJECT_DIR$/template/product/product_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_index.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_index.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lualib/vendor/helper.lua" afterPath="$PROJECT_DIR$/lualib/vendor/helper.lua" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,42 +18,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nginx_product.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/domains/nginx_product.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/product/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductController.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controller/ProductController.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controller/IndexController.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="29" />
-              <folding />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="342">
+                <caret line="237" column="4" lean-forward="true" selection-start-line="237" selection-start-column="4" selection-end-line="237" selection-end-column="14" />
+                <folding>
+                  <marker date="1495247367300" expanded="true" signature="1146:1153" ph="..." />
+                  <marker date="1495247367300" expanded="true" signature="1201:1273" ph="..." />
+                  <marker date="1495247367300" expanded="true" signature="3639:3665" ph="..." />
+                  <marker date="1495247367300" expanded="true" signature="4173:4206" ph="..." />
+                  <marker date="1495247367300" expanded="true" signature="4315:4351" ph="..." />
+                  <marker date="1495247367300" expanded="true" signature="8146:8210" ph="..." />
+                  <marker date="1495247367300" expanded="true" signature="9037:9187" ph="..." />
+                  <marker date="1495247367300" expanded="true" signature="9037:9195" ph="..." />
+                  <marker date="1495247367300" expanded="true" signature="9892:9915" ph="..." />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -67,8 +44,8 @@
       <file leaf-file-name="nginx_index.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/domains/nginx_index.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="36" />
+            <state relative-caret-position="276">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="38" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -79,36 +56,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="helper.lua" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lualib/vendor/helper.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="http.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lualib/resty/http.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2220">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="redis.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lualib/resty/redis.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-420">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="13" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -166,15 +113,16 @@
         <option value="$PROJECT_DIR$/bin/doc2unix.sh" />
         <option value="$PROJECT_DIR$/public/websocket/public/clinet.html" />
         <option value="$PROJECT_DIR$/conf/domains/nginx_product.conf" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/template/product/product_list.html" />
         <option value="$PROJECT_DIR$/template/product/header.html" />
         <option value="$PROJECT_DIR$/template/product/footer.html" />
         <option value="$PROJECT_DIR$/template/product/index.html" />
         <option value="$PROJECT_DIR$/application/controller/ProductController.lua" />
         <option value="$PROJECT_DIR$/application/controller/IndexController.lua" />
-        <option value="$PROJECT_DIR$/conf/domains/nginx_index.conf" />
         <option value="$PROJECT_DIR$/lualib/vendor/helper.lua" />
+        <option value="$PROJECT_DIR$/logs/index_error.log" />
+        <option value="$PROJECT_DIR$/conf/domains/nginx_index.conf" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -231,56 +179,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lua_project_v0.01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lua_project_v0.01" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lualib" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lua_project_v0.01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lua_project_v0.01" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lualib" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lua_project_v0.01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lua_project_v0.01" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lualib" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resty" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -528,7 +426,7 @@
       <workItem from="1495031750867" duration="6965000" />
       <workItem from="1495091915080" duration="652000" />
       <workItem from="1495102103604" duration="3000" />
-      <workItem from="1495235315851" duration="4477000" />
+      <workItem from="1495235315851" duration="5746000" />
     </task>
     <task id="LOCAL-00001" summary="添加Nginx 启动脚本">
       <created>1494858373915</created>
@@ -775,11 +673,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495212841189</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="字符串分割函数封装 :sunflower: :sunflower: :sunflower:">
+      <created>1495246129503</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1495246129503</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47671000" />
+    <option name="totallyTimeSpent" value="48940000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -813,7 +718,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加Nginx 启动、停止脚本" />
     <MESSAGE value="update readme" />
     <MESSAGE value="update readme 贰萬" />
     <MESSAGE value="update readme 贰萬 nginx.conf, the Nginx web server configuration" />
@@ -838,7 +742,8 @@
     <MESSAGE value="`resty.template`渲染模板,通过`ngx API`输出内容到指定的`html`页面 :blossom:  :blossom:  :blossom:" />
     <MESSAGE value="`resty.template`渲染模板,输出内容到`html`页面 :sunflower: :sunflower: :sunflower:" />
     <MESSAGE value=":sunflower: :sunflower: :sunflower:" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sunflower: :sunflower: :sunflower:" />
+    <MESSAGE value="字符串分割函数封装 :sunflower: :sunflower: :sunflower:" />
+    <option name="LAST_COMMIT_MESSAGE" value="字符串分割函数封装 :sunflower: :sunflower: :sunflower:" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1054,6 +959,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-278">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,6 +967,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,25 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="622">
-            <caret line="223" column="4" lean-forward="false" selection-start-line="223" selection-start-column="4" selection-end-line="223" selection-end-column="4" />
-            <folding>
-              <marker date="1495212823703" expanded="true" signature="1146:1153" ph="..." />
-              <marker date="1495212823703" expanded="true" signature="1201:1273" ph="..." />
-              <marker date="1495212823703" expanded="true" signature="3639:3665" ph="..." />
-              <marker date="1495212823703" expanded="true" signature="4173:4206" ph="..." />
-              <marker date="1495212823703" expanded="true" signature="4315:4351" ph="..." />
-              <marker date="1495212823703" expanded="true" signature="8146:8210" ph="..." />
-              <marker date="1495212823703" expanded="true" signature="9167:9190" ph="..." />
-            </folding>
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1103,8 +991,8 @@
         <state relative-caret-position="80">
           <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
           <folding>
-            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h3#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1120,7 +1008,7 @@
     <entry file="file://$PROJECT_DIR$/template/product/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1141,14 +1029,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/domains/nginx_product.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controller/ProductController.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1165,10 +1045,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lualib/resty/redis_iresty.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1560">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lualib/resty/redis.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
+        <state relative-caret-position="-60">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="13" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lualib/resty/http.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2220">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lualib/vendor/helper.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="65" column="24" lean-forward="false" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1189,35 +1093,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lualib/resty/redis_iresty.lua">
+    <entry file="file://$PROJECT_DIR$/conf/domains/nginx_product.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1560">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lualib/resty/http.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2220">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="416">
+          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/domains/nginx_index.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="36" />
+        <state relative-caret-position="276">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="38" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lualib/vendor/helper.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="8" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="342">
+            <caret line="237" column="4" lean-forward="true" selection-start-line="237" selection-start-column="4" selection-end-line="237" selection-end-column="14" />
+            <folding>
+              <marker date="1495247367300" expanded="true" signature="1146:1153" ph="..." />
+              <marker date="1495247367300" expanded="true" signature="1201:1273" ph="..." />
+              <marker date="1495247367300" expanded="true" signature="3639:3665" ph="..." />
+              <marker date="1495247367300" expanded="true" signature="4173:4206" ph="..." />
+              <marker date="1495247367300" expanded="true" signature="4315:4351" ph="..." />
+              <marker date="1495247367300" expanded="true" signature="8146:8210" ph="..." />
+              <marker date="1495247367300" expanded="true" signature="9037:9187" ph="..." />
+              <marker date="1495247367300" expanded="true" signature="9037:9195" ph="..." />
+              <marker date="1495247367300" expanded="true" signature="9892:9915" ph="..." />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

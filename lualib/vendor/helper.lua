@@ -29,16 +29,6 @@ end
 local _M = new_tab(0, 54)
 
 _M._VERSION = '0.01'
-_M._AUTHER = 'Tinywan'
-
-
-function _M.GetName()
-    return _M._AUTHER
-end
-
-function _M.SetName(name)
-    _M._AUTHER = name
-end
 
 -- add
 function _M.add(a,b)
@@ -61,17 +51,57 @@ function _M.split(szFullString, szSeparator)
     local nSplitIndex = 1
     local nSplitArray = {}
     while true do
-        local nFindLastIndex = string.find(szFullString, szSeparator, nFindStartIndex)
+        local nFindLastIndex = find(szFullString, szSeparator, nFindStartIndex)
         if not nFindLastIndex then
-            nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, string.len(szFullString))
+            nSplitArray[nSplitIndex] = sub(szFullString, nFindStartIndex, len(szFullString))
             break
         end
-        nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, nFindLastIndex - 1)
-        nFindStartIndex = nFindLastIndex + string.len(szSeparator)
+        nSplitArray[nSplitIndex] = sub(szFullString, nFindStartIndex, nFindLastIndex - 1)
+        nFindStartIndex = nFindLastIndex + len(szSeparator)
         nSplitIndex = nSplitIndex + 1
     end
     return nSplitArray
 end
+
+-- 删除空格 Delete the space
+function _M.ltrim(s)
+    if not s then
+        return s
+    end
+    local res = s
+    local tmp = string_find(res, '%S')
+    if not tmp then
+        res = ''
+    elseif tmp ~= 1 then
+        res = string_sub(res, tmp)
+    end
+    return res
+end
+
+function _M.rtrim(s)
+    if not s then
+        return s
+    end
+    local res = s
+    local tmp = string_find(res, '%S%s*$')
+    if not tmp then
+        res = ''
+    elseif tmp ~= #res then
+        res = string_sub(res, 1, tmp)
+    end
+
+    return res
+end
+
+function _M.trim(s)
+    if not s then
+        return s
+    end
+    local res1 = ltrim(s)
+    local res2 = rtrim(res1)
+    return res2
+end
+
 
 return _M
 
