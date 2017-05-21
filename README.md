@@ -251,8 +251,7 @@ http {
         ```
 +   :white_check_mark: 获取Redis数据库数据渲染到html模板页面显示
     +   数据显示、文件加载都合适
-    +   :x: :x: :x: 问题：JS、CSS样式文件路径不合适 
- 
+    +   :x: 问题：JS、CSS样式文件路径不合适 
 +   :white_check_mark: Nginx+Lua逻辑开发 Redis 做为页面缓存
     +   Nginx 配置文件：`nginx_live.conf`      
     +   Lua 文件：`LiveRedisCacheController.lua` 
@@ -270,7 +269,18 @@ http {
         expires      7d;
     }
     ```     
-+   访问页面：`http://192.168.127.133:8083/2017TinywanInfo`可以得到响应内容    
++   访问页面：`http://192.168.127.133:8083/2017TinywanInfo`可以得到响应内容  
+####    nginx proxy_cache 缓存配置
++   配置代理
+    +   访问8082 服务器代理到8083 服务器代理缓存已经 :ok:
+    +   测试访问：`http://192.168.127.133:8082/2017TinywanInfo` 
+    +   :x: 清理缓存配置 ，由于清除模块没有安装,没有进行测试
++   参考文献      
+    +   [nginx proxy_cache 缓存配置](http://blog.csdn.net/dengjiexian123/article/details/53386586)  
+    +   [nginx: [emerg] unknown directive "proxy_cache_purge](http://www.linuxidc.com/Linux/2013-11/93021.htm)  
+    +   [nginx proxy cache 为了防止恶意刷页面/热点页面访问频繁](http://jinnianshilongnian.iteye.com/blog/2188538?page=2#comments)  
+
+
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据

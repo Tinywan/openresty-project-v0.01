@@ -9,45 +9,7 @@
 --]]
 
 --加载Lua模块库
-local dkjson = require 'vendor.dkjson'
-local redis = require "resty.redis_iresty"
-local template = require("resty.template")
-
-local red = redis:new()
-local res, err = red:auth("tinywan123456")
-if not res then
-    ngx.say("failed to authenticate: ", err)
-    return
-end
-
--- get redis data
-local res, err = red:get("2017_list")
-if not res then
-    ngx.say("failed to get decode_redis: ", err)
-    return
-end
-
-if res == ngx.null then
-    ngx.say("decode_redis not found.")
-    return
-end
-
-local obj, pos, err = dkjson.decode(res, 1, nil)
-
---ngx.say(obj.title, "<br/>")
---ngx.say(obj.age, "<br/>")
---ngx.say(obj.age == nil, "<br/>")
---ngx.say(obj.hobby[1], "<br/>")
-
---渲染模板
-template.render("index.html",obj)
-
---template.render("index.html", {
---    title = "Testing lua-resty-template",
---    message = "Hello, World!",
---    names = { "James", "Tinywan", "Anne" },
---    jquery = '<script src="js/jquery.min.js"></script>'
---})
-
+local var = ngx.var
+ngx.say(var.skuId .. '==URI == '.. ngx.time())
 
 
