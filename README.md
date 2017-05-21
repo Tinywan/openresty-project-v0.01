@@ -259,7 +259,7 @@ http {
     +   `http://127.0.0.1:8088/ad/13345` 没有缓存返回：`{"content":"MYSQL DATA \n"}`
 +   :heavy_check_mark: 发布一个V0.01 版本 :pencil2: :pencil2: :pencil2: :pencil2:
 #### 　:deciduous_tree: 2017年05月21日 星期日
-+   历史遗留问题解决：模板页面的JS、CSS样式文件加载不合适，忘记了Nginx处理静态资源的配置，添加以下代码OK
++   :white_check_mark: 历史遗留问题解决：模板页面的JS、CSS样式文件加载不合适，忘记了Nginx处理静态资源的配置，添加以下代码OK
     ```javascript
     #配置Nginx动静分离，定义的静态页面直接从Nginx发布目录读取。
     location ~ .*\.(html|htm|gif|jpg|jpeg|bmp|png|ico|txt|js|css)$

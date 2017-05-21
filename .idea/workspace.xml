@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/product/index2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controller/ProductController.lua" afterPath="$PROJECT_DIR$/application/controller/ProductController.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_index.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_index.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_product.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_product.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/product_access.log" afterPath="$PROJECT_DIR$/logs/product_access.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/product_error.log" afterPath="$PROJECT_DIR$/logs/product_error.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,20 +19,20 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="522">
-                <caret line="272" column="8" lean-forward="false" selection-start-line="272" selection-start-column="8" selection-end-line="272" selection-end-column="30" />
+              <first_editor relative-caret-position="302">
+                <caret line="261" column="23" lean-forward="false" selection-start-line="261" selection-start-column="23" selection-end-line="261" selection-end-column="23" />
                 <folding>
-                  <marker date="1495338041962" expanded="true" signature="1146:1153" ph="..." />
-                  <marker date="1495338041962" expanded="true" signature="1201:1273" ph="..." />
-                  <marker date="1495338041962" expanded="true" signature="3639:3665" ph="..." />
-                  <marker date="1495338041962" expanded="true" signature="4173:4206" ph="..." />
-                  <marker date="1495338041962" expanded="true" signature="4315:4351" ph="..." />
-                  <marker date="1495338041962" expanded="true" signature="8146:8210" ph="..." />
-                  <marker date="1495338041962" expanded="true" signature="9124:9274" ph="..." />
-                  <marker date="1495338041962" expanded="true" signature="9124:9282" ph="..." />
-                  <marker date="1495338041962" expanded="true" signature="10088:10260" ph="{...}" />
-                  <marker date="1495338041962" expanded="true" signature="10089:10142" ph="..." />
-                  <marker date="1495338041962" expanded="true" signature="11457:11480" ph="..." />
+                  <marker date="1495338148911" expanded="true" signature="1146:1153" ph="..." />
+                  <marker date="1495338148911" expanded="true" signature="1201:1273" ph="..." />
+                  <marker date="1495338148911" expanded="true" signature="3639:3665" ph="..." />
+                  <marker date="1495338148911" expanded="true" signature="4173:4206" ph="..." />
+                  <marker date="1495338148911" expanded="true" signature="4315:4351" ph="..." />
+                  <marker date="1495338148911" expanded="true" signature="8146:8210" ph="..." />
+                  <marker date="1495338148911" expanded="true" signature="9124:9274" ph="..." />
+                  <marker date="1495338148911" expanded="true" signature="9124:9282" ph="..." />
+                  <marker date="1495338148911" expanded="true" signature="10107:10279" ph="{...}" />
+                  <marker date="1495338148911" expanded="true" signature="10108:10161" ph="..." />
+                  <marker date="1495338148911" expanded="true" signature="11476:11499" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -90,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/conf/domains/nginx_product.conf">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="740">
-              <caret line="58" column="47" lean-forward="true" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+              <caret line="58" column="47" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -466,7 +460,7 @@
       <workItem from="1495091915080" duration="652000" />
       <workItem from="1495102103604" duration="3000" />
       <workItem from="1495235315851" duration="19496000" />
-      <workItem from="1495326245344" duration="9672000" />
+      <workItem from="1495326245344" duration="9794000" />
     </task>
     <task id="LOCAL-00001" summary="添加Nginx 启动脚本">
       <created>1494858373915</created>
@@ -797,11 +791,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495330240357</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary=":recycle: :recycle: :recycle: nginx proxy_cache 缓存配置">
+      <created>1495338087286</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1495338087286</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72362000" />
+    <option name="totallyTimeSpent" value="72484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -835,7 +836,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update config.lua file" />
     <MESSAGE value="update logs" />
     <MESSAGE value="add waf directory and fastcgi_params file" />
     <MESSAGE value="nginx start script error problem is OK！" />
@@ -860,7 +860,8 @@
     <MESSAGE value=":heavy_check_mark: :heavy_check_mark: :heavy_check_mark: 发布一个V0.01 版本" />
     <MESSAGE value=":cactus: :cactus: :cactus: 历史遗留问题解决：模板页面的JS、CSS样式文件加载不合适，忘记了Nginx处理静态资源的配置，添加以下代码OK" />
     <MESSAGE value=":heavy_check_mark: 发布一个V0.01 版本 :pencil2: :pencil2: :pencil2: :pencil2:" />
-    <option name="LAST_COMMIT_MESSAGE" value=":heavy_check_mark: 发布一个V0.01 版本 :pencil2: :pencil2: :pencil2: :pencil2:" />
+    <MESSAGE value=":recycle: :recycle: :recycle: nginx proxy_cache 缓存配置" />
+    <option name="LAST_COMMIT_MESSAGE" value=":recycle: :recycle: :recycle: nginx proxy_cache 缓存配置" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1233,7 +1234,7 @@
     <entry file="file://$PROJECT_DIR$/conf/domains/nginx_product.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="740">
-          <caret line="58" column="47" lean-forward="true" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+          <caret line="58" column="47" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1241,20 +1242,20 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="522">
-            <caret line="272" column="8" lean-forward="false" selection-start-line="272" selection-start-column="8" selection-end-line="272" selection-end-column="30" />
+          <first_editor relative-caret-position="302">
+            <caret line="261" column="23" lean-forward="false" selection-start-line="261" selection-start-column="23" selection-end-line="261" selection-end-column="23" />
             <folding>
-              <marker date="1495338041962" expanded="true" signature="1146:1153" ph="..." />
-              <marker date="1495338041962" expanded="true" signature="1201:1273" ph="..." />
-              <marker date="1495338041962" expanded="true" signature="3639:3665" ph="..." />
-              <marker date="1495338041962" expanded="true" signature="4173:4206" ph="..." />
-              <marker date="1495338041962" expanded="true" signature="4315:4351" ph="..." />
-              <marker date="1495338041962" expanded="true" signature="8146:8210" ph="..." />
-              <marker date="1495338041962" expanded="true" signature="9124:9274" ph="..." />
-              <marker date="1495338041962" expanded="true" signature="9124:9282" ph="..." />
-              <marker date="1495338041962" expanded="true" signature="10088:10260" ph="{...}" />
-              <marker date="1495338041962" expanded="true" signature="10089:10142" ph="..." />
-              <marker date="1495338041962" expanded="true" signature="11457:11480" ph="..." />
+              <marker date="1495338148911" expanded="true" signature="1146:1153" ph="..." />
+              <marker date="1495338148911" expanded="true" signature="1201:1273" ph="..." />
+              <marker date="1495338148911" expanded="true" signature="3639:3665" ph="..." />
+              <marker date="1495338148911" expanded="true" signature="4173:4206" ph="..." />
+              <marker date="1495338148911" expanded="true" signature="4315:4351" ph="..." />
+              <marker date="1495338148911" expanded="true" signature="8146:8210" ph="..." />
+              <marker date="1495338148911" expanded="true" signature="9124:9274" ph="..." />
+              <marker date="1495338148911" expanded="true" signature="9124:9282" ph="..." />
+              <marker date="1495338148911" expanded="true" signature="10107:10279" ph="{...}" />
+              <marker date="1495338148911" expanded="true" signature="10108:10161" ph="..." />
+              <marker date="1495338148911" expanded="true" signature="11476:11499" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
