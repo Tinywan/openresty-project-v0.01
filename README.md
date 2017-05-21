@@ -221,9 +221,7 @@ http {
         }
     ```
 * :blossom: `resty.template`渲染模板,通过`ngx API`输出内容到指定的`html`页面  
-    -  ![Markdown](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/lua-resty-template.png)
-
-      
+    -  ![Markdown](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/lua-resty-template.png)    
 #### 　:deciduous_tree: 2017年05月20日 星期六
 +   :white_check_mark: helper类的封装
     + Example
@@ -260,7 +258,19 @@ http {
     +   Lua 文件：`LiveRedisCacheController.lua` 
     +   `http://127.0.0.1:8088/ad/133456` 有缓存返回：`{"content":"Redis Cache Data"}`
     +   `http://127.0.0.1:8088/ad/13345` 没有缓存返回：`{"content":"MYSQL DATA \n"}`
-+   :heavy_check_mark: 发布一个V0.01 版本         
++   :heavy_check_mark: 发布一个V0.01 版本
+#### 　:deciduous_tree: 2017年05月21日 星期日
++   历史遗留问题解决：模板页面的JS、CSS样式文件加载不合适，忘记了Nginx处理静态资源的配置，添加以下代码OK
+    ```javascript
+    #配置Nginx动静分离，定义的静态页面直接从Nginx发布目录读取。
+    location ~ .*\.(html|htm|gif|jpg|jpeg|bmp|png|ico|txt|js|css)$
+    {
+        root /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/template/info;
+        #expires定义用户浏览器缓存的时间为7天，如果静态页面不常更新，可以设置更长，这样可以节省带宽和缓解服务器的压力
+        expires      7d;
+    }
+    ```     
++   访问页面：`http://192.168.127.133:8083/2017TinywanInfo`可以得到响应内容    
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据
