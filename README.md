@@ -270,6 +270,14 @@ http {
     }
     ```     
 +   访问页面：`http://192.168.127.133:8083/2017TinywanInfo`可以得到响应内容  
+#### 　:deciduous_tree: 2017年05月22日 星期一
++   标准os库,待补充 :negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:
+    +   `os.rename(oldname, newname)`:文件重命名
+    +   `os.remove(filename)`:删除一个文件
+    +   `os.execute(cmd)`:os.execute可运行一条系统命令，类似于C语言的system函数，`os.execute("mkdir /tmp/cq")`
+    +   `os.exit(code)`:中止当前程序的执行，code参数默认值为true。
+    +   `os.getenv(variable)`:返回环境变量的值，如果不存在，返回nil,`print(os.getenv('HOME')) -- /root`
+    +   `os.time(tb)`:返回一个指定时间点的UNIX时间戳，如不带参数调用的话，就返回当前时间点的UNIX时间戳
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据
