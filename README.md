@@ -270,17 +270,6 @@ http {
     }
     ```     
 +   访问页面：`http://192.168.127.133:8083/2017TinywanInfo`可以得到响应内容  
-####    nginx proxy_cache 缓存配置
-+   配置代理
-    +   访问8082 服务器代理到8083 服务器代理缓存已经 :ok:
-    +   测试访问：`http://192.168.127.133:8082/2017TinywanInfo` 
-    +   :x: 清理缓存配置 ，由于清除模块没有安装,没有进行测试
-+   参考文献      
-    +   [nginx proxy_cache 缓存配置](http://blog.csdn.net/dengjiexian123/article/details/53386586)  
-    +   [nginx: [emerg] unknown directive "proxy_cache_purge](http://www.linuxidc.com/Linux/2013-11/93021.htm)  
-    +   [nginx proxy cache 为了防止恶意刷页面/热点页面访问频繁](http://jinnianshilongnian.iteye.com/blog/2188538?page=2#comments)  
-
-
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据
@@ -320,3 +309,12 @@ http {
 +   注意：在这里并没有用到`lua-resty-shell` 库，有时间整合到一起去 
 +   效果预览图：
     ![websocket_shell](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/WebSocket_shell.jpg)
+####    nginx proxy_cache 缓存配置
++   配置代理
+    +   访问8082 服务器代理到8083 服务器代理缓存已经 :ok:
+    +   测试访问：`http://192.168.127.133:8082/2017TinywanInfo` 
+    +   :x: 清理缓存配置 ，由于清除模块没有安装,没有进行测试
++   参考文献      
+    +   [nginx proxy_cache 缓存配置](http://blog.csdn.net/dengjiexian123/article/details/53386586)  
+    +   [nginx: [emerg] unknown directive "proxy_cache_purge](http://www.linuxidc.com/Linux/2013-11/93021.htm)  
+    +   [nginx proxy cache 为了防止恶意刷页面/热点页面访问频繁](http://jinnianshilongnian.iteye.com/blog/2188538?page=2#comments)  

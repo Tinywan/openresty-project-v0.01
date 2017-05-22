@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
+    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="doc2unix.sh study">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -15,97 +15,35 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="nginx_product.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/domains/nginx_product.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="77" column="5" lean-forward="false" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="302">
-                <caret line="261" column="23" lean-forward="false" selection-start-line="261" selection-start-column="23" selection-end-line="261" selection-end-column="23" />
+              <first_editor relative-caret-position="790">
+                <caret line="319" column="114" lean-forward="false" selection-start-line="319" selection-start-column="114" selection-end-line="319" selection-end-column="114" />
                 <folding>
-                  <marker date="1495338148911" expanded="true" signature="1146:1153" ph="..." />
-                  <marker date="1495338148911" expanded="true" signature="1201:1273" ph="..." />
-                  <marker date="1495338148911" expanded="true" signature="3639:3665" ph="..." />
-                  <marker date="1495338148911" expanded="true" signature="4173:4206" ph="..." />
-                  <marker date="1495338148911" expanded="true" signature="4315:4351" ph="..." />
-                  <marker date="1495338148911" expanded="true" signature="8146:8210" ph="..." />
-                  <marker date="1495338148911" expanded="true" signature="9124:9274" ph="..." />
-                  <marker date="1495338148911" expanded="true" signature="9124:9282" ph="..." />
-                  <marker date="1495338148911" expanded="true" signature="10107:10279" ph="{...}" />
-                  <marker date="1495338148911" expanded="true" signature="10108:10161" ph="..." />
-                  <marker date="1495338148911" expanded="true" signature="11476:11499" ph="..." />
+                  <marker date="1495413400311" expanded="true" signature="1146:1153" ph="..." />
+                  <marker date="1495413400311" expanded="true" signature="1201:1273" ph="..." />
+                  <marker date="1495413400311" expanded="true" signature="3639:3665" ph="..." />
+                  <marker date="1495413400311" expanded="true" signature="4173:4206" ph="..." />
+                  <marker date="1495413400311" expanded="true" signature="4315:4351" ph="..." />
+                  <marker date="1495413400311" expanded="true" signature="8146:8210" ph="..." />
+                  <marker date="1495413400311" expanded="true" signature="9124:9274" ph="..." />
+                  <marker date="1495413400311" expanded="true" signature="10107:10279" ph="{...}" />
+                  <marker date="1495413400311" expanded="true" signature="10955:10978" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product_error.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/product_error.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nginx_index.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/domains/nginx_index.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product_access.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/product_access.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1338">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductController.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controller/ProductController.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nginx_product.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/domains/nginx_product.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="58" column="47" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/product/index2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InfoController.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controller/InfoController.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="30" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -196,8 +134,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1924" />
-    <option name="height" value="1056" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -214,6 +152,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -251,11 +190,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="product" />
+              <option name="myItemId" value="conf" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -269,45 +204,16 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cache" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lua_project_v0.01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemId" value="conf" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lua_project_v0.01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lua_project_v0.01" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="domains" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,6 +238,192 @@
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\template" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\lualib\vendor" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/bin/doc2unix.sh</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/conf/domains/nginx_product.conf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/logs/product_access.log</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/logs/product_error.log</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/websocket/public/clinet.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controller/IndexController.lua</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controller/InfoController.lua</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controller/ProductController.lua</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controller/RedisController.lua</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controller/view.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/model/Products.lua</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/conf/domains/nginx_demo.conf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/conf/domains/nginx_index.conf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/conf/domains/nginx_live.conf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lualib/resty/template.lua</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lualib/resty/template/html.lua</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lualib/resty/template/microbenchmark.lua</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lualib/vendor/dkjson.lua</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lualib/vendor/helper.lua</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/images/github/lua-resty-template.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/index/index.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/dist/css/fontello.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/dist/css/print.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/dist/css/style.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/favicon.ico</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/font/fontello.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/font/fontello.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/font/fontello.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/font/fontello.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/gulpfile.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/Do-you-like-me.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/anotherhome.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/aplayer.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/dstore.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/head - 副本.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/head.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/jCarrousel.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/jilin1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/jilin2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/jilin3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/mlk1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/mlk2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/mlk3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/nginrtmp1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/nginrtmp2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/nginrtmp3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/qr.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/resume.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/task0001.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/task0002.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/task0003.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/task0004.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/version1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/version2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/version3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/version4.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/yzw1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/yzw2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/img/yzw3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/index.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/jwplayer/facebook/facebook.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/jwplayer/jwplayer.flash.swf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/jwplayer/jwplayer.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/jwplayer/ping.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/src/css/fontello.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/src/css/print.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/src/css/style.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/info/wanshaobopdf.pdf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/product/footer.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/product/header.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/product/index.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/product/index2.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template/product/product_list.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -802,31 +894,42 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72484000" />
+    <option name="totallyTimeSpent" value="72557000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23712446" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18923241" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23712446" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -925,7 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,7 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,7 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2520">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,7 +1139,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="536">
           <caret line="65" column="24" lean-forward="false" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1080,13 +1179,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/index_error.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-758">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/index_error.log" />
     <entry file="file://$PROJECT_DIR$/application/redis/test_long.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1099,7 +1192,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1107,7 +1199,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
           <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1115,7 +1206,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1123,7 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="117" column="138" lean-forward="false" selection-start-line="117" selection-start-column="138" selection-end-line="117" selection-end-column="138" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1131,7 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="556">
           <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1139,7 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="114" column="6" lean-forward="false" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1147,23 +1234,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/index_access.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2138">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/index_access.log" />
     <entry file="file://$PROJECT_DIR$/logs/product_access.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1338">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1171,7 +1249,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1179,23 +1256,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/live_error.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-518">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/live_error.log" />
     <entry file="file://$PROJECT_DIR$/logs/product_error.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1203,7 +1271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="6" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1211,7 +1278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1219,22 +1285,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cache/proxy_cache/1/9e/ba9112dca443be9ee0bd8f25e86749e1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/proxy_cache/1/9e/ba9112dca443be9ee0bd8f25e86749e1" />
     <entry file="file://$PROJECT_DIR$/conf/domains/nginx_product.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="58" column="47" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+        <state relative-caret-position="765">
+          <caret line="77" column="5" lean-forward="false" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1242,20 +1300,18 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="302">
-            <caret line="261" column="23" lean-forward="false" selection-start-line="261" selection-start-column="23" selection-end-line="261" selection-end-column="23" />
+          <first_editor relative-caret-position="790">
+            <caret line="319" column="114" lean-forward="false" selection-start-line="319" selection-start-column="114" selection-end-line="319" selection-end-column="114" />
             <folding>
-              <marker date="1495338148911" expanded="true" signature="1146:1153" ph="..." />
-              <marker date="1495338148911" expanded="true" signature="1201:1273" ph="..." />
-              <marker date="1495338148911" expanded="true" signature="3639:3665" ph="..." />
-              <marker date="1495338148911" expanded="true" signature="4173:4206" ph="..." />
-              <marker date="1495338148911" expanded="true" signature="4315:4351" ph="..." />
-              <marker date="1495338148911" expanded="true" signature="8146:8210" ph="..." />
-              <marker date="1495338148911" expanded="true" signature="9124:9274" ph="..." />
-              <marker date="1495338148911" expanded="true" signature="9124:9282" ph="..." />
-              <marker date="1495338148911" expanded="true" signature="10107:10279" ph="{...}" />
-              <marker date="1495338148911" expanded="true" signature="10108:10161" ph="..." />
-              <marker date="1495338148911" expanded="true" signature="11476:11499" ph="..." />
+              <marker date="1495413400311" expanded="true" signature="1146:1153" ph="..." />
+              <marker date="1495413400311" expanded="true" signature="1201:1273" ph="..." />
+              <marker date="1495413400311" expanded="true" signature="3639:3665" ph="..." />
+              <marker date="1495413400311" expanded="true" signature="4173:4206" ph="..." />
+              <marker date="1495413400311" expanded="true" signature="4315:4351" ph="..." />
+              <marker date="1495413400311" expanded="true" signature="8146:8210" ph="..." />
+              <marker date="1495413400311" expanded="true" signature="9124:9274" ph="..." />
+              <marker date="1495413400311" expanded="true" signature="10107:10279" ph="{...}" />
+              <marker date="1495413400311" expanded="true" signature="10955:10978" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
