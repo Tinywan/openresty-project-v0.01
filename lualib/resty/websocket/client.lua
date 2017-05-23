@@ -104,11 +104,11 @@ function _M.connect(self, uri, opts)
         local protos = opts.protocols
         if protos then
             if type(protos) == "table" then
-                proto_header = "\r\nSec-WebSocket-Protocol: "
+                proto_header = "\r\nSec-websocket-Protocol: "
                                .. concat(protos, ",")
 
             else
-                proto_header = "\r\nSec-WebSocket-Protocol: " .. protos
+                proto_header = "\r\nSec-websocket-Protocol: " .. protos
             end
         end
 
@@ -173,9 +173,9 @@ function _M.connect(self, uri, opts)
     local key = encode_base64(bytes)
     local req = "GET " .. path .. " HTTP/1.1\r\nUpgrade: websocket\r\nHost: "
                 .. host .. ":" .. port
-                .. "\r\nSec-WebSocket-Key: " .. key
+                .. "\r\nSec-websocket-Key: " .. key
                 .. (proto_header or "")
-                .. "\r\nSec-WebSocket-Version: 13"
+                .. "\r\nSec-websocket-Version: 13"
                 .. (origin_header or "")
                 .. "\r\nConnection: Upgrade\r\n\r\n"
 

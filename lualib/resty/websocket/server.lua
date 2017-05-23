@@ -82,12 +82,12 @@ function _M.new(self, opts)
     end
 
     if protocols then
-        ngx_header["Sec-WebSocket-Protocol"] = protocols
+        ngx_header["Sec-websocket-Protocol"] = protocols
     end
     ngx_header["Upgrade"] = "websocket"
 
     local sha1 = sha1_bin(key .. "258EAFA5-E914-47DA-95CA-C5AB0DC85B11")
-    ngx_header["Sec-WebSocket-Accept"] = base64(sha1)
+    ngx_header["Sec-websocket-Accept"] = base64(sha1)
 
     ngx_header["Content-Type"] = nil
 
