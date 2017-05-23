@@ -223,6 +223,7 @@ http {
 * :blossom: `resty.template`渲染模板,通过`ngx API`输出内容到指定的`html`页面  
     -  ![Markdown](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/lua-resty-template.png)    
 ####    2017年05月20日 星期六
+####    2017年05月20日 星期六
 +   :white_check_mark: helper类的封装
     + Example
       ```lua
@@ -258,6 +259,7 @@ http {
     +   `http://127.0.0.1:8088/ad/133456` 有缓存返回：`{"content":"Redis Cache Data"}`
     +   `http://127.0.0.1:8088/ad/13345` 没有缓存返回：`{"content":"MYSQL DATA \n"}`
 +   :heavy_check_mark: 发布一个V0.01 版本 :pencil2: :pencil2: :pencil2: :pencil2:
+####    2017年05月21日 星期日
 ####    2017年05月21日 星期日
 +   :white_check_mark: 历史遗留问题解决：模板页面的JS、CSS样式文件加载不合适，忘记了Nginx处理静态资源的配置，添加以下代码OK
     ```javascript
