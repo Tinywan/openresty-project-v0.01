@@ -292,7 +292,7 @@ http {
     +   curl访问地址：`curl http://192.168.127.133:8686/0.1/app/lua文件名`
     +   访问案例：`curl http://192.168.127.133:8686/0.1/app/web`,将会执行`web.lua`文件
 +   如何使用API接口
-    +   :heavy_plus_sign: 创建对象：
+    +   :white_check_mark: 创建对象：
         ```javascript
         curl -X POST \
           -H "X-LC-Id: 558e20cbe4b060308e3eb36c" \
@@ -301,15 +301,16 @@ http {
           -d "name=tinywan&age=26" \
           http://127.0.0.1:8686/0.1/users
         ```
-    +   :heavy_dollar_sign: 查询信息：
+    +   :white_check_mark: 查询信息：
         ```javascript
         curl -X GET \
           -H "X-LC-Id: {{appid}}" \
           -H "X-LC-Key: {{appkey}}" \
           -G \
-          --data-urlencode 'id=9090' http://127.0.0.1:8686/0.1/users
+          --data-urlencode 'id=9090' 
+          http://127.0.0.1:8686/0.1/users
         ```
-    +   :heavy_check_mark: 更新对象：
+    +   :white_check_mark: 更新对象：
         ```javascript
         curl -X PUT \
           -H "X-LC-Id: {{appid}}" \
@@ -319,7 +320,7 @@ http {
           http://127.0.0.1:8686/0.1/users
 
         ```
-    +   :heavy_multiplication_x: 删除对象：
+    +   :white_check_mark: 删除对象：
         ```javascript
         curl -X DELETE \
            -H "X-LC-Id: {{appid}}" \
