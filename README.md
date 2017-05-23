@@ -89,7 +89,7 @@ http {
     +   解决办法：`sed -i 's/\r$//' ../lua_project_v0.01/bin/start.sh`
     +   [解决 linux下编译make文件报错“/bin/bash^M: 坏的解释器：没有那个文件或目录” 问题](http://blog.csdn.net/liuqiyao_01/article/details/41542101#comments)
     
-####    :fallen_leaf: 2017年05月17日 星期三
+####    2017年05月17日 星期三
 +   ngx_lua_waf 安装使用(ngx_lua_waf是一个基于lua-nginx-module(openresty)的web应用防火墙) 
     +   [ngx_lua_waf github 地址](https://github.com/loveshell/ngx_lua_waf)
     +   安装步骤
@@ -152,7 +152,7 @@ http {
     -   ![waf_ip_blaklist2](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/waf_ip_blaklist2.png)
 +   :poop: 坑 :poop: 在提交代码的时候`waf`目录一直提交不了，提示:`modified: xxx(modified content, untracked content)`,
     原来在`waf`目录下有个.git 目录,删除.git目录,重新git add 就可以了   
-####    :hibiscus: 2017年05月19日 星期五
+####   2017年05月19日 星期五
 *  第一版采用单模块设计
 *  简单的MVC模式，目录、命名约定（Phalcon MVC）
     +   Model（模型）负责在数据库中存取数据 
@@ -222,7 +222,7 @@ http {
     ```
 * :blossom: `resty.template`渲染模板,通过`ngx API`输出内容到指定的`html`页面  
     -  ![Markdown](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/lua-resty-template.png)    
-#### 　:deciduous_tree: 2017年05月20日 星期六
+#### 　2017年05月20日 星期六
 +   :white_check_mark: helper类的封装
     + Example
       ```lua
@@ -258,7 +258,7 @@ http {
     +   `http://127.0.0.1:8088/ad/133456` 有缓存返回：`{"content":"Redis Cache Data"}`
     +   `http://127.0.0.1:8088/ad/13345` 没有缓存返回：`{"content":"MYSQL DATA \n"}`
 +   :heavy_check_mark: 发布一个V0.01 版本 :pencil2: :pencil2: :pencil2: :pencil2:
-#### 　:deciduous_tree: 2017年05月21日 星期日
+#### 　2017年05月21日 星期日
 +   :white_check_mark: 历史遗留问题解决：模板页面的JS、CSS样式文件加载不合适，忘记了Nginx处理静态资源的配置，添加以下代码OK
     ```javascript
     #配置Nginx动静分离，定义的静态页面直接从Nginx发布目录读取。
@@ -270,7 +270,7 @@ http {
     }
     ```     
 +   访问页面：`http://192.168.127.133:8083/2017TinywanInfo`可以得到响应内容  
-#### 　:deciduous_tree: 2017年05月22日 星期一
+#### 　2017年05月22日 星期一
 +   标准os库,待补充 :negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:
     +   `os.rename(oldname, newname)`:文件重命名
     +   `os.remove(filename)`:删除一个文件
@@ -278,6 +278,40 @@ http {
     +   `os.exit(code)`:中止当前程序的执行，code参数默认值为true。
     +   `os.getenv(variable)`:返回环境变量的值，如果不存在，返回nil,`print(os.getenv('HOME')) -- /root`
     +   `os.time(tb)`:返回一个指定时间点的UNIX时间戳，如不带参数调用的话，就返回当前时间点的UNIX时间戳
+#### 　2017年05月23日 星期二
++   API 的设计
+    +   版本：`0.1`
+    +   专用端口：`8686`
+    +   配置文件
+        ```lua
+        location ~ ^/app/([-_a-zA-Z0-9/]+)$ {
+            set $id $1;
+            content_by_lua_file /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/application/api/${id}.lua;
+        }
+        ```
+    +   curl访问地址：`curl http://192.168.127.133:8686/0.1/app/lua文件名`
+    +   访问案例：`curl http://192.168.127.133:8686/0.1/app/web`,将会执行`web.lua`文件
++   访问设计
+    +   创建对象：
+        ```javascript
+            curl -X POST \
+              -H "X-LC-Id: 558e20cbe4b060308e3eb36c" \
+              -H "X-LC-Key: cbe4b06030558e208e3eb36c20cbe4b060308e3eb36c" \
+              -H "Content-Type: application/json" \
+              -d "name=tinywan&age=26" \
+              http://127.0.0.1:8686/0.1/users
+        ```
+    +   查询信息：
+        ```javascript
+            curl -X GET \
+              -H "X-LC-Id: {{appid}}" \
+              -H "X-LC-Key: {{appkey}}" \
+              -G \
+              --data-urlencode 'id=9090' http://127.0.0.1:8686/0.1/users
+        ```
+    +   创建对象：` curl -X POST -d "name=tinywan&age=26" http://127.0.0.1:8686/0.1/users`
+    +   创建对象：` curl -X POST -d "name=tinywan&age=26" http://127.0.0.1:8686/0.1/users`
+    
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据
