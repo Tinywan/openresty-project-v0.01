@@ -35,12 +35,15 @@ end
 
 -- 修改
 function update()
-    ngx.say('update')
+    local name = post_args.name
+    local age = post_args.age
+    ngx.say('更新数据为 name = ' .. name .. ' age = ' .. age)
 end
 
 -- 删除
 function delete()
-    ngx.say('delete')
+    local id = get_args.id
+    ngx.say('删除用户为 id = ' .. id .. '的信息')
 end
 
 --未知
