@@ -4,7 +4,6 @@
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/users.lua" afterPath="$PROJECT_DIR$/application/api/users.lua" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,21 +19,21 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="82">
-                <caret line="293" column="13" lean-forward="false" selection-start-line="293" selection-start-column="4" selection-end-line="293" selection-end-column="13" />
+              <first_editor relative-caret-position="-538">
+                <caret line="280" column="8" lean-forward="false" selection-start-line="280" selection-start-column="8" selection-end-line="280" selection-end-column="8" />
                 <folding>
-                  <marker date="1495550453131" expanded="true" signature="1146:1153" ph="..." />
-                  <marker date="1495550453131" expanded="true" signature="1201:1273" ph="..." />
-                  <marker date="1495550453131" expanded="true" signature="3625:3651" ph="..." />
-                  <marker date="1495550453131" expanded="true" signature="4159:4192" ph="..." />
-                  <marker date="1495550453131" expanded="true" signature="4301:4337" ph="..." />
-                  <marker date="1495550453131" expanded="true" signature="8120:8184" ph="..." />
-                  <marker date="1495550453131" expanded="true" signature="9081:9231" ph="..." />
-                  <marker date="1495550453131" expanded="true" signature="9081:9239" ph="..." />
-                  <marker date="1495550453131" expanded="true" signature="10047:10219" ph="{...}" />
-                  <marker date="1495550453131" expanded="true" signature="10048:10101" ph="..." />
-                  <marker date="1495550453131" expanded="true" signature="10945:10960" ph="..." />
-                  <marker date="1495550453131" expanded="true" signature="13015:13038" ph="..." />
+                  <marker date="1495550527502" expanded="true" signature="1146:1153" ph="..." />
+                  <marker date="1495550527502" expanded="true" signature="1201:1273" ph="..." />
+                  <marker date="1495550527502" expanded="true" signature="3625:3651" ph="..." />
+                  <marker date="1495550527502" expanded="true" signature="4159:4192" ph="..." />
+                  <marker date="1495550527502" expanded="true" signature="4301:4337" ph="..." />
+                  <marker date="1495550527502" expanded="true" signature="8121:8185" ph="..." />
+                  <marker date="1495550527502" expanded="true" signature="9084:9234" ph="..." />
+                  <marker date="1495550527502" expanded="true" signature="9084:9242" ph="..." />
+                  <marker date="1495550527502" expanded="true" signature="10052:10224" ph="{...}" />
+                  <marker date="1495550527502" expanded="true" signature="10053:10106" ph="..." />
+                  <marker date="1495550527502" expanded="true" signature="10954:10969" ph="..." />
+                  <marker date="1495550527502" expanded="true" signature="13024:13047" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -558,13 +557,6 @@
       <workItem from="1495433286751" duration="5382000" />
       <workItem from="1495519587802" duration="3466000" />
     </task>
-    <task id="LOCAL-00004" summary="update readme 贰萬">
-      <created>1494859026015</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1494859026015</updated>
-    </task>
     <task id="LOCAL-00005" summary="update readme 贰萬 nginx.conf, the Nginx web server configuration">
       <created>1494859169594</created>
       <option name="number" value="00005" />
@@ -901,11 +893,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495549524746</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="如何使用API接口 :performing_arts: :performing_arts: :performing_arts:">
+      <created>1495550480601</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1495550480601</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89403000" />
+    <option name="totallyTimeSpent" value="89474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -950,7 +949,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="doc2unix.sh study" />
     <MESSAGE value="简单的MVC模式，目录、命名约定" />
     <MESSAGE value="第一个简单的 mvc 模式的文件路径访问" />
     <MESSAGE value=":fallen_leaf: 第一个简单的 mvc 模式的文件路径访问" />
@@ -975,7 +973,8 @@
     <MESSAGE value="update readme" />
     <MESSAGE value="标准os库 :negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:" />
     <MESSAGE value="API 的设计:negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:" />
-    <option name="LAST_COMMIT_MESSAGE" value="API 的设计:negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:" />
+    <MESSAGE value="如何使用API接口 :performing_arts: :performing_arts: :performing_arts:" />
+    <option name="LAST_COMMIT_MESSAGE" value="如何使用API接口 :performing_arts: :performing_arts: :performing_arts:" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1329,21 +1328,21 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="82">
-            <caret line="293" column="13" lean-forward="false" selection-start-line="293" selection-start-column="4" selection-end-line="293" selection-end-column="13" />
+          <first_editor relative-caret-position="-538">
+            <caret line="280" column="8" lean-forward="false" selection-start-line="280" selection-start-column="8" selection-end-line="280" selection-end-column="8" />
             <folding>
-              <marker date="1495550453131" expanded="true" signature="1146:1153" ph="..." />
-              <marker date="1495550453131" expanded="true" signature="1201:1273" ph="..." />
-              <marker date="1495550453131" expanded="true" signature="3625:3651" ph="..." />
-              <marker date="1495550453131" expanded="true" signature="4159:4192" ph="..." />
-              <marker date="1495550453131" expanded="true" signature="4301:4337" ph="..." />
-              <marker date="1495550453131" expanded="true" signature="8120:8184" ph="..." />
-              <marker date="1495550453131" expanded="true" signature="9081:9231" ph="..." />
-              <marker date="1495550453131" expanded="true" signature="9081:9239" ph="..." />
-              <marker date="1495550453131" expanded="true" signature="10047:10219" ph="{...}" />
-              <marker date="1495550453131" expanded="true" signature="10048:10101" ph="..." />
-              <marker date="1495550453131" expanded="true" signature="10945:10960" ph="..." />
-              <marker date="1495550453131" expanded="true" signature="13015:13038" ph="..." />
+              <marker date="1495550527502" expanded="true" signature="1146:1153" ph="..." />
+              <marker date="1495550527502" expanded="true" signature="1201:1273" ph="..." />
+              <marker date="1495550527502" expanded="true" signature="3625:3651" ph="..." />
+              <marker date="1495550527502" expanded="true" signature="4159:4192" ph="..." />
+              <marker date="1495550527502" expanded="true" signature="4301:4337" ph="..." />
+              <marker date="1495550527502" expanded="true" signature="8121:8185" ph="..." />
+              <marker date="1495550527502" expanded="true" signature="9084:9234" ph="..." />
+              <marker date="1495550527502" expanded="true" signature="9084:9242" ph="..." />
+              <marker date="1495550527502" expanded="true" signature="10052:10224" ph="{...}" />
+              <marker date="1495550527502" expanded="true" signature="10053:10106" ph="..." />
+              <marker date="1495550527502" expanded="true" signature="10954:10969" ph="..." />
+              <marker date="1495550527502" expanded="true" signature="13024:13047" ph="..." />
             </folding>
           </first_editor>
           <second_editor />

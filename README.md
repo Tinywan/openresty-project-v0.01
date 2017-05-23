@@ -152,7 +152,7 @@ http {
     -   ![waf_ip_blaklist2](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/waf_ip_blaklist2.png)
 +   :poop: 坑 :poop: 在提交代码的时候`waf`目录一直提交不了，提示:`modified: xxx(modified content, untracked content)`,
     原来在`waf`目录下有个.git 目录,删除.git目录,重新git add 就可以了   
-####   2017年05月19日 星期五
+####    2017年05月19日 星期五
 *  第一版采用单模块设计
 *  简单的MVC模式，目录、命名约定（Phalcon MVC）
     +   Model（模型）负责在数据库中存取数据 
@@ -222,7 +222,7 @@ http {
     ```
 * :blossom: `resty.template`渲染模板,通过`ngx API`输出内容到指定的`html`页面  
     -  ![Markdown](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/lua-resty-template.png)    
-#### 　2017年05月20日 星期六
+####    2017年05月20日 星期六
 +   :white_check_mark: helper类的封装
     + Example
       ```lua
@@ -258,7 +258,7 @@ http {
     +   `http://127.0.0.1:8088/ad/133456` 有缓存返回：`{"content":"Redis Cache Data"}`
     +   `http://127.0.0.1:8088/ad/13345` 没有缓存返回：`{"content":"MYSQL DATA \n"}`
 +   :heavy_check_mark: 发布一个V0.01 版本 :pencil2: :pencil2: :pencil2: :pencil2:
-#### 　2017年05月21日 星期日
+####    2017年05月21日 星期日
 +   :white_check_mark: 历史遗留问题解决：模板页面的JS、CSS样式文件加载不合适，忘记了Nginx处理静态资源的配置，添加以下代码OK
     ```javascript
     #配置Nginx动静分离，定义的静态页面直接从Nginx发布目录读取。
@@ -270,7 +270,7 @@ http {
     }
     ```     
 +   访问页面：`http://192.168.127.133:8083/2017TinywanInfo`可以得到响应内容  
-#### 　2017年05月22日 星期一
+####    2017年05月22日 星期一
 +   标准os库,待补充 :negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:
     +   `os.rename(oldname, newname)`:文件重命名
     +   `os.remove(filename)`:删除一个文件
@@ -278,7 +278,7 @@ http {
     +   `os.exit(code)`:中止当前程序的执行，code参数默认值为true。
     +   `os.getenv(variable)`:返回环境变量的值，如果不存在，返回nil,`print(os.getenv('HOME')) -- /root`
     +   `os.time(tb)`:返回一个指定时间点的UNIX时间戳，如不带参数调用的话，就返回当前时间点的UNIX时间戳
-#### 　2017年05月23日 星期二
+####    2017年05月23日 星期二
 +   API 的设计
     +   版本：`0.1`
     +   专用端口：`8686`
