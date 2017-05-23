@@ -289,8 +289,8 @@ http {
             content_by_lua_file /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/application/api/${id}.lua;
         }
         ```
-    +   curl访问地址：`curl http://192.168.127.133:8686/0.1/app/lua文件名`
-    +   访问案例：`curl http://192.168.127.133:8686/0.1/app/web`,将会执行`web.lua`文件
+    +   curl访问地址：`curl http://127.0.0.1:8686/0.1/app/web文件名`
+    +   访问案例：`curl http://127.0.0.1:8686/0.1/app/web`,将会执行`web.lua`文件
 +   如何使用API接口
     +   :white_check_mark: 创建对象：
         ```javascript

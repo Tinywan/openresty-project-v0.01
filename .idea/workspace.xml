@@ -19,21 +19,21 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="662">
-                <caret line="322" column="26" lean-forward="false" selection-start-line="322" selection-start-column="26" selection-end-line="322" selection-end-column="26" />
+              <first_editor relative-caret-position="402">
+                <caret line="291" column="18" lean-forward="true" selection-start-line="291" selection-start-column="18" selection-end-line="291" selection-end-column="59" />
                 <folding>
-                  <marker date="1495550765532" expanded="true" signature="1146:1153" ph="..." />
-                  <marker date="1495550765532" expanded="true" signature="1201:1273" ph="..." />
-                  <marker date="1495550765532" expanded="true" signature="3625:3651" ph="..." />
-                  <marker date="1495550765532" expanded="true" signature="4159:4192" ph="..." />
-                  <marker date="1495550765532" expanded="true" signature="4301:4337" ph="..." />
-                  <marker date="1495550765532" expanded="true" signature="8121:8185" ph="..." />
-                  <marker date="1495550765532" expanded="true" signature="9084:9234" ph="..." />
-                  <marker date="1495550765532" expanded="true" signature="9084:9242" ph="..." />
-                  <marker date="1495550765532" expanded="true" signature="10052:10224" ph="{...}" />
-                  <marker date="1495550765532" expanded="true" signature="10053:10106" ph="..." />
-                  <marker date="1495550765532" expanded="true" signature="10954:10969" ph="..." />
-                  <marker date="1495550765532" expanded="true" signature="13029:13052" ph="..." />
+                  <marker date="1495550856044" expanded="true" signature="1146:1153" ph="..." />
+                  <marker date="1495550856044" expanded="true" signature="1201:1273" ph="..." />
+                  <marker date="1495550856044" expanded="true" signature="3625:3651" ph="..." />
+                  <marker date="1495550856044" expanded="true" signature="4159:4192" ph="..." />
+                  <marker date="1495550856044" expanded="true" signature="4301:4337" ph="..." />
+                  <marker date="1495550856044" expanded="true" signature="8121:8185" ph="..." />
+                  <marker date="1495550856044" expanded="true" signature="9084:9234" ph="..." />
+                  <marker date="1495550856044" expanded="true" signature="9084:9242" ph="..." />
+                  <marker date="1495550856044" expanded="true" signature="10052:10224" ph="{...}" />
+                  <marker date="1495550856044" expanded="true" signature="10053:10106" ph="..." />
+                  <marker date="1495550856044" expanded="true" signature="10954:10969" ph="..." />
+                  <marker date="1495550856044" expanded="true" signature="13017:13040" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -557,13 +557,6 @@
       <workItem from="1495433286751" duration="5382000" />
       <workItem from="1495519587802" duration="3466000" />
     </task>
-    <task id="LOCAL-00008" summary="add underline">
-      <created>1494860166641</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1494860166641</updated>
-    </task>
     <task id="LOCAL-00009" summary="add underline">
       <created>1494860347056</created>
       <option name="number" value="00009" />
@@ -900,11 +893,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495550643686</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="如何使用API接口 :white_check_mark: :white_check_mark: :white_check_mark:">
+      <created>1495550773820</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1495550773821</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89712000" />
+    <option name="totallyTimeSpent" value="89807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -949,7 +949,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="简单的MVC模式，目录、命名约定" />
     <MESSAGE value="第一个简单的 mvc 模式的文件路径访问" />
     <MESSAGE value=":fallen_leaf: 第一个简单的 mvc 模式的文件路径访问" />
     <MESSAGE value="add lua-resty-template" />
@@ -974,7 +973,8 @@
     <MESSAGE value="标准os库 :negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:" />
     <MESSAGE value="API 的设计:negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:" />
     <MESSAGE value="如何使用API接口 :performing_arts: :performing_arts: :performing_arts:" />
-    <option name="LAST_COMMIT_MESSAGE" value="如何使用API接口 :performing_arts: :performing_arts: :performing_arts:" />
+    <MESSAGE value="如何使用API接口 :white_check_mark: :white_check_mark: :white_check_mark:" />
+    <option name="LAST_COMMIT_MESSAGE" value="如何使用API接口 :white_check_mark: :white_check_mark: :white_check_mark:" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1328,21 +1328,21 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="662">
-            <caret line="322" column="26" lean-forward="false" selection-start-line="322" selection-start-column="26" selection-end-line="322" selection-end-column="26" />
+          <first_editor relative-caret-position="402">
+            <caret line="291" column="18" lean-forward="true" selection-start-line="291" selection-start-column="18" selection-end-line="291" selection-end-column="59" />
             <folding>
-              <marker date="1495550765532" expanded="true" signature="1146:1153" ph="..." />
-              <marker date="1495550765532" expanded="true" signature="1201:1273" ph="..." />
-              <marker date="1495550765532" expanded="true" signature="3625:3651" ph="..." />
-              <marker date="1495550765532" expanded="true" signature="4159:4192" ph="..." />
-              <marker date="1495550765532" expanded="true" signature="4301:4337" ph="..." />
-              <marker date="1495550765532" expanded="true" signature="8121:8185" ph="..." />
-              <marker date="1495550765532" expanded="true" signature="9084:9234" ph="..." />
-              <marker date="1495550765532" expanded="true" signature="9084:9242" ph="..." />
-              <marker date="1495550765532" expanded="true" signature="10052:10224" ph="{...}" />
-              <marker date="1495550765532" expanded="true" signature="10053:10106" ph="..." />
-              <marker date="1495550765532" expanded="true" signature="10954:10969" ph="..." />
-              <marker date="1495550765532" expanded="true" signature="13029:13052" ph="..." />
+              <marker date="1495550856044" expanded="true" signature="1146:1153" ph="..." />
+              <marker date="1495550856044" expanded="true" signature="1201:1273" ph="..." />
+              <marker date="1495550856044" expanded="true" signature="3625:3651" ph="..." />
+              <marker date="1495550856044" expanded="true" signature="4159:4192" ph="..." />
+              <marker date="1495550856044" expanded="true" signature="4301:4337" ph="..." />
+              <marker date="1495550856044" expanded="true" signature="8121:8185" ph="..." />
+              <marker date="1495550856044" expanded="true" signature="9084:9234" ph="..." />
+              <marker date="1495550856044" expanded="true" signature="9084:9242" ph="..." />
+              <marker date="1495550856044" expanded="true" signature="10052:10224" ph="{...}" />
+              <marker date="1495550856044" expanded="true" signature="10053:10106" ph="..." />
+              <marker date="1495550856044" expanded="true" signature="10954:10969" ph="..." />
+              <marker date="1495550856044" expanded="true" signature="13017:13040" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
