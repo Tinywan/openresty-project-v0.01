@@ -99,8 +99,8 @@ http {
 }
 ```
 ## helper 类方法归类
-- [x]获取http get/post 请求参数：`helper.http_args()`
-- [x]字符串分割：`helper.split()`
+- [x] 获取http get/post 请求参数：`helper.http_args()`
+- [x] 字符串分割：`helper.split()`
 ##  :date:
 ####    2017年05月07日 星期日 
 +   创建项目、项目架构搭建、目录结构调整

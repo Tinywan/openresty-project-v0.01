@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="获取http get/post 请求参数">
+    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lualib/vendor/helper.lua" afterPath="$PROJECT_DIR$/lualib/vendor/helper.lua" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,25 +19,25 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="313">
-                <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+              <first_editor relative-caret-position="213">
+                <caret line="102" column="6" lean-forward="false" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
                 <folding>
-                  <marker date="1495726881989" expanded="true" signature="2034:2041" ph="..." />
-                  <marker date="1495726881989" expanded="true" signature="2089:2161" ph="..." />
-                  <marker date="1495726881989" expanded="true" signature="4604:4630" ph="..." />
-                  <marker date="1495726881989" expanded="true" signature="5138:5171" ph="..." />
-                  <marker date="1495726881989" expanded="true" signature="5280:5316" ph="..." />
-                  <marker date="1495726881989" expanded="true" signature="9100:9164" ph="..." />
-                  <marker date="1495726881989" expanded="true" signature="10063:10213" ph="..." />
-                  <marker date="1495726881989" expanded="true" signature="11031:11203" ph="{...}" />
-                  <marker date="1495726881989" expanded="true" signature="11933:11948" ph="..." />
-                  <marker date="1495726881989" expanded="true" signature="13580:13648" ph="..." />
-                  <marker date="1495726881989" expanded="true" signature="13734:13753" ph="..." />
-                  <marker date="1495726881989" expanded="true" signature="13734:13770" ph="..." />
-                  <marker date="1495726881989" expanded="true" signature="13870:13959" ph="..." />
-                  <marker date="1495726881989" expanded="true" signature="13870:13963" ph="..." />
-                  <marker date="1495726881989" expanded="true" signature="13902:13957" ph="..." />
-                  <marker date="1495726881989" expanded="true" signature="14999:15022" ph="..." />
+                  <marker date="1495727001078" expanded="true" signature="2034:2041" ph="..." />
+                  <marker date="1495727001078" expanded="true" signature="2089:2161" ph="..." />
+                  <marker date="1495727001078" expanded="true" signature="4606:4632" ph="..." />
+                  <marker date="1495727001078" expanded="true" signature="5140:5173" ph="..." />
+                  <marker date="1495727001078" expanded="true" signature="5282:5318" ph="..." />
+                  <marker date="1495727001078" expanded="true" signature="9102:9166" ph="..." />
+                  <marker date="1495727001078" expanded="true" signature="10065:10215" ph="..." />
+                  <marker date="1495727001078" expanded="true" signature="11033:11205" ph="{...}" />
+                  <marker date="1495727001078" expanded="true" signature="11935:11950" ph="..." />
+                  <marker date="1495727001078" expanded="true" signature="13582:13650" ph="..." />
+                  <marker date="1495727001078" expanded="true" signature="13736:13755" ph="..." />
+                  <marker date="1495727001078" expanded="true" signature="13736:13772" ph="..." />
+                  <marker date="1495727001078" expanded="true" signature="13872:13961" ph="..." />
+                  <marker date="1495727001078" expanded="true" signature="13872:13965" ph="..." />
+                  <marker date="1495727001078" expanded="true" signature="13904:13959" ph="..." />
+                  <marker date="1495727001078" expanded="true" signature="15001:15024" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -540,14 +539,7 @@
       <workItem from="1495588997283" duration="1393000" />
       <workItem from="1495673684195" duration="2145000" />
       <workItem from="1495700391341" duration="1615000" />
-      <workItem from="1495720556063" duration="5732000" />
-    </task>
-    <task id="LOCAL-00013" summary="ngx_lua_waf install test success OK">
-      <created>1495036750605</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1495036750605</updated>
+      <workItem from="1495720556063" duration="5829000" />
     </task>
     <task id="LOCAL-00014" summary="ngx_lua_waf install test success OK">
       <created>1495036829127</created>
@@ -885,11 +877,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495726565275</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="获取http get/post 请求参数">
+      <created>1495726908303</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1495726908303</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106939000" />
+    <option name="totallyTimeSpent" value="107036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1047" extended-state="0" />
@@ -1268,25 +1267,25 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="313">
-            <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <first_editor relative-caret-position="213">
+            <caret line="102" column="6" lean-forward="false" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
             <folding>
-              <marker date="1495726881989" expanded="true" signature="2034:2041" ph="..." />
-              <marker date="1495726881989" expanded="true" signature="2089:2161" ph="..." />
-              <marker date="1495726881989" expanded="true" signature="4604:4630" ph="..." />
-              <marker date="1495726881989" expanded="true" signature="5138:5171" ph="..." />
-              <marker date="1495726881989" expanded="true" signature="5280:5316" ph="..." />
-              <marker date="1495726881989" expanded="true" signature="9100:9164" ph="..." />
-              <marker date="1495726881989" expanded="true" signature="10063:10213" ph="..." />
-              <marker date="1495726881989" expanded="true" signature="11031:11203" ph="{...}" />
-              <marker date="1495726881989" expanded="true" signature="11933:11948" ph="..." />
-              <marker date="1495726881989" expanded="true" signature="13580:13648" ph="..." />
-              <marker date="1495726881989" expanded="true" signature="13734:13753" ph="..." />
-              <marker date="1495726881989" expanded="true" signature="13734:13770" ph="..." />
-              <marker date="1495726881989" expanded="true" signature="13870:13959" ph="..." />
-              <marker date="1495726881989" expanded="true" signature="13870:13963" ph="..." />
-              <marker date="1495726881989" expanded="true" signature="13902:13957" ph="..." />
-              <marker date="1495726881989" expanded="true" signature="14999:15022" ph="..." />
+              <marker date="1495727001078" expanded="true" signature="2034:2041" ph="..." />
+              <marker date="1495727001078" expanded="true" signature="2089:2161" ph="..." />
+              <marker date="1495727001078" expanded="true" signature="4606:4632" ph="..." />
+              <marker date="1495727001078" expanded="true" signature="5140:5173" ph="..." />
+              <marker date="1495727001078" expanded="true" signature="5282:5318" ph="..." />
+              <marker date="1495727001078" expanded="true" signature="9102:9166" ph="..." />
+              <marker date="1495727001078" expanded="true" signature="10065:10215" ph="..." />
+              <marker date="1495727001078" expanded="true" signature="11033:11205" ph="{...}" />
+              <marker date="1495727001078" expanded="true" signature="11935:11950" ph="..." />
+              <marker date="1495727001078" expanded="true" signature="13582:13650" ph="..." />
+              <marker date="1495727001078" expanded="true" signature="13736:13755" ph="..." />
+              <marker date="1495727001078" expanded="true" signature="13736:13772" ph="..." />
+              <marker date="1495727001078" expanded="true" signature="13872:13961" ph="..." />
+              <marker date="1495727001078" expanded="true" signature="13872:13965" ph="..." />
+              <marker date="1495727001078" expanded="true" signature="13904:13959" ph="..." />
+              <marker date="1495727001078" expanded="true" signature="15001:15024" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
