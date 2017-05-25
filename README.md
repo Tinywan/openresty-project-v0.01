@@ -14,25 +14,25 @@
 │   │   └── Products.lua
 │   └── zabbix
 │       └── install-record01.conf
-├── bin                            -- 脚本文件
+├── bin                             -- 脚本文件
 │   ├── doc2unix.sh
 │   ├── start.sh
 │   └── stop.sh
 ├── cache
 │   └── proxy_cache
-├── conf                           -- 配置文件
+├── conf                            -- 配置文件
 │   ├── domains
 │   │   ├── api.conf
 │   │   └── waf.conf
 │   ├── fastcgi_params
 │   ├── nginx.conf
 │   └── nginx_lua_upstream.conf
-├── logs                          -- 日志文件 
+├── logs                            -- 日志文件 
 │   ├── api_access.log
 │   ├── hack
 │   │   └── 2017-05-17_sec.log
 │   └── waf_error.log
-├── lualib                        -- 公共Lua库
+├── lualib                          -- 公共Lua库
 │   ├── cjson.so
 │   ├── ngx
 │   │   └── ssl.lua
@@ -41,12 +41,12 @@
 │   │   ├── redis.lua
 │   │   ├── upstream
 │   │   └── websocket
-│   └── vendor                    -- 第三方Lua库
+│   └── vendor                      -- 第三方Lua库
 │       ├── config.lua
 │       ├── dkjson.lua
 │       ├── helper.lua
 │       └── ip_location.lua
-├── public                        -- 公共静态文件
+├── public                          -- 公共静态文件
 │   ├── data
 │   │   └── location_ip_db.dat
 │   ├── images
@@ -58,7 +58,7 @@
 │   └── websocket
 │       └── public
 ├── README.md
-└── template                       -- 模板
+└── template                         -- 模板
     ├── index
     │   └── index.html
     ├── info

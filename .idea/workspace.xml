@@ -19,19 +19,19 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="-36">
-                <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+              <first_editor relative-caret-position="324">
+                <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
                 <folding>
-                  <marker date="1495701941347" expanded="true" signature="2022:2029" ph="..." />
-                  <marker date="1495701941347" expanded="true" signature="2077:2149" ph="..." />
-                  <marker date="1495701941347" expanded="true" signature="4501:4527" ph="..." />
-                  <marker date="1495701941347" expanded="true" signature="5035:5068" ph="..." />
-                  <marker date="1495701941347" expanded="true" signature="5177:5213" ph="..." />
-                  <marker date="1495701941347" expanded="true" signature="8997:9061" ph="..." />
-                  <marker date="1495701941347" expanded="true" signature="9960:10110" ph="..." />
-                  <marker date="1495701941347" expanded="true" signature="10928:11100" ph="{...}" />
-                  <marker date="1495701941347" expanded="true" signature="11830:11845" ph="..." />
-                  <marker date="1495701941347" expanded="true" signature="13925:13948" ph="..." />
+                  <marker date="1495702009783" expanded="true" signature="2034:2041" ph="..." />
+                  <marker date="1495702009783" expanded="true" signature="2089:2161" ph="..." />
+                  <marker date="1495702009783" expanded="true" signature="4513:4539" ph="..." />
+                  <marker date="1495702009783" expanded="true" signature="5047:5080" ph="..." />
+                  <marker date="1495702009783" expanded="true" signature="5189:5225" ph="..." />
+                  <marker date="1495702009783" expanded="true" signature="9009:9073" ph="..." />
+                  <marker date="1495702009783" expanded="true" signature="9972:10122" ph="..." />
+                  <marker date="1495702009783" expanded="true" signature="10940:11112" ph="{...}" />
+                  <marker date="1495702009783" expanded="true" signature="11842:11857" ph="..." />
+                  <marker date="1495702009783" expanded="true" signature="13937:13960" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -356,14 +356,7 @@
       <workItem from="1495519587802" duration="3466000" />
       <workItem from="1495588997283" duration="1393000" />
       <workItem from="1495673684195" duration="2145000" />
-      <workItem from="1495700391341" duration="1555000" />
-    </task>
-    <task id="LOCAL-00010" summary="ngx_lua_waf 安装使用(ngx_lua_waf是一个基于lua-nginx-module(openresty)的web应用防火墙)">
-      <created>1495032248725</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1495032248725</updated>
+      <workItem from="1495700391341" duration="1615000" />
     </task>
     <task id="LOCAL-00011" summary="ngx_lua_waf 安装使用测试完毕">
       <created>1495036473980</created>
@@ -701,11 +694,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495701838695</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="update readme">
+      <created>1495701962159</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1495701962159</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95145000" />
+    <option name="totallyTimeSpent" value="95205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
@@ -759,12 +759,12 @@
     <MESSAGE value=":cactus: :cactus: :cactus: 历史遗留问题解决：模板页面的JS、CSS样式文件加载不合适，忘记了Nginx处理静态资源的配置，添加以下代码OK" />
     <MESSAGE value=":heavy_check_mark: 发布一个V0.01 版本 :pencil2: :pencil2: :pencil2: :pencil2:" />
     <MESSAGE value=":recycle: :recycle: :recycle: nginx proxy_cache 缓存配置" />
-    <MESSAGE value="update readme" />
     <MESSAGE value="标准os库 :negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:" />
     <MESSAGE value="API 的设计:negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:" />
     <MESSAGE value="如何使用API接口 :performing_arts: :performing_arts: :performing_arts:" />
     <MESSAGE value="如何使用API接口 :white_check_mark: :white_check_mark: :white_check_mark:" />
-    <option name="LAST_COMMIT_MESSAGE" value="如何使用API接口 :white_check_mark: :white_check_mark: :white_check_mark:" />
+    <MESSAGE value="update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1071,19 +1071,19 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="-36">
-            <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+          <first_editor relative-caret-position="324">
+            <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
             <folding>
-              <marker date="1495701941347" expanded="true" signature="2022:2029" ph="..." />
-              <marker date="1495701941347" expanded="true" signature="2077:2149" ph="..." />
-              <marker date="1495701941347" expanded="true" signature="4501:4527" ph="..." />
-              <marker date="1495701941347" expanded="true" signature="5035:5068" ph="..." />
-              <marker date="1495701941347" expanded="true" signature="5177:5213" ph="..." />
-              <marker date="1495701941347" expanded="true" signature="8997:9061" ph="..." />
-              <marker date="1495701941347" expanded="true" signature="9960:10110" ph="..." />
-              <marker date="1495701941347" expanded="true" signature="10928:11100" ph="{...}" />
-              <marker date="1495701941347" expanded="true" signature="11830:11845" ph="..." />
-              <marker date="1495701941347" expanded="true" signature="13925:13948" ph="..." />
+              <marker date="1495702009783" expanded="true" signature="2034:2041" ph="..." />
+              <marker date="1495702009783" expanded="true" signature="2089:2161" ph="..." />
+              <marker date="1495702009783" expanded="true" signature="4513:4539" ph="..." />
+              <marker date="1495702009783" expanded="true" signature="5047:5080" ph="..." />
+              <marker date="1495702009783" expanded="true" signature="5189:5225" ph="..." />
+              <marker date="1495702009783" expanded="true" signature="9009:9073" ph="..." />
+              <marker date="1495702009783" expanded="true" signature="9972:10122" ph="..." />
+              <marker date="1495702009783" expanded="true" signature="10940:11112" ph="{...}" />
+              <marker date="1495702009783" expanded="true" signature="11842:11857" ph="..." />
+              <marker date="1495702009783" expanded="true" signature="13937:13960" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
