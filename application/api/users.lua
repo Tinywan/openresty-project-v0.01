@@ -5,6 +5,8 @@
 -- Time: 21:26
 -- To change this template use File | Settings | File Templates.
 --
+local dkjson = require 'vendor.dkjson'
+local cjson = require "cjson"
 local var = ngx.var
 local method = var.request_method
 local get_args = ngx.req.get_uri_args()
@@ -22,9 +24,21 @@ end
 
 -- 新增
 function add()
-    local name = post_args.name
-    local age = post_args.age
-    ngx.say('新增 name = ' .. name .. ' age = ' .. age)
+    local json_str = '{"name": "Tinywan123","age": "2600","tel": 13669361192}'
+    --
+--    local str = cjson.decode(post_args)
+--    local text = cjson.encode(post_args)
+--    local value = cjson.decode(text) -- value = cjson.decode(text)
+--    ngx.say(value['name'], "<br/>")
+--    ngx.say(value.name, "<br/>")
+    --字符串到lua对象
+    str = '{"hobby":["film","music","read"],"is_male":false,"name":"zhangsan","id":1,"age":null}'
+    local obj, pos, err = dkjson.decode(str, 1, nil)
+
+    ngx.say(obj.age, "<br/>")
+    ngx.say(obj.age == nil, "<br/>")
+    ngx.say(obj.hobby[1], "<br/>")
+
 end
 
 -- 查询

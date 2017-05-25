@@ -3,40 +3,108 @@
 ##  Project structure
 ```javascript
 .
-├── application                      -- 业务代码
-│   ├── get_redis_iresty.lua
-│   ├── ip_location.lua
-│   ├── lua_websocket_server.lua
+├── application                     -- 业务代码
+│   ├── api                         -- API接口
+│   │   ├── classes.lua
+│   │   └── users.lua
+│   ├── controller                  -- 业务控制器
+│   │   ├── IndexController.lua
+│   │   └── RedisController.lua
+│   ├── demo
+│   │   ├── get_redis_iresty.lua
+│   │   └── websocket_server_test.lua
+│   ├── model
+│   │   └── Products.lua
 │   ├── mysql
-│   ├── mysql.lua
+│   │   └── mysql.lua
 │   ├── redis
+│   │   ├── redis_iresty_long.lua
+│   │   └── test_short.lua
 │   ├── swoole
-│   ├── test.lua
-│   ├── websocket_server_test.lua
+│   │   └── websocket-server.php
+│   ├── waf
+│   │   ├── init.lua
+│   │   ├── install.sh
+│   │   ├── wafconf
+│   │   └── waf.lua
 │   └── zabbix
-├── bin                             -- 脚本文件
+│       └── install-record01.conf
+├── bin                            -- 脚本文件
+│   ├── doc2unix.sh
 │   ├── start.sh
 │   └── stop.sh
-├── conf                            -- 配置文件
+├── cache
+│   └── proxy_cache
+├── conf                           -- 配置文件
 │   ├── domains
+│   │   ├── api.conf
+│   │   ├── nginx_demo.conf
+│   │   ├── nginx_index.conf
+│   │   ├── nginx_live.conf
+│   │   ├── nginx_product.conf
+│   │   └── waf.conf
+│   ├── fastcgi_params
 │   ├── nginx.conf
-│   └── nginx.conf.default
-├── logs                            -- 日志文件 
-│   ├── lua2_error.log
-│   └── lua_error2.log
-├── lualib                          -- 公共Lua库
+│   ├── nginx.conf.default
+│   └── nginx_lua_upstream.conf
+├── logs                          -- 日志文件 
+│   ├── api_access.log
+│   ├── api_error.log
+│   ├── hack
+│   │   └── 2017-05-17_sec.log
+│   ├── waf_access.log
+│   └── waf_error.log
+├── lualib                        -- 公共Lua库
 │   ├── cjson.so
 │   ├── ngx
+│   │   └── ssl.lua
 │   ├── rds
+│   │   └── parser.so
 │   ├── redis
+│   │   └── parser.so
 │   ├── resty
-│   └── vendor                      -- 第三方Lua库
-├── public                          -- 公共静态文件
+│   │   ├── aes.lua
+│   │   ├── core
+│   │   ├── core.lua
+│   │   ├── dns
+│   │   ├── redis.lua
+│   │   ├── upstream
+│   │   └── websocket
+│   └── vendor                    -- 第三方Lua库
+│       ├── config.lua
+│       ├── dkjson.lua
+│       ├── helper.lua
+│       └── ip_location.lua
+├── public                        -- 公共静态文件
 │   ├── data
+│   │   └── location_ip_db.dat
 │   ├── images
+│   │   ├── github
+│   │   └── yinzhang.png
+│   ├── upstream
+│   │   ├── html8082
+│   │   └── html8083
 │   └── websocket
-├── README.md                      
-└── template                        -- 模板
+│       └── public
+├── README.md
+└── template                       -- 模板
+    ├── index
+    │   └── index.html
+    ├── info
+    │   ├── src
+    │   └── wanshaobopdf.pdf
+    ├── product
+    │   ├── footer.html
+    │   ├── header.html
+    │   ├── index2.html
+    │   ├── index.html
+    │   └── product_list.html
+    ├── waf
+    │   ├── index.html
+    │   └── waf.php
+    └── websocket
+        ├── index.html
+        └── js
 ```
 ## nginx.conf, the Nginx web server configuration
 
@@ -298,7 +366,7 @@ http {
           -H "X-LC-Id: 558e20cbe4b060308e3eb36c" \
           -H "X-LC-Key: cbe4b06030558e208e3eb36c20cbe4b060308e3eb36c" \
           -H "Content-Type: application/json" \
-          -d "name=tinywan&age=26" \
+          -d '{"name": "Tinywan","age": "26","tel": 13669361192}' \ 
           http://127.0.0.1:8686/0.1/users
         ```
     +   :white_check_mark: 查询信息：
