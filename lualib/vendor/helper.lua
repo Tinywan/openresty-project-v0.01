@@ -37,7 +37,12 @@ function _M.add(a,b)
     return a + b
 end
 
--- 获取http get/post 请求参数
+--[[    获取http get/post 请求参数
+eg:
+    post: curl -d "name=tinywan&age=24" http://127.0.0.1:8686/0.1/live/http_args
+    get: curl -G -d "name=tinywan&age=24" http://127.0.0.1:8686/0.1/live/http_args
+-- --]]
+
 function _M.http_args()
     local request_method = ngx.var.request_method
     local args = ngx.req.get_uri_args()
@@ -54,40 +59,13 @@ function _M.http_args()
     return args
 end
 
---ngx.req.read_body()
---local post_args, err = ngx.req.get_post_args()
---if not post_args then
---    ngx.say("failed to get post args: ", err)
---    return
---end
---
----- 获取http get/post 请求参数
---function _M.getArgs()
---    local request_method = ngx.var.request_method
---    local args = ngx.req.get_uri_args()
---    -- 参数获取
---    if "POST" == request_method then
---        ngx.req.read_body()
---        local postArgs = ngx.req.get_post_args()
---        if postArgs then
---            for k, v in pairs(postArgs) do
---                args[k] = v
---            end
---        end
---    end
---    return args
---end
-
-
---[[
--- 字符串分割
--- #demo
+--[[    字符串分割
+eg:
     local array = helper.split('a,b,v,b',',')
     for key,value in ipairs(array)
     do
       ngx.say(key, value) -- 1a,2b,3v,4b
     end
-    -- array[1] = a
 -- --]]
 
 function _M.split(szFullString, szSeparator)
