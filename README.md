@@ -10,23 +10,8 @@
 │   ├── controller                  -- 业务控制器
 │   │   ├── IndexController.lua
 │   │   └── RedisController.lua
-│   ├── demo
-│   │   ├── get_redis_iresty.lua
-│   │   └── websocket_server_test.lua
 │   ├── model
 │   │   └── Products.lua
-│   ├── mysql
-│   │   └── mysql.lua
-│   ├── redis
-│   │   ├── redis_iresty_long.lua
-│   │   └── test_short.lua
-│   ├── swoole
-│   │   └── websocket-server.php
-│   ├── waf
-│   │   ├── init.lua
-│   │   ├── install.sh
-│   │   ├── wafconf
-│   │   └── waf.lua
 │   └── zabbix
 │       └── install-record01.conf
 ├── bin                            -- 脚本文件
@@ -38,34 +23,20 @@
 ├── conf                           -- 配置文件
 │   ├── domains
 │   │   ├── api.conf
-│   │   ├── nginx_demo.conf
-│   │   ├── nginx_index.conf
-│   │   ├── nginx_live.conf
-│   │   ├── nginx_product.conf
 │   │   └── waf.conf
 │   ├── fastcgi_params
 │   ├── nginx.conf
-│   ├── nginx.conf.default
 │   └── nginx_lua_upstream.conf
 ├── logs                          -- 日志文件 
 │   ├── api_access.log
-│   ├── api_error.log
 │   ├── hack
 │   │   └── 2017-05-17_sec.log
-│   ├── waf_access.log
 │   └── waf_error.log
 ├── lualib                        -- 公共Lua库
 │   ├── cjson.so
 │   ├── ngx
 │   │   └── ssl.lua
-│   ├── rds
-│   │   └── parser.so
-│   ├── redis
-│   │   └── parser.so
 │   ├── resty
-│   │   ├── aes.lua
-│   │   ├── core
-│   │   ├── core.lua
 │   │   ├── dns
 │   │   ├── redis.lua
 │   │   ├── upstream

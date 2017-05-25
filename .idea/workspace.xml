@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/controller/view.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/users.lua" afterPath="$PROJECT_DIR$/application/api/users.lua" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/get_redis_iresty.lua" afterPath="$PROJECT_DIR$/application/demo/get_redis_iresty.lua" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/ip_location.lua" afterPath="$PROJECT_DIR$/application/demo/ip_location.lua" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/lua_websocket_server.lua" afterPath="$PROJECT_DIR$/application/demo/lua_websocket_server.lua" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/mysql.lua" afterPath="$PROJECT_DIR$/application/demo/mysql.lua" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/test.lua" afterPath="$PROJECT_DIR$/application/demo/test.lua" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/websocket_server_test.lua" afterPath="$PROJECT_DIR$/application/demo/websocket_server_test.lua" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,19 +19,19 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="72">
-                <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <first_editor relative-caret-position="-36">
+                <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
                 <folding>
-                  <marker date="1495701828817" expanded="true" signature="2677:2684" ph="..." />
-                  <marker date="1495701828817" expanded="true" signature="2732:2804" ph="..." />
-                  <marker date="1495701828817" expanded="true" signature="5156:5182" ph="..." />
-                  <marker date="1495701828817" expanded="true" signature="5690:5723" ph="..." />
-                  <marker date="1495701828817" expanded="true" signature="5832:5868" ph="..." />
-                  <marker date="1495701828817" expanded="true" signature="9652:9716" ph="..." />
-                  <marker date="1495701828817" expanded="true" signature="10615:10765" ph="..." />
-                  <marker date="1495701828817" expanded="true" signature="11583:11755" ph="{...}" />
-                  <marker date="1495701828817" expanded="true" signature="12485:12500" ph="..." />
-                  <marker date="1495701828817" expanded="true" signature="14580:14603" ph="..." />
+                  <marker date="1495701941347" expanded="true" signature="2022:2029" ph="..." />
+                  <marker date="1495701941347" expanded="true" signature="2077:2149" ph="..." />
+                  <marker date="1495701941347" expanded="true" signature="4501:4527" ph="..." />
+                  <marker date="1495701941347" expanded="true" signature="5035:5068" ph="..." />
+                  <marker date="1495701941347" expanded="true" signature="5177:5213" ph="..." />
+                  <marker date="1495701941347" expanded="true" signature="8997:9061" ph="..." />
+                  <marker date="1495701941347" expanded="true" signature="9960:10110" ph="..." />
+                  <marker date="1495701941347" expanded="true" signature="10928:11100" ph="{...}" />
+                  <marker date="1495701941347" expanded="true" signature="11830:11845" ph="..." />
+                  <marker date="1495701941347" expanded="true" signature="13925:13948" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -364,14 +356,7 @@
       <workItem from="1495519587802" duration="3466000" />
       <workItem from="1495588997283" duration="1393000" />
       <workItem from="1495673684195" duration="2145000" />
-      <workItem from="1495700391341" duration="1435000" />
-    </task>
-    <task id="LOCAL-00009" summary="add underline">
-      <created>1494860347056</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1494860347056</updated>
+      <workItem from="1495700391341" duration="1555000" />
     </task>
     <task id="LOCAL-00010" summary="ngx_lua_waf 安装使用(ngx_lua_waf是一个基于lua-nginx-module(openresty)的web应用防火墙)">
       <created>1495032248725</created>
@@ -709,11 +694,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495550773821</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="如何使用API接口 :white_check_mark: :white_check_mark: :white_check_mark:">
+      <created>1495701838695</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1495701838695</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95025000" />
+    <option name="totallyTimeSpent" value="95145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
@@ -1079,19 +1071,19 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="72">
-            <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <first_editor relative-caret-position="-36">
+            <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
             <folding>
-              <marker date="1495701828817" expanded="true" signature="2677:2684" ph="..." />
-              <marker date="1495701828817" expanded="true" signature="2732:2804" ph="..." />
-              <marker date="1495701828817" expanded="true" signature="5156:5182" ph="..." />
-              <marker date="1495701828817" expanded="true" signature="5690:5723" ph="..." />
-              <marker date="1495701828817" expanded="true" signature="5832:5868" ph="..." />
-              <marker date="1495701828817" expanded="true" signature="9652:9716" ph="..." />
-              <marker date="1495701828817" expanded="true" signature="10615:10765" ph="..." />
-              <marker date="1495701828817" expanded="true" signature="11583:11755" ph="{...}" />
-              <marker date="1495701828817" expanded="true" signature="12485:12500" ph="..." />
-              <marker date="1495701828817" expanded="true" signature="14580:14603" ph="..." />
+              <marker date="1495701941347" expanded="true" signature="2022:2029" ph="..." />
+              <marker date="1495701941347" expanded="true" signature="2077:2149" ph="..." />
+              <marker date="1495701941347" expanded="true" signature="4501:4527" ph="..." />
+              <marker date="1495701941347" expanded="true" signature="5035:5068" ph="..." />
+              <marker date="1495701941347" expanded="true" signature="5177:5213" ph="..." />
+              <marker date="1495701941347" expanded="true" signature="8997:9061" ph="..." />
+              <marker date="1495701941347" expanded="true" signature="9960:10110" ph="..." />
+              <marker date="1495701941347" expanded="true" signature="10928:11100" ph="{...}" />
+              <marker date="1495701941347" expanded="true" signature="11830:11845" ph="..." />
+              <marker date="1495701941347" expanded="true" signature="13925:13948" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
