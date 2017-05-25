@@ -380,7 +380,6 @@ http {
     # Redis 没有缓存数据则后端Mysql查询数据
     location /sub {
         internal;
-        #proxy_pass http://backend/$1$is_args$args;
         proxy_pass http://127.0.0.1:8686/backend/mysql;
     }
 

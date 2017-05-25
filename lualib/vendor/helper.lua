@@ -20,6 +20,8 @@ local setmetatable = setmetatable
 local tonumber = tonumber
 local tostring = tostring
 local rawget = rawget
+local request_method = ngx.var.request_method
+local method = ngx.var.request_method
 
 local ok, new_tab = pcall(require, "table.new")
 if not ok or type(new_tab) ~= "function" then
@@ -34,6 +36,48 @@ _M._VERSION = '0.01'
 function _M.add(a,b)
     return a + b
 end
+
+-- 获取http get/post 请求参数
+function _M.http_args()
+    local request_method = ngx.var.request_method
+    local args = ngx.req.get_uri_args()
+    -- 参数获取
+    if "POST" == request_method then
+        ngx.req.read_body()
+        local post_args = ngx.req.get_post_args()
+        if post_args then
+            for k, v in pairs(post_args) do
+                args[k] = v
+            end
+        end
+    end
+    return args
+end
+
+--ngx.req.read_body()
+--local post_args, err = ngx.req.get_post_args()
+--if not post_args then
+--    ngx.say("failed to get post args: ", err)
+--    return
+--end
+--
+---- 获取http get/post 请求参数
+--function _M.getArgs()
+--    local request_method = ngx.var.request_method
+--    local args = ngx.req.get_uri_args()
+--    -- 参数获取
+--    if "POST" == request_method then
+--        ngx.req.read_body()
+--        local postArgs = ngx.req.get_post_args()
+--        if postArgs then
+--            for k, v in pairs(postArgs) do
+--                args[k] = v
+--            end
+--        end
+--    end
+--    return args
+--end
+
 
 --[[
 -- 字符串分割
