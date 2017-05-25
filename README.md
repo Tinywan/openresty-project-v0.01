@@ -98,7 +98,7 @@ http {
     include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/domains/*";
 }
 ```
-## helper 类方法归类
+## helper 助手
 - [x] 获取http get/post 请求参数：`helper.http_args()`
 - [x] 字符串分割：`helper.split()`
 - [x] 删除空格：`helper.ltrim() / rtrim() / trim()`
@@ -401,6 +401,7 @@ http {
          live_redis_mysql.lua:122: redis not cache content, Content comes from mysql , id : 1122334, 
          live_redis_mysql.lua:125: Content comes from Redis, id = 1122334, 
         ```
+    +  [live_redis_mysql.lua](https://github.com/Tinywan/lua_project_v0.01/blob/master/application/api/live/live_redis_mysql.lua)     
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据

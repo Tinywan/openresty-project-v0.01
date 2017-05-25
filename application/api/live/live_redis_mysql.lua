@@ -1,10 +1,12 @@
---
--- Created by IntelliJ IDEA.
--- User: tinywan
--- Date: 2017/5/23
--- Time: 21:32
--- To change this template use File | Settings | File Templates.
---
+--[[-----------------------------------------------------------------------
+* |  Copyright (C) Shaobo Wan (Tinywan)
+* |  Github: https://github.com/Tinywan
+* |  Blog: http://www.cnblogs.com/Tinywan
+* |------------------------------------------------------------------------
+* |  Date: 2017/5/25 22:29
+* |  Function: helper function lib
+* |------------------------------------------------------------------------
+--]]
 local redis = require("resty.redis")
 local cjson = require("cjson")
 local cjson_encode = cjson.encode
