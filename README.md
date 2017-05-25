@@ -368,7 +368,36 @@ http {
            --data-urlencode 'id=10' \
            http://127.0.0.1:8686/0.1/users 
         ```
-    
+####    2017年05月25日 星期四
++   活动直播接口 API 数据访问Redis，如果没有则回源到后端Mysql数据库
++   nginx.conf配置
+    ```lua
+    # 直播接口数据
+    location ~ ^/0.1/live/([-_a-zA-Z0-9/]+) {
+        content_by_lua_file /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/application/api/$1.lua;
+    }
+
+    # Redis 没有缓存数据则后端Mysql查询数据
+    location /sub {
+        internal;
+        #proxy_pass http://backend/$1$is_args$args;
+        proxy_pass http://127.0.0.1:8686/backend/mysql;
+    }
+
+    # Backend Mysql Data
+    location /backend/mysql {
+         content_by_lua_block {
+             ngx.say("backend post: Mysql ")
+         }
+    }
+    ```
++   请求Example：
+    +   访问如：`http://127.0.0.1:8686/0.1/live/live_redis_mysql?id=1122334`即可得到结果。而且注意观察日志，第一次访问时不命中Redis，回源到Mysql;第二次请求时就会命中Redis了。   
+    +   第一次访问时将看到../logs/api_error.log输出类似如下的内容，而第二次请求相同的url不再有如下内容 
+        ```javascript
+         live_redis_mysql.lua:122: redis not cache content, Content comes from mysql , id : 1122334, 
+         live_redis_mysql.lua:125: Content comes from Redis, id = 1122334, 
+        ```
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据
