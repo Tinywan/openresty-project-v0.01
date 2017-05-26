@@ -419,6 +419,12 @@ http {
          live_redis_mysql.lua:125: Content comes from Redis, id = 1122334, 
         ```
     +  [live_redis_mysql.lua](https://github.com/Tinywan/lua_project_v0.01/blob/master/application/api/live/live_redis_mysql.lua)     
+####    2017年05月26日 星期五
++   nginx+lua+redis实现反向代理
++   端口：`8687`
++   [UpstreamBackendController.lua](https://github.com/Tinywan/lua_project_v0.01/blob/master/application/controller/UpstreamBackendController.lua)
++   参考文档：[利用nginx+lua+redis实现反向代理方法教程](http://www.jb51.net/article/113224.htm)
+    
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据
