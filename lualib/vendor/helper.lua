@@ -22,6 +22,7 @@ local tostring = tostring
 local rawget = rawget
 local request_method = ngx.var.request_method
 local method = ngx.var.request_method
+local cjson = require("cjson")
 
 local ok, new_tab = pcall(require, "table.new")
 if not ok or type(new_tab) ~= "function" then
@@ -35,6 +36,44 @@ _M._VERSION = '0.01'
 -- add
 function _M.add(a,b)
     return a + b
+end
+
+--[[    获取http get/post 请求参数
+eg:
+    local str1  = '{"hobby":{"name":"tinywan","age":24,"reader":"AMAI"},"is_male":false}'
+    local obj_obj = cjson_decode(str1)
+    if obj_obj == nil
+    then
+        ngx.say('cjson error')
+    else
+        ngx.say(obj_obj.is_male, "<br/>")
+        ngx.say(obj_obj.hobby.name, "<br/>")
+        ngx.say(obj_obj.hobby.age, "<br/>")
+        ngx.say(obj_obj.hobby.reader, "<br/>")
+    end
+--]]
+local function _json_encode(str)
+    return cjson.encode(str)
+end
+
+local function _json_decode(str)
+    return cjson.decode(str)
+end
+
+function _M.cjson_encode( str )
+    local ok, t = pcall(_json_encode, str)
+    if not ok then
+        return nil
+    end
+    return t
+end
+
+function _M.cjson_decode( str )
+    local ok, t = pcall(_json_decode, str)
+    if not ok then
+        return nil
+    end
+    return t
 end
 
 --[[    获取http get/post 请求参数

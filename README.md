@@ -102,6 +102,21 @@ http {
 - [x] 获取http get/post 请求参数：`helper.http_args()`
 - [x] 字符串分割：`helper.split()`
 - [x] 删除空格：`helper.ltrim() / rtrim() / trim()`
+- [x] json 解析的异常：(改方法可以避免cjson解析异常直接导致服务器500错误)
+```lua 
+    local helper = require 'vendor.helper'
+    local str1  = '{"hobby":{"name":"tinywan","age":24,"reader":"AMAI"},"is_male":false}'
+    local str2  = [[ {"hobby":{"name":"tinywan","age":24,"reader":"AMAI"},"is_male:false} ]]
+    local obj_obj = helper.cjson_decode(str2)
+    if obj_obj == nil
+    then
+        ngx.say('cjson_decode error')
+    else
+        ngx.say("cjson_decode success")
+        ngx.say(obj_obj.hobby.name, "<br/>")
+    end
+```
+
 ##  :date:
 ####    2017年05月07日 星期日 
 +   创建项目、项目架构搭建、目录结构调整
