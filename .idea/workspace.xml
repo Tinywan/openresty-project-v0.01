@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/demo/cjson.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_demo.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_demo.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lualib/vendor/helper.lua" afterPath="$PROJECT_DIR$/lualib/vendor/helper.lua" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cjson.lua" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cjson.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/demo/cjson.lua">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="576">
-              <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+              <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -32,33 +29,33 @@
         <entry file="file://$PROJECT_DIR$/lualib/vendor/helper.lua">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-189">
-              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="414">
-                <caret line="104" column="6" lean-forward="false" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="47" />
+              <first_editor relative-caret-position="432">
+                <caret line="105" column="8" lean-forward="true" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="36" />
                 <folding>
-                  <marker date="1495762413888" expanded="true" signature="2034:2041" ph="..." />
-                  <marker date="1495762413888" expanded="true" signature="2089:2161" ph="..." />
-                  <marker date="1495762413888" expanded="true" signature="5154:5180" ph="..." />
-                  <marker date="1495762413888" expanded="true" signature="5688:5721" ph="..." />
-                  <marker date="1495762413888" expanded="true" signature="5830:5866" ph="..." />
-                  <marker date="1495762413888" expanded="true" signature="9650:9714" ph="..." />
-                  <marker date="1495762413888" expanded="true" signature="10613:10763" ph="..." />
-                  <marker date="1495762413888" expanded="true" signature="11581:11753" ph="{...}" />
-                  <marker date="1495762413888" expanded="true" signature="12483:12498" ph="..." />
-                  <marker date="1495762413888" expanded="true" signature="14130:14198" ph="..." />
-                  <marker date="1495762413888" expanded="true" signature="14284:14320" ph="..." />
-                  <marker date="1495762413888" expanded="true" signature="14420:14509" ph="..." />
-                  <marker date="1495762413888" expanded="true" signature="14452:14507" ph="..." />
-                  <marker date="1495762413888" expanded="true" signature="15684:15707" ph="..." />
+                  <marker date="1495763395211" expanded="true" signature="2034:2041" ph="..." />
+                  <marker date="1495763395211" expanded="true" signature="2089:2161" ph="..." />
+                  <marker date="1495763395211" expanded="true" signature="5253:5279" ph="..." />
+                  <marker date="1495763395211" expanded="true" signature="5787:5820" ph="..." />
+                  <marker date="1495763395211" expanded="true" signature="5929:5965" ph="..." />
+                  <marker date="1495763395211" expanded="true" signature="9749:9813" ph="..." />
+                  <marker date="1495763395211" expanded="true" signature="10712:10862" ph="..." />
+                  <marker date="1495763395211" expanded="true" signature="11680:11852" ph="{...}" />
+                  <marker date="1495763395211" expanded="true" signature="12582:12597" ph="..." />
+                  <marker date="1495763395211" expanded="true" signature="14229:14297" ph="..." />
+                  <marker date="1495763395211" expanded="true" signature="14383:14419" ph="..." />
+                  <marker date="1495763395211" expanded="true" signature="14519:14608" ph="..." />
+                  <marker date="1495763395211" expanded="true" signature="14551:14606" ph="..." />
+                  <marker date="1495763395211" expanded="true" signature="15783:15806" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -394,7 +391,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/Tinywan/gtilab/Stream-System-Doc" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Linux-Share/Lua/lua_project_v0.01/conf/domains/nginx_product.conf" />
@@ -671,13 +668,6 @@
       <workItem from="1495673684195" duration="2145000" />
       <workItem from="1495700391341" duration="1615000" />
       <workItem from="1495720556063" duration="6150000" />
-    </task>
-    <task id="LOCAL-00016" summary="update config.lua file">
-      <created>1495037009526</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1495037009526</updated>
     </task>
     <task id="LOCAL-00017" summary="update logs">
       <created>1495037227872</created>
@@ -1015,11 +1005,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495727105380</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="json 解析的异常：(改方法可以避免cjson解析异常直接导致服务器500错误)">
+      <created>1495762433666</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1495762433667</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110070000" />
+    <option name="totallyTimeSpent" value="111043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
@@ -1064,7 +1061,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":four_leaf_clover: :four_leaf_clover: :four_leaf_clover: add lua-resty-template" />
     <MESSAGE value=":leaves: :leaves: :leaves: lua-resty-template use" />
     <MESSAGE value=":bouquet: :bouquet: :bouquet: echo $PID &quot;doc2unix&quot;" />
     <MESSAGE value=":hibiscus: :hibiscus: :hibiscus: websocketd" />
@@ -1089,7 +1085,8 @@
     <MESSAGE value="活动直播接口 API 数据访问Redis，如果没有则回源到后端Mysql数据库" />
     <MESSAGE value="获取http get/post 请求参数" />
     <MESSAGE value="helper 类方法归类 删除空格" />
-    <option name="LAST_COMMIT_MESSAGE" value="helper 类方法归类 删除空格" />
+    <MESSAGE value="json 解析的异常：(改方法可以避免cjson解析异常直接导致服务器500错误)" />
+    <option name="LAST_COMMIT_MESSAGE" value="json 解析的异常：(改方法可以避免cjson解析异常直接导致服务器500错误)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1394,7 +1391,15 @@
     <entry file="file://$PROJECT_DIR$/lualib/vendor/helper.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-189">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/demo/cjson.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1402,34 +1407,26 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="414">
-            <caret line="104" column="6" lean-forward="false" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="47" />
+          <first_editor relative-caret-position="432">
+            <caret line="105" column="8" lean-forward="true" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="36" />
             <folding>
-              <marker date="1495762413888" expanded="true" signature="2034:2041" ph="..." />
-              <marker date="1495762413888" expanded="true" signature="2089:2161" ph="..." />
-              <marker date="1495762413888" expanded="true" signature="5154:5180" ph="..." />
-              <marker date="1495762413888" expanded="true" signature="5688:5721" ph="..." />
-              <marker date="1495762413888" expanded="true" signature="5830:5866" ph="..." />
-              <marker date="1495762413888" expanded="true" signature="9650:9714" ph="..." />
-              <marker date="1495762413888" expanded="true" signature="10613:10763" ph="..." />
-              <marker date="1495762413888" expanded="true" signature="11581:11753" ph="{...}" />
-              <marker date="1495762413888" expanded="true" signature="12483:12498" ph="..." />
-              <marker date="1495762413888" expanded="true" signature="14130:14198" ph="..." />
-              <marker date="1495762413888" expanded="true" signature="14284:14320" ph="..." />
-              <marker date="1495762413888" expanded="true" signature="14420:14509" ph="..." />
-              <marker date="1495762413888" expanded="true" signature="14452:14507" ph="..." />
-              <marker date="1495762413888" expanded="true" signature="15684:15707" ph="..." />
+              <marker date="1495763395211" expanded="true" signature="2034:2041" ph="..." />
+              <marker date="1495763395211" expanded="true" signature="2089:2161" ph="..." />
+              <marker date="1495763395211" expanded="true" signature="5253:5279" ph="..." />
+              <marker date="1495763395211" expanded="true" signature="5787:5820" ph="..." />
+              <marker date="1495763395211" expanded="true" signature="5929:5965" ph="..." />
+              <marker date="1495763395211" expanded="true" signature="9749:9813" ph="..." />
+              <marker date="1495763395211" expanded="true" signature="10712:10862" ph="..." />
+              <marker date="1495763395211" expanded="true" signature="11680:11852" ph="{...}" />
+              <marker date="1495763395211" expanded="true" signature="12582:12597" ph="..." />
+              <marker date="1495763395211" expanded="true" signature="14229:14297" ph="..." />
+              <marker date="1495763395211" expanded="true" signature="14383:14419" ph="..." />
+              <marker date="1495763395211" expanded="true" signature="14519:14608" ph="..." />
+              <marker date="1495763395211" expanded="true" signature="14551:14606" ph="..." />
+              <marker date="1495763395211" expanded="true" signature="15783:15806" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/demo/cjson.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
