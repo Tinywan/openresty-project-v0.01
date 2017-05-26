@@ -107,8 +107,8 @@ http {
     +   如何调用
     ```lua 
         local helper = require 'vendor.helper'
-        local str1  = '{"hobby":{"name":"tinywan","age":24,"reader":"AMAI"},"is_male":false}'    -- 写法1
-        local str2  = [[ {"hobby":{"name":"tinywan","age":24,"reader":"AMAI"},"is_male:false} ]] -- 写法2   
+        local str1  = '{"hobby":{"name":"tinywan","age":24},"is_male":false}'    -- 写法1
+        local str2  = [[ {"hobby":{"name":"tinywan","age":24},"is_male:false} ]] -- 写法2   
         local obj_obj = helper.cjson_decode(str2)
         if obj_obj == nil
         then
