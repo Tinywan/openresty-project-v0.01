@@ -424,7 +424,17 @@ http {
 +   端口：`8687`
 +   [UpstreamBackendController.lua](https://github.com/Tinywan/lua_project_v0.01/blob/master/application/controller/UpstreamBackendController.lua)
 +   参考文档：[利用nginx+lua+redis实现反向代理方法教程](http://www.jb51.net/article/113224.htm)
-    
+####    2017年05月31日 星期三
++   虚拟主机的项目根目录自定义，方便灵活修改
++   配置案例：
+    ```lua
+    server {
+        listen       8080;
+        set $project_path /mnt/hgfs/Linux-Share/Lua/;  # 定义项目根目录，在此目录为虚拟机目录，你可以自定义为 /home/www/
+        location /cjson_decode_pcall {
+            content_by_lua_file "${project_path}lua_project_v0.01/application/demo/cjson.lua";
+        }
+    ```
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据

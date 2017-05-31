@@ -7,7 +7,7 @@
 --
 
 local str1  = '{"hobby":{"name":"tinywan","age":24,"reader":"AMAI"},"is_male":false}'
-local str2  = [[ {"hobby":{"name":"tinywan","age":24,"reader":"AMAI"},"is_male:false} ]]
+--local str2  = [[ {"hobby":{"name":"tinywan","age":24,"reader":"AMAI"},"is_male:false} ]]
 
 --local json = require("cjson")
 local helper = require 'vendor.helper'
@@ -25,7 +25,7 @@ local helper = require 'vendor.helper'
 --    return t
 --end
 
-local obj_obj = helper.cjson_decode(str2)
+local obj_obj = helper.cjson_decode(str1)
 if obj_obj == nil
     then
     ngx.say('cjson error')
