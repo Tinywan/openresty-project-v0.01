@@ -4,8 +4,6 @@
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/demo/cjson.lua" afterPath="$PROJECT_DIR$/application/demo/cjson.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_demo.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_demo.conf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/conf/domains/nginx_demo.conf">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="12" column="76" lean-forward="false" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
+              <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -31,25 +29,25 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="280">
-                <caret line="427" column="4" lean-forward="true" selection-start-line="427" selection-start-column="4" selection-end-line="427" selection-end-column="24" />
+              <first_editor relative-caret-position="370">
+                <caret line="432" column="50" lean-forward="true" selection-start-line="432" selection-start-column="10" selection-end-line="432" selection-end-column="50" />
                 <folding>
-                  <marker date="1496207494342" expanded="true" signature="2034:2041" ph="..." />
-                  <marker date="1496207494342" expanded="true" signature="2089:2161" ph="..." />
-                  <marker date="1496207494342" expanded="true" signature="5241:5267" ph="..." />
-                  <marker date="1496207494342" expanded="true" signature="5775:5808" ph="..." />
-                  <marker date="1496207494342" expanded="true" signature="5917:5953" ph="..." />
-                  <marker date="1496207494342" expanded="true" signature="9737:9801" ph="..." />
-                  <marker date="1496207494342" expanded="true" signature="10700:10850" ph="..." />
-                  <marker date="1496207494342" expanded="true" signature="11668:11840" ph="{...}" />
-                  <marker date="1496207494342" expanded="true" signature="12570:12585" ph="..." />
-                  <marker date="1496207494342" expanded="true" signature="14217:14285" ph="..." />
-                  <marker date="1496207494342" expanded="true" signature="14371:14407" ph="..." />
-                  <marker date="1496207494342" expanded="true" signature="14507:14596" ph="..." />
-                  <marker date="1496207494342" expanded="true" signature="14539:14594" ph="..." />
-                  <marker date="1496207494342" expanded="true" signature="15546:15560" ph="..." />
-                  <marker date="1496207494342" expanded="true" signature="15707:15811" ph="..." />
-                  <marker date="1496207494342" expanded="true" signature="16418:16441" ph="..." />
+                  <marker date="1496207587613" expanded="true" signature="2034:2041" ph="..." />
+                  <marker date="1496207587613" expanded="true" signature="2089:2161" ph="..." />
+                  <marker date="1496207587613" expanded="true" signature="5241:5267" ph="..." />
+                  <marker date="1496207587613" expanded="true" signature="5775:5808" ph="..." />
+                  <marker date="1496207587613" expanded="true" signature="5917:5953" ph="..." />
+                  <marker date="1496207587613" expanded="true" signature="9737:9801" ph="..." />
+                  <marker date="1496207587613" expanded="true" signature="10700:10850" ph="..." />
+                  <marker date="1496207587613" expanded="true" signature="11668:11840" ph="{...}" />
+                  <marker date="1496207587613" expanded="true" signature="12570:12585" ph="..." />
+                  <marker date="1496207587613" expanded="true" signature="14217:14285" ph="..." />
+                  <marker date="1496207587613" expanded="true" signature="14371:14407" ph="..." />
+                  <marker date="1496207587613" expanded="true" signature="14507:14596" ph="..." />
+                  <marker date="1496207587613" expanded="true" signature="14539:14594" ph="..." />
+                  <marker date="1496207587613" expanded="true" signature="15546:15560" ph="..." />
+                  <marker date="1496207587613" expanded="true" signature="15719:15823" ph="..." />
+                  <marker date="1496207587613" expanded="true" signature="16430:16453" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -1181,13 +1179,6 @@
       <workItem from="1495720556063" duration="6150000" />
       <workItem from="1495763522897" duration="13000" />
     </task>
-    <task id="LOCAL-00019" summary="add waf directory and fastcgi_params file">
-      <created>1495038286179</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1495038286179</updated>
-    </task>
     <task id="LOCAL-00020" summary="add waf directory and fastcgi_params file">
       <created>1495038341222</created>
       <option name="number" value="00020" />
@@ -1524,11 +1515,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495763479327</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="虚拟主机的项目根目录自定义，方便灵活修改">
+      <created>1496207517294</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1496207517302</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115148000" />
+    <option name="totallyTimeSpent" value="115236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
@@ -1573,7 +1571,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":hibiscus: :hibiscus: :hibiscus: websocketd" />
     <MESSAGE value="`resty.template`渲染模板,通过`ngx API`输出内容到指定的`html`页面 :blossom:  :blossom:  :blossom:" />
     <MESSAGE value="`resty.template`渲染模板,输出内容到`html`页面 :sunflower: :sunflower: :sunflower:" />
     <MESSAGE value=":sunflower: :sunflower: :sunflower:" />
@@ -1598,7 +1595,8 @@
     <MESSAGE value="json 解析的异常：(改方法可以避免cjson解析异常直接导致服务器500错误)" />
     <MESSAGE value="该方法可以避免cjson解析异常直接导致服务器500错误" />
     <MESSAGE value="json 解析的异常：`helper.cjson_decode(str2)`该方法可以避免cjson解析异常直接导致服务器500错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="json 解析的异常：`helper.cjson_decode(str2)`该方法可以避免cjson解析异常直接导致服务器500错误" />
+    <MESSAGE value="虚拟主机的项目根目录自定义，方便灵活修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="虚拟主机的项目根目录自定义，方便灵活修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1922,7 +1920,7 @@
     <entry file="file://$PROJECT_DIR$/conf/domains/nginx_demo.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="12" column="76" lean-forward="false" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
+          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -1930,25 +1928,25 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="280">
-            <caret line="427" column="4" lean-forward="true" selection-start-line="427" selection-start-column="4" selection-end-line="427" selection-end-column="24" />
+          <first_editor relative-caret-position="370">
+            <caret line="432" column="50" lean-forward="true" selection-start-line="432" selection-start-column="10" selection-end-line="432" selection-end-column="50" />
             <folding>
-              <marker date="1496207494342" expanded="true" signature="2034:2041" ph="..." />
-              <marker date="1496207494342" expanded="true" signature="2089:2161" ph="..." />
-              <marker date="1496207494342" expanded="true" signature="5241:5267" ph="..." />
-              <marker date="1496207494342" expanded="true" signature="5775:5808" ph="..." />
-              <marker date="1496207494342" expanded="true" signature="5917:5953" ph="..." />
-              <marker date="1496207494342" expanded="true" signature="9737:9801" ph="..." />
-              <marker date="1496207494342" expanded="true" signature="10700:10850" ph="..." />
-              <marker date="1496207494342" expanded="true" signature="11668:11840" ph="{...}" />
-              <marker date="1496207494342" expanded="true" signature="12570:12585" ph="..." />
-              <marker date="1496207494342" expanded="true" signature="14217:14285" ph="..." />
-              <marker date="1496207494342" expanded="true" signature="14371:14407" ph="..." />
-              <marker date="1496207494342" expanded="true" signature="14507:14596" ph="..." />
-              <marker date="1496207494342" expanded="true" signature="14539:14594" ph="..." />
-              <marker date="1496207494342" expanded="true" signature="15546:15560" ph="..." />
-              <marker date="1496207494342" expanded="true" signature="15707:15811" ph="..." />
-              <marker date="1496207494342" expanded="true" signature="16418:16441" ph="..." />
+              <marker date="1496207587613" expanded="true" signature="2034:2041" ph="..." />
+              <marker date="1496207587613" expanded="true" signature="2089:2161" ph="..." />
+              <marker date="1496207587613" expanded="true" signature="5241:5267" ph="..." />
+              <marker date="1496207587613" expanded="true" signature="5775:5808" ph="..." />
+              <marker date="1496207587613" expanded="true" signature="5917:5953" ph="..." />
+              <marker date="1496207587613" expanded="true" signature="9737:9801" ph="..." />
+              <marker date="1496207587613" expanded="true" signature="10700:10850" ph="..." />
+              <marker date="1496207587613" expanded="true" signature="11668:11840" ph="{...}" />
+              <marker date="1496207587613" expanded="true" signature="12570:12585" ph="..." />
+              <marker date="1496207587613" expanded="true" signature="14217:14285" ph="..." />
+              <marker date="1496207587613" expanded="true" signature="14371:14407" ph="..." />
+              <marker date="1496207587613" expanded="true" signature="14507:14596" ph="..." />
+              <marker date="1496207587613" expanded="true" signature="14539:14594" ph="..." />
+              <marker date="1496207587613" expanded="true" signature="15546:15560" ph="..." />
+              <marker date="1496207587613" expanded="true" signature="15719:15823" ph="..." />
+              <marker date="1496207587613" expanded="true" signature="16430:16453" ph="..." />
             </folding>
           </first_editor>
           <second_editor />

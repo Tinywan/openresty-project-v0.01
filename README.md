@@ -430,7 +430,8 @@ http {
     ```lua
     server {
         listen       8080;
-        set $project_path /mnt/hgfs/Linux-Share/Lua/;  # 定义项目根目录，在此目录为虚拟机目录，你可以自定义为 /home/www/
+        # 定义项目根目录，在此本项目目录为虚拟机目录，你可以自定义为 /home/www/
+        set $project_path /mnt/hgfs/Linux-Share/Lua/;  
         location /cjson_decode_pcall {
             content_by_lua_file "${project_path}lua_project_v0.01/application/demo/cjson.lua";
         }
