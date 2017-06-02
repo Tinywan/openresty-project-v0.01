@@ -436,6 +436,14 @@ http {
             content_by_lua_file "${project_path}lua_project_v0.01/application/demo/cjson.lua";
         }
     ```
+####    2017年06月2日 星期五
++   API接口先查询Redis缓存数据，如果没有则到Mysql数据库查询获取,同时缓存数据到Redis中，把数据在模板页面显示出来
++   访问地址返回数据：
+   ```lua
+   tinywan@tinywan:~$ curl http://127.0.0.1:8686/0.1/live/live_redis_to_mysql?id=3
+   {"1":{"age":"24","name":"tinywan","address":"China","id":"3"},"Data_Sources":"Redis Cache Content"}
+   ```
++  [live_redis_to_mysql.lua](https://github.com/Tinywan/lua_project_v0.01/blob/master/application/api/live/live_redis_to_mysql.lua)     
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据
