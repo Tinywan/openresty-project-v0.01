@@ -118,7 +118,29 @@ http {
             ngx.say(obj_obj.hobby.name, "<br/>")
         end
     ```
-
+####    Mysql 数据库操作
++   :white_check_mark: 添加
+    ```lua
+     data = { name = "Tinywan", address = "HeilongJiang", age = "26" }
+     local result = add(data.name,data.address,data.age)
+     ngx.print(cjson.encode(result))
+    ```     
++   :white_check_mark: 查询  
+    ```lua
+    local result = select(3)
+    ngx.print(cjson.encode(result))
+    ```
++   :white_check_mark: 修改
+    ```lua
+    local result = update(3,"TinTinAIAI")
+    ngx.print(cjson.encode(result))
+    ```
++   :white_check_mark: 删除
+    ```lua
+    local result = delete(3)
+    ngx.print(cjson.encode(result))
+    ```
++  [mysql_fun.lua](https://github.com/Tinywan/lua_project_v0.01/blob/master/application/mysql/mysql_fun.lua)  
 ##  :date:
 ####    2017年05月07日 星期日 
 +   创建项目、项目架构搭建、目录结构调整

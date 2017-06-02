@@ -34,36 +34,36 @@ end
 
 ngx.say("connected to mysql.")
 
---local res, err, errcode, sqlstate =
---db:query("drop table if exists tb_ngx_test")
---if not res then
---    ngx.say("bad result: ", err, ": ", errcode, ": ", sqlstate, ".")
---    return
---end
---
---res, err, errcode, sqlstate =
---db:query("create table tb_ngx_test "
---        .. "(id serial primary key, "
---        .. "name varchar(15),"
---        .. "address varchar(115),"
---        .. "age varchar(15))")
---if not res then
---    ngx.say("bad result: ", err, ": ", errcode, ": ", sqlstate, ".")
---    return
---end
---
---ngx.say("table tb_ngx_test created.")
---
---res, err, errcode, sqlstate =
---db:query("insert into tb_ngx_test (name,address,age) "
---        .. "values (\'tinywan\',\'China\',24)")
---if not res then
---    ngx.say("bad result: ", err, ": ", errcode, ": ", sqlstate, ".")
---    return
---end
---
---ngx.say(res.affected_rows, " rows inserted into table cats ",
---    "(last insert id: ", res.insert_id, ")")
+local res, err, errcode, sqlstate =
+db:query("drop table if exists tb_ngx_test")
+if not res then
+    ngx.say("bad result: ", err, ": ", errcode, ": ", sqlstate, ".")
+    return
+end
+
+res, err, errcode, sqlstate =
+db:query("create table tb_ngx_test "
+        .. "(id serial primary key, "
+        .. "name varchar(15),"
+        .. "address varchar(115),"
+        .. "age varchar(15))")
+if not res then
+    ngx.say("bad result: ", err, ": ", errcode, ": ", sqlstate, ".")
+    return
+end
+
+ngx.say("table tb_ngx_test created.")
+
+res, err, errcode, sqlstate =
+db:query("insert into tb_ngx_test (name,address,age) "
+        .. "values (\'tinywan\',\'China\',24)")
+if not res then
+    ngx.say("bad result: ", err, ": ", errcode, ": ", sqlstate, ".")
+    return
+end
+
+ngx.say(res.affected_rows, " rows inserted into table cats ",
+    "(last insert id: ", res.insert_id, ")")
 
 -- run a select query, expected about 10 rows in
 -- the result set:
