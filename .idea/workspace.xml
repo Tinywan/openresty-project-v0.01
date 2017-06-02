@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mysql/mysql_fun.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/mysql/mysql.lua" afterPath="$PROJECT_DIR$/application/mysql/mysql.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_demo.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_demo.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_product.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_product.conf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,25 +19,25 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="314">
-                <caret line="120" column="8" lean-forward="false" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="19" />
+              <first_editor relative-caret-position="814">
+                <caret line="100" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="515" selection-end-column="114" />
                 <folding>
-                  <marker date="1496414357111" expanded="true" signature="2034:2041" ph="..." />
-                  <marker date="1496414357111" expanded="true" signature="2089:2161" ph="..." />
-                  <marker date="1496414357111" expanded="true" signature="5931:5957" ph="..." />
-                  <marker date="1496414357111" expanded="true" signature="6465:6498" ph="..." />
-                  <marker date="1496414357111" expanded="true" signature="6607:6643" ph="..." />
-                  <marker date="1496414357111" expanded="true" signature="10427:10491" ph="..." />
-                  <marker date="1496414357111" expanded="true" signature="11390:11540" ph="..." />
-                  <marker date="1496414357111" expanded="true" signature="12358:12530" ph="{...}" />
-                  <marker date="1496414357111" expanded="true" signature="13260:13275" ph="..." />
-                  <marker date="1496414357111" expanded="true" signature="14907:14975" ph="..." />
-                  <marker date="1496414357111" expanded="true" signature="15061:15097" ph="..." />
-                  <marker date="1496414357111" expanded="true" signature="15197:15286" ph="..." />
-                  <marker date="1496414357111" expanded="true" signature="15229:15284" ph="..." />
-                  <marker date="1496414357111" expanded="true" signature="16236:16250" ph="..." />
-                  <marker date="1496414357111" expanded="true" signature="16409:16513" ph="..." />
-                  <marker date="1496414357111" expanded="true" signature="17565:17588" ph="..." />
+                  <marker date="1496414410364" expanded="true" signature="2034:2041" ph="..." />
+                  <marker date="1496414410364" expanded="true" signature="2089:2161" ph="..." />
+                  <marker date="1496414410364" expanded="true" signature="5928:5954" ph="..." />
+                  <marker date="1496414410364" expanded="true" signature="6462:6495" ph="..." />
+                  <marker date="1496414410364" expanded="true" signature="6604:6640" ph="..." />
+                  <marker date="1496414410364" expanded="true" signature="10424:10488" ph="..." />
+                  <marker date="1496414410364" expanded="true" signature="11387:11537" ph="..." />
+                  <marker date="1496414410364" expanded="true" signature="12355:12527" ph="{...}" />
+                  <marker date="1496414410364" expanded="true" signature="13257:13272" ph="..." />
+                  <marker date="1496414410364" expanded="true" signature="14904:14972" ph="..." />
+                  <marker date="1496414410364" expanded="true" signature="15058:15094" ph="..." />
+                  <marker date="1496414410364" expanded="true" signature="15194:15283" ph="..." />
+                  <marker date="1496414410364" expanded="true" signature="15226:15281" ph="..." />
+                  <marker date="1496414410364" expanded="true" signature="16233:16247" ph="..." />
+                  <marker date="1496414410364" expanded="true" signature="16406:16510" ph="..." />
+                  <marker date="1496414410364" expanded="true" signature="17562:17585" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -550,13 +546,6 @@
       <workItem from="1496381367271" duration="3383000" />
       <workItem from="1496394090776" duration="2630000" />
     </task>
-    <task id="LOCAL-00023" summary="doc2unix.sh study">
-      <created>1495073455436</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1495073455436</updated>
-    </task>
     <task id="LOCAL-00024" summary="简单的MVC模式，目录、命名约定">
       <created>1495205989196</created>
       <option name="number" value="00024" />
@@ -893,11 +882,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496309102411</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Mysql 数据库操作">
+      <created>1496414372050</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1496414372050</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132110000" />
+    <option name="totallyTimeSpent" value="132199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1047" extended-state="0" />
@@ -942,7 +938,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":sunflower: :sunflower: :sunflower:" />
     <MESSAGE value="字符串分割函数封装 :sunflower: :sunflower: :sunflower:" />
     <MESSAGE value="很高兴我们引入了dkjson库 :clap: :clap: :clap:" />
     <MESSAGE value=":dizzy: :dizzy: :dizzy: 很高兴我们引入了dkjson库" />
@@ -967,7 +962,8 @@
     <MESSAGE value="虚拟主机的项目根目录自定义，方便灵活修改" />
     <MESSAGE value="定义项目根目录，在此本项目目录为虚拟机目录，你可以自定义为 /home/www/" />
     <MESSAGE value="$project_path定义项目根目录，在此本项目目录为虚拟机目录，你可以自定义为 /home/www/" />
-    <option name="LAST_COMMIT_MESSAGE" value="$project_path定义项目根目录，在此本项目目录为虚拟机目录，你可以自定义为 /home/www/" />
+    <MESSAGE value="Mysql 数据库操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mysql 数据库操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1330,25 +1326,25 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="314">
-            <caret line="120" column="8" lean-forward="false" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="19" />
+          <first_editor relative-caret-position="814">
+            <caret line="100" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="515" selection-end-column="114" />
             <folding>
-              <marker date="1496414357111" expanded="true" signature="2034:2041" ph="..." />
-              <marker date="1496414357111" expanded="true" signature="2089:2161" ph="..." />
-              <marker date="1496414357111" expanded="true" signature="5931:5957" ph="..." />
-              <marker date="1496414357111" expanded="true" signature="6465:6498" ph="..." />
-              <marker date="1496414357111" expanded="true" signature="6607:6643" ph="..." />
-              <marker date="1496414357111" expanded="true" signature="10427:10491" ph="..." />
-              <marker date="1496414357111" expanded="true" signature="11390:11540" ph="..." />
-              <marker date="1496414357111" expanded="true" signature="12358:12530" ph="{...}" />
-              <marker date="1496414357111" expanded="true" signature="13260:13275" ph="..." />
-              <marker date="1496414357111" expanded="true" signature="14907:14975" ph="..." />
-              <marker date="1496414357111" expanded="true" signature="15061:15097" ph="..." />
-              <marker date="1496414357111" expanded="true" signature="15197:15286" ph="..." />
-              <marker date="1496414357111" expanded="true" signature="15229:15284" ph="..." />
-              <marker date="1496414357111" expanded="true" signature="16236:16250" ph="..." />
-              <marker date="1496414357111" expanded="true" signature="16409:16513" ph="..." />
-              <marker date="1496414357111" expanded="true" signature="17565:17588" ph="..." />
+              <marker date="1496414410364" expanded="true" signature="2034:2041" ph="..." />
+              <marker date="1496414410364" expanded="true" signature="2089:2161" ph="..." />
+              <marker date="1496414410364" expanded="true" signature="5928:5954" ph="..." />
+              <marker date="1496414410364" expanded="true" signature="6462:6495" ph="..." />
+              <marker date="1496414410364" expanded="true" signature="6604:6640" ph="..." />
+              <marker date="1496414410364" expanded="true" signature="10424:10488" ph="..." />
+              <marker date="1496414410364" expanded="true" signature="11387:11537" ph="..." />
+              <marker date="1496414410364" expanded="true" signature="12355:12527" ph="{...}" />
+              <marker date="1496414410364" expanded="true" signature="13257:13272" ph="..." />
+              <marker date="1496414410364" expanded="true" signature="14904:14972" ph="..." />
+              <marker date="1496414410364" expanded="true" signature="15058:15094" ph="..." />
+              <marker date="1496414410364" expanded="true" signature="15194:15283" ph="..." />
+              <marker date="1496414410364" expanded="true" signature="15226:15281" ph="..." />
+              <marker date="1496414410364" expanded="true" signature="16233:16247" ph="..." />
+              <marker date="1496414410364" expanded="true" signature="16406:16510" ph="..." />
+              <marker date="1496414410364" expanded="true" signature="17562:17585" ph="..." />
             </folding>
           </first_editor>
           <second_editor />

@@ -98,7 +98,7 @@ http {
     include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/domains/*";
 }
 ```
-## helper 助手
+##  helper 助手
 - [x] 获取http get/post 请求参数：`helper.http_args()`
 - [x] 字符串分割：`helper.split()`
 - [x] 删除空格：`helper.ltrim() / rtrim() / trim()`
@@ -118,7 +118,7 @@ http {
             ngx.say(obj_obj.hobby.name, "<br/>")
         end
     ```
-####    Mysql 数据库操作
+##  Mysql 数据库操作
 +   :white_check_mark: 添加
     ```lua
      data = { name = "Tinywan", address = "HeilongJiang", age = "26" }
