@@ -1,14 +1,20 @@
---[[-----------------------------------------------------------------------
-* |  Copyright (C) Shaobo Wan (Tinywan)
-* |  Github: https://github.com/Tinywan
-* |  Blog: http://www.cnblogs.com/Tinywan
-* |------------------------------------------------------------------------
-* |  Date: 2017/6/02 22:29
-* |  Function: msyql add select udpate delete option
-* |------------------------------------------------------------------------
---]]
 local mysql = require 'resty.mysql'
 local cjson = require 'cjson'
+local type = type
+local ok, new_tab = pcall(require, "table.new")
+if not ok or type(new_tab) ~= "function" then
+    new_tab = function (narr, nrec) return {} end
+end
+
+local _M = new_tab(0, 54)
+
+_M._VERSION = '0.08'
+
+-- add
+function _M.add(a,b)
+    return a + b
+end
+
 local db_config = {
     host = '127.0.0.1',
     port = 3306,
@@ -24,23 +30,28 @@ if not db then
     ngx.log(ngx_ERR, "failed to instantiate mysql: ", err) -- 未安装mysql客户端
     return
 end
-local ok, err, errcode, sqlstate = db:connect({
-    host = db_config.host,
-    port = db_config.port,
-    database = db_config.database,
-    user = db_config.user,
-    password = db_config.password
-})
-if not ok then
-    ngx.log(ngx_ERR, "failed to connect: ", err, ": ", errcode, " ", sqlstate) -- mysql连接不上
-    return
+
+-- 封装错误：lua entry thread aborted: runtime error: attempt to yield across C-call boundary
+local function connect_db()
+    local ok, err, errcode, sqlstate = db:connect({
+        host = db_config.host,
+        port = db_config.port,
+        database = db_config.database,
+        user = db_config.user,
+        password = db_config.password
+    })
+    if not ok then
+        ngx.log(ngx_ERR, "failed to connect: ", err, ": ", errcode, " ", sqlstate) -- mysql连接不上
+        return
+    end
 end
 
 -- 添加
 --  data = { name = "XIDaDa", address = "HeilongJiang", age = "66" }
 --  local result = add(data.name,data.address,data.age)
 --  ngx.print(cjson.encode(result))
-function add(name, address, age)
+function _M.add(name, address, age)
+    connect_db()
     local res = {}
     if name ~= nil then
         local sql = "INSERT INTO tb_ngx_test (name,address,age) VALUES (\'" .. name .. "\',\'" .. address .. "\'," .. age .. ")";
@@ -65,7 +76,8 @@ end
 -- 查询
 --  local result = select(3)
 --  ngx.print(cjson.encode(result))
-function select(id)
+function _M.select(id)
+    connect_db()
     local res = {}
     if id ~= nil then
         local data, err, errno, sqlstate = db:query('SELECT * FROM ' .. db_config.table .. ' WHERE id=' .. id .. ' LIMIT 1', 1)
@@ -89,7 +101,8 @@ end
 -- 修改
 --  local result = update(3,"TinTinAIAI")
 --  ngx.print(cjson.encode(result))
-function update(id, name)
+function _M.update(id, name)
+    connect_db()
     local res = {}
     if id ~= nil and name ~= nil then
         local data, err, errno, sqlstate = db:query('UPDATE ' .. db_config.table .. ' SET `name` = "' .. name .. '" WHERE id=' .. id)
@@ -111,7 +124,8 @@ end
 -- 删除操作
 --local result = delete(3)
 --ngx.print(cjson.encode(result))
-function delete(id)
+function _M.delete(id)
+    connect_db()
     local res = {}
     if id ~= nil then
         local data, err, errno, sqlstate = db:query('DELETE FROM ' .. db_config.table .. ' WHERE id=' .. id)
@@ -130,9 +144,7 @@ function delete(id)
     return res
 end
 
-function add(a,b)
-    return a+b
-end
+return _M
 
 
 

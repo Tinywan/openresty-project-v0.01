@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mysql/mysql_fun_test.lua" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lualib/vendor/mysql_fun.lua" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/product_access.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/product_error.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/waf_access.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/waf_error.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/mysql/mysql_fun.lua" afterPath="$PROJECT_DIR$/application/mysql/mysql_fun.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_demo.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_demo.conf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,40 +23,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="814">
-                <caret line="100" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="515" selection-end-column="114" />
-                <folding>
-                  <marker date="1496414410364" expanded="true" signature="2034:2041" ph="..." />
-                  <marker date="1496414410364" expanded="true" signature="2089:2161" ph="..." />
-                  <marker date="1496414410364" expanded="true" signature="5928:5954" ph="..." />
-                  <marker date="1496414410364" expanded="true" signature="6462:6495" ph="..." />
-                  <marker date="1496414410364" expanded="true" signature="6604:6640" ph="..." />
-                  <marker date="1496414410364" expanded="true" signature="10424:10488" ph="..." />
-                  <marker date="1496414410364" expanded="true" signature="11387:11537" ph="..." />
-                  <marker date="1496414410364" expanded="true" signature="12355:12527" ph="{...}" />
-                  <marker date="1496414410364" expanded="true" signature="13257:13272" ph="..." />
-                  <marker date="1496414410364" expanded="true" signature="14904:14972" ph="..." />
-                  <marker date="1496414410364" expanded="true" signature="15058:15094" ph="..." />
-                  <marker date="1496414410364" expanded="true" signature="15194:15283" ph="..." />
-                  <marker date="1496414410364" expanded="true" signature="15226:15281" ph="..." />
-                  <marker date="1496414410364" expanded="true" signature="16233:16247" ph="..." />
-                  <marker date="1496414410364" expanded="true" signature="16406:16510" ph="..." />
-                  <marker date="1496414410364" expanded="true" signature="17562:17585" ph="..." />
-                </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="live_redis_to_mysql.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/api/live/live_redis_to_mysql.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1180">
+            <state relative-caret-position="-433">
               <caret line="140" column="92" lean-forward="false" selection-start-line="140" selection-start-column="49" selection-end-line="140" selection-end-column="92" />
               <folding />
             </state>
@@ -58,8 +36,73 @@
       <file leaf-file-name="helper.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lualib/vendor/helper.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
+            <state relative-caret-position="400">
               <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="38" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql_fun.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lualib/vendor/mysql_fun.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="104" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="redis_iresty.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lualib/resty/redis_iresty.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1600">
+              <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="374">
+                <caret line="120" column="4" lean-forward="false" selection-start-line="120" selection-start-column="4" selection-end-line="120" selection-end-column="15" />
+                <folding>
+                  <marker date="1496496454643" expanded="true" signature="2034:2041" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="2089:2161" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="3899:3983" ph="{&quot;error_code&quot;: 200...}" />
+                  <marker date="1496496454643" expanded="true" signature="4063:4147" ph="{&quot;error_code&quot;: 504...}" />
+                  <marker date="1496496454643" expanded="true" signature="4659:4684" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="4659:4693" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="4659:4696" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="6786:6812" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="7320:7353" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="7462:7498" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="11282:11346" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="12245:12395" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="13213:13385" ph="{...}" />
+                  <marker date="1496496454643" expanded="true" signature="14115:14130" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="15762:15830" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="15916:15952" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="16052:16141" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="16084:16139" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="17091:17105" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="17264:17368" ph="..." />
+                  <marker date="1496496454643" expanded="true" signature="18420:18443" ph="..." />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql_fun_test.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/mysql/mysql_fun_test.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -68,8 +111,8 @@
       <file leaf-file-name="nginx_demo.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/domains/nginx_demo.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="112" column="23" lean-forward="false" selection-start-line="112" selection-start-column="14" selection-end-line="112" selection-end-column="23" />
+            <state relative-caret-position="467">
+              <caret line="117" column="28" lean-forward="false" selection-start-line="117" selection-start-column="14" selection-end-line="117" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -78,29 +121,8 @@
       <file leaf-file-name="demo_error.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logs/demo_error.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1113">
-              <caret line="66" column="23" lean-forward="false" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="121" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="caputer.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/api/live/caputer.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql_fun.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/mysql/mysql_fun.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="111" column="26" lean-forward="false" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="26" />
-              <caret line="112" column="33" lean-forward="false" selection-start-line="112" selection-start-column="2" selection-end-line="112" selection-end-column="33" />
+            <state relative-caret-position="193">
+              <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="122" />
               <folding />
             </state>
           </provider>
@@ -134,7 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/template/product/header.html" />
         <option value="$PROJECT_DIR$/template/product/footer.html" />
         <option value="$PROJECT_DIR$/template/product/index.html" />
         <option value="$PROJECT_DIR$/application/controller/IndexController.lua" />
@@ -161,7 +182,6 @@
         <option value="$PROJECT_DIR$/conf/domains/nginx_index.conf" />
         <option value="$PROJECT_DIR$/application/api/redis_mysql/classes.lua" />
         <option value="$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua" />
-        <option value="$PROJECT_DIR$/application/api/live/caputer.lua" />
         <option value="$PROJECT_DIR$/application/api/live/classes.lua" />
         <option value="$PROJECT_DIR$/logs/api_access.log" />
         <option value="$PROJECT_DIR$/conf/domains/api.conf" />
@@ -178,12 +198,14 @@
         <option value="$PROJECT_DIR$/logs/api_error.log" />
         <option value="$PROJECT_DIR$/application/api/live/live_redis_to_mysql.lua" />
         <option value="$PROJECT_DIR$/conf/domains/nginx_product.conf" />
+        <option value="$PROJECT_DIR$/lualib/resty/mysql_fun.lua" />
+        <option value="$PROJECT_DIR$/application/mysql/mysql.lua" />
+        <option value="$PROJECT_DIR$/application/api/live/caputer.lua" />
+        <option value="$PROJECT_DIR$/application/mysql/mysql_fun.lua" />
         <option value="$PROJECT_DIR$/conf/domains/nginx_demo.conf" />
         <option value="$PROJECT_DIR$/logs/demo_error.log" />
         <option value="$PROJECT_DIR$/lualib/vendor/mysql_fun.lua" />
-        <option value="$PROJECT_DIR$/lualib/resty/mysql_fun.lua" />
-        <option value="$PROJECT_DIR$/application/mysql/mysql.lua" />
-        <option value="$PROJECT_DIR$/application/mysql/mysql_fun.lua" />
+        <option value="$PROJECT_DIR$/application/mysql/mysql_fun_test.lua" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -238,6 +260,70 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="lualib" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lualib" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lualib" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resty" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="application" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -260,6 +346,46 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua_project_v0.01" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="live" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -274,6 +400,13 @@
     <property name="GO_FMT" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application\mysql" />
+      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\lualib\vendor" />
+      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\lualib\resty" />
+      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application\api\live" />
+      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\conf\domains" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application\api\redis_mysql" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application\demo" />
@@ -281,127 +414,6 @@
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application\api\classes" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\lualib\resty" />
-      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application\api\live" />
-      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\conf\domains" />
-      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application\api" />
-      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\template\websocket\js" />
-    </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/mysql/mysql.lua</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/conf/domains/nginx_demo.conf</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/api/live/live_redis_to_mysql.lua</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -545,13 +557,8 @@
       <workItem from="1496374476174" duration="34000" />
       <workItem from="1496381367271" duration="3383000" />
       <workItem from="1496394090776" duration="2630000" />
-    </task>
-    <task id="LOCAL-00024" summary="简单的MVC模式，目录、命名约定">
-      <created>1495205989196</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1495205989196</updated>
+      <workItem from="1496452537107" duration="1778000" />
+      <workItem from="1496492523763" duration="3933000" />
     </task>
     <task id="LOCAL-00025" summary="第一个简单的 mvc 模式的文件路径访问">
       <created>1495206510623</created>
@@ -889,46 +896,42 @@
       <option name="project" value="LOCAL" />
       <updated>1496414372050</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary=":revolving_hearts: :revolving_hearts: :revolving_hearts: :revolving_hearts: Mysql 数据库操作">
+      <created>1496414511821</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1496414511821</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132199000" />
+    <option name="totallyTimeSpent" value="139411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19742489" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16255365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3274918" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968238" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20842217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -938,7 +941,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="字符串分割函数封装 :sunflower: :sunflower: :sunflower:" />
     <MESSAGE value="很高兴我们引入了dkjson库 :clap: :clap: :clap:" />
     <MESSAGE value=":dizzy: :dizzy: :dizzy: 很高兴我们引入了dkjson库" />
     <MESSAGE value=":cherry_blossom: :cherry_blossom: :cherry_blossom: 获取Redis数据库数据渲染到html模板页面显示 :cherry_blossom: :cherry_blossom: :cherry_blossom:" />
@@ -963,15 +965,14 @@
     <MESSAGE value="定义项目根目录，在此本项目目录为虚拟机目录，你可以自定义为 /home/www/" />
     <MESSAGE value="$project_path定义项目根目录，在此本项目目录为虚拟机目录，你可以自定义为 /home/www/" />
     <MESSAGE value="Mysql 数据库操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mysql 数据库操作" />
+    <MESSAGE value=":revolving_hearts: :revolving_hearts: :revolving_hearts: :revolving_hearts: Mysql 数据库操作" />
+    <option name="LAST_COMMIT_MESSAGE" value=":revolving_hearts: :revolving_hearts: :revolving_hearts: :revolving_hearts: Mysql 数据库操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/api/classes/web.lua" />
-    <entry file="file://$PROJECT_DIR$/application/api/users/login.lua" />
     <entry file="file://$PROJECT_DIR$/application/api/users/requestPasswordReset.lua" />
     <entry file="file://$PROJECT_DIR$/application/api/users/requestEmailVerify.lua" />
     <entry file="file://$PROJECT_DIR$/lualib/resty/redis.lua">
@@ -1166,7 +1167,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="57" column="9" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1174,29 +1174,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lualib/vendor/ip_check.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lualib/vendor/config.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lualib/vendor/ip_location.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1680">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1226,54 +1209,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lualib/vendor/helper.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="38" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lualib/resty/redis_iresty.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1287">
-          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lualib/vendor/mysql_fun.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="46" column="35" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lualib/resty/mysql_fun.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="55" column="2" lean-forward="true" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/domains/nginx_demo.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="112" column="23" lean-forward="false" selection-start-line="112" selection-start-column="14" selection-end-line="112" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/live/live_redis_to_mysql.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1180">
-          <caret line="140" column="92" lean-forward="false" selection-start-line="140" selection-start-column="49" selection-end-line="140" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lualib/resty/mysql_fun.lua" />
     <entry file="file://$PROJECT_DIR$/application/api/live/live_redis_mysql.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1292,33 +1228,104 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/api/live/caputer.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        <state relative-caret-position="728">
+          <caret line="39" column="3" lean-forward="false" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/mysql/mysql.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-820">
+        <state relative-caret-position="-573">
           <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/demo_error.log">
+    <entry file="file://$PROJECT_DIR$/lualib/vendor/dkjson.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1113">
-          <caret line="66" column="23" lean-forward="false" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="121" />
+        <state relative-caret-position="-960">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lualib/vendor/config.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-227">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lualib/vendor/ip_location.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="23" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/live/live_redis_to_mysql.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-433">
+          <caret line="140" column="92" lean-forward="false" selection-start-line="140" selection-start-column="49" selection-end-line="140" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lualib/resty/redis_iresty.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1600">
+          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/mysql/mysql_fun.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="111" column="26" lean-forward="false" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="26" />
-          <caret line="112" column="33" lean-forward="false" selection-start-line="112" selection-start-column="2" selection-end-line="112" selection-end-column="33" />
+        <state relative-caret-position="400">
+          <caret line="49" column="48" lean-forward="false" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/domains/nginx_demo.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="117" column="28" lean-forward="false" selection-start-line="117" selection-start-column="14" selection-end-line="117" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lualib/vendor/helper.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="38" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/demo_error.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/mysql/mysql_fun_test.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lualib/vendor/mysql_fun.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="104" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1326,25 +1333,30 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="814">
-            <caret line="100" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="515" selection-end-column="114" />
+          <first_editor relative-caret-position="374">
+            <caret line="120" column="4" lean-forward="false" selection-start-line="120" selection-start-column="4" selection-end-line="120" selection-end-column="15" />
             <folding>
-              <marker date="1496414410364" expanded="true" signature="2034:2041" ph="..." />
-              <marker date="1496414410364" expanded="true" signature="2089:2161" ph="..." />
-              <marker date="1496414410364" expanded="true" signature="5928:5954" ph="..." />
-              <marker date="1496414410364" expanded="true" signature="6462:6495" ph="..." />
-              <marker date="1496414410364" expanded="true" signature="6604:6640" ph="..." />
-              <marker date="1496414410364" expanded="true" signature="10424:10488" ph="..." />
-              <marker date="1496414410364" expanded="true" signature="11387:11537" ph="..." />
-              <marker date="1496414410364" expanded="true" signature="12355:12527" ph="{...}" />
-              <marker date="1496414410364" expanded="true" signature="13257:13272" ph="..." />
-              <marker date="1496414410364" expanded="true" signature="14904:14972" ph="..." />
-              <marker date="1496414410364" expanded="true" signature="15058:15094" ph="..." />
-              <marker date="1496414410364" expanded="true" signature="15194:15283" ph="..." />
-              <marker date="1496414410364" expanded="true" signature="15226:15281" ph="..." />
-              <marker date="1496414410364" expanded="true" signature="16233:16247" ph="..." />
-              <marker date="1496414410364" expanded="true" signature="16406:16510" ph="..." />
-              <marker date="1496414410364" expanded="true" signature="17562:17585" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="2034:2041" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="2089:2161" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="3899:3983" ph="{&quot;error_code&quot;: 200...}" />
+              <marker date="1496496454643" expanded="true" signature="4063:4147" ph="{&quot;error_code&quot;: 504...}" />
+              <marker date="1496496454643" expanded="true" signature="4659:4684" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="4659:4693" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="4659:4696" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="6786:6812" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="7320:7353" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="7462:7498" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="11282:11346" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="12245:12395" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="13213:13385" ph="{...}" />
+              <marker date="1496496454643" expanded="true" signature="14115:14130" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="15762:15830" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="15916:15952" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="16052:16141" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="16084:16139" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="17091:17105" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="17264:17368" ph="..." />
+              <marker date="1496496454643" expanded="true" signature="18420:18443" ph="..." />
             </folding>
           </first_editor>
           <second_editor />

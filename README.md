@@ -121,9 +121,11 @@ http {
 ##  Mysql 数据库操作
 +   :white_check_mark: 添加
     ```lua
-     data = { name = "Tinywan", address = "HeilongJiang", age = "26" }
-     local result = add(data.name,data.address,data.age)
-     ngx.print(cjson.encode(result))
+    local mysql = require 'vendor.mysql_fun'
+    local cjson = require 'cjson'
+    data = { name = "TinyWAN", address = "HeilongJiang", age = "26" }
+    local result = mysql.add(data.name,data.address,data.age)
+    ngx.print(cjson.encode(result))
     ```     
 +   :white_check_mark: 查询  
     ```lua
@@ -140,7 +142,33 @@ http {
     local result = delete(3)
     ngx.print(cjson.encode(result))
     ```
++   :recycle: 数据返回结果：
+    +   :white_check_mark:  成功
+        ```json
+        {
+            "error_code": 200,
+            "message": "add successfully"
+        }
+        ```
+    +   :negative_squared_cross_mark:   失败
+        ```json
+        {
+            "error_code": 504,
+            "message": "failed to delete"
+        }
+        ```
 +  [mysql_fun.lua](https://github.com/Tinywan/lua_project_v0.01/blob/master/application/mysql/mysql_fun.lua)  
++   封装遇到的问题：
+    +   nginx 错误日志总是出现这个：`lua entry thread aborted: runtime error: attempt to yield across C-call boundary`
+    +   解决办法：[ngx_lua 连接mysql](http://wxianfeng.com/)
+    +   封装好的文件：`/vendor/mysql_fun.lua`
+    +   封装好调用的时候一直出现这个：`curl: (52) Empty reply from server`
+    +   解决办法,在每次增删改查的时候都要调用数据库连接的这个方法数据库连接`connect_db()`方法就可以了
+        ```lua
+        function _M.update(id, name)
+            connect_db()
+        end
+        ```
 ##  :date:
 ####    2017年05月07日 星期日 
 +   创建项目、项目架构搭建、目录结构调整
