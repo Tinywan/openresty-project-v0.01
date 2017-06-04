@@ -98,6 +98,12 @@ http {
     include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/domains/*";
 }
 ```
+## config 配置文件列表(为了测试方便)
++   API接口专用（8686）：`api.conf`
++   Demo测试专用（8080）：`nginx_demo.conf`
++   活动直播专用（8088）：`nginx_live.conf`
++   Waf防火墙专用（8082）：`waf.conf`
++   商品列表专用（8083）：`nginx_product.conf`
 ##  helper 助手
 - [x] 获取http get/post 请求参数：`helper.http_args()`
 - [x] 字符串分割：`helper.split()`
@@ -129,28 +135,28 @@ http {
     ```     
 +   :white_check_mark: 查询  
     ```lua
-    local result = select(3)
+    local result = mysql.select(3)
     ngx.print(cjson.encode(result))
     ```
 +   :white_check_mark: 修改
     ```lua
-    local result = update(3,"TinTinAIAI")
+    local result = mysql.update(3,"TinTinAIAI")
     ngx.print(cjson.encode(result))
     ```
 +   :white_check_mark: 删除
     ```lua
-    local result = delete(3)
+    local result = mysql.delete(3)
     ngx.print(cjson.encode(result))
     ```
-+   :recycle: 数据返回结果：
-    +   :white_check_mark:  成功
++   :white_check_mark: 数据返回结果：
+    +   :heavy_check_mark:  成功
         ```json
         {
             "error_code": 200,
             "message": "add successfully"
         }
         ```
-    +   :negative_squared_cross_mark:   失败
+    +   :heavy_multiplication_x:   失败
         ```json
         {
             "error_code": 504,
@@ -487,13 +493,31 @@ http {
         }
     ```
 ####    2017年06月2日 星期五
-+   API接口先查询Redis缓存数据，如果没有则到Mysql数据库查询获取,同时缓存数据到Redis中，把数据在模板页面显示出来
++   API接口先查询Redis缓存数据，如果没有则到Mysql数据库查询获取,同时缓存数据到Redis中
 +   访问地址返回数据：
    ```lua
    tinywan@tinywan:~$ curl http://127.0.0.1:8686/0.1/live/live_redis_to_mysql?id=3
    {"1":{"age":"24","name":"tinywan","address":"China","id":"3"},"Data_Sources":"Redis Cache Content"}
    ```
-+  [live_redis_to_mysql.lua](https://github.com/Tinywan/lua_project_v0.01/blob/master/application/api/live/live_redis_to_mysql.lua)     
++  [live_redis_to_mysql.lua](https://github.com/Tinywan/lua_project_v0.01/blob/master/application/api/live/live_redis_to_mysql.lua)   
+####   2017年06月4日 星期日  
++   获取Get 参数查询Mysql数据同时把数据在模板页面显示出来
++   参考代码：
+    ```lua
+    local template = require "resty.template"
+    local mysql = require 'vendor.mysql_fun'
+    local helper = require "vendor.helper"
+    local arg = helper.http_args()
+    local live_id = arg.live_id
+    local res = mysql.select(live_id)
+    
+    if res.error_code ~= 200 then
+        ngx.log(ERROR, 'server error')
+        ngx.exit(500)
+    end
+    template.render("index.html", { hls_address = res.result.address })
+    ``` 
++   ![websocket_shell](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/lua_mysql_hls_address.png) 
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据

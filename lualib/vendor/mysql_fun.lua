@@ -53,7 +53,7 @@ end
 function _M.add(name, address, age)
     connect_db()
     local res = {}
-    if name ~= nil then
+    if name ~= nil and address ~= nil and age ~= nil then
         local sql = "INSERT INTO tb_ngx_test (name,address,age) VALUES (\'" .. name .. "\',\'" .. address .. "\'," .. age .. ")";
         local data, err, errcode, sqlstate = db:query(sql)
         if not data then
