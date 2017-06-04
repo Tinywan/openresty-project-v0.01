@@ -13,14 +13,12 @@ local cjson = require 'cjson'
 local arg = helper.http_args()
 local live_id = arg.live_id
 local res = mysql.select(live_id)
-
-if res.error_code ~= 200 then
-    ngx.log(ERROR, 'server error')
-    -- 跳到一个错误页面去
-    ngx.exit(500)
+local address = ""
+if res.error_code == 200 then
+    address = res.result.address
 end
 --ngx.print(cjson.encode(res))
 --ngx.print(res.error_code)
---ngx.print(res.result.name)
-template.render("index.html", { hls_address = res.result.address })
+--ngx.print("address",address)
+template.render("index.html", { hls_address = address })
 

@@ -510,12 +510,11 @@ http {
     local arg = helper.http_args()
     local live_id = arg.live_id
     local res = mysql.select(live_id)
-    
-    if res.error_code ~= 200 then
-        ngx.log(ERROR, 'server error')
-        ngx.exit(500)
+    local address = ""
+    if res.error_code == 200 then
+        address = res.result.address
     end
-    template.render("index.html", { hls_address = res.result.address })
+    template.render("index.html", { hls_address = address })
     ``` 
 +   ![websocket_shell](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/lua_mysql_hls_address.png) 
 ## 功能列表

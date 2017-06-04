@@ -33,6 +33,7 @@ end
 
 -- 封装错误：lua entry thread aborted: runtime error: attempt to yield across C-call boundary
 local function connect_db()
+    db:set_timeout(db_config.timeout) -- 1 sec
     local ok, err, errcode, sqlstate = db:connect({
         host = db_config.host,
         port = db_config.port,
@@ -85,6 +86,12 @@ function _M.select(id)
             res.error_code = 200
             res.message = 'search successfully'
             res.result = data[1]
+            -- 解决查询空数据的问题,判断table是否为空
+            if next(data) == nil then -- next获取表中的下一个内容，在空表里是没有下一个内容的，返回nil
+                res.error_code = 400
+                res.message = 'not data'
+                res.result = nil
+            end
         else
             res.error_code = 502
             res.message = 'no data'
