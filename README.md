@@ -110,8 +110,7 @@ http {
     +   日志文件不支持变量(暂时是写死，以后在做处理)：`access_log  "/home/lua_project_v0.01/logs/demo_access.log";`
 +   启动脚本
     +   赋予权限（655）：`chmod +x /start.sh `,
-    +   修改项目路径配置变量：`BIN_PATH="/home/"`
-    +   配置成功效果如下：
+    +   配置成功运行结果如下：
         ```bash
         /home/lua_project_v0.01/conf# ../bin/start.sh 
          [ Stop OK ] 
