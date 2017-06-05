@@ -1,1 +1,1 @@
-ngx.say("Hello! First_Protect")
+ngx.say("Hello! lua_project_v0.01")
