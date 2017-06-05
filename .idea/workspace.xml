@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/proxy_cache/2131" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/start.sh" afterPath="$PROJECT_DIR$/bin/start.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_index.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_index.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_product.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_product.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/api.conf" afterPath="$PROJECT_DIR$/conf/domains/api.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_demo.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_demo.conf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,6 +16,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="nginx_demo.conf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/conf/domains/nginx_demo.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="103" column="27" lean-forward="false" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="nginx_live.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/domains/nginx_live.conf">
           <provider selected="true" editor-type-id="text-editor">
@@ -39,31 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2131" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2131" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cache/proxy_cache/2131">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/domains/api.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/domains/test.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="41" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -199,7 +186,6 @@
         <option value="$PROJECT_DIR$/application/api/live/caputer.lua" />
         <option value="$PROJECT_DIR$/application/api/live/classes.lua" />
         <option value="$PROJECT_DIR$/logs/api_access.log" />
-        <option value="$PROJECT_DIR$/conf/domains/api.conf" />
         <option value="$PROJECT_DIR$/application/api/live/http_args.lua" />
         <option value="$PROJECT_DIR$/application/api/live/live_redis_mysql.lua" />
         <option value="$PROJECT_DIR$/lualib/vendor/helper.lua" />
@@ -214,13 +200,14 @@
         <option value="$PROJECT_DIR$/logs/api_error.log" />
         <option value="$PROJECT_DIR$/application/api/live/live_redis_to_mysql.lua" />
         <option value="$PROJECT_DIR$/conf/nginx.conf" />
-        <option value="$PROJECT_DIR$/conf/domains/nginx_demo.conf" />
         <option value="$PROJECT_DIR$/conf/domains/test.conf" />
         <option value="$PROJECT_DIR$/application/demo/test.lua" />
         <option value="$PROJECT_DIR$/bin/start.sh" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/conf/domains/nginx_index.conf" />
         <option value="$PROJECT_DIR$/conf/domains/nginx_product.conf" />
+        <option value="$PROJECT_DIR$/conf/domains/api.conf" />
+        <option value="$PROJECT_DIR$/conf/domains/nginx_demo.conf" />
       </list>
     </option>
   </component>
@@ -554,14 +541,7 @@
       <workItem from="1496381367271" duration="3383000" />
       <workItem from="1496394090776" duration="2717000" />
       <workItem from="1496625731847" duration="29000" />
-      <workItem from="1496625828221" duration="7582000" />
-    </task>
-    <task id="LOCAL-00025" summary="第一个简单的 mvc 模式的文件路径访问">
-      <created>1495206510623</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1495206510623</updated>
+      <workItem from="1496625828221" duration="7844000" />
     </task>
     <task id="LOCAL-00026" summary=":fallen_leaf: 第一个简单的 mvc 模式的文件路径访问">
       <created>1495206618264</created>
@@ -899,16 +879,24 @@
       <option name="project" value="LOCAL" />
       <updated>1496636104588</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="add cache file">
+      <created>1496638942013</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1496638942013</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130699000" />
+    <option name="totallyTimeSpent" value="130961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="1066" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20842217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20842217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -936,7 +924,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="很高兴我们引入了dkjson库 :clap: :clap: :clap:" />
     <MESSAGE value=":dizzy: :dizzy: :dizzy: 很高兴我们引入了dkjson库" />
     <MESSAGE value=":cherry_blossom: :cherry_blossom: :cherry_blossom: 获取Redis数据库数据渲染到html模板页面显示 :cherry_blossom: :cherry_blossom: :cherry_blossom:" />
     <MESSAGE value=":paw_prints: :paw_prints: :paw_prints: Nginx+Lua逻辑开发 Redis 做为页面缓存" />
@@ -961,7 +948,8 @@
     <MESSAGE value="$project_path定义项目根目录，在此本项目目录为虚拟机目录，你可以自定义为 /home/www/" />
     <MESSAGE value=":rocket: :rocket: :rocket: :rocket: :rocket: API接口先查询Redis缓存数据，如果没有则到Mysql数据库查询获取,同时缓存数据到Redis中，把数据在模板页面显示出来" />
     <MESSAGE value=":rocket: :rocket: :rocket: :rocket: :rocket: 如何安装使用" />
-    <option name="LAST_COMMIT_MESSAGE" value=":rocket: :rocket: :rocket: :rocket: :rocket: 如何安装使用" />
+    <MESSAGE value="add cache file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cache file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1205,26 +1193,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/domains/nginx_demo.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/redis/test_short.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
           <caret line="43" column="10" lean-forward="false" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/domains/api.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1340,10 +1312,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/conf/domains/api.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="85" lean-forward="false" selection-start-line="19" selection-start-column="85" selection-end-line="19" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cache/proxy_cache/2131">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/domains/nginx_demo.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="103" column="27" lean-forward="false" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
           <folding />
         </state>
       </provider>
