@@ -1,6 +1,6 @@
 #!/bin/bash
 #get nginx.conf path
-CONF_FILE_PATH=$(find / -type f -name 'nginx.conf' | grep lua_project_v0.01 | xargs ls)
+#CONF_FILE_PATH=$(sudo find / -type f -name 'nginx.conf' | grep lua_project_v0.01 | xargs ls)
 # get Nginx Pid
 PID=$(ps -aef | grep nginx | grep -v grep | grep master |awk '{print $2}')
 if [[ $? == 0 && -n $PID ]]

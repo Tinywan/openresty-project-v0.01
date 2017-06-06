@@ -125,6 +125,16 @@ http {
 +   活动直播专用（8088）：`nginx_live.conf`
 +   Waf防火墙专用（8082）：`waf.conf`
 +   商品列表专用（8083）：`nginx_product.conf`
+##  错误问题
++   [解决nginx: [emerg] bind() to [::]:80 failed (98: Address already in use)](http://www.sjsjw.com/kf_system/article/167_16951_30655.asp)
++   错误日志：`[crit] 3478#0: *5 connect() to unix:/var/run/php7.0.9-fpm.sock failed (13: Permission denied)`
+    +   修改php-fpm.conf配置文件
+    ```bash
+    listen.owner = nginx
+    listen.group = nginx
+    listen.mode = 0660
+    ```
+    +   跑nginx的用户是nginx，而/var/run/php7.0.9-fpm.sock 这个文件。监听的nginx用户没有该权限，导致nginx无法访问/var/run/php5-fpm.sock这个文件，自然监听就失去了效果。
 ##  helper 助手
 - [x] 获取http get/post 请求参数：`helper.http_args()`
 - [x] 字符串分割：`helper.split()`
@@ -538,6 +548,12 @@ http {
     template.render("index.html", { hls_address = address })
     ``` 
 +   ![websocket_shell](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/lua_mysql_hls_address.png) 
+####    2017年06月07日 星期三
++   商品的详情页页面数据显示(数据存储(Redis)的时候使用json格式存储，键约定：`ITEM:${Product_Id}`)
++   配置文件：`nginx_product.conf`
++   控制器文件：`ItemController.lua`
++   访问路径：`http://127.0.0.1:8087/item/13669361192` 即可把Redis的缓存数据渲染到html页面
++   下来要做的就是动态加载模板和数据、缓存处理...
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据

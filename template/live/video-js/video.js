@@ -9661,7 +9661,7 @@ var Player = function (_Component) {
       // Otherwise try to get the aspect ratio from the video metadata
       aspectRatio = this.videoWidth() + ':' + this.videoHeight();
     } else {
-      // Or use a default. The video element's is 2:1, but 16:9 is more common.
+      // Or use a default. The video element's is 2:1, but 16:9 is more item.
       aspectRatio = '16:9';
     }
 
@@ -12288,7 +12288,7 @@ var Player = function (_Component) {
     var elem = _document2['default'].createElement('i');
 
     // Note: We don't actually use flexBasis (or flexOrder), but it's one of the more
-    // common flex features that we can rely on when checking for flex support.
+    // item flex features that we can rely on when checking for flex support.
     return !('flexBasis' in elem.style || 'webkitFlexBasis' in elem.style || 'mozFlexBasis' in elem.style || 'msFlexBasis' in elem.style ||
     // IE10-specific (2012 flex spec)
     'msFlexOrder' in elem.style);
@@ -20679,7 +20679,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 /**
- * A Track class that contains all of the common functionality for {@link AudioTrack},
+ * A Track class that contains all of the item functionality for {@link AudioTrack},
  * {@link VideoTrack}, and {@link TextTrack}.
  *
  * > Note: This class should not be used directly
