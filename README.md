@@ -557,6 +557,8 @@ http {
     +   Nginx配置：`root /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/public;`
     +   Html页面加载：`<script src="/video-js/videojs-contrib-hls.min.js"></script>`
 +   下来要做的就是动态加载模板和数据、缓存处理...
+##  个人简历(resume)制作
++   resume
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据
