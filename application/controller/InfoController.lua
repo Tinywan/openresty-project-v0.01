@@ -40,7 +40,7 @@ local obj, pos, err = dkjson.decode(res, 1, nil)
 --ngx.say(obj.GitHub, "<br/>")
 
 --渲染模板
-template.render("index.html",obj)
+template.render("chatroom.html",obj)
 
 
 

@@ -20,5 +20,5 @@ end
 --ngx.print(cjson.encode(res))
 --ngx.print(res.error_code)
 --ngx.print("address",address)
-template.render("index.html", { hls_address = address })
+template.render("chatroom.html", { hls_address = address })
 

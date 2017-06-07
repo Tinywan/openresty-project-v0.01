@@ -363,7 +363,7 @@ http {
            default_type 'text/html';
            content_by_lua '
                 local template = require "resty.template"
-                template.render("index.html", { message = "Hello, World!" })
+                template.render(chatroom.html, { message = "Hello, World!" })
            ';
         }
     ```
@@ -545,7 +545,7 @@ http {
     if res.error_code == 200 then
         address = res.result.address
     end
-    template.render("index.html", { hls_address = address })
+    template.render(chatroom.html, { hls_address = address })
     ``` 
 +   ![websocket_shell](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/lua_mysql_hls_address.png) 
 ####    2017年06月07日 星期三
@@ -553,6 +553,9 @@ http {
 +   配置文件：`nginx_product.conf`
 +   控制器文件：`ItemController.lua`
 +   访问路径：`http://127.0.0.1:8087/item/13669361192` 即可把Redis的缓存数据渲染到html页面
++   所有的静态文件罗列在一个地方：
+    +   Nginx配置：`root /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/public;`
+    +   Html页面加载：`<script src="/video-js/videojs-contrib-hls.min.js"></script>`
 +   下来要做的就是动态加载模板和数据、缓存处理...
 ## 功能列表
 ####    简单的Redis数据库操作  
