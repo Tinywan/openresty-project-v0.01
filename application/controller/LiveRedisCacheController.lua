@@ -177,4 +177,4 @@ end
 --输出内容
 --ngx_print(cjson_encode({ content = content }))
 members = { Tom = 10, Jake = 11, Dodo = 12, Jhon = 16 }
-template.render("index2.html", {content = cjson_decode(content),members = members})
+template.render("index.html", {title = "Openresty 模板渲染界面",content = cjson_decode(content),members = members})

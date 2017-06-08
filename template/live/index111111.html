@@ -10,13 +10,13 @@
     <!--[if lt IE 9]>
     <script src="/bootstrap/js/html5shiv.js"></script>
     <script src="/bootstrap/js/respond.min.js"></script>
-    <![endif]-->
     <link href="/video-js/video-js.css" rel="stylesheet">
     <script src="/video-js/video.js"></script>
     <script src="/video-js/videojs-contrib-hls.min.js"></script>
     <script>
         videojs.options.flash.swf = "/video-js/video-js/video-js.swf"
     </script>
+    <![endif]-->
 
     <style>
 
@@ -30,7 +30,7 @@
 
         .carousel {
             height: 500px;
-            margin-bottom: 10px;
+            margin-bottom: 60px;
         }
 
         .carousel .item {
@@ -59,7 +59,10 @@
             padding-left: 15px;
         }
 
-
+        .summary .col-md-4 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
         /* 特性 */
 
@@ -121,6 +124,24 @@
                 margin-top: 120px;
             }
         }
+
+        #live-stream {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            top: 50%;
+            left: 50%;
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            background-size: cover;
+        }
     </style>
 
 </head>
@@ -136,7 +157,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">{{title}}</a>
+            <a class="navbar-brand" href="#">{{content["play_m3u8_address"]}}</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -257,7 +278,7 @@
                poster="/video-js/videodemo.png"
                data-setup='{"example_option":true}'>
             <!--<source src='{{content["play_m3u8_address"]}}' type="application/x-mpegURL">-->
-            <source src='http://zonelue2.amailive.com/live/4001481873572.m3u8' type="application/x-mpegURL">
+            <source src='http://zonelue2.amailive.com/live/4001483686566.m3u8' type="application/x-mpegURL">
         </video>
     </div>
 
@@ -390,8 +411,8 @@
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <script>
     var options = {
-        width: 1024,
-        height: 480
+        width: 100,
+        height: 100
     }
     var player = videojs('live-stream');
 
