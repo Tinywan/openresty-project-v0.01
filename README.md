@@ -98,6 +98,17 @@ http {
     include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/domains/*";
 }
 ```
+## Openresty安装
++   环境：`apt-get install libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make build-essential`
++   下载,编译：
+    ```bash
+    wget https://openresty.org/download/openresty-1.11.2.1.tar.gz
+    tar xvf openresty-1.11.2.1.tar.gz
+    cd openresty-1.11.2.1
+    ./configure --prefix=/opt/openresty --with-luajit --with-http_iconv_module
+    make
+    sudo make install
+    ```
 ## 如何安装使用
 +   修改主配置文件：`lua_project_v0.01/conf/nginx.conf` 的路径,一下的`/home/`修改为项目所在路径
     ```bash
@@ -575,7 +586,10 @@ http {
         proxy_pass http://www.baidu.com;
     }
     ``` 
-+   做个压力测试......
++   做个压力测试(主要是Redis连接数，并发太多将会出现超时问题，`netstat` 查看Redis连接数，好多"TIME OUT")，测试很糟糕的，QPS好低哦!
++   :x: :x: :x: :x: :x: :x: :x: :x: :x: 这块一定要优化！80%就大工搞成了 :x: :x: :x: :x:
++   别人的建议：
+    +   ![lua_redis](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/lua_redis.png)
     
 ##  个人简历(resume)制作
 +   resume
