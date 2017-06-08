@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/github/location_lua_redis_backend.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/api/live/live_redis_to_mysql_bak.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/live/index2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/live/live_redis_to_mysql.lua" afterPath="$PROJECT_DIR$/application/api/live/live_redis_to_mysql.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua" afterPath="$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_live.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_live.conf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/conf/domains/nginx_live.conf">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="738">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -45,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="609">
-              <caret line="152" column="0" lean-forward="true" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+              <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -65,28 +59,28 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="100">
-                <caret line="560" column="4" lean-forward="true" selection-start-line="560" selection-start-column="4" selection-end-line="560" selection-end-column="34" />
+              <first_editor relative-caret-position="604">
+                <caret line="579" column="18" lean-forward="true" selection-start-line="579" selection-start-column="18" selection-end-line="579" selection-end-column="18" />
                 <folding>
-                  <marker date="1496899806992" expanded="true" signature="5596:5680" ph="{&quot;error_code&quot;: 200...}" />
-                  <marker date="1496899806992" expanded="true" signature="5755:5839" ph="{&quot;error_code&quot;: 504...}" />
-                  <marker date="1496899806992" expanded="true" signature="6351:6388" ph="..." />
-                  <marker date="1496899806992" expanded="true" signature="8478:8504" ph="..." />
-                  <marker date="1496899806992" expanded="true" signature="9012:9045" ph="..." />
-                  <marker date="1496899806992" expanded="true" signature="9154:9190" ph="..." />
-                  <marker date="1496899806992" expanded="true" signature="12974:13038" ph="..." />
-                  <marker date="1496899806992" expanded="true" signature="13938:14088" ph="..." />
-                  <marker date="1496899806992" expanded="true" signature="14906:15078" ph="{...}" />
-                  <marker date="1496899806992" expanded="true" signature="15808:15823" ph="..." />
-                  <marker date="1496899806992" expanded="true" signature="17455:17523" ph="..." />
-                  <marker date="1496899806992" expanded="true" signature="17609:17645" ph="..." />
-                  <marker date="1496899806992" expanded="true" signature="17745:17834" ph="..." />
-                  <marker date="1496899806992" expanded="true" signature="17777:17832" ph="..." />
-                  <marker date="1496899806992" expanded="true" signature="18784:18798" ph="..." />
-                  <marker date="1496899806992" expanded="true" signature="18957:19061" ph="..." />
-                  <marker date="1496899806992" expanded="true" signature="20754:20755" ph="..." />
-                  <marker date="1496899806992" expanded="true" signature="20968:21004" ph="..." />
-                  <marker date="1496899806992" expanded="true" signature="21817:21840" ph="..." />
+                  <marker date="1496900065038" expanded="true" signature="5596:5680" ph="{&quot;error_code&quot;: 200...}" />
+                  <marker date="1496900065038" expanded="true" signature="5755:5839" ph="{&quot;error_code&quot;: 504...}" />
+                  <marker date="1496900065038" expanded="true" signature="6351:6388" ph="..." />
+                  <marker date="1496900065038" expanded="true" signature="8478:8504" ph="..." />
+                  <marker date="1496900065038" expanded="true" signature="9012:9045" ph="..." />
+                  <marker date="1496900065038" expanded="true" signature="9154:9190" ph="..." />
+                  <marker date="1496900065038" expanded="true" signature="12974:13038" ph="..." />
+                  <marker date="1496900065038" expanded="true" signature="13938:14088" ph="..." />
+                  <marker date="1496900065038" expanded="true" signature="14906:15078" ph="{...}" />
+                  <marker date="1496900065038" expanded="true" signature="15808:15823" ph="..." />
+                  <marker date="1496900065038" expanded="true" signature="17455:17523" ph="..." />
+                  <marker date="1496900065038" expanded="true" signature="17609:17645" ph="..." />
+                  <marker date="1496900065038" expanded="true" signature="17745:17834" ph="..." />
+                  <marker date="1496900065038" expanded="true" signature="17777:17832" ph="..." />
+                  <marker date="1496900065038" expanded="true" signature="18784:18798" ph="..." />
+                  <marker date="1496900065038" expanded="true" signature="18957:19061" ph="..." />
+                  <marker date="1496900065038" expanded="true" signature="20921:20922" ph="..." />
+                  <marker date="1496900065038" expanded="true" signature="21120:21156" ph="..." />
+                  <marker date="1496900065038" expanded="true" signature="21844:21867" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -5780,13 +5774,6 @@
       <workItem from="1496713290808" duration="2719000" />
       <workItem from="1496738545938" duration="3654000" />
     </task>
-    <task id="LOCAL-00027" summary=":fallen_leaf: 第一个简单的 mvc 模式的文件路径访问">
-      <created>1495206870894</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1495206870894</updated>
-    </task>
     <task id="LOCAL-00028" summary=":fallen_leaf: 第一个简单的 mvc 模式的文件路径访问">
       <created>1495207056953</created>
       <option name="number" value="00028" />
@@ -6123,11 +6110,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496639201755</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary=":grapes: :grapes: :grapes: 后台数据缓存在Redis（待优化，现在只是跑通一个DEMO）">
+      <created>1496899902382</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1496899902384</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163424000" />
+    <option name="totallyTimeSpent" value="163695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="1066" extended-state="0" />
@@ -6172,7 +6166,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":paw_prints: :paw_prints: :paw_prints: Nginx+Lua逻辑开发 Redis 做为页面缓存" />
     <MESSAGE value="v0.01" />
     <MESSAGE value=":heavy_check_mark: :heavy_check_mark: :heavy_check_mark: 发布一个V0.01 版本" />
     <MESSAGE value=":cactus: :cactus: :cactus: 历史遗留问题解决：模板页面的JS、CSS样式文件加载不合适，忘记了Nginx处理静态资源的配置，添加以下代码OK" />
@@ -6197,7 +6190,8 @@
     <MESSAGE value="add cache file" />
     <MESSAGE value="update &quot;${project_path}" />
     <MESSAGE value=" :dog: :dog: :dog: :dog: :dog: 商品的详情页页面数据显示(数据存储(Redis)的时候使用json格式存储，键约定：`ITEM:${Product_Id}`)" />
-    <option name="LAST_COMMIT_MESSAGE" value=" :dog: :dog: :dog: :dog: :dog: 商品的详情页页面数据显示(数据存储(Redis)的时候使用json格式存储，键约定：`ITEM:${Product_Id}`)" />
+    <MESSAGE value=":grapes: :grapes: :grapes: 后台数据缓存在Redis（待优化，现在只是跑通一个DEMO）" />
+    <option name="LAST_COMMIT_MESSAGE" value=":grapes: :grapes: :grapes: 后台数据缓存在Redis（待优化，现在只是跑通一个DEMO）" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -6501,7 +6495,7 @@
     <entry file="file://$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
-          <caret line="152" column="0" lean-forward="true" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -6509,7 +6503,7 @@
     <entry file="file://$PROJECT_DIR$/conf/domains/nginx_live.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -6517,28 +6511,28 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="100">
-            <caret line="560" column="4" lean-forward="true" selection-start-line="560" selection-start-column="4" selection-end-line="560" selection-end-column="34" />
+          <first_editor relative-caret-position="604">
+            <caret line="579" column="18" lean-forward="true" selection-start-line="579" selection-start-column="18" selection-end-line="579" selection-end-column="18" />
             <folding>
-              <marker date="1496899806992" expanded="true" signature="5596:5680" ph="{&quot;error_code&quot;: 200...}" />
-              <marker date="1496899806992" expanded="true" signature="5755:5839" ph="{&quot;error_code&quot;: 504...}" />
-              <marker date="1496899806992" expanded="true" signature="6351:6388" ph="..." />
-              <marker date="1496899806992" expanded="true" signature="8478:8504" ph="..." />
-              <marker date="1496899806992" expanded="true" signature="9012:9045" ph="..." />
-              <marker date="1496899806992" expanded="true" signature="9154:9190" ph="..." />
-              <marker date="1496899806992" expanded="true" signature="12974:13038" ph="..." />
-              <marker date="1496899806992" expanded="true" signature="13938:14088" ph="..." />
-              <marker date="1496899806992" expanded="true" signature="14906:15078" ph="{...}" />
-              <marker date="1496899806992" expanded="true" signature="15808:15823" ph="..." />
-              <marker date="1496899806992" expanded="true" signature="17455:17523" ph="..." />
-              <marker date="1496899806992" expanded="true" signature="17609:17645" ph="..." />
-              <marker date="1496899806992" expanded="true" signature="17745:17834" ph="..." />
-              <marker date="1496899806992" expanded="true" signature="17777:17832" ph="..." />
-              <marker date="1496899806992" expanded="true" signature="18784:18798" ph="..." />
-              <marker date="1496899806992" expanded="true" signature="18957:19061" ph="..." />
-              <marker date="1496899806992" expanded="true" signature="20754:20755" ph="..." />
-              <marker date="1496899806992" expanded="true" signature="20968:21004" ph="..." />
-              <marker date="1496899806992" expanded="true" signature="21817:21840" ph="..." />
+              <marker date="1496900065038" expanded="true" signature="5596:5680" ph="{&quot;error_code&quot;: 200...}" />
+              <marker date="1496900065038" expanded="true" signature="5755:5839" ph="{&quot;error_code&quot;: 504...}" />
+              <marker date="1496900065038" expanded="true" signature="6351:6388" ph="..." />
+              <marker date="1496900065038" expanded="true" signature="8478:8504" ph="..." />
+              <marker date="1496900065038" expanded="true" signature="9012:9045" ph="..." />
+              <marker date="1496900065038" expanded="true" signature="9154:9190" ph="..." />
+              <marker date="1496900065038" expanded="true" signature="12974:13038" ph="..." />
+              <marker date="1496900065038" expanded="true" signature="13938:14088" ph="..." />
+              <marker date="1496900065038" expanded="true" signature="14906:15078" ph="{...}" />
+              <marker date="1496900065038" expanded="true" signature="15808:15823" ph="..." />
+              <marker date="1496900065038" expanded="true" signature="17455:17523" ph="..." />
+              <marker date="1496900065038" expanded="true" signature="17609:17645" ph="..." />
+              <marker date="1496900065038" expanded="true" signature="17745:17834" ph="..." />
+              <marker date="1496900065038" expanded="true" signature="17777:17832" ph="..." />
+              <marker date="1496900065038" expanded="true" signature="18784:18798" ph="..." />
+              <marker date="1496900065038" expanded="true" signature="18957:19061" ph="..." />
+              <marker date="1496900065038" expanded="true" signature="20921:20922" ph="..." />
+              <marker date="1496900065038" expanded="true" signature="21120:21156" ph="..." />
+              <marker date="1496900065038" expanded="true" signature="21844:21867" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
