@@ -5,7 +5,6 @@
 * |------------------------------------------------------------------------
 * |  Date: 2017/5/25 22:29
 * |  Function: API接口先查询Redis缓存数据，如果没有则到Mysql 数据库获取同时缓存下来，同时把数据在模板页面显示出来
-* |  修改：Redis参数修改为外部调用即可
 * |------------------------------------------------------------------------
 --]]
 local redis = require("resty.redis")
@@ -36,93 +35,36 @@ local function close_redis(red)
     end
 end
 
--- write redis
--- read_redis("127.0.0.1", 63700,'tinywan123456', {basicInfoKey})
-local function write_redis(ip, port, auth, keys,values)
+-- read redis
+local function read_redis(id)
     local red = redis:new()
     red:set_timeout(1000)
-    -- connect
+    local ip = "127.0.0.1"
+    local port = 63700
+    local auth = "tinywan123456"
     local ok, err = red:connect(ip, port)
     if not ok then
         ngx_log(ngx_ERR, "connect to redis error : ", err)
         return close_redis(red)
     end
 
-    -- Redis授权登陆
-    local count
-    count, err = red:get_reused_times()
-    if 0 == count then
-        local res, err = red:auth(auth)
-        if not res then
-            ngx_log(ngx_ERR, "failed to authenticate: ", err)
-            return
-        end
-    elseif err then
-        ngx_log(ngx_ERR, "failed to get_reused_times: ", err)
+    local res, err = red:auth(auth)
+    if not res then
+        ngx.say("failed to authenticate: ", err)
+        return
     end
 
-    -- get data
-    local resp = nil
-    if #keys == 1 then
-        resp, err = red:set(keys[1],values)
-    else
-        resp, err = red:mset(keys,values)
-    end
-    if not resp then
-        ngx_log(ngx_ERR, "set redis content error : ", err)
-        return close_redis(red)
-    end
-
-    --得到的数据为空处理
-    if resp == ngx.null then
-        resp = nil
-    end
-    close_redis(red)
-
-    return resp
-end
-
-local function read_redis(ip, port, auth, keys)
-    local red = redis:new()
-    red:set_timeout(1000)
-    -- connect
-    local ok, err = red:connect(ip, port)
-    if not ok then
-        ngx_log(ngx_ERR, "connect to redis error : ", err)
-        return close_redis(red)
-    end
-
-    -- Redis授权登陆
-    local count
-    count, err = red:get_reused_times()
-    if 0 == count then
-        local res, err = red:auth(auth)
-        if not res then
-            ngx_log(ngx_ERR, "failed to authenticate: ", err)
-            return
-        end
-    elseif err then
-        ngx_log(ngx_ERR, "failed to get_reused_times: ", err)
-    end
-
-    -- get data
-    local resp = nil
-    if #keys == 1 then
-        resp, err = red:get(keys[1])
-    else
-        resp, err = red:mget(keys)
-    end
+    local resp, err = red:get("LiveTable:"..id)
     if not resp then
         ngx_log(ngx_ERR, "get redis content error : ", err)
         return close_redis(red)
     end
-
     --得到的数据为空处理
     if resp == ngx.null then
         resp = nil
     end
     close_redis(red)
-
+--    resp = {data = 'Content comes from Redis '}
     return resp
 end
 
@@ -130,7 +72,7 @@ end
 local function read_http(id)
     local resp = ngx.location.capture("/sub", {
         method = ngx.HTTP_GET,
-        args = { id = id }
+        args = {id = id}
     })
 
     if not resp then
@@ -149,7 +91,26 @@ local function read_http(id)
     end
 
     -- 获取后端Mysql数据存储到Redis中去
-    write_redis("127.0.0.1", 63700,'tinywan123456', {id},cjson.encode('Redis Cache Content ' .. id))
+    local red = redis:new()
+    red:set_timeout(1000)
+    local ip = "127.0.0.1"
+    local port = 63700
+    local auth = "tinywan123456"
+    local ok, err = red:connect(ip, port)
+    if not ok then
+        ngx_log(ngx_ERR, "connect to redis error : ", err)
+        return close_redis(red)
+    end
+
+    local res, err = red:auth(auth)
+    if not res then
+        ngx.say("failed to authenticate: ", err)
+        return
+    end
+    local ok, err = red:set(id,cjson.encode('Redis Cache Content '..id))
+    if not ok then
+        ngx_log(ngx_ERR, "failed to set : " .. id, err)
+    end
     return resp.body
 end
 
@@ -163,14 +124,13 @@ local function read_mysql(id)
 
     db:set_timeout(1000) -- 1 sec
 
-    local ok, err, errcode, sqlstate = db:connect {
+    local ok, err, errcode, sqlstate = db:connect{
         host = "127.0.0.1",
         port = 3306,
         database = "lua",
         user = "root",
         password = "123456",
-        max_packet_size = 1024 * 1024
-    }
+        max_packet_size = 1024 * 1024 }
 
     if not ok then
         ngx.say("failed to connect: ", err, ": ", errcode, " ", sqlstate)
@@ -178,7 +138,7 @@ local function read_mysql(id)
     end
 
     -- Mysql查询结果 -- array table
-    mysql_res, err, errcode, sqlstate = db:query("select * from tb_ngx_test where id = " .. id, 10)
+    mysql_res, err, errcode, sqlstate = db:query("select * from tb_ngx_test where id = "..id, 10)
     if not mysql_res then
         ngx_log(ngx_ERR, "Mysql select fail: ", err)
         return nil
@@ -204,7 +164,7 @@ local function read_mysql(id)
 
     -- 为了方便测试，给该数组添加一个字段 data = "Redis Cache Content"
     mysql_res['Data_Sources'] = "Redis Cache Content"
-    local ok, err = red:set("LiveTable:" .. id, cjson.encode(mysql_res))
+    local ok, err = red:set("LiveTable:"..id,cjson.encode(mysql_res))
     -- save redis result ： "{\"1\":{\"age\":\"24\",\"name\":\"tinywan\",\"address\":\"China\",\"id\":\"3\"},\"Data_Sources\":\"Redis Cache Content\"}"
     if not ok then
         ngx_log(ngx_ERR, "failed to set : " .. id, err)
@@ -224,7 +184,7 @@ local content = read_redis(id)
 if not content then
     ngx_log(ngx_ERR, "redis not cache content, Content comes from mysql , id : ", id)
     content = read_mysql(id)
-    --    content = read_http(id)
+--    content = read_http(id)
 else
     ngx_log(ngx_ERR, "Content comes from Redis, id = ", id)
 end
@@ -236,5 +196,5 @@ if not content then
 end
 
 -- 返回数据为json格式，直接输出就可以了
-ngx_print(content .. "\n")
+ngx_print(content.."\n")
 

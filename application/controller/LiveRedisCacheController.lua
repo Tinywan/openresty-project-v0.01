@@ -8,10 +8,11 @@
 * |  TestInfo: port = 63700 auth = tinywan123456
 * |------------------------------------------------------------------------
 --]]
-
+local template = require "resty.template"
 local redis = require("resty.redis")
 local cjson = require("cjson")
 local cjson_encode = cjson.encode
+local cjson_decode = cjson.decode
 local ngx_log = ngx.log
 local ngx_ERR = ngx.ERR
 local ngx_exit = ngx.exit
@@ -35,29 +36,41 @@ local function close_redis(red)
 end
 
 -- read redis
-local function read_redis(id)
+local function read_redis(ip, port, auth, keys)
     local red = redis:new()
     red:set_timeout(1000)
-    local ip = "127.0.0.1"
-    local port = 63700
-    local auth = "tinywan123456"
+    -- connect
     local ok, err = red:connect(ip, port)
     if not ok then
         ngx_log(ngx_ERR, "connect to redis error : ", err)
         return close_redis(red)
     end
 
-    local res, err = red:auth(auth)
-    if not res then
-        ngx.say("failed to authenticate: ", err)
-        return
+    -- Redis授权登陆
+    local count
+    count, err = red:get_reused_times()
+    if 0 == count then
+        local res, err = red:auth(auth)
+        if not res then
+            ngx_log(ngx_ERR, "failed to authenticate: ", err)
+            return
+        end
+    elseif err then
+        ngx_log(ngx_ERR, "failed to get_reused_times: ", err)
     end
 
-    local resp, err = red:get(id)
+    -- get data
+    local resp = nil
+    if #keys == 1 then
+        resp, err = red:get(keys[1])
+    else
+        resp, err = red:mget(keys)
+    end
     if not resp then
         ngx_log(ngx_ERR, "get redis content error : ", err)
         return close_redis(red)
     end
+
     --得到的数据为空处理
     if resp == ngx.null then
         resp = nil
@@ -67,15 +80,56 @@ local function read_redis(id)
     return resp
 end
 
+-- 主要是后端数据缓存处理
+local function write_redis(ip, port, auth, keys, values)
+    local red = redis:new()
+    red:set_timeout(1000)
+    -- connect
+    local ok, err = red:connect(ip, port)
+    if not ok then
+        ngx_log(ngx_ERR, "connect to redis error : ", err)
+        return close_redis(red)
+    end
+
+    -- Redis授权登陆
+    local count
+    count, err = red:get_reused_times()
+    if 0 == count then
+        local res, err = red:auth(auth)
+        if not res then
+            ngx_log(ngx_ERR, "failed to authenticate: ", err)
+            return
+        end
+    elseif err then
+        ngx_log(ngx_ERR, "failed to get_reused_times: ", err)
+    end
+
+    -- set data
+    local resp = nil
+    if #keys == 1 then
+        resp, err = red:set(keys[1], values)
+    else
+        resp, err = red:mset(keys, values)
+    end
+    if not resp then
+        ngx_log(ngx_ERR, "set redis live error : ", err)
+        return close_redis(red)
+    end
+
+    close_redis(red)
+
+    return resp
+end
+
 -- read mysql
 local function read_http(id)
-    local resp = ngx.location.capture("/sub", {
+    local resp = ngx.location.capture("/openapi/luaJson", {
         method = ngx.HTTP_GET,
-        args = {id = id}
+        args = { id = id }
     })
 
     if not resp then
-        ngx_log(ngx_ERR, "mysql request error :", err)
+        ngx_log(ngx_ERR, "API request error :", err)
         return
     end
 
@@ -89,7 +143,15 @@ local function read_http(id)
         ngx.exit(resp.status)
     end
 
-    return resp.body
+    -- Redis 数据缓存
+    local live_info_key = "LIVE_TABLE:" .. id
+    local live_value = cjson_decode(resp.body) -- 解析的Lua自己的然后存储到Redis 数据库中去
+    local live_live_str = write_redis("127.0.0.1", 63700, 'tinywan123456', { live_info_key }, cjson_encode(live_value))
+    if not live_live_str then
+        ngx_log(ngx_ERR, "redis set info error: ")
+    end
+
+    return cjson_encode(live_value)
 end
 
 
@@ -97,20 +159,22 @@ end
 local id = ngx_var.id
 
 --从redis获取
-local content = read_redis(id)
+local live_info_key = "LIVE_TABLE:" .. id
+local content = read_redis("127.0.0.1", 63700, 'tinywan123456', { live_info_key })
 
 --如果redis没有，回源到tomcat mysql 数据库
 if not content then
-    ngx_log(ngx_ERR, "redis not found content, back to http msyql , id : ", id)
-    ngx.say('Nginx is no ')
+    ngx_log(ngx_ERR, "redis not found content, back to backend API , id : ", id)
     content = read_http(id)
 end
 
---如果还没有返回404
+-- 如果还没有返回404 这里以后要做优化
 if not content then
-    ngx_log(ngx_ERR, "http not found content, id : ", id)
+    ngx_log(ngx_ERR, "backend API not found content, id : ", id)
     return ngx_exit(ngx.HTTP_NOT_FOUND)
 end
 
 --输出内容
-ngx_print(cjson_encode({content = content}))
+--ngx_print(cjson_encode({ content = content }))
+members = { Tom = 10, Jake = 11, Dodo = 12, Jhon = 16 }
+template.render("index2.html", {content = cjson_decode(content),members = members})

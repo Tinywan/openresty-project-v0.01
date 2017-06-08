@@ -557,6 +557,27 @@ http {
     +   Nginx配置：`root /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/public;`
     +   Html页面加载：`<script src="/video-js/videojs-contrib-hls.min.js"></script>`
 +   下来要做的就是动态加载模板和数据、缓存处理...
+####    2017年06月08日 星期四
++   后台数据缓存在Redis（待优化，现在只是跑通一个DEMO）
++   流程图
++   访问地址：`curl http://127.0.0.1:8088/live/1108`,请注意查看Log日志文件的变化
++   主要代码
+    ```bash
+    # 入口文件 Lua 的调用
+    location ~ ^/live/(\d+)$ {
+        set $id $1;
+        content_by_lua_file "${project_path}lua_project_v0.01/application/controller/LiveRedisCacheController.lua";
+    }
+
+    # 请求后端服务器的API接口查询数据，接口返回数据格式为Json格式
+    location ~ /openapi/(.*) {
+        internal;
+        proxy_pass http://www.baidu.com;
+    }
+    ```
++   ![fdsf](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/location_lua_redis_backend.png)    
++   做个压力测试......
+    
 ##  个人简历(resume)制作
 +   resume
 ## 功能列表
