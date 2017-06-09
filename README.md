@@ -644,3 +644,24 @@ http {
     +   [nginx proxy_cache 缓存配置](http://blog.csdn.net/dengjiexian123/article/details/53386586)  
     +   [nginx: [emerg] unknown directive "proxy_cache_purge](http://www.linuxidc.com/Linux/2013-11/93021.htm)  
     +   [nginx proxy cache 为了防止恶意刷页面/热点页面访问频繁](http://jinnianshilongnian.iteye.com/blog/2188538?page=2#comments)  
++   画图
+```bash
+                   +-------------+
+                   |    uplink   |
+                   +-------------+
+                          |
+                          +
+    MASTER            keep|alived         BACKUP
+172.29.88.224      172.29.88.222      172.29.88.225
++-------------+    +-------------+    +-------------+
+|   nginx01   |----|  virtualIP  |----|   nginx02   |
++-------------+    +-------------+    +-------------+
+                          |
+       +------------------+------------------+
+       |                  |                  |
++-------------+    +-------------+    +-------------+
+|    web01    |    |    web02    |    |    web03    |
++-------------+    +-------------+    +-------------+
+
+```   
+    

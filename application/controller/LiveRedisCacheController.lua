@@ -18,6 +18,7 @@ local log = ngx.log
 local ERR = ngx.ERR
 local exit = ngx.exit
 local ngx_var = ngx.var
+local print = ngx.print
 
 -- read redis
 local function read_redis(auth, keys)
@@ -39,7 +40,7 @@ local function read_redis(auth, keys)
     end
 
     if not resp then
-        log(ERR, "get redis content error : "..keys[1], err)
+        log(ERR, "get redis content error : " .. keys[1], err)
         return
     end
 
@@ -77,7 +78,7 @@ end
 -- 大并发采用 resty.http ，对于：ngx.location.capture 慎用
 local function read_http(id)
     local httpc = http.new()
-    local resp, err = httpc:request_uri("http://sewise.amai8.com", {
+    local resp, err = httpc:request_uri("http://sewise.www.com", {
         method = "GET",
         path = "/openapi/luaJson?id=" .. id,
         headers = {
@@ -117,22 +118,28 @@ end
 --获取id
 local id = ngx_var.id
 
---从redis获取
+--redis get content
 local live_info_key = "LIVE_TABLE:" .. id
 local content = read_redis('tinywanredisamaistream', { live_info_key })
 
---如果redis没有，回源到tomcat mysql 数据库
+--if redis not request backend API
 if not content then
     log(ERR, "redis not found content, back to backend API , id : ", id)
     content = read_http(id)
 end
 
--- 如果还没有返回404 这里以后要做优化
+-- if backend API  not exit 404
 if not content then
     log(ERR, "backend API not found content, id : ", id)
-    return exit(ngx.HTTP_NOT_FOUND)
+    return ngx.exit(ngx.HTTP_NOT_FOUND)
 end
---输出内容
---ngx_print(cjson_encode({ content = content }))
+
+-- if backend API  response result is false 403
+if tostring(content) == "false" then
+    log(ERR, "backend API content is false ", id)
+    return ngx.exit(ngx.HTTP_FORBIDDEN)
+end
+
 members = { Tom = 10, Jake = 11, Dodo = 12, Jhon = 16 }
+template.caching(true)
 template.render("index.html", { title = "Openresty 模板渲染界面", content = cjson_decode(content), members = members })
