@@ -11,12 +11,13 @@
 local template = require "resty.template"
 local redis = require "resty.redis_iresty"
 local cjson = require("cjson")
-local http = require("resty.http")
 local cjson_encode = cjson.encode
 local cjson_decode = cjson.decode
-local log = ngx.log
-local ERR = ngx.ERR
-local exit = ngx.exit
+local ngx_log = ngx.log
+local ngx_ERR = ngx.ERR
+local ngx_exit = ngx.exit
+local ngx_print = ngx.print
+local ngx_re_match = ngx.re.match
 local ngx_var = ngx.var
 
 -- read redis
@@ -25,8 +26,7 @@ local function read_redis(auth, keys)
     -- Redis授权登陆
     local res, err = red:auth(auth)
     if not res then
-        --log(DEBUG, "query the TCP server due to reply truncation")
-        log(ERR, "failed to authenticate ", err)
+        ngx_log(ngx_ERR, "failed to authenticate ", err)
         return
     end
 
@@ -37,12 +37,12 @@ local function read_redis(auth, keys)
     else
         resp, err = red:mget(keys)
     end
-
     if not resp then
-        log(ERR, "get redis content error : "..keys[1], err)
+        ngx_log(ngx_ERR, "get redis content error : ", err)
         return
     end
 
+    --得到的数据为空处理
     if resp == ngx.null then
         resp = nil
     end
@@ -56,7 +56,7 @@ local function write_redis(auth, keys, values)
     -- Redis授权登陆
     local res, err = red:auth(auth)
     if not res then
-        log(ERR, "failed to authenticate: ", err)
+        ngx_log(ngx_ERR, "failed to authenticate: ", err)
         return
     end
 
@@ -68,38 +68,32 @@ local function write_redis(auth, keys, values)
         resp, err = red:mset(keys, values)
     end
     if not resp then
-        log(ERR, "set redis live error : ", err)
+        ngx_log(ngx_ERR, "set redis live error : ", err)
         return
     end
     return resp
 end
 
--- 大并发采用 resty.http ，对于：ngx.location.capture 慎用
+-- read mysql
 local function read_http(id)
-    local httpc = http.new()
-    local resp, err = httpc:request_uri("http://sewise.amai8.com", {
-        method = "GET",
-        path = "/openapi/luaJson?id=" .. id,
-        headers = {
-            ["User-Agent"] = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36"
-        }
+    local resp = ngx.location.capture("/openapi/luaJson", {
+        method = ngx.HTTP_GET,
+        args = { id = id }
     })
 
     if not resp then
-        log(ERR, "resty.http API request error :", err)
+        ngx_log(ngx_ERR, "API request error :", err)
         return
     end
-    httpc:close()
 
     -- 判断状态码
     if resp.status ~= ngx.HTTP_OK then
-        log(ERR, "request error, status :", resp.status)
+        ngx_log(ngx_ERR, "request error, status :", resp.status)
         return
     end
 
     if resp.status == ngx.HTTP_FORBIDDEN then
-        log(ERR, "request error, status :", resp.status)
-        return
+        ngx.exit(resp.status)
     end
 
     -- Redis 数据缓存
@@ -107,7 +101,7 @@ local function read_http(id)
     local live_value = cjson_decode(resp.body) -- 解析的Lua自己的然后存储到Redis 数据库中去
     local live_live_str = write_redis('tinywanredisamaistream', { live_info_key }, cjson_encode(live_value))
     if not live_live_str then
-        log(ERR, "redis set info error: ")
+        ngx_log(ngx_ERR, "redis set info error: ")
     end
 
     return cjson_encode(live_value)
@@ -123,16 +117,16 @@ local content = read_redis('tinywanredisamaistream', { live_info_key })
 
 --如果redis没有，回源到tomcat mysql 数据库
 if not content then
-    log(ERR, "redis not found content, back to backend API , id : ", id)
+    ngx_log(ngx_ERR, "redis not found content, back to backend API , id : ", id)
     content = read_http(id)
 end
 
 -- 如果还没有返回404 这里以后要做优化
 if not content then
-    log(ERR, "backend API not found content, id : ", id)
-    return exit(ngx.HTTP_NOT_FOUND)
+    ngx_log(ngx_ERR, "backend API not found content, id : ", id)
+    return ngx_exit(ngx.HTTP_NOT_FOUND)
 end
 --输出内容
 --ngx_print(cjson_encode({ content = content }))
 members = { Tom = 10, Jake = 11, Dodo = 12, Jhon = 16 }
-template.render("index.html", { title = "Openresty 模板渲染界面", content = cjson_decode(content), members = members })
+template.render("index.html", {title = "Openresty 模板渲染界面",content = cjson_decode(content),members = members})

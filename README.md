@@ -588,6 +588,9 @@ http {
     ``` 
 +   做个压力测试(主要是Redis连接数，并发太多将会出现超时问题，`netstat` 查看Redis连接数，好多"TIME OUT")，测试很糟糕的，QPS好低哦!
 +   :x: :x: :x: :x: :x: :x: :x: :x: :x: 这块一定要优化！80%就大工搞成了 :x: :x: :x: :x:
++   修改后端API请求方式，由`ngx.location.capture` 转换为：`resty.http` 
+    +   可能出现的错误：`resty.http API request error :no resolver defined to resolve "sewise.baidu.com"`
+    +   解决办法，nginx.conf server节增加dns解析`resolver 8.8.8.8 114.114.114.114 valid=3600s;`
 +   别人的建议：
     +   ![lua_redis](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/lua_redis.png)
     
