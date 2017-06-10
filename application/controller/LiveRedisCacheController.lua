@@ -19,15 +19,33 @@ local ERR = ngx.ERR
 local exit = ngx.exit
 local ngx_var = ngx.var
 local print = ngx.print
+local live_ngx_cache = ngx.shared.live_ngx_cache;
 
--- read redis
+----------------- set ngx.cache
+local function set_cache(key, value, exptime)
+    if not exptime then
+        exptime = 0
+    end
+    local succ, err, forcible = live_ngx_cache:set(key, value, exptime)
+    return succ
+end
+
+-- get ngx.cache
+local function get_cache(key)
+    local value = live_ngx_cache:get(key)
+    if not value then
+        return
+    end
+    log(ERR, "content from ngx.cache id : " .. key)
+    return value
+end
+
+-------------------- read redis
 local function read_redis(auth, keys)
     local red = redis:new()
     -- Redis授权登陆
     local res, err = red:auth(auth)
     if not res then
-        --log(DEBUG, "query the TCP server due to reply truncation")
-        log(ERR, "failed to authenticate ", err)
         return
     end
 
@@ -47,11 +65,13 @@ local function read_redis(auth, keys)
     if resp == ngx.null then
         resp = nil
     end
-
+    -- 缓存到ngx_cache
+    set_cache(keys[1], resp, 0)
+    log(ERR, "content from redis id : " .. keys[1])
     return resp
 end
 
--- 主要是后端数据缓存处理
+-- write redis
 local function write_redis(auth, keys, values)
     local red = redis:new()
     -- Redis授权登陆
@@ -75,10 +95,10 @@ local function write_redis(auth, keys, values)
     return resp
 end
 
--- 大并发采用 resty.http ，对于：ngx.location.capture 慎用
+-------------- read_http 大并发采用 resty.http ，对于：ngx.location.capture 慎用
 local function read_http(id)
     local httpc = http.new()
-    local resp, err = httpc:request_uri("http://sewise.www.com", {
+    local resp, err = httpc:request_uri("http://sewise.amai8.com", {
         method = "GET",
         path = "/openapi/luaJson?id=" .. id,
         headers = {
@@ -103,24 +123,28 @@ local function read_http(id)
         return
     end
 
-    -- Redis 数据缓存
+    -- 缓存到 Redis 数据缓存
     local live_info_key = "LIVE_TABLE:" .. id
     local live_value = cjson_decode(resp.body) -- 解析的Lua自己的然后存储到Redis 数据库中去
     local live_live_str = write_redis('tinywanredisamaistream', { live_info_key }, cjson_encode(live_value))
     if not live_live_str then
         log(ERR, "redis set info error: ")
     end
-
+    log(ERR, "content from backend API id : " .. id)
     return cjson_encode(live_value)
 end
 
-
---获取id
+--get var id
 local id = ngx_var.id
-
---redis get content
 local live_info_key = "LIVE_TABLE:" .. id
-local content = read_redis('tinywanredisamaistream', { live_info_key })
+
+-------- ngx.cache get content
+local content = get_cache(live_info_key)
+--if ngx_cache not request redis
+if not content then
+    log(ERR, "live_ngx_cache not found content, request redis  db , id : ", id)
+    content = read_redis('tinywanredisamaistream', { live_info_key })
+end
 
 --if redis not request backend API
 if not content then
@@ -139,7 +163,8 @@ if tostring(content) == "false" then
     log(ERR, "backend API content is false ", id)
     return ngx.exit(ngx.HTTP_FORBIDDEN)
 end
-
+--print(content)
+--exit(200)
 members = { Tom = 10, Jake = 11, Dodo = 12, Jhon = 16 }
 template.caching(true)
 template.render("index.html", { title = "Openresty 模板渲染界面", content = cjson_decode(content), members = members })
