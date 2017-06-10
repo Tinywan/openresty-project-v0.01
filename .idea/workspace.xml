@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment=":hibiscus: :hibiscus: :hibiscus: 添加二级缓存(ngx.cache)">
+    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="缓存记录表 :hibiscus: :hibiscus: :hibiscus: 添加二级缓存(ngx.cache)">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -49,26 +49,26 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="433">
-                <caret line="597" column="13" lean-forward="false" selection-start-line="597" selection-start-column="8" selection-end-line="597" selection-end-column="13" />
+              <first_editor relative-caret-position="413">
+                <caret line="608" column="50" lean-forward="false" selection-start-line="608" selection-start-column="50" selection-end-line="608" selection-end-column="50" />
                 <folding>
-                  <marker date="1497108144674" expanded="true" signature="5989:6073" ph="{&quot;error_code&quot;: 200...}" />
-                  <marker date="1497108144674" expanded="true" signature="6148:6232" ph="{&quot;error_code&quot;: 504...}" />
-                  <marker date="1497108144674" expanded="true" signature="6744:6781" ph="..." />
-                  <marker date="1497108144674" expanded="true" signature="8871:8897" ph="..." />
-                  <marker date="1497108144674" expanded="true" signature="9405:9438" ph="..." />
-                  <marker date="1497108144674" expanded="true" signature="9547:9583" ph="..." />
-                  <marker date="1497108144674" expanded="true" signature="13367:13431" ph="..." />
-                  <marker date="1497108144674" expanded="true" signature="14331:14481" ph="..." />
-                  <marker date="1497108144674" expanded="true" signature="15299:15471" ph="{...}" />
-                  <marker date="1497108144674" expanded="true" signature="16201:16216" ph="..." />
-                  <marker date="1497108144674" expanded="true" signature="17848:17916" ph="..." />
-                  <marker date="1497108144674" expanded="true" signature="18002:18038" ph="..." />
-                  <marker date="1497108144674" expanded="true" signature="18138:18227" ph="..." />
-                  <marker date="1497108144674" expanded="true" signature="18170:18225" ph="..." />
-                  <marker date="1497108144674" expanded="true" signature="19177:19191" ph="..." />
-                  <marker date="1497108144674" expanded="true" signature="19350:19454" ph="..." />
-                  <marker date="1497108144674" expanded="true" signature="24472:24495" ph="..." />
+                  <marker date="1497108418840" expanded="true" signature="5989:6073" ph="{&quot;error_code&quot;: 200...}" />
+                  <marker date="1497108418840" expanded="true" signature="6148:6232" ph="{&quot;error_code&quot;: 504...}" />
+                  <marker date="1497108418840" expanded="true" signature="6744:6781" ph="..." />
+                  <marker date="1497108418840" expanded="true" signature="8871:8897" ph="..." />
+                  <marker date="1497108418840" expanded="true" signature="9405:9438" ph="..." />
+                  <marker date="1497108418840" expanded="true" signature="9547:9583" ph="..." />
+                  <marker date="1497108418840" expanded="true" signature="13367:13431" ph="..." />
+                  <marker date="1497108418840" expanded="true" signature="14331:14481" ph="..." />
+                  <marker date="1497108418840" expanded="true" signature="15299:15471" ph="{...}" />
+                  <marker date="1497108418840" expanded="true" signature="16201:16216" ph="..." />
+                  <marker date="1497108418840" expanded="true" signature="17848:17916" ph="..." />
+                  <marker date="1497108418840" expanded="true" signature="18002:18038" ph="..." />
+                  <marker date="1497108418840" expanded="true" signature="18138:18227" ph="..." />
+                  <marker date="1497108418840" expanded="true" signature="18170:18225" ph="..." />
+                  <marker date="1497108418840" expanded="true" signature="19177:19191" ph="..." />
+                  <marker date="1497108418840" expanded="true" signature="19350:19454" ph="..." />
+                  <marker date="1497108418840" expanded="true" signature="24667:24690" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -693,13 +693,6 @@
       <workItem from="1496968610520" duration="10816000" />
       <workItem from="1496999253338" duration="76000" />
     </task>
-    <task id="LOCAL-00033" summary="`resty.template`渲染模板,通过`ngx API`输出内容到指定的`html`页面 :blossom:  :blossom:  :blossom:">
-      <created>1495212549942</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1495212549942</updated>
-    </task>
     <task id="LOCAL-00034" summary="`resty.template`渲染模板,输出内容到`html`页面 :sunflower: :sunflower: :sunflower:">
       <created>1495212704007</created>
       <option name="number" value="00034" />
@@ -1036,11 +1029,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497107281409</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="缓存记录表 :hibiscus: :hibiscus: :hibiscus: 添加二级缓存(ngx.cache)">
+      <created>1497108156585</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1497108156586</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194872000" />
+    <option name="totallyTimeSpent" value="195155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1047" extended-state="0" />
@@ -1085,7 +1085,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":heavy_check_mark: 发布一个V0.01 版本 :pencil2: :pencil2: :pencil2: :pencil2:" />
     <MESSAGE value=":recycle: :recycle: :recycle: nginx proxy_cache 缓存配置" />
     <MESSAGE value="标准os库 :negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:" />
     <MESSAGE value="API 的设计:negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:" />
@@ -1110,7 +1109,8 @@
     <MESSAGE value=":x: :x: :x: :x: :x:  后台数据缓存在Redis（待优化，现在只是跑通一个DEMO）" />
     <MESSAGE value=":hibiscus: :hibiscus: :hibiscus: 修改后端API请求方式，由`ngx.location.capture` 转换为：`resty.http`" />
     <MESSAGE value=":hibiscus: :hibiscus: :hibiscus: 添加二级缓存(ngx.cache)" />
-    <option name="LAST_COMMIT_MESSAGE" value=":hibiscus: :hibiscus: :hibiscus: 添加二级缓存(ngx.cache)" />
+    <MESSAGE value="缓存记录表 :hibiscus: :hibiscus: :hibiscus: 添加二级缓存(ngx.cache)" />
+    <option name="LAST_COMMIT_MESSAGE" value="缓存记录表 :hibiscus: :hibiscus: :hibiscus: 添加二级缓存(ngx.cache)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1479,26 +1479,26 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="433">
-            <caret line="597" column="13" lean-forward="false" selection-start-line="597" selection-start-column="8" selection-end-line="597" selection-end-column="13" />
+          <first_editor relative-caret-position="413">
+            <caret line="608" column="50" lean-forward="false" selection-start-line="608" selection-start-column="50" selection-end-line="608" selection-end-column="50" />
             <folding>
-              <marker date="1497108144674" expanded="true" signature="5989:6073" ph="{&quot;error_code&quot;: 200...}" />
-              <marker date="1497108144674" expanded="true" signature="6148:6232" ph="{&quot;error_code&quot;: 504...}" />
-              <marker date="1497108144674" expanded="true" signature="6744:6781" ph="..." />
-              <marker date="1497108144674" expanded="true" signature="8871:8897" ph="..." />
-              <marker date="1497108144674" expanded="true" signature="9405:9438" ph="..." />
-              <marker date="1497108144674" expanded="true" signature="9547:9583" ph="..." />
-              <marker date="1497108144674" expanded="true" signature="13367:13431" ph="..." />
-              <marker date="1497108144674" expanded="true" signature="14331:14481" ph="..." />
-              <marker date="1497108144674" expanded="true" signature="15299:15471" ph="{...}" />
-              <marker date="1497108144674" expanded="true" signature="16201:16216" ph="..." />
-              <marker date="1497108144674" expanded="true" signature="17848:17916" ph="..." />
-              <marker date="1497108144674" expanded="true" signature="18002:18038" ph="..." />
-              <marker date="1497108144674" expanded="true" signature="18138:18227" ph="..." />
-              <marker date="1497108144674" expanded="true" signature="18170:18225" ph="..." />
-              <marker date="1497108144674" expanded="true" signature="19177:19191" ph="..." />
-              <marker date="1497108144674" expanded="true" signature="19350:19454" ph="..." />
-              <marker date="1497108144674" expanded="true" signature="24472:24495" ph="..." />
+              <marker date="1497108418840" expanded="true" signature="5989:6073" ph="{&quot;error_code&quot;: 200...}" />
+              <marker date="1497108418840" expanded="true" signature="6148:6232" ph="{&quot;error_code&quot;: 504...}" />
+              <marker date="1497108418840" expanded="true" signature="6744:6781" ph="..." />
+              <marker date="1497108418840" expanded="true" signature="8871:8897" ph="..." />
+              <marker date="1497108418840" expanded="true" signature="9405:9438" ph="..." />
+              <marker date="1497108418840" expanded="true" signature="9547:9583" ph="..." />
+              <marker date="1497108418840" expanded="true" signature="13367:13431" ph="..." />
+              <marker date="1497108418840" expanded="true" signature="14331:14481" ph="..." />
+              <marker date="1497108418840" expanded="true" signature="15299:15471" ph="{...}" />
+              <marker date="1497108418840" expanded="true" signature="16201:16216" ph="..." />
+              <marker date="1497108418840" expanded="true" signature="17848:17916" ph="..." />
+              <marker date="1497108418840" expanded="true" signature="18002:18038" ph="..." />
+              <marker date="1497108418840" expanded="true" signature="18138:18227" ph="..." />
+              <marker date="1497108418840" expanded="true" signature="18170:18225" ph="..." />
+              <marker date="1497108418840" expanded="true" signature="19177:19191" ph="..." />
+              <marker date="1497108418840" expanded="true" signature="19350:19454" ph="..." />
+              <marker date="1497108418840" expanded="true" signature="24667:24690" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
