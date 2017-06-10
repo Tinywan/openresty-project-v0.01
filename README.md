@@ -593,25 +593,39 @@ http {
     +   解决办法，nginx.conf server节增加dns解析`resolver 8.8.8.8 114.114.114.114 valid=3600s;`
 +   别人的建议：
     +   ![lua_redis](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/lua_redis.png)
-  
 +   添加二级缓存(ngx.cache)
+    +   访问地址：`http://127.0.0.1:8088/live/1063`
+    +   缓存记录表
+        ```bash
+        +-------------+    +-------------+    +-------------+    +-------------+
+        |   第一次访问  |--->|  ngx_cache  |--->| redis_cache |--->| backend API |
+        +-------------+    +-------------+    +-------------+    +-------------+
+        
+        +-------------+    +-------------+    +-------------+ 
+        |   第二次访问  |--->|  ngx_cache  |--->| redis_cache |
+        +-------------+    +-------------+    +-------------+    
+        
+        +-------------+    +-------------+ 
+        |   第三次访问  |--->|  ngx_cache  |
+        +-------------+    +-------------+ 
+        ```
     +   第一次访问日志记录
         ```bash
-         [lua] LiveRedisCacheController.lua:145: live_ngx_cache not found content, request redis  db , id : 1066,
-         [lua] LiveRedisCacheController.lua:61: read_redis(): get redis content error : LIVE_TABLE : 1066
-         [lua] LiveRedisCacheController.lua:151: redis not found content, back to backend API , id : 1066
-         [lua] LiveRedisCacheController.lua:133: read_http(): content from backend API id : 1066
+         [lua] CacheController.lua:145: ngx_cache not found content, request redis  db , id : 1066,
+         [lua] CacheController.lua:61: read_redis(): get redis content error : LIVE_TABLE : 1066
+         [lua] CacheController.lua:151: redis not found content, back to backend API , id : 1066
+         [lua] CacheController.lua:133: read_http(): content from backend API id : 1066
         ```
     +   第二次访问日志记录
         ```bash
-        [lua] LiveRedisCacheController.lua:145: live_ngx_cache not found content, request redis  db , id : 1066
-        [lua] LiveRedisCacheController.lua:70: read_redis(): content from redis LIVE_TABLE:1066
+        [lua] CacheController.lua:145: ngx_cache not found content, request redis  db , id : 1066
+        [lua] CacheController.lua:70: read_redis(): content from redis LIVE_TABLE:1066
         ```  
-    +   第三次到第N次访问日志记录
+    +   第三次到第N次访问日志记
         ```bash
-        [lua] LiveRedisCacheController.lua:39: get_cache(): content from ngx.cache id : LIVE_TABLE:1066
-        [lua] LiveRedisCacheController.lua:39: get_cache(): content from ngx.cache id : LIVE_TABLE:1066
-        [lua] LiveRedisCacheController.lua:39: get_cache(): content from ngx.cache id : LIVE_TABLE:1066
+        [lua] CacheController.lua:39: get_cache(): content from ngx.cache id : LIVE_TABLE:1066
+        [lua] CacheController.lua:39: get_cache(): content from ngx.cache id : LIVE_TABLE:1066
+        [lua] CacheController.lua:39: get_cache(): content from ngx.cache id : LIVE_TABLE:1066
         ```  
     +   问题，过期问题如何解决？？？？？？？？？？？？？          
     
@@ -684,5 +698,17 @@ http {
 |    web01    |    |    web02    |    |    web03    |
 +-------------+    +-------------+    +-------------+
 
+
++-------------+    +-------------+    +-------------+    +-------------+
+|   第一次访问  |--->|  ngx_cache  |--->|   redis     |--->| backend API |
++-------------+    +-------------+    +-------------+    +-------------+
+
++-------------+    +-------------+    +-------------+ 
+|   第二次访问  |--->|  ngx_cache  |--->|   redis     |
++-------------+    +-------------+    +-------------+    
+
++-------------+    +-------------+ 
+|   第三次访问  |--->|  ngx_cache  |
++-------------+    +-------------+   
 ```   
     
