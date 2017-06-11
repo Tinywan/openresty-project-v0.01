@@ -1,5 +1,9 @@
 ![Markdown](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/tinywan_title.png)
 ------
+##  branch list
++   目前`master`分支比较问题，将不再直接修改代码
++   公司分支提交到：`company`分支上去
++   家里分支提交到：`home`分支上去
 ##  Project structure
 ```javascript
 .
@@ -151,19 +155,17 @@ http {
 - [x] 字符串分割：`helper.split()`
 - [x] 删除空格：`helper.ltrim() / rtrim() / trim()`
 - [x] json 解析的异常：`helper.cjson_decode(str2)`
-    +   该方法可以避免cjson解析异常直接导致服务器500错误
+    +   错误返回nil，成功返回解析后的json字符串
     +   如何调用
     ```lua 
         local helper = require 'vendor.helper'
         local str1  = '{"hobby":{"name":"tinywan","age":24},"is_male":false}'    -- 写法1
         local str2  = [[ {"hobby":{"name":"tinywan","age":24},"is_male:false} ]] -- 写法2   
         local obj_obj = helper.cjson_decode(str2)
-        if obj_obj == nil
-        then
+        if not json_str then
             ngx.say('cjson_decode error')
         else
-            ngx.say("cjson_decode success")
-            ngx.say(obj_obj.hobby.name, "<br/>")
+            ngx.say(helper.format_table(json_str))
         end
     ```
 ##  Mysql 数据库操作

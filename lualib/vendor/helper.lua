@@ -26,7 +26,7 @@ local cjson = require("cjson")
 
 local ok, new_tab = pcall(require, "table.new")
 if not ok or type(new_tab) ~= "function" then
-    new_tab = function (narr, nrec) return {} end
+    new_tab = function(narr, nrec) return {} end
 end
 
 local _M = new_tab(0, 54)
@@ -34,54 +34,38 @@ local _M = new_tab(0, 54)
 _M._VERSION = '0.01'
 
 -- add
-function _M.add(a,b)
+function _M.add(a, b)
     return a + b
 end
 
---[[    获取http get/post 请求参数
-eg:
-    local str1  = '{"hobby":{"name":"tinywan","age":24,"reader":"AMAI"},"is_male":false}'
-    local obj_obj = cjson_decode(str1)
-    if obj_obj == nil
-    then
-        ngx.say('cjson error')
-    else
-        ngx.say(obj_obj.is_male, "<br/>")
-        ngx.say(obj_obj.hobby.name, "<br/>")
-        ngx.say(obj_obj.hobby.age, "<br/>")
-        ngx.say(obj_obj.hobby.reader, "<br/>")
+-----------------------------------------------------------cjson
+-- help:http://www.jb51.net/article/55522.htm
+function _M.cjson_encode(str)
+    local json_val = nil
+    pcall(function(str) json_val = cjson.encode(str) end, str)
+    return json_val
+end
+
+function _M.cjson_decode(str)
+    local json_val = nil
+    pcall(function(str) json_val = cjson.decode(str) end, str)
+    return json_val
+end
+
+function _M.format_table(tab)
+    local str = ""
+    for k, v in pairs(tab) do
+        str = str..k..'--'..v.."\r\n"
     end
---]]
-local function _json_encode(str)
-    return cjson.encode(str)
+    return str
 end
 
-local function _json_decode(str)
-    return cjson.decode(str)
-end
-
-function _M.cjson_encode( str )
-    local ok, t = pcall(_json_encode, str)
-    if not ok then
-        return nil
-    end
-    return t
-end
-
-function _M.cjson_decode( str )
-    local ok, t = pcall(_json_decode, str)
-    if not ok then
-        return nil
-    end
-    return t
-end
-
+--------------------------------------------------------------http
 --[[    获取http get/post 请求参数
 eg:
     post: curl -d "name=tinywan&age=24" http://127.0.0.1:8686/0.1/live/http_args
     get: curl -G -d "name=tinywan&age=24" http://127.0.0.1:8686/0.1/live/http_args
 -- --]]
-
 function _M.http_args()
     local request_method = ngx.var.request_method
     local args = ngx.req.get_uri_args()
