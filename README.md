@@ -631,8 +631,15 @@ http {
         ```  
     +   问题，过期问题如何解决？？？？？？？？？？？？？          
     
-##  个人简历(resume)制作
-+   resume
+##  openresty进行了简化成了7个阶段
++   `set_by_lua`: 流程分支判断，判断变量初始哈
++   `rewrite_by_lua`: 用lua脚本实现nginx rewrite
++   `access_by_lua`: ip准入，是否能合法性访问，防火墙
++   `content_by_lua`: 内存生成
++   `header_filter_by_lua`：过滤http头信息，增加头信息
++   `body_filter_by_lua`: 内容大小写，内容加密
++   `log_by_lua`: 本地/远程记录日志
++   其实可以只用 `content_by_lua`，所有功能都在该阶段完成，也是可以的
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据

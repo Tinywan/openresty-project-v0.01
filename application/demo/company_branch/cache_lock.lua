@@ -190,6 +190,7 @@ local live_info_key = "LIVE_TABLE:" .. id
 
 -------- ngx.cache get content
 local content = get_cache(live_info_key)
+
 --if ngx_cache not request redis
 if not content then
     log(ERR, "live_ngx_cache not found content, request redis  db , id : ", id)
@@ -204,10 +205,10 @@ if not content then
         log(ERR,"failed to acquire the lock", err)
     end
 
-    -- redis 读取内容
-    value = read_redis('tinywanredisamaistream', { live_info_key })
-    if not value then
-        local ok, err = lock:unlock()  --解锁
+    -- redis get content
+    content = read_redis('tinywanredisamaistream', { live_info_key })
+    if not content then
+        local ok, err = lock:unlock()  --unlock
         if not ok then
             log(ERR,"failed to unlock 111", err)
         end
@@ -215,8 +216,8 @@ if not content then
         return
     end
 
-    -- set
-    local ok, err = live_ngx_cache:set(live_info_key, value, 1)
+    -- set ngx-cache
+    local ok, err = live_ngx_cache:set(live_info_key, content, 1)
     if not ok then
         local ok, err = lock:unlock()
         if not ok then
@@ -232,7 +233,7 @@ if not content then
     log(ERR, "content from ngx.cache id : " ..live_info_key)
 end
 
-print(value)
+print(content)
 exit(200)
 
 
