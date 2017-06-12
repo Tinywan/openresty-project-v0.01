@@ -629,6 +629,7 @@ http {
         [lua] CacheController.lua:39: get_cache(): content from ngx.cache id : LIVE_TABLE:1066
         [lua] CacheController.lua:39: get_cache(): content from ngx.cache id : LIVE_TABLE:1066
         ```  
+    +   解决缓存失效风暴 lua-resty-lock [二级缓存]          
     +   问题，过期问题如何解决？？？？？？？？？？？？？          
     
 ##  openresty进行了简化成了7个阶段

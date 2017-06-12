@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/demo/company_branch/cache_lock.lua" afterPath="$PROJECT_DIR$/application/demo/company_branch/cache_lock.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +15,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cache_lock.lua" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cache_lock.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/demo/company_branch/cache_lock.lua">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
@@ -27,6 +27,37 @@
                 <element signature="n#read_http#0" expanded="true" />
                 <element signature="e#5476#5523#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="412">
+                <caret line="631" column="37" lean-forward="false" selection-start-line="631" selection-start-column="37" selection-end-line="631" selection-end-column="37" />
+                <folding>
+                  <marker date="1497259025441" expanded="true" signature="6028:6112" ph="{&quot;error_code&quot;: 200...}" />
+                  <marker date="1497259025441" expanded="true" signature="6187:6271" ph="{&quot;error_code&quot;: 504...}" />
+                  <marker date="1497259025441" expanded="true" signature="6783:6820" ph="..." />
+                  <marker date="1497259025441" expanded="true" signature="8910:8936" ph="..." />
+                  <marker date="1497259025441" expanded="true" signature="9444:9477" ph="..." />
+                  <marker date="1497259025441" expanded="true" signature="9586:9622" ph="..." />
+                  <marker date="1497259025441" expanded="true" signature="13406:13470" ph="..." />
+                  <marker date="1497259025441" expanded="true" signature="14370:14520" ph="..." />
+                  <marker date="1497259025441" expanded="true" signature="15338:15510" ph="{...}" />
+                  <marker date="1497259025441" expanded="true" signature="16240:16255" ph="..." />
+                  <marker date="1497259025441" expanded="true" signature="17887:17955" ph="..." />
+                  <marker date="1497259025441" expanded="true" signature="18041:18077" ph="..." />
+                  <marker date="1497259025441" expanded="true" signature="18177:18266" ph="..." />
+                  <marker date="1497259025441" expanded="true" signature="18209:18264" ph="..." />
+                  <marker date="1497259025441" expanded="true" signature="19216:19230" ph="..." />
+                  <marker date="1497259025441" expanded="true" signature="19389:19493" ph="..." />
+                  <marker date="1497259025441" expanded="true" signature="25047:25070" ph="..." />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -45,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/logs/live_error.log">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+              <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -149,9 +180,9 @@
         <option value="$PROJECT_DIR$/lualib/vendor/helper.lua" />
         <option value="$PROJECT_DIR$/application/demo/json_table.lua" />
         <option value="$PROJECT_DIR$/conf/domains/nginx_live.conf" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/application/demo/company_branch/cache_lock.lua" />
         <option value="$PROJECT_DIR$/logs/live_error.log" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -464,14 +495,7 @@
       <workItem from="1497108621277" duration="124000" />
       <workItem from="1497146170700" duration="613000" />
       <workItem from="1497149557811" duration="5057000" />
-      <workItem from="1497246328065" duration="9385000" />
-    </task>
-    <task id="LOCAL-00037" summary="很高兴我们引入了dkjson库 :clap: :clap: :clap:">
-      <created>1495247440627</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1495247440627</updated>
+      <workItem from="1497246328065" duration="9484000" />
     </task>
     <task id="LOCAL-00038" summary=":dizzy: :dizzy: :dizzy: 很高兴我们引入了dkjson库">
       <created>1495247696221</created>
@@ -809,11 +833,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497253379718</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="解决缓存失效风暴 lua-resty-lock">
+      <created>1497258935259</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1497258935259</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210553000" />
+    <option name="totallyTimeSpent" value="210652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="1066" extended-state="0" />
@@ -847,7 +878,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="API 的设计:negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:" />
     <MESSAGE value="如何使用API接口 :performing_arts: :performing_arts: :performing_arts:" />
     <MESSAGE value="如何使用API接口 :white_check_mark: :white_check_mark: :white_check_mark:" />
     <MESSAGE value="update readme" />
@@ -872,7 +902,8 @@
     <MESSAGE value="缓存记录表 :hibiscus: :hibiscus: :hibiscus: 添加二级缓存(ngx.cache)" />
     <MESSAGE value="resty.lock" />
     <MESSAGE value="openresty进行了简化成了7个阶段" />
-    <option name="LAST_COMMIT_MESSAGE" value="openresty进行了简化成了7个阶段" />
+    <MESSAGE value="解决缓存失效风暴 lua-resty-lock" />
+    <option name="LAST_COMMIT_MESSAGE" value="解决缓存失效风暴 lua-resty-lock" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -891,8 +922,8 @@
         <state relative-caret-position="2736">
           <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
           <folding>
-            <element signature="n#get_cache#0" expanded="true" />
-            <element signature="n#read_redis#0" expanded="true" />
+            <element signature="n#get_cache#0" expanded="false" />
+            <element signature="n#read_redis#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -931,8 +962,8 @@
         <state relative-caret-position="2736">
           <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
           <folding>
-            <element signature="n#get_cache#0" expanded="true" />
-            <element signature="n#read_redis#0" expanded="true" />
+            <element signature="n#get_cache#0" expanded="false" />
+            <element signature="n#read_redis#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1159,35 +1190,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="446">
-            <caret line="633" column="24" lean-forward="false" selection-start-line="633" selection-start-column="4" selection-end-line="633" selection-end-column="24" />
-            <folding>
-              <marker date="1497253370313" expanded="true" signature="6028:6112" ph="{&quot;error_code&quot;: 200...}" />
-              <marker date="1497253370313" expanded="true" signature="6187:6271" ph="{&quot;error_code&quot;: 504...}" />
-              <marker date="1497253370313" expanded="true" signature="6783:6820" ph="..." />
-              <marker date="1497253370313" expanded="true" signature="8910:8936" ph="..." />
-              <marker date="1497253370313" expanded="true" signature="9444:9477" ph="..." />
-              <marker date="1497253370313" expanded="true" signature="9586:9622" ph="..." />
-              <marker date="1497253370313" expanded="true" signature="13406:13470" ph="..." />
-              <marker date="1497253370313" expanded="true" signature="14370:14520" ph="..." />
-              <marker date="1497253370313" expanded="true" signature="15338:15510" ph="{...}" />
-              <marker date="1497253370313" expanded="true" signature="16240:16255" ph="..." />
-              <marker date="1497253370313" expanded="true" signature="17887:17955" ph="..." />
-              <marker date="1497253370313" expanded="true" signature="18041:18077" ph="..." />
-              <marker date="1497253370313" expanded="true" signature="18177:18266" ph="..." />
-              <marker date="1497253370313" expanded="true" signature="18209:18264" ph="..." />
-              <marker date="1497253370313" expanded="true" signature="19216:19230" ph="..." />
-              <marker date="1497253370313" expanded="true" signature="19389:19493" ph="..." />
-              <marker date="1497253370313" expanded="true" signature="24998:25021" ph="..." />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lualib/resty/redis_iresty.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
@@ -1209,8 +1211,8 @@
         <state relative-caret-position="213">
           <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
           <folding>
-            <element signature="n#get_cache#0" expanded="true" />
-            <element signature="n#read_redis#0" expanded="true" />
+            <element signature="n#get_cache#0" expanded="false" />
+            <element signature="n#read_redis#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1234,7 +1236,7 @@
     <entry file="file://$PROJECT_DIR$/logs/live_error.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -1250,6 +1252,35 @@
             <element signature="n#read_http#0" expanded="true" />
             <element signature="e#5476#5523#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="412">
+            <caret line="631" column="37" lean-forward="false" selection-start-line="631" selection-start-column="37" selection-end-line="631" selection-end-column="37" />
+            <folding>
+              <marker date="1497259025441" expanded="true" signature="6028:6112" ph="{&quot;error_code&quot;: 200...}" />
+              <marker date="1497259025441" expanded="true" signature="6187:6271" ph="{&quot;error_code&quot;: 504...}" />
+              <marker date="1497259025441" expanded="true" signature="6783:6820" ph="..." />
+              <marker date="1497259025441" expanded="true" signature="8910:8936" ph="..." />
+              <marker date="1497259025441" expanded="true" signature="9444:9477" ph="..." />
+              <marker date="1497259025441" expanded="true" signature="9586:9622" ph="..." />
+              <marker date="1497259025441" expanded="true" signature="13406:13470" ph="..." />
+              <marker date="1497259025441" expanded="true" signature="14370:14520" ph="..." />
+              <marker date="1497259025441" expanded="true" signature="15338:15510" ph="{...}" />
+              <marker date="1497259025441" expanded="true" signature="16240:16255" ph="..." />
+              <marker date="1497259025441" expanded="true" signature="17887:17955" ph="..." />
+              <marker date="1497259025441" expanded="true" signature="18041:18077" ph="..." />
+              <marker date="1497259025441" expanded="true" signature="18177:18266" ph="..." />
+              <marker date="1497259025441" expanded="true" signature="18209:18264" ph="..." />
+              <marker date="1497259025441" expanded="true" signature="19216:19230" ph="..." />
+              <marker date="1497259025441" expanded="true" signature="19389:19493" ph="..." />
+              <marker date="1497259025441" expanded="true" signature="25047:25070" ph="..." />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
