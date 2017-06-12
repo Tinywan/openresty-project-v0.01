@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/demo/company_branch/cache_lock.lua" afterPath="$PROJECT_DIR$/application/demo/company_branch/cache_lock.lua" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,66 +15,18 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cache_lock.lua" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cache_lock.lua" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/demo/company_branch/cache_lock.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-173">
-              <caret line="147" column="42" lean-forward="true" selection-start-line="147" selection-start-column="42" selection-end-line="147" selection-end-column="69" />
+            <state relative-caret-position="544">
+              <caret line="116" column="62" lean-forward="false" selection-start-line="116" selection-start-column="62" selection-end-line="116" selection-end-column="62" />
               <folding>
                 <element signature="n#set_cache#0" expanded="true" />
-                <element signature="n#get_cache#0" expanded="true" />
+                <element signature="n#read_redis#0" expanded="true" />
+                <element signature="n#write_redis#0" expanded="true" />
+                <element signature="n#read_http#0" expanded="true" />
+                <element signature="e#5476#5523#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="446">
-                <caret line="633" column="24" lean-forward="false" selection-start-line="633" selection-start-column="4" selection-end-line="633" selection-end-column="24" />
-                <folding>
-                  <marker date="1497253370313" expanded="true" signature="6028:6112" ph="{&quot;error_code&quot;: 200...}" />
-                  <marker date="1497253370313" expanded="true" signature="6187:6271" ph="{&quot;error_code&quot;: 504...}" />
-                  <marker date="1497253370313" expanded="true" signature="6783:6820" ph="..." />
-                  <marker date="1497253370313" expanded="true" signature="8910:8936" ph="..." />
-                  <marker date="1497253370313" expanded="true" signature="9444:9477" ph="..." />
-                  <marker date="1497253370313" expanded="true" signature="9586:9622" ph="..." />
-                  <marker date="1497253370313" expanded="true" signature="13406:13470" ph="..." />
-                  <marker date="1497253370313" expanded="true" signature="14370:14520" ph="..." />
-                  <marker date="1497253370313" expanded="true" signature="15338:15510" ph="{...}" />
-                  <marker date="1497253370313" expanded="true" signature="16240:16255" ph="..." />
-                  <marker date="1497253370313" expanded="true" signature="17887:17955" ph="..." />
-                  <marker date="1497253370313" expanded="true" signature="18041:18077" ph="..." />
-                  <marker date="1497253370313" expanded="true" signature="18177:18266" ph="..." />
-                  <marker date="1497253370313" expanded="true" signature="18209:18264" ph="..." />
-                  <marker date="1497253370313" expanded="true" signature="19216:19230" ph="..." />
-                  <marker date="1497253370313" expanded="true" signature="19389:19493" ph="..." />
-                  <marker date="1497253370313" expanded="true" signature="24998:25021" ph="..." />
-                </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LiveRedisCacheController.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lock.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lualib/resty/lock.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -83,8 +34,8 @@
       <file leaf-file-name="nginx_live.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/domains/nginx_live.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="108" lean-forward="false" selection-start-line="28" selection-start-column="108" selection-end-line="28" selection-end-column="108" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -93,18 +44,8 @@
       <file leaf-file-name="live_error.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logs/live_error.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="35" column="66" lean-forward="false" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="92" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="redis_iresty.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lualib/resty/redis_iresty.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="98" column="48" lean-forward="false" selection-start-line="98" selection-start-column="48" selection-end-line="98" selection-end-column="48" />
+            <state relative-caret-position="0">
+              <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -208,9 +149,9 @@
         <option value="$PROJECT_DIR$/lualib/vendor/helper.lua" />
         <option value="$PROJECT_DIR$/application/demo/json_table.lua" />
         <option value="$PROJECT_DIR$/conf/domains/nginx_live.conf" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/application/demo/company_branch/cache_lock.lua" />
         <option value="$PROJECT_DIR$/logs/live_error.log" />
-        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -523,14 +464,7 @@
       <workItem from="1497108621277" duration="124000" />
       <workItem from="1497146170700" duration="613000" />
       <workItem from="1497149557811" duration="5057000" />
-      <workItem from="1497246328065" duration="3836000" />
-    </task>
-    <task id="LOCAL-00036" summary="字符串分割函数封装 :sunflower: :sunflower: :sunflower:">
-      <created>1495246129503</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1495246129503</updated>
+      <workItem from="1497246328065" duration="9385000" />
     </task>
     <task id="LOCAL-00037" summary="很高兴我们引入了dkjson库 :clap: :clap: :clap:">
       <created>1495247440627</created>
@@ -868,11 +802,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497252544515</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="openresty进行了简化成了7个阶段">
+      <created>1497253379718</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1497253379718</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205004000" />
+    <option name="totallyTimeSpent" value="210553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="1066" extended-state="0" />
@@ -906,7 +847,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="标准os库 :negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:" />
     <MESSAGE value="API 的设计:negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:" />
     <MESSAGE value="如何使用API接口 :performing_arts: :performing_arts: :performing_arts:" />
     <MESSAGE value="如何使用API接口 :white_check_mark: :white_check_mark: :white_check_mark:" />
@@ -931,7 +871,8 @@
     <MESSAGE value=":hibiscus: :hibiscus: :hibiscus: 添加二级缓存(ngx.cache)" />
     <MESSAGE value="缓存记录表 :hibiscus: :hibiscus: :hibiscus: 添加二级缓存(ngx.cache)" />
     <MESSAGE value="resty.lock" />
-    <option name="LAST_COMMIT_MESSAGE" value="resty.lock" />
+    <MESSAGE value="openresty进行了简化成了7个阶段" />
+    <option name="LAST_COMMIT_MESSAGE" value="openresty进行了简化成了7个阶段" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -949,7 +890,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2736">
           <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#get_cache#0" expanded="true" />
+            <element signature="n#read_redis#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -986,7 +930,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2736">
           <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#get_cache#0" expanded="true" />
+            <element signature="n#read_redis#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1183,13 +1130,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controller/LiveRedisCacheController55555555.lua" />
-    <entry file="file://$PROJECT_DIR$/logs/index_error.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/demo/ngx_cache.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1219,57 +1159,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lualib/resty/lock.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lualib/resty/redis_iresty.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="98" column="48" lean-forward="false" selection-start-line="98" selection-start-column="48" selection-end-line="98" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/live_error.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="35" column="66" lean-forward="false" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/domains/nginx_live.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="108" lean-forward="false" selection-start-line="28" selection-start-column="108" selection-end-line="28" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/demo/company_branch/cache_lock.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-173">
-          <caret line="147" column="42" lean-forward="true" selection-start-line="147" selection-start-column="42" selection-end-line="147" selection-end-column="69" />
-          <folding>
-            <element signature="n#set_cache#0" expanded="true" />
-            <element signature="n#get_cache#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -1296,6 +1185,71 @@
             </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lualib/resty/redis_iresty.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="98" column="48" lean-forward="false" selection-start-line="98" selection-start-column="48" selection-end-line="98" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lualib/resty/lock.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding>
+            <element signature="n#get_cache#0" expanded="true" />
+            <element signature="n#read_redis#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/domains/nginx_live.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/index_error.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/live_error.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/demo/company_branch/cache_lock.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="116" column="62" lean-forward="false" selection-start-line="116" selection-start-column="62" selection-end-line="116" selection-end-column="62" />
+          <folding>
+            <element signature="n#set_cache#0" expanded="true" />
+            <element signature="n#read_redis#0" expanded="true" />
+            <element signature="n#write_redis#0" expanded="true" />
+            <element signature="n#read_http#0" expanded="true" />
+            <element signature="e#5476#5523#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

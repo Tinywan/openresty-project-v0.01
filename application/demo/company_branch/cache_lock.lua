@@ -31,17 +31,8 @@ local function set_cache(key, value, exptime)
     return succ
 end
 
--- get ngx.cache
-local function get_cache(key)
-    local value = live_ngx_cache:get(key)
-    if not value then
-        return
-    end
-    log(ERR, "content from ngx.cache id : " .. key)
-    return value
-end
 
--------------------- read redis
+-- read redis
 local function read_redis(auth, keys)
     local red = redis:new()
     -- Redis授权登陆
@@ -59,16 +50,14 @@ local function read_redis(auth, keys)
     end
 
     if not resp then
-        log(ERR, "get redis content error : " .. keys[1], err)
+        log(ERR, keys[1] .. " get redis content error : ", err)
         return
     end
 
     if resp == ngx.null then
         resp = nil
     end
-    -- 缓存到ngx_cache
-    set_cache(keys[1], resp, 0)
-    log(ERR, "content from redis id : " .. keys[1])
+    log(ERR, " [read_redis] content from redis.cache  id = " .. keys[1]) -- tag data origin
     return resp
 end
 
@@ -97,52 +86,58 @@ local function write_redis(auth, keys, values)
 end
 
 
--- get_lock_cache ngx.cache
-local function get_lock_cache(key)
-    local value = live_ngx_cache:get(key)
-    if not value then   -- cache miss
-        local lock, err = resty_lock:new("cache_lock")
+-- get ngx.cache
+local function get_cache(key)
+    local ngx_resp = nil
+    -- 获取共享内存上key对应的值。如果key不存在，或者key已经过期，将会返回nil；如果出现错误，那么将会返回nil以及错误信息。
+    ngx_resp = live_ngx_cache:get(key)
+    if not ngx_resp then -- cache miss
+        local lock, err = resty_lock:new("cache_lock") -- start resty.lock
         if not lock then
-            log(ERR,"failed to create lock: ", err)
+            log(ERR, "failed to create lock: ", err)
         end
+
         local elapsed, err = lock:lock(key)
         if not elapsed then
-            log(ERR,"failed to acquire the lock", err)
-            return
+            log(ERR, "failed to acquire the lock", err)
         end
 
-        value = read_redis(auth,key)
-        if not value then
-            local ok, err = lock:unlock()
+        -- get redis cache
+        local redis_resp = nil
+        redis_resp = read_redis('tinywanredisamaistream', { key }) -- redis get content
+        if not redis_resp then
+            local ok, err = lock:unlock() --unlock
             if not ok then
-                log(ERR,"failed to unlock 111", err)
-                return
+                log(ERR, "failed to unlock [111] : ", err)
             end
-            ngx.say("no value found")
+            --            log(ERR, "[[redis]] not found content")
             return
         end
 
-        local ok, err = live_ngx_cache:set(key, value, 1)
+        local ok, err = live_ngx_cache:set(key, redis_resp, 10) -- set ngx-cache
         if not ok then
             local ok, err = lock:unlock()
             if not ok then
-                log(ERR,"failed to unlock 2222", err)
-                return
+                log(ERR, "failed to unlock [222] : ", err)
             end
-            log(ERR,"failed to update ngx_cache:", err)
-            return
+            log(ERR, "failed to update live_ngx_cache:  ", err)
         end
 
         local ok, err = lock:unlock()
         if not ok then
-            log(ERR,"failed to unlock 33333", err)
-            return
+            log(ERR, "failed to unlock [333] :  ", err)
         end
-
-        return value
+        if redis_resp == ngx.null then
+            redis_resp = nil
+        end
+        return redis_resp
     end
-    log(ERR, "content from ngx.cache id : " .. key)
-    return value
+
+    if ngx_resp == ngx.null then
+        ngx_resp = nil
+    end
+    log(ERR, " [get_cache]  content from ngx.cache id = " .. key) -- tag data origin
+    return ngx_resp
 end
 
 -------------- read_http 大并发采用 resty.http ，对于：ngx.location.capture 慎用
@@ -173,14 +168,14 @@ local function read_http(id)
         return
     end
 
-    -- 缓存到 Redis 数据缓存
+    -- 缓存到 Redis 数据缓存 这里也要枷锁
     local live_info_key = "LIVE_TABLE:" .. id
     local live_value = cjson_decode(resp.body) -- 解析的Lua自己的然后存储到Redis 数据库中去
     local live_live_str = write_redis('tinywanredisamaistream', { live_info_key }, cjson_encode(live_value))
     if not live_live_str then
         log(ERR, "redis set info error: ")
     end
-    log(ERR, "content from backend API id : " .. id)
+    log(ERR, " [read_http] content from backend API id : " .. id) -- tag data origin
     return cjson_encode(live_value)
 end
 
@@ -188,53 +183,14 @@ end
 local id = ngx_var.id
 local live_info_key = "LIVE_TABLE:" .. id
 
--------- ngx.cache get content
+-------- get ngx.cache content
 local content = get_cache(live_info_key)
 
---if ngx_cache not request redis
-if not content then
-    log(ERR, "live_ngx_cache not found content, request redis  db , id : ", id)
-    -- 开锁机制
-    local lock, err = resty_lock:new("cache_lock")
-    if not lock then
-        log(ERR,"failed to create lock: ", err)
-    end
-
-    local elapsed, err = lock:lock(live_info_key)
-    if not elapsed then
-        log(ERR,"failed to acquire the lock", err)
-    end
-
-    -- redis get content
-    content = read_redis('tinywanredisamaistream', { live_info_key })
-    if not content then
-        local ok, err = lock:unlock()  --unlock
-        if not ok then
-            log(ERR,"failed to unlock 111", err)
-        end
-        log(ERR,"[ redis ] no value found")
-        return
-    end
-
-    -- set ngx-cache
-    local ok, err = live_ngx_cache:set(live_info_key, content, 1)
-    if not ok then
-        local ok, err = lock:unlock()
-        if not ok then
-              log(ERR,"failed to unlock 222 ", err)
-        end
-        log(ERR,"failed to update ngx_cache:  ", err)
-    end
-
-    local ok, err = lock:unlock()
-    if not ok then
-        log(ERR,"ailed to unlock 333 :  ", err)
-    end
-    log(ERR, "content from ngx.cache id : " ..live_info_key)
-end
-
-print(content)
-exit(200)
+--if not content then
+--    print("RESULT : == NIL ")
+--end
+--- -print("RESULT : = "..content)
+-- exit(200)
 
 
 if not content then
@@ -243,12 +199,14 @@ if not content then
     content = read_redis('tinywanredisamaistream', { live_info_key })
 end
 
---if redis not request backend API
+--if redis not request backend API and udpate redis cache
 if not content then
     log(ERR, "redis not found content, back to backend API , id : ", id)
     content = read_http(id)
 end
 
+print(content)
+exit(200)
 -- if backend API  not exit 404
 if not content then
     log(ERR, "backend API not found content, id : ", id)
