@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="解决缓存失效风暴 lua-resty-lock">
+    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -390,14 +390,7 @@
       <workItem from="1497149557811" duration="5057000" />
       <workItem from="1497246328065" duration="9546000" />
       <workItem from="1497315780671" duration="6364000" />
-      <workItem from="1497328668021" duration="695000" />
-    </task>
-    <task id="LOCAL-00040" summary=":paw_prints: :paw_prints: :paw_prints: Nginx+Lua逻辑开发 Redis 做为页面缓存">
-      <created>1495270911398</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1495270911399</updated>
+      <workItem from="1497328668021" duration="711000" />
     </task>
     <task id="LOCAL-00041" summary=":paw_prints: :paw_prints: :paw_prints: Nginx+Lua逻辑开发 Redis 做为页面缓存">
       <created>1495271094425</created>
@@ -735,11 +728,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497327302152</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="add test file">
+      <created>1497329745294</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1497329745294</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217789000" />
+    <option name="totallyTimeSpent" value="217805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="1066" extended-state="0" />
@@ -772,7 +772,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="如何使用API接口 :performing_arts: :performing_arts: :performing_arts:" />
     <MESSAGE value="如何使用API接口 :white_check_mark: :white_check_mark: :white_check_mark:" />
     <MESSAGE value="update readme" />
     <MESSAGE value="活动直播接口 API 数据访问Redis，如果没有则回源到后端Mysql数据库" />
@@ -797,7 +796,8 @@
     <MESSAGE value="resty.lock" />
     <MESSAGE value="openresty进行了简化成了7个阶段" />
     <MESSAGE value="解决缓存失效风暴 lua-resty-lock" />
-    <option name="LAST_COMMIT_MESSAGE" value="解决缓存失效风暴 lua-resty-lock" />
+    <MESSAGE value="add test file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
