@@ -2,17 +2,10 @@
 ------
 ##  Wiki manual
 [https://github.com/Tinywan/lua_project_v0.01/wiki](https://github.com/Tinywan/lua_project_v0.01/wiki)
-<<<<<<< HEAD
 ## branch list
 +   master分支已经很稳定了，将不再提交代码，以后将从以下分支提交
 +   公司`company`分支
 +   家里`home`分支
-=======
-##  branch list
-+   目前`master`分支比较稳定，将不再直接修改代码，所欲代码通过以下分支提交
-+   公司分支提交到：`company`分支上去
-+   家里分支提交到：`home`分支上去
->>>>>>> company
 ##  Project structure
 ```javascript
 .
