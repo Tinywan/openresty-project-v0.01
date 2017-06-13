@@ -87,17 +87,94 @@ end
 
 
 -- get ngx.cache
-local function get_cache(key)
+--[1]即使发生其他一些不相关的错误，您也需要尽快解除锁定。
+--[2]在释放锁之前，您需要从后端获得的结果更新缓存，以便其他已经等待锁定的线程在获得锁定后才能获得缓存值。
+--[3]当后端根本没有返回任何值时，我们应该通过将一些存根值插入缓存来仔细处理。
+local function read_cache(key)
     local ngx_resp = nil
     -- 获取共享内存上key对应的值。如果key不存在，或者key已经过期，将会返回nil；如果出现错误，那么将会返回nil以及错误信息。
+    -- step 1
+    local val, err = live_ngx_cache:get(key)
+    if val then
+        log(ERR, " [get_cache]  content from ngx.cache id = " .. key) -- tag data origin
+        return val
+    end
+
+    if err then
+        log(ERR, "failed to get key from shm: ", err)
+    end
+
+    -- cache miss!
+    -- step 2:
+    local lock, err = resty_lock:new("cache_lock") -- new resty.lock
+    if not lock then
+        log(ERR, "failed to create lock [cache_lock] : ", err)
+        return
+    end
+
+    local elapsed, err = lock:lock(key) -- 锁
+    if not elapsed then
+        log(ERR, "failed to acquire the lock", err)
+        return
+    end
+    -- lock successfully acquired!
+
+    -- step 3:
+    -- someone might have already put the value into the cache ,so we check it here again:
+    val, err = live_ngx_cache:get(key)
+    if val then
+        local ok, err = lock:unlock()
+        if not ok then
+            log(ERR, "failed to unlock [111] : ", err)
+        end
+        return val
+    end
+
+    --- step 4:
+    local val = read_redis('tinywanredisamaistream', { key })
+    if not val then
+        local ok, err = lock:unlock()
+        if not ok then
+            log(ERR, "failed to unlock [222] : ", err)
+        end
+        -- FIXME: we should handle the backend miss more carefully
+        -- here, like inserting a stub value into the cache.
+        log(ERR, "redis no value found : ", err)
+        return ngx_resp
+    end
+
+    -- [lock] update the shm cache with the newly fetched value
+    -- 在释放锁之前，您需要从后端获得的结果更新缓存，以便其他已经等待锁定的线程在获得锁定后才能获得缓存值
+    local ok, err = live_ngx_cache:set(key, val, 10)
+    if not ok then
+        local ok, err = lock:unlock()
+        if not ok then
+            log(ERR, "failed to unlock [333] : ", err)
+        end
+        log(ERR, "failed to update live_ngx_cache:  ", err)
+    end
+
+    local ok, err = lock:unlock()
+    if not ok then
+        log(ERR, "failed to unlock [444] : ", err)
+    end
+
+    return val
+end
+
+-- get ngx.cache bak
+local function get_cache_bak(key)
+    local ngx_resp = nil
+    -- 获取共享内存上key对应的值。如果key不存在，或者key已经过期，将会返回nil；如果出现错误，那么将会返回nil以及错误信息。
+    -- step 1
     ngx_resp = live_ngx_cache:get(key)
-    if not ngx_resp then -- cache miss
-        local lock, err = resty_lock:new("cache_lock") -- start resty.lock
+    if not ngx_resp then -- cache miss (缓存未命中)
+        local lock, err = resty_lock:new("cache_lock") -- new resty.lock
         if not lock then
             log(ERR, "failed to create lock: ", err)
         end
 
-        local elapsed, err = lock:lock(key)
+        local elapsed, err = lock:lock(key) -- get lock
         if not elapsed then
             log(ERR, "failed to acquire the lock", err)
         end
@@ -106,7 +183,7 @@ local function get_cache(key)
         local redis_resp = nil
         redis_resp = read_redis('tinywanredisamaistream', { key }) -- redis get content
         if not redis_resp then
-            local ok, err = lock:unlock() --unlock
+            local ok, err = lock:unlock() --unlock      强烈建议始终调用unlock（）方法，尽快主动释放锁,如果在此方法调用之后，unlock（）方法永远不会被调用，那么锁将会被释放
             if not ok then
                 log(ERR, "failed to unlock [111] : ", err)
             end
@@ -184,7 +261,7 @@ local id = ngx_var.id
 local live_info_key = "LIVE_TABLE:" .. id
 
 -------- get ngx.cache content
-local content = get_cache(live_info_key)
+local content = read_cache(live_info_key)
 
 --if not content then
 --    print("RESULT : == NIL ")

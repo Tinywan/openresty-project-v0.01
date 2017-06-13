@@ -1,7 +1,7 @@
 ![Markdown](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/tinywan_title.png)
 ------
 ##  branch list
-+   目前`master`分支比较问题，将不再直接修改代码
++   目前`master`分支比较稳定，将不再直接修改代码，所欲代码通过以下分支提交
 +   公司分支提交到：`company`分支上去
 +   家里分支提交到：`home`分支上去
 ##  Project structure
