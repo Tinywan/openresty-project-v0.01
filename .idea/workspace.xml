@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="解决缓存失效风暴 lua-resty-lock" />
+=======
+    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="解决缓存失效风暴 lua-resty-lock">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/demo_error.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/index_error.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/live_error.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/product_access.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/product_error.log" afterPath="" />
+    </list>
+>>>>>>> company
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +29,7 @@
               <first_editor relative-caret-position="51">
                 <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
                 <folding>
+<<<<<<< HEAD
                   <marker date="1497327716008" expanded="true" signature="6075:6159" ph="{&quot;error_code&quot;: 200...}" />
                   <marker date="1497327716008" expanded="true" signature="6234:6318" ph="{&quot;error_code&quot;: 504...}" />
                   <marker date="1497327716008" expanded="true" signature="6830:6867" ph="..." />
@@ -36,6 +47,25 @@
                   <marker date="1497327716008" expanded="true" signature="19263:19277" ph="..." />
                   <marker date="1497327716008" expanded="true" signature="19436:19540" ph="..." />
                   <marker date="1497327716008" expanded="true" signature="24753:24776" ph="..." />
+=======
+                  <marker date="1497328000578" expanded="true" signature="6041:6125" ph="{&quot;error_code&quot;: 200...}" />
+                  <marker date="1497328000578" expanded="true" signature="6200:6284" ph="{&quot;error_code&quot;: 504...}" />
+                  <marker date="1497328000578" expanded="true" signature="6796:6833" ph="..." />
+                  <marker date="1497328000578" expanded="true" signature="8923:8949" ph="..." />
+                  <marker date="1497328000578" expanded="true" signature="9457:9490" ph="..." />
+                  <marker date="1497328000578" expanded="true" signature="9599:9635" ph="..." />
+                  <marker date="1497328000578" expanded="true" signature="13419:13483" ph="..." />
+                  <marker date="1497328000578" expanded="true" signature="14383:14533" ph="..." />
+                  <marker date="1497328000578" expanded="true" signature="15351:15523" ph="{...}" />
+                  <marker date="1497328000578" expanded="true" signature="16253:16268" ph="..." />
+                  <marker date="1497328000578" expanded="true" signature="17900:17968" ph="..." />
+                  <marker date="1497328000578" expanded="true" signature="18054:18090" ph="..." />
+                  <marker date="1497328000578" expanded="true" signature="18190:18279" ph="..." />
+                  <marker date="1497328000578" expanded="true" signature="18222:18277" ph="..." />
+                  <marker date="1497328000578" expanded="true" signature="19229:19243" ph="..." />
+                  <marker date="1497328000578" expanded="true" signature="19402:19506" ph="..." />
+                  <marker date="1497328000578" expanded="true" signature="25060:25083" ph="..." />
+>>>>>>> company
                 </folding>
               </first_editor>
               <second_editor />
@@ -46,8 +76,13 @@
       <file leaf-file-name="nginx_live.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/domains/nginx_live.conf">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="17">
               <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+=======
+            <state relative-caret-position="34">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+>>>>>>> company
               <folding />
             </state>
           </provider>
@@ -90,6 +125,7 @@
       <find>log</find>
       <find>LIVE_TABLE</find>
       <find>live_ngx_cache</find>
+      <find>failed to update ngx_cache</find>
     </findStrings>
     <dirStrings>
       <dir>D:\Linux-Share\Lua\lua_project_v0.01\public\bootstrap</dir>
@@ -102,11 +138,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/api/live/classes.lua" />
-        <option value="$PROJECT_DIR$/logs/api_access.log" />
         <option value="$PROJECT_DIR$/application/api/live/http_args.lua" />
         <option value="$PROJECT_DIR$/application/api/live/live_redis_mysql.lua" />
-        <option value="$PROJECT_DIR$/lualib/vendor/helper.lua" />
         <option value="$PROJECT_DIR$/logs/upstream_error.log" />
         <option value="$PROJECT_DIR$/application/controller/UpstreamBackendController.lua" />
         <option value="$PROJECT_DIR$/logs/demo_access.log" />
@@ -149,8 +182,11 @@
         <option value="$PROJECT_DIR$/lualib/resty/redis_iresty.lua" />
         <option value="$PROJECT_DIR$/conf/domains/waf.conf" />
         <option value="$PROJECT_DIR$/application/demo/ngx_cache.lua" />
-        <option value="$PROJECT_DIR$/conf/domains/nginx_live.conf" />
         <option value="$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua" />
+        <option value="$PROJECT_DIR$/lualib/vendor/helper.lua" />
+        <option value="$PROJECT_DIR$/application/demo/json_table.lua" />
+        <option value="$PROJECT_DIR$/conf/domains/nginx_live.conf" />
+        <option value="$PROJECT_DIR$/application/demo/company_branch/cache_lock.lua" />
         <option value="$PROJECT_DIR$/logs/live_error.log" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
@@ -161,6 +197,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -221,7 +260,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/Git/github-study" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Linux-Share/Lua/lua_project_v0.01/conf/domains/nginx_product.conf" />
@@ -243,6 +282,7 @@
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application\api\redis_mysql" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
     <UpdatedFiles>
       <FILE-GROUP>
@@ -7162,6 +7202,8 @@
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
+=======
+>>>>>>> company
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -7175,6 +7217,7 @@
     </option>
   </component>
   <component name="RunManager">
+<<<<<<< HEAD
     <configuration default="true" type="#com.sylvanaar.idea.Lua.run.LuaConfigurationType" factoryName="Lua Script">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="" />
@@ -7187,6 +7230,8 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
+=======
+>>>>>>> company
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
       <method />
@@ -7258,6 +7303,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="" />
@@ -7301,48 +7349,11 @@
       <workItem from="1496901706180" duration="11884000" />
       <workItem from="1496968610520" duration="10816000" />
       <workItem from="1496999253338" duration="76000" />
-    </task>
-    <task id="LOCAL-00034" summary="`resty.template`渲染模板,输出内容到`html`页面 :sunflower: :sunflower: :sunflower:">
-      <created>1495212704007</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1495212704007</updated>
-    </task>
-    <task id="LOCAL-00035" summary=":sunflower: :sunflower: :sunflower:">
-      <created>1495212841189</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1495212841189</updated>
-    </task>
-    <task id="LOCAL-00036" summary="字符串分割函数封装 :sunflower: :sunflower: :sunflower:">
-      <created>1495246129503</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1495246129503</updated>
-    </task>
-    <task id="LOCAL-00037" summary="很高兴我们引入了dkjson库 :clap: :clap: :clap:">
-      <created>1495247440627</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1495247440627</updated>
-    </task>
-    <task id="LOCAL-00038" summary=":dizzy: :dizzy: :dizzy: 很高兴我们引入了dkjson库">
-      <created>1495247696221</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1495247696221</updated>
-    </task>
-    <task id="LOCAL-00039" summary=":cherry_blossom: :cherry_blossom: :cherry_blossom: 获取Redis数据库数据渲染到html模板页面显示 :cherry_blossom: :cherry_blossom: :cherry_blossom:">
-      <created>1495260437526</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1495260437526</updated>
+      <workItem from="1497108621277" duration="124000" />
+      <workItem from="1497146170700" duration="613000" />
+      <workItem from="1497149557811" duration="5057000" />
+      <workItem from="1497246328065" duration="9546000" />
+      <workItem from="1497315780671" duration="6364000" />
     </task>
     <task id="LOCAL-00040" summary=":paw_prints: :paw_prints: :paw_prints: Nginx+Lua逻辑开发 Redis 做为页面缓存">
       <created>1495270911398</created>
@@ -7645,11 +7656,57 @@
       <option name="project" value="LOCAL" />
       <updated>1497108156586</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="缓存记录表 :hibiscus: :hibiscus: :hibiscus: 添加二级缓存(ngx.cache)">
+      <created>1497108436228</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1497108436228</updated>
+    </task>
+    <task id="LOCAL-00084" summary="resty.lock">
+      <created>1497252544514</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1497252544515</updated>
+    </task>
+    <task id="LOCAL-00085" summary="openresty进行了简化成了7个阶段">
+      <created>1497253379718</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1497253379718</updated>
+    </task>
+    <task id="LOCAL-00086" summary="解决缓存失效风暴 lua-resty-lock">
+      <created>1497258935259</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1497258935259</updated>
+    </task>
+    <task id="LOCAL-00087" summary="解决缓存失效风暴 lua-resty-lock">
+      <created>1497259033363</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1497259033363</updated>
+    </task>
+    <task id="LOCAL-00088" summary="解决缓存失效风暴 lua-resty-lock">
+      <created>1497327302152</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1497327302152</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="196258000" />
+=======
+    <option name="totallyTimeSpent" value="217094000" />
+>>>>>>> company
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="1066" extended-state="0" />
@@ -7675,11 +7732,12 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6081371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17110874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17590618" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253012" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -7693,9 +7751,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":recycle: :recycle: :recycle: nginx proxy_cache 缓存配置" />
-    <MESSAGE value="标准os库 :negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:" />
-    <MESSAGE value="API 的设计:negative_squared_cross_mark: :negative_squared_cross_mark: :negative_squared_cross_mark:" />
     <MESSAGE value="如何使用API接口 :performing_arts: :performing_arts: :performing_arts:" />
     <MESSAGE value="如何使用API接口 :white_check_mark: :white_check_mark: :white_check_mark:" />
     <MESSAGE value="update readme" />
@@ -7718,13 +7773,17 @@
     <MESSAGE value=":hibiscus: :hibiscus: :hibiscus: 修改后端API请求方式，由`ngx.location.capture` 转换为：`resty.http`" />
     <MESSAGE value=":hibiscus: :hibiscus: :hibiscus: 添加二级缓存(ngx.cache)" />
     <MESSAGE value="缓存记录表 :hibiscus: :hibiscus: :hibiscus: 添加二级缓存(ngx.cache)" />
-    <option name="LAST_COMMIT_MESSAGE" value="缓存记录表 :hibiscus: :hibiscus: :hibiscus: 添加二级缓存(ngx.cache)" />
+    <MESSAGE value="resty.lock" />
+    <MESSAGE value="openresty进行了简化成了7个阶段" />
+    <MESSAGE value="解决缓存失效风暴 lua-resty-lock" />
+    <option name="LAST_COMMIT_MESSAGE" value="解决缓存失效风暴 lua-resty-lock" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/template/live/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -7776,6 +7835,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> company
     <entry file="file://$PROJECT_DIR$/logs/live_error.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
@@ -7953,6 +8014,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/logs/demo_error.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -7960,6 +8022,9 @@
         </state>
       </provider>
     </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/logs/demo_error.log" />
+>>>>>>> company
     <entry file="file://$PROJECT_DIR$/conf/domains/nginx_demo.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="707">
@@ -8023,8 +8088,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lualib/resty/redis_iresty.lua">
+    <entry file="file://$PROJECT_DIR$/application/controller/LiveRedisCacheController55555555.lua" />
+    <entry file="file://$PROJECT_DIR$/application/demo/ngx_cache.lua">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="804">
           <caret line="98" column="26" lean-forward="true" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="39" />
         </state>
@@ -8036,13 +8103,57 @@
         <state relative-caret-position="17">
           <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding />
+=======
+        <state relative-caret-position="140">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/demo/ngx_cache.lua">
+    <entry file="file://$PROJECT_DIR$/application/demo/json_table.lua">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="32" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lualib/vendor/helper.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/demo/get_redis_iresty.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> company
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lualib/resty/redis_iresty.lua">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="140">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="49" />
+=======
+        <state relative-caret-position="447">
+          <caret line="98" column="48" lean-forward="false" selection-start-line="98" selection-start-column="48" selection-end-line="98" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lualib/resty/lock.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+>>>>>>> company
         </state>
       </provider>
     </entry>
@@ -8053,18 +8164,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/live_error.log">
+    <entry file="file://$PROJECT_DIR$/conf/domains/nginx_live.conf">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="374">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+=======
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+>>>>>>> company
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua">
+    <entry file="file://$PROJECT_DIR$/application/demo/company_branch/cache_lock.lua">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="787">
           <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="2" selection-end-line="166" selection-end-column="11" />
+=======
+        <state relative-caret-position="314">
+          <caret line="263" column="26" lean-forward="false" selection-start-line="263" selection-start-column="26" selection-end-line="263" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/live_error.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+>>>>>>> company
         </state>
       </provider>
     </entry>
@@ -8074,6 +8202,7 @@
           <first_editor relative-caret-position="51">
             <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
             <folding>
+<<<<<<< HEAD
               <marker date="1497327716008" expanded="true" signature="6075:6159" ph="{&quot;error_code&quot;: 200...}" />
               <marker date="1497327716008" expanded="true" signature="6234:6318" ph="{&quot;error_code&quot;: 504...}" />
               <marker date="1497327716008" expanded="true" signature="6830:6867" ph="..." />
@@ -8091,6 +8220,25 @@
               <marker date="1497327716008" expanded="true" signature="19263:19277" ph="..." />
               <marker date="1497327716008" expanded="true" signature="19436:19540" ph="..." />
               <marker date="1497327716008" expanded="true" signature="24753:24776" ph="..." />
+=======
+              <marker date="1497328000578" expanded="true" signature="6041:6125" ph="{&quot;error_code&quot;: 200...}" />
+              <marker date="1497328000578" expanded="true" signature="6200:6284" ph="{&quot;error_code&quot;: 504...}" />
+              <marker date="1497328000578" expanded="true" signature="6796:6833" ph="..." />
+              <marker date="1497328000578" expanded="true" signature="8923:8949" ph="..." />
+              <marker date="1497328000578" expanded="true" signature="9457:9490" ph="..." />
+              <marker date="1497328000578" expanded="true" signature="9599:9635" ph="..." />
+              <marker date="1497328000578" expanded="true" signature="13419:13483" ph="..." />
+              <marker date="1497328000578" expanded="true" signature="14383:14533" ph="..." />
+              <marker date="1497328000578" expanded="true" signature="15351:15523" ph="{...}" />
+              <marker date="1497328000578" expanded="true" signature="16253:16268" ph="..." />
+              <marker date="1497328000578" expanded="true" signature="17900:17968" ph="..." />
+              <marker date="1497328000578" expanded="true" signature="18054:18090" ph="..." />
+              <marker date="1497328000578" expanded="true" signature="18190:18279" ph="..." />
+              <marker date="1497328000578" expanded="true" signature="18222:18277" ph="..." />
+              <marker date="1497328000578" expanded="true" signature="19229:19243" ph="..." />
+              <marker date="1497328000578" expanded="true" signature="19402:19506" ph="..." />
+              <marker date="1497328000578" expanded="true" signature="25060:25083" ph="..." />
+>>>>>>> company
             </folding>
           </first_editor>
           <second_editor />

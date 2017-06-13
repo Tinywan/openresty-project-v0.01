@@ -1,9 +1,16 @@
 ![Markdown](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/tinywan_title.png)
 ------
+<<<<<<< HEAD
 ## branch list
 +   master分支已经很稳定了，将不再提交代码，以后将从以下分支提交
 +   公司`company`分支
 +   家里`home`分支
+=======
+##  branch list
++   目前`master`分支比较稳定，将不再直接修改代码，所欲代码通过以下分支提交
++   公司分支提交到：`company`分支上去
++   家里分支提交到：`home`分支上去
+>>>>>>> company
 ##  Project structure
 ```javascript
 .
@@ -155,19 +162,17 @@ http {
 - [x] 字符串分割：`helper.split()`
 - [x] 删除空格：`helper.ltrim() / rtrim() / trim()`
 - [x] json 解析的异常：`helper.cjson_decode(str2)`
-    +   该方法可以避免cjson解析异常直接导致服务器500错误
+    +   错误返回nil，成功返回解析后的json字符串
     +   如何调用
     ```lua 
         local helper = require 'vendor.helper'
         local str1  = '{"hobby":{"name":"tinywan","age":24},"is_male":false}'    -- 写法1
         local str2  = [[ {"hobby":{"name":"tinywan","age":24},"is_male:false} ]] -- 写法2   
         local obj_obj = helper.cjson_decode(str2)
-        if obj_obj == nil
-        then
+        if not json_str then
             ngx.say('cjson_decode error')
         else
-            ngx.say("cjson_decode success")
-            ngx.say(obj_obj.hobby.name, "<br/>")
+            ngx.say(helper.format_table(json_str))
         end
     ```
 ##  Mysql 数据库操作
@@ -631,10 +636,18 @@ http {
         [lua] CacheController.lua:39: get_cache(): content from ngx.cache id : LIVE_TABLE:1066
         [lua] CacheController.lua:39: get_cache(): content from ngx.cache id : LIVE_TABLE:1066
         ```  
+    +   解决缓存失效风暴 lua-resty-lock [二级缓存]          
     +   问题，过期问题如何解决？？？？？？？？？？？？？          
     
-##  个人简历(resume)制作
-+   resume
+##  openresty进行了简化成了7个阶段
++   `set_by_lua`: 流程分支判断，判断变量初始哈
++   `rewrite_by_lua`: 用lua脚本实现nginx rewrite
++   `access_by_lua`: ip准入，是否能合法性访问，防火墙
++   `content_by_lua`: 内存生成
++   `header_filter_by_lua`：过滤http头信息，增加头信息
++   `body_filter_by_lua`: 内容大小写，内容加密
++   `log_by_lua`: 本地/远程记录日志
++   其实可以只用 `content_by_lua`，所有功能都在该阶段完成，也是可以的
 ## 功能列表
 ####    简单的Redis数据库操作  
 +   通过引入已经封装好的Redis类操作Redis数据
