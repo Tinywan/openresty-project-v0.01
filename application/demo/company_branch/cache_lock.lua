@@ -162,61 +162,6 @@ local function read_cache(key)
     return val
 end
 
--- get ngx.cache bak
-local function get_cache_bak(key)
-    local ngx_resp = nil
-    -- 获取共享内存上key对应的值。如果key不存在，或者key已经过期，将会返回nil；如果出现错误，那么将会返回nil以及错误信息。
-    -- step 1
-    ngx_resp = live_ngx_cache:get(key)
-    if not ngx_resp then -- cache miss (缓存未命中)
-        local lock, err = resty_lock:new("cache_lock") -- new resty.lock
-        if not lock then
-            log(ERR, "failed to create lock: ", err)
-        end
-
-        local elapsed, err = lock:lock(key) -- get lock
-        if not elapsed then
-            log(ERR, "failed to acquire the lock", err)
-        end
-
-        -- get redis cache
-        local redis_resp = nil
-        redis_resp = read_redis('tinywanredisamaistream', { key }) -- redis get content
-        if not redis_resp then
-            local ok, err = lock:unlock() --unlock      强烈建议始终调用unlock（）方法，尽快主动释放锁,如果在此方法调用之后，unlock（）方法永远不会被调用，那么锁将会被释放
-            if not ok then
-                log(ERR, "failed to unlock [111] : ", err)
-            end
-            --            log(ERR, "[[redis]] not found content")
-            return
-        end
-
-        local ok, err = live_ngx_cache:set(key, redis_resp, 10) -- set ngx-cache
-        if not ok then
-            local ok, err = lock:unlock()
-            if not ok then
-                log(ERR, "failed to unlock [222] : ", err)
-            end
-            log(ERR, "failed to update live_ngx_cache:  ", err)
-        end
-
-        local ok, err = lock:unlock()
-        if not ok then
-            log(ERR, "failed to unlock [333] :  ", err)
-        end
-        if redis_resp == ngx.null then
-            redis_resp = nil
-        end
-        return redis_resp
-    end
-
-    if ngx_resp == ngx.null then
-        ngx_resp = nil
-    end
-    log(ERR, " [get_cache]  content from ngx.cache id = " .. key) -- tag data origin
-    return ngx_resp
-end
-
 -------------- read_http 大并发采用 resty.http ，对于：ngx.location.capture 慎用
 local function read_http(id)
     local httpc = http.new()
@@ -245,7 +190,7 @@ local function read_http(id)
         return
     end
 
-    -- 缓存到 Redis 数据缓存 这里也要枷锁
+    -- 缓存到 Redis 数据缓存  -- 这里要做优化
     local live_info_key = "LIVE_TABLE:" .. id
     local live_value = cjson_decode(resp.body) -- 解析的Lua自己的然后存储到Redis 数据库中去
     local live_live_str = write_redis('tinywanredisamaistream', { live_info_key }, cjson_encode(live_value))
@@ -263,27 +208,13 @@ local live_info_key = "LIVE_TABLE:" .. id
 -------- get ngx.cache content
 local content = read_cache(live_info_key)
 
---if not content then
---    print("RESULT : == NIL ")
---end
---- -print("RESULT : = "..content)
--- exit(200)
-
-
-if not content then
-    log(ERR, "live_ngx_cache not found content, request redis  db , id : ", id)
-    -- redis 读取内容
-    content = read_redis('tinywanredisamaistream', { live_info_key })
-end
-
 --if redis not request backend API and udpate redis cache
 if not content then
     log(ERR, "redis not found content, back to backend API , id : ", id)
     content = read_http(id)
 end
 
-print(content)
-exit(200)
+--------------------------------主要就是这里要根据后端服务没有数据的情况处理，最好不要出现500错误就可以啦
 -- if backend API  not exit 404
 if not content then
     log(ERR, "backend API not found content, id : ", id)
