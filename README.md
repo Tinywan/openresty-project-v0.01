@@ -1,5 +1,7 @@
 ![Markdown](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/tinywan_title.png)
 ------
+##  Wiki manual
+[https://github.com/Tinywan/lua_project_v0.01/wiki](https://github.com/Tinywan/lua_project_v0.01/wiki)
 <<<<<<< HEAD
 ## branch list
 +   master分支已经很稳定了，将不再提交代码，以后将从以下分支提交
