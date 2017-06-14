@@ -9,8 +9,7 @@
 * |------------------------------------------------------------------------
 --]]
 local template = require "resty.template"
---local redis = require "resty.redis_iresty"
-local redis = require "resty.redis"
+local redis = require "resty.redis_iresty"
 local cjson = require("cjson")
 local resty_lock = require "resty.lock"
 local http = require "resty.http"
@@ -23,11 +22,6 @@ local ngx_var = ngx.var
 local print = ngx.print
 local live_ngx_cache = ngx.shared.live_ngx_cache;
 
-local redis_host = "121.41.88.209"
-local redis_port = 63789
-local redis_auth = "tinywanredisamaistream"
-local redis_timeout = 1000
-
 ----------------- set ngx.cache
 local function set_cache(key, value, exptime)
     if not exptime then
@@ -37,44 +31,17 @@ local function set_cache(key, value, exptime)
     return succ
 end
 
--- close redis
-local function close_redis(red)
-    if not red then
-        return
-    end
-    --释放连接(连接池实现)
-    local pool_max_idle_time = 10000 --毫秒
-    local pool_size = 100 --连接池大小
-    local ok, err = red:set_keepalive(pool_max_idle_time, pool_size)
-
-    if not ok then
-        log(ERR, "set redis keepalive error : ", err)
-    end
-end
 
 -- read redis
-local function read_redis(_host, _port, _auth, keys)
+local function read_redis(auth, keys)
     local red = redis:new()
-    red:set_timeout(redis_timeout)
-    local ok, err = red:connect(_host, _port)
-    if not ok then
-        log(ERR, "connect to redis error : ", err)
+    -- Redis授权登陆
+    local res, err = red:auth(auth)
+    if not res then
+        return
     end
 
-    -- 请注意这里 auth 的调用过程
-    local count
-    count, err = red:get_reused_times()
-    if 0 == count then
-        ok, err = red:auth(_auth)
-        if not ok then
-            log(ERR, "failed to auth: ", err)
-            return close_redis(red)
-        end
-    elseif err then
-        log(ERR, "failed to get reused times: ", err)
-        return close_redis(red)
-    end
-
+    -- get data
     local resp = nil
     if #keys == 1 then
         resp, err = red:get(keys[1])
@@ -84,37 +51,24 @@ local function read_redis(_host, _port, _auth, keys)
 
     if not resp then
         log(ERR, keys[1] .. " get redis content error : ", err)
-        return close_redis(red)
+        return
     end
 
     if resp == ngx.null then
         resp = nil
     end
-    close_redis(red)
     log(ERR, " [read_redis] content from redis.cache  id = " .. keys[1]) -- tag data origin
     return resp
 end
 
 -- write redis
-local function write_redis(_host, _port, _auth, keys, values)
+local function write_redis(auth, keys, values)
     local red = redis:new()
-    red:set_timeout(redis_timeout)
-    local ok, err = red:connect(_host, _port)
-    if not ok then
-        log(ERR, "connect to redis error : ", err)
-    end
-
-    local count
-    count, err = red:get_reused_times()
-    if 0 == count then
-        ok, err = red:auth(_auth)
-        if not ok then
-            log(ERR, "failed to auth: ", err)
-            return close_redis(red)
-        end
-    elseif err then
-        log(ERR, "failed to get reused times: ", err)
-        return close_redis(red)
+    -- Redis授权登陆
+    local res, err = red:auth(auth)
+    if not res then
+        log(ERR, "failed to authenticate: ", err)
+        return
     end
 
     -- set data
@@ -126,9 +80,8 @@ local function write_redis(_host, _port, _auth, keys, values)
     end
     if not resp then
         log(ERR, "set redis live error : ", err)
-        close_redis(red)
+        return
     end
-    close_redis(red)
     return resp
 end
 
@@ -178,7 +131,7 @@ local function read_cache(key)
     end
 
     --- step 4:
-    local val = read_redis(redis_host, redis_port, redis_auth, { key })
+    local val = read_redis('tinywanredisamaistream', { key })
     if not val then
         local ok, err = lock:unlock()
         if not ok then
@@ -191,6 +144,7 @@ local function read_cache(key)
     end
 
     -- [lock] update the shm cache with the newly fetched value
+    -- 在释放锁之前，您需要从后端获得的结果更新缓存，以便其他已经等待锁定的线程在获得锁定后才能获得缓存值
     local ok, err = live_ngx_cache:set(key, val, 1)
     if not ok then
         local ok, err = lock:unlock()
@@ -239,7 +193,7 @@ local function read_http(id)
     -- 缓存到 Redis 数据缓存  -- 这里要做优化
     local live_info_key = "LIVE_TABLE:" .. id
     local live_value = cjson_decode(resp.body) -- 解析的Lua自己的然后存储到Redis 数据库中去
-    local live_live_str = write_redis(redis_host,redis_port,redis_auth, { live_info_key }, cjson_encode(live_value))
+    local live_live_str = write_redis('tinywanredisamaistream', { live_info_key }, cjson_encode(live_value))
     if not live_live_str then
         log(ERR, "redis set info error: ")
     end
@@ -247,7 +201,6 @@ local function read_http(id)
     return cjson_encode(live_value)
 end
 
-----------------------------------------------------------------------业务逻辑处理
 --get var id
 local id = ngx_var.id
 local live_info_key = "LIVE_TABLE:" .. id
@@ -260,7 +213,8 @@ if not content then
     log(ERR, "redis not found content, back to backend API , id : ", id)
     content = read_http(id)
 end
--------------------------------- 主要就是这里要根据后端服务没有数据的情况处理，最好不要出现500错误就可以啦
+
+--------------------------------主要就是这里要根据后端服务没有数据的情况处理，最好不要出现500错误就可以啦
 -- if backend API  not exit 404
 if not content then
     log(ERR, "backend API not found content, id : ", id)
@@ -280,5 +234,5 @@ template.render("index.html", {
     title = "Openresty 模板渲染界面",
     content = cjson_decode(content),
     members = members,
-    jquery = '<script src="/video-js/video.js"></script>'
+    jquery  = '<script src="/video-js/video.js"></script>'
 })
