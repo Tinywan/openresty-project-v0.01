@@ -145,7 +145,7 @@ local function read_cache(key)
 
     -- [lock] update the shm cache with the newly fetched value
     -- 在释放锁之前，您需要从后端获得的结果更新缓存，以便其他已经等待锁定的线程在获得锁定后才能获得缓存值
-    local ok, err = live_ngx_cache:set(key, val, 10)
+    local ok, err = live_ngx_cache:set(key, val, 1)
     if not ok then
         local ok, err = lock:unlock()
         if not ok then
@@ -226,5 +226,13 @@ if tostring(content) == "false" then
     log(ERR, "backend API content is false ", id)
     return ngx.exit(ngx.HTTP_FORBIDDEN)
 end
-print(content)
-exit(200)
+--print(content)
+--exit(200)
+members = { Tom = 10, Jake = 11, Dodo = 12, Jhon = 16 }
+template.caching(true)
+template.render("index.html", {
+    title = "Openresty 模板渲染界面",
+    content = cjson_decode(content),
+    members = members,
+    jquery  = '<script src="/video-js/video.js"></script>'
+})

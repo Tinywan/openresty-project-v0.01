@@ -632,7 +632,8 @@ http {
         [lua] CacheController.lua:39: get_cache(): content from ngx.cache id : LIVE_TABLE:1066
         ```  
     +   解决缓存失效风暴 lua-resty-lock [二级缓存]          
-    +   问题，过期问题如何解决？？？？？？？？？？？？？          
+    +   缓存时间问题：ngx.cache目前默认为1s        
++   redis使用连接池、锁机制、二级缓存，全部为官方代码，第三方封装好的`redis_iresty`没有使用     
     
 ##  openresty进行了简化成了7个阶段
 +   `set_by_lua`: 流程分支判断，判断变量初始哈
