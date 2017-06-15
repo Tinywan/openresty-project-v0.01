@@ -278,7 +278,7 @@ members = { Tom = 10, Jake = 11, Dodo = 12, Jhon = 16 }
 template.caching(true)
 template.render("index.html", {
     title = "Openresty 模板渲染界面",
+    ws_title = "Openresty 渲染 websocket",
     content = cjson_decode(content),
-    members = members,
-    jquery = '<script src="/video-js/video.js"></script>'
+    members = members
 })

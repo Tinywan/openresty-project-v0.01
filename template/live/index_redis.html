@@ -4,19 +4,60 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>现代浏览器博物馆</title>
-    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <title>{{title}}</title>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    {*jquery*}
     <!--[if lt IE 9]>
     <script src="/bootstrap/js/html5shiv.js"></script>
     <script src="/bootstrap/js/respond.min.js"></script>
+    <![endif]-->
     <link href="/video-js/video-js.css" rel="stylesheet">
     <script src="/video-js/video.js"></script>
     <script src="/video-js/videojs-contrib-hls.min.js"></script>
     <script>
         videojs.options.flash.swf = "/video-js/video-js/video-js.swf"
     </script>
-    <![endif]-->
+
+    <script>
+        var ws = null;
+        function connect() {
+            if (ws !== null) return log('already connected');
+            ws = new WebSocket('ws://192.168.18.180:8088/ws/');
+            ws.onopen = function () {
+                log('connected');
+            };
+            ws.onerror = function (error) {
+                log(error);
+            };
+            ws.onmessage = function (e) {
+                log('recv: ' + e.data);
+            };
+            ws.onclose = function () {
+                log('disconnected');
+                ws = null;
+            };
+            return false;
+        }
+        function disconnect() {
+            if (ws === null) return log('already disconnected');
+            ws.close();
+            return false;
+        }
+        function send() {
+            if (ws === null) return log('please connect first');
+            var text = document.getElementById('text').value;
+            document.getElementById('text').value = "";
+            log('send: ' + text);
+            ws.send(text);
+            return false;
+        }
+        function log(text) {
+            var li = document.createElement('li');
+            li.appendChild(document.createTextNode(text));
+            document.getElementById('log').appendChild(li);
+            return false;
+        }
+    </script>
 
     <style>
 
@@ -30,7 +71,7 @@
 
         .carousel {
             height: 500px;
-            margin-bottom: 60px;
+            margin-bottom: 10px;
         }
 
         .carousel .item {
@@ -57,11 +98,6 @@
         .summary {
             padding-right: 15px;
             padding-left: 15px;
-        }
-
-        .summary .col-md-4 {
-            margin-bottom: 20px;
-            text-align: center;
         }
 
         /* 特性 */
@@ -124,24 +160,6 @@
                 margin-top: 120px;
             }
         }
-
-        #live-stream {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            top: 50%;
-            left: 50%;
-            -moz-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            background-size: cover;
-        }
     </style>
 
 </head>
@@ -157,7 +175,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">{{content["play_m3u8_address"]}}</a>
+            <a class="navbar-brand" href="#">{{title}}</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -233,7 +251,7 @@
             </div>
         </div>
         <div class="item">
-            <img src="images/opera-big.jpg" alt="4 slide">
+            <img src="/bootstrap/images/opera-big.jpg" alt="4 slide">
 
             <div class="container">
                 <div class="carousel-caption">
@@ -278,130 +296,40 @@
                poster="/video-js/videodemo.png"
                data-setup='{"example_option":true}'>
             <!--<source src='{{content["play_m3u8_address"]}}' type="application/x-mpegURL">-->
-            <source src='http://zonelue2.amailive.com/live/4001483686566.m3u8' type="application/x-mpegURL">
+            <source src='http://tinywan.amai8.com/live/4001490605096.m3u8' type="application/x-mpegURL">
         </video>
     </div>
+    <hr>
 
-    <!-- 特性 -->
 
-    <hr class="feature-divider">
-
-    <ul class="nav nav-tabs" role="tablist" id="feature-tab">
-        <li class="active"><a href="#tab-chrome" role="tab" data-toggle="tab">Chrome</a></li>
-        <li><a href="#tab-firefox" role="tab" data-toggle="tab">Firefox</a></li>
-        <li><a href="#tab-safari" role="tab" data-toggle="tab">Safari</a></li>
-        <li><a href="#tab-opera" role="tab" data-toggle="tab">Opera</a></li>
-        <li><a href="#tab-ie" role="tab" data-toggle="tab">IE</a></li>
-    </ul>
-
-    <div class="tab-content">
-        <div class="tab-pane active" id="tab-chrome">
-            <div class="row feature">
-                <div class="col-md-7">
-
-                    <h2 class="feature-heading">Google Chrome <span
-                            class="text-muted">使用最广的浏览器</span></h2>
-
-                    <p class="lead">Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器。
-                        该浏览器是基于其他开源软件所撰写，包括WebKit，目标是提升稳定性、速度和安全性，并创造出简单且有效率的使用者界面。</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="/bootstrap/images/chrome-logo.jpg"
-                         alt="Chrome">
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab-firefox">
-            <div class="row feature">
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="/bootstrap/images/firefox-logo.jpg"
-                         alt="Firefox">
-                </div>
-                <div class="col-md-7">
-
-                    <h2 class="feature-heading">Mozilla Firefox <span class="text-muted">美丽的狐狸</span>
-                    </h2>
-
-                    <p class="lead">Mozilla Firefox，中文名通常称为“火狐”或“火狐浏览器”，是一个开源网页浏览器，
-                        使用Gecko引擎（非ie内核），支持多种操作系统如Windows、Mac和linux。</p>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab-safari">
-            <div class="row feature">
-                <div class="col-md-7">
-
-                    <h2 class="feature-heading">Safari <span class="text-muted">Mac用户首选</span></h2>
-
-                    <p class="lead">Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器，使用了KDE的KHTML作为浏览器的运算核心。
-                        Safari在2003年1月7日首度发行测试版，并成为Mac OS X v10.3与之后的默认浏览器，也是iPhone与IPAD和iPod touch的指定浏览器。</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="/bootstrap/images/safari-logo.jpg"
-                         alt="Safari">
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab-opera">
-            <div class="row feature">
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="/bootstrap/images/opera-logo.jpg"
-                         alt="Opera">
-                </div>
-                <div class="col-md-7">
-
-                    <h2 class="feature-heading">Opera <span class="text-muted">小众但易用</span>
-                    </h2>
-
-                    <p class="lead">Opera浏览器，是一款挪威Opera Software ASA公司制作的支持多页面标签式浏览的网络浏览器。
-                        是跨平台浏览器可以在Windows、Mac和Linux三个操作系统平台上运行。.</p>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab-ie">
-            <div class="row feature">
-                <div class="col-md-7">
-
-                    <h2 class="feature-heading">IE <span class="text-muted">你懂的</span></h2>
-
-                    <p class="lead">Internet Explorer，原称Microsoft Internet Explorer(6版本以前)和Windows Internet
-                        Explorer(7，8，9，10版本)，
-                        简称IE，是美国微软公司推出的一款网页浏览器。它采用的排版引擎(俗称内核)为Trident。</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="feature-image img-responsive" src="/bootstrap/images/ie-logo.jpg"
-                         alt="IE">
-                </div>
-            </div>
-        </div>
+    <div class="row">
+        <h2>{{ ws_title }}</h2>
+        <form onsubmit="return send();">
+            <button type="button" onclick="return connect();">
+                Connect
+            </button>
+            <button type="button" onclick="return disconnect();">
+                Disconnect
+            </button>
+            <input id="text" type="text">
+            <button type="submit">Send</button>
+        </form>
+        <ol id="log"></ol>
     </div>
 
-    <!-- 关于 -->
-    <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
-         aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span
-                            aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
-                    <h4 class="modal-title" id="modal-label">关于</h4>
-                </div>
-                <div class="modal-body">
-                    <p>慕课网隶属于北京慕课科技中心(有限合伙)，是一家从事互联网免费教学的网络教育公司。秉承“开拓、创新、公平、分享”的精神，
-                        将互联网特性全面的应用在教育领域，致力于为教育机构及求学者打造一站式互动在线教育品牌。</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
-                </div>
-            </div>
-        </div>
+    <div class="row">
+        <h2>{{ title }}</h2>
+        <ul>
+            {% for value, name in pairs(content) do %}
+            <li>{{value}} == {{name}}</li>
+            {% end %}
+        </ul>
     </div>
-
 
     <footer>
         <p class="pull-right"><a href="#top">回到顶部</a></p>
 
-        <p>&copy; 2014 慕课网 </p>
+        <p>&copy; 2017 https://github.com/Tinywan </p>
     </footer>
 
 </div>
@@ -411,10 +339,10 @@
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <script>
     var options = {
-        width: 100,
-        height: 100
+        width: 1280,
+        height: 720
     }
-    var player = videojs('live-stream');
+    var player = videojs('live-stream', options);
 
     player.on(['loadstart', 'play', 'playing', 'firstplay', 'pause', 'ended', 'adplay', 'adplaying', 'adfirstplay', 'adpause', 'adended', 'contentplay', 'contentplaying', 'contentfirstplay', 'contentpause', 'contentended', 'contentupdate'], function (e) {
         console.warn('VIDEOJS player event: ', e.type);

@@ -1,8 +1,0 @@
-192.168.127.133 [2017-05-17 23:48:02] "GET localhost/waf.php?id=../etc/passwd" "-"  "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" "\.\./"
-192.168.127.133 [2017-05-17 23:48:05] "GET localhost/waf.php?id=../etc/passwd&name=Tinywan" "-"  "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" "\.\./"
-192.168.127.133 [2017-05-17 23:48:07] "GET localhost/waf.php?id=../etc/passwd" "-"  "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" "\.\./"
-192.168.127.133 [2017-05-17 23:48:08] "GET localhost/waf.php?id=../etc/passwd" "-"  "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" "\.\./"
-192.168.127.133 [2017-05-17 23:48:19] "GET localhost/waf.php?id=../etc/passwd&name=Tinywan" "-"  "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" "\.\./"
-192.168.127.133 [2017-05-17 23:48:36] "GET localhost/waf.php?id=../etc/passwd&name=Tinywan" "-"  "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" "\.\./"
-192.168.127.133 [2017-05-17 23:48:36] "GET localhost/waf.php?id=../etc/passwd&name=Tinywan" "-"  "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" "\.\./"
-192.168.127.133 [2017-05-17 23:51:04] "GET localhost/waf.php?id=../etc/passwd&name=Tinywan" "-"  "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" "\.\./"

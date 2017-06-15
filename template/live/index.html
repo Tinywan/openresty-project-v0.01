@@ -17,7 +17,6 @@
     <script>
         videojs.options.flash.swf = "/video-js/video-js/video-js.swf"
     </script>
-
     <style>
 
         body {
@@ -58,8 +57,6 @@
             padding-right: 15px;
             padding-left: 15px;
         }
-
-
 
         /* 特性 */
 
@@ -122,7 +119,46 @@
             }
         }
     </style>
-
+    <script>
+        var ws = null;
+        function connect() {
+            if (ws !== null) return log('already connected');
+            ws = new WebSocket('ws://192.168.18.180:8088/ws/');
+            ws.onopen = function () {
+                log('connected');
+            };
+            ws.onerror = function (error) {
+                log(error);
+            };
+            ws.onmessage = function (e) {
+                log('recv: ' + e.data);
+            };
+            ws.onclose = function () {
+                log('disconnected');
+                ws = null;
+            };
+            return false;
+        }
+        function disconnect() {
+            if (ws === null) return log('already disconnected');
+            ws.close();
+            return false;
+        }
+        function send() {
+            if (ws === null) return log('please connect first');
+            var text = document.getElementById('text').value;
+            document.getElementById('text').value = "";
+            log('send: ' + text);
+            ws.send(text);
+            return false;
+        }
+        function log(text) {
+            var li = document.createElement('li');
+            li.appendChild(document.createTextNode(text));
+            document.getElementById('log').appendChild(li);
+            return false;
+        }
+    </script>
 </head>
 
 <body>
@@ -257,11 +293,29 @@
                poster="/video-js/videodemo.png"
                data-setup='{"example_option":true}'>
             <!--<source src='{{content["play_m3u8_address"]}}' type="application/x-mpegURL">-->
-            <source src='http://tinywan.amai8.com/live/4001490605096.m3u8' type="application/x-mpegURL">
+            <source src='http://ivi.bupt.edu.cn/hls/cctv5hd.m3u8' type="application/x-mpegURL">
         </video>
     </div>
     <hr>
-    <div class="row" >
+
+
+    <div class="row">
+        <h2>{{ ws_title }}</h2>
+        <form onsubmit="return send();">
+            <button type="button" onclick="return connect();">
+                Connect
+            </button>
+            <button type="button" onclick="return disconnect();">
+                Disconnect
+            </button>
+            <input id="text" type="text">
+            <button type="submit">Send</button>
+        </form>
+        <ol id="log"></ol>
+    </div>
+
+    <div class="row">
+        <h2>{{ title }}</h2>
         <ul>
             {% for value, name in pairs(content) do %}
             <li>{{value}} == {{name}}</li>
@@ -285,7 +339,7 @@
         width: 1280,
         height: 720
     }
-    var player = videojs('live-stream',options);
+    var player = videojs('live-stream', options);
 
     player.on(['loadstart', 'play', 'playing', 'firstplay', 'pause', 'ended', 'adplay', 'adplaying', 'adfirstplay', 'adpause', 'adended', 'contentplay', 'contentplaying', 'contentfirstplay', 'contentpause', 'contentended', 'contentupdate'], function (e) {
         console.warn('VIDEOJS player event: ', e.type);
