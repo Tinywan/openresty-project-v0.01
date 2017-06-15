@@ -5,7 +5,7 @@
 * |------------------------------------------------------------------------
 * |  Date: 2017/6/15 23:25
 * |  Function: To change this template use File | Settings | File Templates.
-* |  TestInfo: port = 63700 auth = tinywan123456
+* |  Openresty 模板渲染界面
 * |------------------------------------------------------------------------
 --]]
 local server = require "resty.websocket.server"
