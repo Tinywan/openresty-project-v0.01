@@ -638,7 +638,7 @@ http {
 +   `resty.websocket.server`和`resty.redis` 实现聊天室功能    
 +   [WebSocketRedisController.lua 文件](https://github.com/Tinywan/lua_project_v0.01/blob/master/application/controller/WebSocketRedisController.lua)    
 +   ![live_room.png](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/live_room.png)   
-+   待解决` lua tcp socket read timed out` 问题 
++   :x::x::x::x::x::x:待解决` lua tcp socket read timed out` 问题, 
     
 ##  openresty进行了简化成了7个阶段
 +   `set_by_lua`: 流程分支判断，判断变量初始哈
