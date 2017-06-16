@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<meta charset = "utf-8" />
+<title>WebSocket Test</title>
+
+<script language = "javascript" type = "text/javascript">
+    var wsUri = "ws://192.168.18.180:8088/ws/";
+    var output;
+
+    function init() {
+        output = document.getElementById("output");
+        testWebSocket();
+    }
+
+    function testWebSocket() {
+        websocket = new WebSocket(wsUri);
+
+        websocket.onopen = function(evt) {
+            onOpen(evt)
+        };
+
+        websocket.onmessage = function(evt) {
+            onMessage(evt)
+        };
+
+        websocket.onerror = function(evt) {
+            onError(evt)
+        };
+    }
+
+    function onOpen(evt) {
+        writeToScreen("CONNECTED");
+        doSend("WebSocket rocks");
+    }
+
+    function onMessage(evt) {
+        writeToScreen('<span style = "color: blue;">RESPONSE: ' +
+            evt.data+'</span>'); websocket.close();
+    }
+
+    function onError(evt) {
+        writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+    }
+
+    function doSend(message) {
+        writeToScreen("SENT: " + message); websocket.send(message);
+    }
+
+    function writeToScreen(message) {
+        var pre = document.createElement("p");
+        pre.style.wordWrap = "break-word";
+        pre.innerHTML = message; output.appendChild(pre);
+    }
+
+    function sub(){
+        var text = document.getElementById('data').value;
+        console.log(text);
+        websocket.send(text);
+    }
+
+    window.addEventListener("load", init, false);
+
+</script>
+
+<h2>WebSocket Test</h2>
+token：<input type="text" name="token" id="token"><p></p>
+数据：<input type="text" style="height: 50px; width: 100%;" name="data" id="data"><p></p>
+<button id="submit" onclick="sub()" >提交</button> <p></p>
+
+<div id = "output"></div>
+
+</html>

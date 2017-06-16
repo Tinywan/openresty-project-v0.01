@@ -10,6 +10,7 @@
 --]]
 local server = require "resty.websocket.server"
 local helper = require "vendor.helper"
+local id = ngx.var.uri
 local wb, err = server:new {
     timeout = 5000,
     max_payload_len = 65535
@@ -40,9 +41,9 @@ while true do
     elseif typ == "pong" then
         ngx.log(ngx.INFO, "client ponged")
     elseif typ == "text" then
-        local bytes, err = wb:send_text('['..ngx.localtime()..'] say : '..data)
+        local bytes, err = wb:send_text('[ '..ngx.localtime()..' ] say : '..data)
 --        local send_data =
-        ngx.log(ngx.ERR, "wb:send_text: ", '['..ngx.localtime()..'] say : '..data)
+--        ngx.log(ngx.ERR, "wb:send_text: ", '['..ngx.localtime()..'] say : '..data)
         if not bytes then
             ngx.log(ngx.ERR, "failed to send text: ", err)
             return ngx.exit(444)

@@ -9,7 +9,6 @@
 * |------------------------------------------------------------------------
 --]]
 local template = require "resty.template"
---local redis = require "resty.redis_iresty"
 local redis = require "resty.redis"
 local cjson = require("cjson")
 local resty_lock = require "resty.lock"
@@ -22,6 +21,7 @@ local exit = ngx.exit
 local ngx_var = ngx.var
 local print = ngx.print
 local live_ngx_cache = ngx.shared.live_ngx_cache;
+local live_room = ngx.shared.live_room;
 
 local redis_host = "121.41.88.209"
 local redis_port = 63789
@@ -252,6 +252,8 @@ end
 local id = ngx_var.id
 local live_info_key = "LIVE_TABLE:" .. id
 
+-- chat room num
+local succ, err, forcible = live_room:set("chat", id)
 -------- get ngx.cache content
 local content = read_cache(live_info_key)
 
@@ -277,7 +279,8 @@ end
 members = { Tom = 10, Jake = 11, Dodo = 12, Jhon = 16 }
 template.caching(true)
 template.render("index.html", {
-    title = "Openresty 模板渲染界面",
+    live_id = id,
+    title = "Openresty 渲染 html 界面",
     ws_title = "Openresty 渲染 websocket",
     content = cjson_decode(content),
     members = members

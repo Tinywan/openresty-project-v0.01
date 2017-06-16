@@ -634,6 +634,10 @@ http {
     +   解决缓存失效风暴 lua-resty-lock [二级缓存]          
     +   缓存时间问题：ngx.cache目前默认为1s        
 +   redis使用连接池、锁机制、二级缓存，全部为官方代码，第三方封装好的`redis_iresty`没有使用     
+####    2017年06月16日 星期五
++   `resty.websocket.server`和`resty.redis` 实现聊天室功能    
++   [WebSocketRedisController.lua 文件](https://github.com/Tinywan/lua_project_v0.01/blob/master/application/controller/WebSocketRedisController.lua)    
++   ![live_room.png](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/github/live_room.png)    
     
 ##  openresty进行了简化成了7个阶段
 +   `set_by_lua`: 流程分支判断，判断变量初始哈

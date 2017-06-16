@@ -14,6 +14,7 @@
     <link href="/video-js/video-js.css" rel="stylesheet">
     <script src="/video-js/video.js"></script>
     <script src="/video-js/videojs-contrib-hls.min.js"></script>
+    <script src="https://cdn.bootcss.com/reconnecting-websocket/1.0.0/reconnecting-websocket.min.js"></script>
     <script>
         videojs.options.flash.swf = "/video-js/video-js/video-js.swf"
     </script>
@@ -119,45 +120,73 @@
             }
         }
     </style>
-    <script>
-        var ws = null;
-        function connect() {
-            if (ws !== null) return log('already connected');
-            ws = new WebSocket('ws://192.168.18.180:8088/ws/');
-            ws.onopen = function () {
-                log('connected');
-            };
-            ws.onerror = function (error) {
-                log(error);
-            };
-            ws.onmessage = function (e) {
-                log('recv: ' + e.data);
-            };
-            ws.onclose = function () {
-                log('disconnected');
-                ws = null;
-            };
-            return false;
+    <script language="javascript" type="text/javascript">
+        var wsUri = "ws://192.168.18.180:8088/lua_ws/";
+        var output;
+        var clientId;
+
+        function init() {
+            output = document.getElementById("output");
+            testWebSocket();
+            websocket.send("hello \n");
         }
-        function disconnect() {
-            if (ws === null) return log('already disconnected');
-            ws.close();
-            return false;
+
+        function testWebSocket() {
+            websocket = new ReconnectingWebSocket(wsUri);
+            websocket.onopen = function (evt) {
+                onOpen(evt)
+            };
+            websocket.onclose = function (evt) {
+                onClose(evt)
+            };
+            websocket.onmessage = function (evt) {
+                onMessage(evt)
+            };
+            websocket.onerror = function (evt) {
+                onError(evt)
+            };
         }
-        function send() {
-            if (ws === null) return log('please connect first');
-            var text = document.getElementById('text').value;
-            document.getElementById('text').value = "";
-            log('send: ' + text);
-            ws.send(text);
-            return false;
+        function onOpen(evt) {
+            writeToScreen("CONNECTED");
         }
-        function log(text) {
-            var li = document.createElement('li');
-            li.appendChild(document.createTextNode(text));
-            document.getElementById('log').appendChild(li);
-            return false;
+
+        function onClose(evt) {
+            writeToScreen("DISCONNECTED");
         }
+
+        function onMessage(evt) {
+            writeToScreen('<span style="color: blue;">RESPONSE: '+ evt.data + '</span>');
+        }
+
+        function onError(evt) {
+            writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+        }
+
+        function writeToScreen(message) {
+            var pre = document.createElement("p");
+            pre.style.wordWrap = "break-word";
+            pre.innerHTML = message;
+            output.appendChild(pre);
+        }
+
+        //添加或者修改json数据
+        function setJson(jsonStr, name, value) {
+            if (!jsonStr)jsonStr = "{}";
+            var jsonObj = JSON.parse(jsonStr);
+            jsonObj[name] = value;
+            return JSON.stringify(jsonObj)
+        }
+
+        function toJson(str) {
+            var json = eval('(' + str + ')');
+            return json;
+        }
+
+        function sub(){
+            var text = document.getElementById('data').value;
+            websocket.send(text+"\n");
+        }
+        window.addEventListener("load", init, false);
     </script>
 </head>
 
@@ -301,17 +330,9 @@
 
     <div class="row">
         <h2>{{ ws_title }}</h2>
-        <form onsubmit="return send();">
-            <button type="button" onclick="return connect();">
-                Connect
-            </button>
-            <button type="button" onclick="return disconnect();">
-                Disconnect
-            </button>
-            <input id="text" type="text">
-            <button type="submit">Send</button>
-        </form>
-        <ol id="log"></ol>
+        websocket send content：<input type="text" style="height: 50px; width: 100%;" name="data" id="data"><p></p>
+        <button id="submit" onclick="sub()" >send info</button> <p></p>
+        <div id="output"></div>
     </div>
 
     <div class="row">

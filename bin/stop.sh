@@ -1,5 +1,4 @@
 #!/bin/bash
-# get Nginx Pid
 PID=$(ps -aef | grep nginx | grep -v grep | grep master |awk '{print $2}')
 sudo kill -QUIT ${PID}
 if [[ $? == 0 &&  -n $PID ]]
