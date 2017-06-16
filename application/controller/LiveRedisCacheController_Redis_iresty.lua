@@ -9,7 +9,6 @@
 * |------------------------------------------------------------------------
 --]]
 local template = require "resty.template"
---local redis = require("resty.redis")
 local redis = require "resty.redis_iresty"
 local cjson = require("cjson")
 local cjson_encode = cjson.encode
