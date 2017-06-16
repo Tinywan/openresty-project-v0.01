@@ -147,11 +147,11 @@
             };
         }
         function onOpen(evt) {
-            writeToScreen("CONNECTED");
+            console.log("CONNECTED");
         }
 
         function onClose(evt) {
-            writeToScreen("DISCONNECTED");
+            console.log("DISCONNECTED");
         }
 
         function onMessage(evt) {
@@ -159,7 +159,7 @@
         }
 
         function onError(evt) {
-            writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+            console.log('<span style="color: red;">ERROR:</span> ' + evt.data);
         }
 
         function writeToScreen(message) {
