@@ -32,6 +32,7 @@ if not wb then
     return ngx.exit(444)
 end
 
+
 local push = function()
     -- --create redis
     local red = redis:new()
@@ -45,7 +46,7 @@ local push = function()
 
     ok, err = red:auth(redis_auth)
     if not ok then
-        log(ERR, "failed to auth: ", err)
+        ngx.log(ngx.ERR, "failed to auth: ", err)
         wb:send_close()
     end
     --sub
@@ -61,7 +62,7 @@ local push = function()
         local res, err = red:read_reply()
         if res then
             local item = res[3]
---            local bytes, err = wb:send_text(tostring(msg_id).." "..item)
+            --local bytes, err = wb:send_text(tostring(msg_id).." "..item)
             local bytes, err = wb:send_text('[ '..tostring(msg_id).." ] "..ngx.localtime().." "..item)
             if not bytes then
                 -- better error handling
@@ -72,6 +73,7 @@ local push = function()
         end
     end
 end
+
 
 local co = ngx.thread.spawn(push)   -- create thread 1
 
