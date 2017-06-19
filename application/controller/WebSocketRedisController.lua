@@ -16,6 +16,10 @@ local channel_name, err = live_room:get("chat")
 if channel_name then
     log(ngx.ERR, " resty.websocket.server :: ",err) -- tag data origin
 end
+local redis_host = "121.41.88.209"
+local redis_port = 63789
+local redis_auth = "tinywanredisamaistream"
+local redis_timeout = 1000
 
 local msg_id = 0
 local wb, err = server:new {
@@ -32,14 +36,14 @@ local push = function()
     -- --create redis
     local red = redis:new()
     red:set_timeout(5000) -- 1 sec
-    local ok, err = red:connect("121.41.88.209", 63789)
+    local ok, err = red:connect(redis_host, redis_port)
     if not ok then
         ngx.log(ngx.ERR, "failed to connect redis: ", err)
         wb:send_close()
         return
     end
 
-    ok, err = red:auth("tinywanredisamaistream")
+    ok, err = red:auth(redis_auth)
     if not ok then
         log(ERR, "failed to auth: ", err)
         wb:send_close()
@@ -103,12 +107,12 @@ while true do
         --send to redis
         local red2 = redis:new()
         red2:set_timeout(1000) -- 1 sec
-        local ok, err = red2:connect("121.41.88.209", 63789)
+        local ok, err = red2:connect(redis_host, redis_port)
         if not ok then
             ngx.log(ngx.ERR, "failed to connect redis: ", err)
             break
         end
-        ok, err = red2:auth("tinywanredisamaistream")
+        ok, err = red2:auth(redis_auth)
         if not ok then
             log(ERR, "failed to auth: ", err)
         end

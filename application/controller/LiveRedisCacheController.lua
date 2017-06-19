@@ -23,7 +23,7 @@ local print = ngx.print
 local live_ngx_cache = ngx.shared.live_ngx_cache;
 local live_room = ngx.shared.live_room;
 
-local redis_host = "127.0.0.1"
+local redis_host = "121.41.88.209"
 local redis_port = 63789
 local redis_auth = "tinywanredisamaistream"
 local redis_timeout = 1000
