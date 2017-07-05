@@ -2,10 +2,6 @@
 ------
 ##  Wiki manual
 [https://github.com/Tinywan/lua_project_v0.01/wiki](https://github.com/Tinywan/lua_project_v0.01/wiki)
-## branch list
-+   master分支已经很稳定了，将不再提交代码，以后将从以下分支提交
-+   公司`company`分支
-+   家里`home`分支
 ##  Project structure
 ```javascript
 .
@@ -83,27 +79,6 @@
         ├── index.html
         └── js
 ```
-## nginx.conf, the Nginx web server configuration
-
-```bash
-user  www www;
-worker_processes  8;
-
-pid        logs/nginx.pid;
-
-events {
-    use epoll;
-    worker_connections  1024;
-}
-
-http {
-    include       /opt/openresty/nginx/conf/mime.types;
-    default_type  text/html;
-    lua_package_path "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/lualib/?.lua;;";  #lua 模块
-    lua_package_cpath "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/lualib/?.so;;";  #c模块
-    include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/domains/*";
-}
-```
 ## Openresty安装
 +   环境：`apt-get install libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make build-essential`
 +   下载,编译：
@@ -115,8 +90,37 @@ http {
     make
     sudo make install
     ```
+    
+## nginx.conf, the Nginx web server configuration
+
+```bash
+user  www www;
+worker_processes  8;
+
+pid        logs/nginx.pid;
+worker_rlimit_nofile 204800;
+
+events {
+    use epoll;
+    worker_connections  204800;
+}
+
+http {
+    include       /opt/openresty/nginx/conf/mime.types;
+    default_type  text/html;
+    charset  utf-8;
+    lua_package_path "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/lualib/?.lua;;";  #lua 模块
+    lua_package_cpath "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/lualib/?.so;;";  #c模块
+    include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/domains/*";
+}
+```
+## branch list
++   master分支已经很稳定了，将不再提交代码，以后将从以下分支提交
++   公司`company`分支
++   家里`home`分支
+  
 ## 如何安装使用
-+   修改主配置文件：`lua_project_v0.01/conf/nginx.conf` 的路径,一下的`/home/`修改为项目所在路径
++   修改主配置文件：`lua_project_v0.01/conf/nginx.conf` 的路径,以下的`/home/`修改为项目所在路径
     ```bash
     lua_package_path "/home/lua_project_v0.01/lualib/?.lua;/home/lua_project_v0.01/application/controller/?.lua";#lua 模块
     lua_package_cpath "/home/lua_project_v0.01/lualib/?.so;;";          #  c模块
@@ -135,7 +139,8 @@ http {
         nginx: configuration file /home/lua_project_v0.01/conf/nginx.conf test is successful
          [ Start OK ]
         ```
-+   测试流程是否跑通：`curl http://127.0.0.1/test`,输出："Hello! lua_project_v0.01"，表示Ok        
++   测试流程是否跑通：`curl http://127.0.0.1/test`,输出：" Hello! lua_project_v0.01"，表示Ok 
+       
 ## config 配置文件列表(为了测试方便)
 +   API接口专用（8686）：`api.conf`
 +   Demo测试专用（8080）：`nginx_demo.conf`
