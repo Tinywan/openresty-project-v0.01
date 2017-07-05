@@ -80,8 +80,8 @@
         └── js
 ```
 ## Openresty Installation
-+   环境：`apt-get install libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make build-essential`
-+   下载,编译：
++   Prerequisites：`apt-get install libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make build-essential`
++   Building：
     ```bash
     wget https://openresty.org/download/openresty-1.11.2.1.tar.gz
     tar xvf openresty-1.11.2.1.tar.gz
@@ -120,7 +120,7 @@ http {
     include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/domains/*";
 }
 ```
-## 如何安装使用
+## How to use
 +   修改主配置文件：`lua_project_v0.01/conf/nginx.conf` 的路径,以下的`/home/`修改为项目所在路径
     ```bash
     lua_package_path "/home/lua_project_v0.01/lualib/?.lua;/home/lua_project_v0.01/application/controller/?.lua";#lua 模块
@@ -145,13 +145,13 @@ http {
 +   master分支已经很稳定了，将不再提交代码，以后将从以下分支提交
 +   公司`company`分支
 +   家里`home`分支       
-## config 配置文件列表(为了测试方便)
+## config list
 +   API接口专用（8686）：`api.conf`
 +   Demo测试专用（8080）：`nginx_demo.conf`
 +   活动直播专用（8088）：`nginx_live.conf`
 +   Waf防火墙专用（8082）：`waf.conf`
 +   商品列表专用（8083）：`nginx_product.conf`
-##  错误问题
+##  error infomation
 +   [解决nginx: [emerg] bind() to [::]:80 failed (98: Address already in use)](http://www.sjsjw.com/kf_system/article/167_16951_30655.asp)
 +   错误日志：`[crit] 3478#0: *5 connect() to unix:/var/run/php7.0.9-fpm.sock failed (13: Permission denied)`
     +   修改php-fpm.conf配置文件
