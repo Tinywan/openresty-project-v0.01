@@ -79,14 +79,20 @@
         ├── index.html
         └── js
 ```
-## Openresty安装
+## Openresty Installation
 +   环境：`apt-get install libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make build-essential`
 +   下载,编译：
     ```bash
     wget https://openresty.org/download/openresty-1.11.2.1.tar.gz
     tar xvf openresty-1.11.2.1.tar.gz
     cd openresty-1.11.2.1
-    ./configure --prefix=/opt/openresty --with-luajit --with-http_iconv_module
+    ./configure --prefix=/opt/openresty \
+                --with-pcre-jit \
+                --with-ipv6 \
+                --without-http_redis2_module \
+                --with-http_iconv_module \
+                --with-http_postgres_module \
+                -j2
     make
     sudo make install
     ```
@@ -114,11 +120,6 @@ http {
     include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/domains/*";
 }
 ```
-## branch list
-+   master分支已经很稳定了，将不再提交代码，以后将从以下分支提交
-+   公司`company`分支
-+   家里`home`分支
-  
 ## 如何安装使用
 +   修改主配置文件：`lua_project_v0.01/conf/nginx.conf` 的路径,以下的`/home/`修改为项目所在路径
     ```bash
@@ -128,7 +129,7 @@ http {
     ```
 +   测试配置文件：`test.conf`
 +   修改项目路径变量：`set $project_path /home/;`
-    +   日志文件不支持变量(暂时是写死，以后在做处理)：`access_log  "/home/lua_project_v0.01/logs/demo_access.log";`
+    +   日志文件路径不支持变量(暂时需要修改，以后直接做跨域保存就可以了)：`access_log  "/home/lua_project_v0.01/logs/demo_access.log";`
 +   启动脚本
     +   赋予权限（655）：`chmod +x /start.sh `,
     +   配置成功运行结果如下：
@@ -139,8 +140,11 @@ http {
         nginx: configuration file /home/lua_project_v0.01/conf/nginx.conf test is successful
          [ Start OK ]
         ```
-+   测试流程是否跑通：`curl http://127.0.0.1/test`,输出：" Hello! lua_project_v0.01"，表示Ok 
-       
++   测试流程是否跑通：`curl http://127.0.0.1/`,输出：`Hello! lua_project_v0.01`，表示环境配置成功
+## branch list
++   master分支已经很稳定了，将不再提交代码，以后将从以下分支提交
++   公司`company`分支
++   家里`home`分支       
 ## config 配置文件列表(为了测试方便)
 +   API接口专用（8686）：`api.conf`
 +   Demo测试专用（8080）：`nginx_demo.conf`
