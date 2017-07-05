@@ -134,7 +134,7 @@ http {
     +   赋予权限（655）：`chmod +x /start.sh `,
     +   配置成功运行结果如下：
         ```bash
-        /home/lua_project_v0.01/conf# ../bin/start.sh 
+        /home/lua_project_v0.01/conf# ../bin/start.sh start
          [ Stop OK ] 
         nginx: the configuration file /home/lua_project_v0.01/conf/nginx.conf syntax is ok
         nginx: configuration file /home/lua_project_v0.01/conf/nginx.conf test is successful
