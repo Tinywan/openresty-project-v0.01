@@ -1,20 +1,58 @@
 #!/bin/bash
-#get nginx.conf path
-#CONF_FILE_PATH=$(sudo find / -type f -name 'nginx.conf' | grep lua_project_v0.01 | xargs ls)
-# get Nginx Pid
+#######################################################
+# $Name:         start.sh
+# $Version:      v1.0
+# $Function:     Nginx start script
+# $Author:       ShaoBo Wan (Tinywan)
+# $organization: https://github.com/Tinywan
+# $Create Date:  2017-07-05
+# $Description:  Nginx start script
+#######################################################
+# update 1
+NGINX_SBIN_PATH="/opt/openresty/nginx/sbin/nginx"
+# update 1
+NGINX_CONFIG_PATH="/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/nginx.conf"
 PID=$(ps -aef | grep nginx | grep -v grep | grep master |awk '{print $2}')
-if [[ $? == 0 && -n $PID ]]
-then
-    echo -e "\033[35m [ Nginx running ] \033[0m"
-    #确认nginx配置文件的语法是否正确，否则nginx将不会加载新的配置文件
-    sudo /opt/openresty/nginx/sbin/nginx  -t -c /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/nginx.conf
-    #sudo /opt/openresty/nginx/sbin/nginx  -s reload
-    sudo kill -HUP $PID
-    echo -e "\033[33m [ Nginx has reload ] \033[0m"
-else
-    echo -e "\033[31m [ Stop OK ] \033[0m"
-    sudo /opt/openresty/nginx/sbin/nginx  -t -c /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/nginx.conf
-    sudo /opt/openresty/nginx/sbin/nginx  -c /mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/nginx.conf
-    echo -e "\033[32m [ Start OK ] \033[0m"
-fi
-exit 1
+shell_usage(){
+    echo $"Usage: $0 start|stop"
+}
+
+start_nginx(){
+    if [[ $? == 0 && -n $PID ]]
+    then
+        echo -e "\033[35m [ Nginx running ] \033[0m"
+        sudo $NGINX_SBIN_PATH  -t -c $NGINX_CONFIG_PATH
+        sudo kill -HUP $PID
+        echo -e "\033[33m [ Nginx has reload ] \033[0m"
+    else
+        echo -e "\033[31m [ Stop OK ] \033[0m"
+        sudo $NGINX_SBIN_PATH  -t -c $NGINX_CONFIG_PATH
+        sudo $NGINX_SBIN_PATH  -c $NGINX_CONFIG_PATH
+        echo -e "\033[32m [ Start OK ] \033[0m"
+    fi
+}
+
+stop_nginx(){
+    sudo kill -QUIT ${PID}
+    if [[ $? == 0 &&  -n $PID ]]
+    then
+        echo -e "\033[33m [ Stop Success ] \033[0m"
+    else
+        echo -e "\033[31m [ Stop Fail ] \033[0m"
+    fi
+    exit 1
+}
+
+# Main Function
+main(){
+    case $1 in
+        start) start_nginx
+        ;;
+        stop) stop_nginx
+        ;;
+        *) shell_usage
+        ;;
+    esac
+}
+
+main $1

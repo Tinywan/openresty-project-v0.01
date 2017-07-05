@@ -2,10 +2,6 @@
 ------
 ##  Wiki manual
 [https://github.com/Tinywan/lua_project_v0.01/wiki](https://github.com/Tinywan/lua_project_v0.01/wiki)
-## branch list
-+   master分支已经很稳定了，将不再提交代码，以后将从以下分支提交
-+   公司`company`分支
-+   家里`home`分支
 ##  Project structure
 ```javascript
 .
@@ -83,6 +79,24 @@
         ├── index.html
         └── js
 ```
+## Openresty Installation
++   Prerequisites：`apt-get install libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make build-essential`
++   Building：
+    ```bash
+    wget https://openresty.org/download/openresty-1.11.2.1.tar.gz
+    tar xvf openresty-1.11.2.1.tar.gz
+    cd openresty-1.11.2.1
+    ./configure --prefix=/opt/openresty \
+                --with-pcre-jit \
+                --with-ipv6 \
+                --without-http_redis2_module \
+                --with-http_iconv_module \
+                --with-http_postgres_module \
+                -j2
+    make
+    sudo make install
+    ```
+    
 ## nginx.conf, the Nginx web server configuration
 
 ```bash
@@ -90,33 +104,24 @@ user  www www;
 worker_processes  8;
 
 pid        logs/nginx.pid;
+worker_rlimit_nofile 204800;
 
 events {
     use epoll;
-    worker_connections  1024;
+    worker_connections  204800;
 }
 
 http {
     include       /opt/openresty/nginx/conf/mime.types;
     default_type  text/html;
+    charset  utf-8;
     lua_package_path "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/lualib/?.lua;;";  #lua 模块
     lua_package_cpath "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/lualib/?.so;;";  #c模块
     include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/domains/*";
 }
 ```
-## Openresty安装
-+   环境：`apt-get install libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make build-essential`
-+   下载,编译：
-    ```bash
-    wget https://openresty.org/download/openresty-1.11.2.1.tar.gz
-    tar xvf openresty-1.11.2.1.tar.gz
-    cd openresty-1.11.2.1
-    ./configure --prefix=/opt/openresty --with-luajit --with-http_iconv_module
-    make
-    sudo make install
-    ```
-## 如何安装使用
-+   修改主配置文件：`lua_project_v0.01/conf/nginx.conf` 的路径,一下的`/home/`修改为项目所在路径
+## How to use
++   修改主配置文件：`lua_project_v0.01/conf/nginx.conf` 的路径,以下的`/home/`修改为项目所在路径
     ```bash
     lua_package_path "/home/lua_project_v0.01/lualib/?.lua;/home/lua_project_v0.01/application/controller/?.lua";#lua 模块
     lua_package_cpath "/home/lua_project_v0.01/lualib/?.so;;";          #  c模块
@@ -124,25 +129,29 @@ http {
     ```
 +   测试配置文件：`test.conf`
 +   修改项目路径变量：`set $project_path /home/;`
-    +   日志文件不支持变量(暂时是写死，以后在做处理)：`access_log  "/home/lua_project_v0.01/logs/demo_access.log";`
+    +   日志文件路径不支持变量(暂时需要修改，以后直接做跨域保存就可以了)：`access_log  "/home/lua_project_v0.01/logs/demo_access.log";`
 +   启动脚本
     +   赋予权限（655）：`chmod +x /start.sh `,
     +   配置成功运行结果如下：
         ```bash
-        /home/lua_project_v0.01/conf# ../bin/start.sh 
+        /home/lua_project_v0.01/conf# ../bin/start.sh start
          [ Stop OK ] 
         nginx: the configuration file /home/lua_project_v0.01/conf/nginx.conf syntax is ok
         nginx: configuration file /home/lua_project_v0.01/conf/nginx.conf test is successful
          [ Start OK ]
         ```
-+   测试流程是否跑通：`curl http://127.0.0.1/test`,输出："Hello! lua_project_v0.01"，表示Ok        
-## config 配置文件列表(为了测试方便)
++   测试流程是否跑通：`curl http://127.0.0.1/`,输出：`Hello! lua_project_v0.01`，表示环境配置成功
+## branch list
++   master分支已经很稳定了，将不再提交代码，以后将从以下分支提交
++   公司`company`分支
++   家里`home`分支       
+## config list
 +   API接口专用（8686）：`api.conf`
 +   Demo测试专用（8080）：`nginx_demo.conf`
 +   活动直播专用（8088）：`nginx_live.conf`
 +   Waf防火墙专用（8082）：`waf.conf`
 +   商品列表专用（8083）：`nginx_product.conf`
-##  错误问题
+##  error infomation
 +   [解决nginx: [emerg] bind() to [::]:80 failed (98: Address already in use)](http://www.sjsjw.com/kf_system/article/167_16951_30655.asp)
 +   错误日志：`[crit] 3478#0: *5 connect() to unix:/var/run/php7.0.9-fpm.sock failed (13: Permission denied)`
     +   修改php-fpm.conf配置文件
