@@ -80,23 +80,40 @@
         └── js
 ```
 ## Openresty Installation
-+   Prerequisites：`apt-get install libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make build-essential`
++   Prerequisites：  
+    ```
+    apt-get install libreadline-dev libncurses5-dev libpcre3-dev \
+    libssl-dev perl make build-essential
+    ```
 +   Building：
     ```bash
-    wget https://openresty.org/download/openresty-1.11.2.1.tar.gz
+    wget https://openresty.org/download/openresty-1.11.2.3.tar.gz
     tar xvf openresty-1.11.2.1.tar.gz
     cd openresty-1.11.2.1
     ./configure --prefix=/opt/openresty \
-                --with-pcre-jit \
-                --with-ipv6 \
+                --with-luajit \
                 --without-http_redis2_module \
                 --with-http_iconv_module \
-                --with-http_postgres_module \
-                -j2
-    make
+                --with-http_postgres_module 
+    make -j2
     sudo make install
     ```
-    
++   error
+    +   错误1：`you need to have ldconfig in your PATH env when enabling luajit.`
+    +   解决办法：
+        ```bash
+        sudo apt-get install luajit
+        whereis luajit
+        luajit: /usr/bin/luajit /usr/share/man/man1/luajit.1.gz
+
+        ./configure --prefix=/opt/openresty \
+                    --with-luajit=/usr/bin/luajit \
+                    --without-http_redis2_module \
+                    --with-http_iconv_module \
+                    --with-http_postgres_module 
+        make -j2
+        sudo make install
+        ```
 ## nginx.conf, the Nginx web server configuration
 
 ```bash
@@ -104,6 +121,7 @@ user  www www;
 worker_processes  8;
 
 pid        logs/nginx.pid;
+error_log log/error.log error;
 worker_rlimit_nofile 204800;
 
 events {
