@@ -11,7 +11,7 @@
 # update 1
 NGINX_SBIN_PATH="/opt/openresty/nginx/sbin/nginx"
 # update 1
-NGINX_CONFIG_PATH="/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/nginx.conf"
+NGINX_CONFIG_PATH="/home/www/lua_project_v0.01/conf/nginx.conf"
 PID=$(ps -aef | grep nginx | grep -v grep | grep master |awk '{print $2}')
 shell_usage(){
     echo $"Usage: $0 start|stop"

@@ -1,11 +1,11 @@
 ![Markdown](https://github.com/Tinywan/lua_project_v0.01/blob/master/public/images/tinywan_title.png)
 ------
-##  Wiki manual
+##  Wiki manual (Version_0.01)
 [https://github.com/Tinywan/lua_project_v0.01/wiki](https://github.com/Tinywan/lua_project_v0.01/wiki)
 ##  Project structure
 ```javascript
 .
-├── application                     -- 业务代码
+├── application                     -- 业务代码 
 │   ├── api                         -- API接口
 │   │   ├── classes.lua
 │   │   └── users.lua
@@ -120,8 +120,8 @@
 user  www www;
 worker_processes  8;
 
-pid        logs/nginx.pid;
-error_log log/error.log error;
+pid       $PATH/lua_project_v0.01/logs/nginx.pid;
+error_log $PATH/lua_project_v0.01/logs/error.log error;
 worker_rlimit_nofile 204800;
 
 events {
@@ -133,12 +133,19 @@ http {
     include       /opt/openresty/nginx/conf/mime.types;
     default_type  text/html;
     charset  utf-8;
-    lua_package_path "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/lualib/?.lua;;";  #lua 模块
-    lua_package_cpath "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/lualib/?.so;;";  #c模块
-    include "/mnt/hgfs/Linux-Share/Lua/lua_project_v0.01/conf/domains/*";
+    lua_package_path "$PATH/lua_project_v0.01/lualib/?.lua;;";  #lua 模块
+    lua_package_cpath "$PATH/lua_project_v0.01/lualib/?.so;;";  #c模块
+    include "$PATH/lua_project_v0.01/conf/domains/*";
 }
 ```
 ## How to use
++   新建文件夹同时下载项目：
+    ```javascript
+    # 切换到 该目录，如果没有请重新建立
+    www@iZ238xopqw6Z:~$ pwd
+    /home/www
+    git clone -b v0.03 https://github.com/Tinywan/lua_project_v0.01.git
+    ```
 +   修改主配置文件：`lua_project_v0.01/conf/nginx.conf` 的路径,以下的`/home/`修改为项目所在路径
     ```bash
     lua_package_path "/home/lua_project_v0.01/lualib/?.lua;/home/lua_project_v0.01/application/controller/?.lua";#lua 模块
