@@ -9,7 +9,6 @@
 * |------------------------------------------------------------------------
 --]]
 local template = require "resty.template"
-local helper = require "vendor.helper"
 local redis = require "resty.redis"
 local cjson = require("cjson")
 local resty_lock = require "resty.lock"
@@ -24,7 +23,7 @@ local print = ngx.print
 local live_ngx_cache = ngx.shared.live_ngx_cache;
 local live_room = ngx.shared.live_room;
 
-local redis_host = "127.0.0.1"
+local redis_host = "1111"
 local redis_port = 63789
 local redis_auth = "1111"
 local redis_timeout = 1000
@@ -212,9 +211,9 @@ end
 -------------- read_http 大并发采用 resty.http ，对于：ngx.location.capture 慎用
 local function read_http(id)
     local httpc = http.new()
-    local resp, err = httpc:request_uri("http://testwww.amai9.com", {
+    local resp, err = httpc:request_uri("http://sewise.amai8.com", {
         method = "GET",
-        path = "/api/liveBackToSourceApi?liveId=" .. id,
+        path = "/openapi/luaJson?id=" .. id,
         headers = {
             ["User-Agent"] = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36"
         }
@@ -237,27 +236,19 @@ local function read_http(id)
         return
     end
 
-    -- backend not data 判断api返回的状态码
-    local status_code = helper.cjson_decode(resp.body)['code']
-    if tonumber(status_code) ~= 404 then
-        -- 正常数据缓存到 Redis 数据缓存
-        local live_info_key = "LIVE_TABLE:" .. id
-        local live_value = helper.cjson_decode(resp.body) -- 解析的Lua自己的然后存储到Redis 数据库中去
-        local live_live_str = write_redis(redis_host, redis_port, redis_auth, { live_info_key }, helper.cjson_encode(live_value))
-        if not live_live_str then
-            log(ERR, "redis set info error: ")
-        end
-        log(ERR, " [read_http] content from backend API id : " .. id) -- tag data origin
-        return helper.cjson_encode(live_value)
-    else
-        -- 后端没有数据直接返回 nil
-        log(ERR, " [read_http] backend API is not content return error_msg : " ..helper.cjson_decode(resp.body)['msg']) -- tag data origin
-        return
+    -- 缓存到 Redis 数据缓存  -- 这里要做优化
+    local live_info_key = "LIVE_TABLE:" .. id
+    local live_value = cjson_decode(resp.body) -- 解析的Lua自己的然后存储到Redis 数据库中去
+    local live_live_str = write_redis(redis_host,redis_port,redis_auth, { live_info_key }, cjson_encode(live_value))
+    if not live_live_str then
+        log(ERR, "redis set info error: ")
     end
+    log(ERR, " [read_http] content from backend API id : " .. id) -- tag data origin
+    return cjson_encode(live_value)
 end
 
----------------------------------------------------------------------- 业务逻辑处理
--- get var id
+----------------------------------------------------------------------业务逻辑处理
+--get var id
 local id = ngx_var.id
 local live_info_key = "LIVE_TABLE:" .. id
 
@@ -271,15 +262,14 @@ if not content then
     log(ERR, "redis not found content, back to backend API , id : ", id)
     content = read_http(id)
 end
-
 -------------------------------- 主要就是这里要根据后端服务没有数据的情况处理，最好不要出现500错误就可以啦
--- if backend API  not success data , page show  404
+-- if backend API  not exit 404
 if not content then
     log(ERR, "backend API not found content, id : ", id)
     return ngx.exit(ngx.HTTP_NOT_FOUND)
 end
 
--- if backend API  response result is false page show 403
+-- if backend API  response result is false 403
 if tostring(content) == "false" then
     log(ERR, "backend API content is false ", id)
     return ngx.exit(ngx.HTTP_FORBIDDEN)

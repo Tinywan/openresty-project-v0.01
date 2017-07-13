@@ -121,6 +121,13 @@ http {
 }
 ```
 ## How to use
++   新建文件夹同时下载项目：
+    ```javascript
+    # 切换到 该目录，如果没有请重新建立
+    www@iZ238xopqw6Z:~$ pwd
+    /home/www
+    git clone -b v0.03 https://github.com/Tinywan/lua_project_v0.01.git
+    ```
 +   修改主配置文件：`lua_project_v0.01/conf/nginx.conf` 的路径,以下的`/home/`修改为项目所在路径
     ```bash
     lua_package_path "/home/lua_project_v0.01/lualib/?.lua;/home/lua_project_v0.01/application/controller/?.lua";#lua 模块
