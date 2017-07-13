@@ -212,9 +212,9 @@ end
 -------------- read_http 大并发采用 resty.http ，对于：ngx.location.capture 慎用
 local function read_http(id)
     local httpc = http.new()
-    local resp, err = httpc:request_uri("http://testwww.amai9.com", {
+    local resp, err = httpc:request_uri("http://testwww.baidu.com", {
         method = "GET",
-        path = "/api/liveBackToSourceApi?liveId=" .. id,
+        path = "/api/Api?liveId=" .. id,
         headers = {
             ["User-Agent"] = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36"
         }
