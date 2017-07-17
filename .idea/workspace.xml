@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="解决缓存失效风暴 lua-resty-lock">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/conf/domains/api.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/conf/domains/nginx_demo.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/conf/domains/nginx_index.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/conf/domains/nginx_product.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/conf/domains/test.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/conf/domains/upstream.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/conf/domains/waf.conf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/.fuse_hidden00001c1c00000047" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua" afterPath="$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/start.sh" afterPath="$PROJECT_DIR$/bin/start.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/nginx.conf" afterPath="$PROJECT_DIR$/conf/nginx.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_live.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_live.conf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,11 +32,13 @@
       <file leaf-file-name="LiveRedisCacheController.lua" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="108" column="9" lean-forward="false" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="9" />
+            <state relative-caret-position="-2023">
+              <caret line="34" column="2" lean-forward="false" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
               <folding>
+                <element signature="n#set_cache#0" expanded="true" />
                 <element signature="n#close_redis#0" expanded="true" />
                 <element signature="n#read_redis#0" expanded="true" />
+                <element signature="n#write_redis#0" expanded="true" />
                 <element signature="n#read_cache#0" expanded="true" />
                 <element signature="n#read_http#0" expanded="true" />
               </folding>
@@ -52,11 +46,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="error.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/error.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="nginx_live.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/domains/nginx_live.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="748">
+              <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -66,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/conf/nginx.conf">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -95,7 +99,6 @@
       <find>new</find>
       <find>cache_item</find>
       <find>404</find>
-      <find>redis not found content</find>
       <find>glyphicon glyphicon-chevron-right</find>
       <find>image</find>
       <find>bootstrap</find>
@@ -111,6 +114,9 @@
       <find>live_ngx_cache</find>
       <find>failed to update ngx_cache</find>
       <find>helper</find>
+      <find>redis.cache</find>
+      <find>ngx.cache find redis cache no value found</find>
+      <find>redis not found content</find>
     </findStrings>
     <dirStrings>
       <dir>D:\Linux-Share\Lua\lua_project_v0.01\public\bootstrap</dir>
@@ -123,7 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/api/live/live_redis_mysql.lua" />
         <option value="$PROJECT_DIR$/logs/upstream_error.log" />
         <option value="$PROJECT_DIR$/application/controller/UpstreamBackendController.lua" />
         <option value="$PROJECT_DIR$/logs/demo_access.log" />
@@ -167,12 +172,13 @@
         <option value="$PROJECT_DIR$/application/demo/ngx_cache.lua" />
         <option value="$PROJECT_DIR$/lualib/vendor/helper.lua" />
         <option value="$PROJECT_DIR$/application/demo/json_table.lua" />
-        <option value="$PROJECT_DIR$/conf/domains/nginx_live.conf" />
         <option value="$PROJECT_DIR$/application/demo/company_branch/cache_lock.lua" />
         <option value="$PROJECT_DIR$/logs/live_error.log" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/logs/company.lua" />
         <option value="$PROJECT_DIR$/conf/nginx.conf" />
+        <option value="$PROJECT_DIR$/conf/domains/nginx_live.conf" />
+        <option value="$PROJECT_DIR$/logs/error.log" />
         <option value="$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua" />
       </list>
     </option>
@@ -230,25 +236,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lua_project_v0.01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lua_project_v0.01" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domains" />
+              <option name="myItemId" value="logs" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -298,19 +286,19 @@
     <property name="GO_FMT" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application\controller" />
-      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\template\live" />
-      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\public\images\github" />
-      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\public\bootstrap" />
-      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application\api\live" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\conf\domains" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\conf" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\template\live" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\conf\bak" />
       <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application\api\redis_mysql" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application\controller" />
+      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\template\live" />
+      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\public\images\github" />
+      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\public\bootstrap" />
+      <recent name="D:\Linux-Share\Lua\lua_project_v0.01\application\api\live" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -463,7 +451,7 @@
       <workItem from="1499936278968" duration="468000" />
       <workItem from="1500254966701" duration="518000" />
       <workItem from="1500255928893" duration="567000" />
-      <workItem from="1500258883792" duration="1583000" />
+      <workItem from="1500258883792" duration="7332000" />
     </task>
     <task id="LOCAL-00040" summary=":paw_prints: :paw_prints: :paw_prints: Nginx+Lua逻辑开发 Redis 做为页面缓存">
       <created>1495270911398</created>
@@ -812,12 +800,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220925000" />
+    <option name="totallyTimeSpent" value="226674000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="1066" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18443497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.141258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -825,7 +814,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6081371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6081371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -877,20 +866,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2736">
-          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/product/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/live/index2.html" />
     <entry file="file://$PROJECT_DIR$/conf/domains/nginx_live.conf">
       <provider selected="true" editor-type-id="text-editor">
@@ -1126,29 +1101,47 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/company.lua" />
-    <entry file="file://$PROJECT_DIR$/conf/nginx.conf">
+    <entry file="file://$PROJECT_DIR$/logs/.fuse_hidden00001c1c00000047">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/domains/nginx_live.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="748">
+          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/error.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="108" column="9" lean-forward="false" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="9" />
+        <state relative-caret-position="-2023">
+          <caret line="34" column="2" lean-forward="false" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
           <folding>
+            <element signature="n#set_cache#0" expanded="true" />
             <element signature="n#close_redis#0" expanded="true" />
             <element signature="n#read_redis#0" expanded="true" />
+            <element signature="n#write_redis#0" expanded="true" />
             <element signature="n#read_cache#0" expanded="true" />
             <element signature="n#read_http#0" expanded="true" />
           </folding>
