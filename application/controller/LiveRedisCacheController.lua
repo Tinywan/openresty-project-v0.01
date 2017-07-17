@@ -24,9 +24,9 @@ local print = ngx.print
 local live_ngx_cache = ngx.shared.live_ngx_cache;
 local live_room = ngx.shared.live_room;
 
-local redis_host = "127.0.0.1"
+local redis_host = "121.41.88.209"
 local redis_port = 63789
-local redis_auth = "1111"
+local redis_auth = "tinywanredisamaistream123456789"
 local redis_timeout = 1000
 
 ----------------- set ngx.cache
@@ -133,7 +133,6 @@ local function write_redis(_host, _port, _auth, keys, values)
     return resp
 end
 
-
 -- get ngx.cache
 --[1]即使发生其他一些不相关的错误，您也需要尽快解除锁定。
 --[2]在释放锁之前，您需要从后端获得的结果更新缓存，以便其他已经等待锁定的线程在获得锁定后才能获得缓存值。
@@ -212,9 +211,9 @@ end
 -------------- read_http 大并发采用 resty.http ，对于：ngx.location.capture 慎用
 local function read_http(id)
     local httpc = http.new()
-    local resp, err = httpc:request_uri("http://testwww.baidu.com", {
+    local resp, err = httpc:request_uri("http://testwww.amai9.com", {
         method = "GET",
-        path = "/api/Api?liveId=" .. id,
+        path = "/api/liveBackToSourceApi?liveId=" .. id,
         headers = {
             ["User-Agent"] = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36"
         }
@@ -263,8 +262,8 @@ local live_info_key = "LIVE_TABLE:" .. id
 
 -- chat room num
 local succ, err, forcible = live_room:set("chat", id)
--------- get ngx.cache content
-local content = read_cache(live_info_key)
+-------- get ngx.cache content 这里遇到的坑就是，注意这里传递的自定义的key
+local content = read_cache(id)
 
 --if redis not request backend API and udpate redis cache
 if not content then
