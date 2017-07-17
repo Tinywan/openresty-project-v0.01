@@ -447,7 +447,7 @@
       <workItem from="1499936278968" duration="468000" />
       <workItem from="1500254966701" duration="518000" />
       <workItem from="1500255928893" duration="567000" />
-      <workItem from="1500258883792" duration="7438000" />
+      <workItem from="1500258883792" duration="7531000" />
     </task>
     <task id="LOCAL-00040" summary=":paw_prints: :paw_prints: :paw_prints: Nginx+Lua逻辑开发 Redis 做为页面缓存">
       <created>1495270911398</created>
@@ -796,7 +796,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226780000" />
+    <option name="totallyTimeSpent" value="226873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="1066" extended-state="0" />
