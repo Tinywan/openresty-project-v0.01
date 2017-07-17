@@ -4,7 +4,7 @@
 * |  Blog: http://www.cnblogs.com/Tinywan
 * |------------------------------------------------------------------------
 * |  Date: 2017/5/19 23:25
-* |  Function: To change this template use File | Settings | File Templates.
+* |  Function: local_live_test.
 * |  TestInfo: port = 63700 auth = tinywan123456
 * |  log [n] 这样子的log日志是可以删除的（）
 * |------------------------------------------------------------------------
