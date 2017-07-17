@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="解决缓存失效风暴 lua-resty-lock">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/.fuse_hidden00001c1c00000047" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua" afterPath="$PROJECT_DIR$/application/controller/LiveRedisCacheController.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/domains/nginx_live.conf" afterPath="$PROJECT_DIR$/conf/domains/nginx_live.conf" />
-    </list>
+    <list default="true" id="f79d2b80-65eb-4b3f-9d56-955664a577b4" name="Default" comment="解决缓存失效风暴 lua-resty-lock" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -451,7 +447,7 @@
       <workItem from="1499936278968" duration="468000" />
       <workItem from="1500254966701" duration="518000" />
       <workItem from="1500255928893" duration="567000" />
-      <workItem from="1500258883792" duration="7332000" />
+      <workItem from="1500258883792" duration="7438000" />
     </task>
     <task id="LOCAL-00040" summary=":paw_prints: :paw_prints: :paw_prints: Nginx+Lua逻辑开发 Redis 做为页面缓存">
       <created>1495270911398</created>
@@ -800,11 +796,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226674000" />
+    <option name="totallyTimeSpent" value="226780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="1066" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.141258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -814,7 +809,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6081371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6081371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
