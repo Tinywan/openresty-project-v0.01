@@ -43,7 +43,7 @@
 │   ├── item
 │   │   ├── common.lua
 │   │   └── items.lua
-│   ├── live
+│   ├── live                         -- 自定义公共部分Lua文件
 │   │   └── common.lua
 │   ├── ngx
 │   │   ├── ssl
