@@ -5,79 +5,108 @@
 ##  Project structure
 ```javascript
 .
-├── application                     -- 业务代码
-│   ├── api                         -- API接口
-│   │   ├── classes.lua
+├── application                    -- 业务代码
+│   ├── api
+│   │   ├── live
 │   │   └── users.lua
-│   ├── controller                  -- 业务控制器
-│   │   ├── IndexController.lua
-│   │   └── RedisController.lua
+│   ├── controller                 -- 业务控制器
+│   │   ├── live_redis_cache.lua
+│   │   ├── upstream_backend.lua
+│   │   └── web_socket_redis.lua
 │   ├── model
 │   │   └── Products.lua
+│   ├── swoole
+│   │   └── websocket-server.php
+│   ├── waf
+│   │   ├── init.lua
+│   │   ├── install.sh
+│   │   ├── wafconf
+│   │   └── waf.lua
 │   └── zabbix
 │       └── install-record01.conf
-├── bin                             -- 脚本文件
+├── bin                             -- 启动脚本
 │   ├── doc2unix.sh
-│   ├── start.sh
-│   └── stop.sh
-├── cache
-│   └── proxy_cache
+│   └── start.sh
 ├── conf                            -- 配置文件
 │   ├── domains
-│   │   ├── api.conf
-│   │   └── waf.conf
+│   │   └── nginx_live.conf
 │   ├── fastcgi_params
 │   ├── nginx.conf
+│   ├── nginx.conf.default
 │   └── nginx_lua_upstream.conf
 ├── logs                            -- 日志文件 
-│   ├── api_access.log
-│   ├── hack
-│   │   └── 2017-05-17_sec.log
-│   └── waf_error.log
-├── lualib                          -- 公共Lua库
+│   ├── 123.txt
+│   ├── error.log
+│   └── nginx.pid
+├── lualib                          -- 官方Lua库
 │   ├── cjson.so
+│   ├── item
+│   │   ├── common.lua
+│   │   └── items.lua
+│   ├── live
+│   │   └── common.lua
 │   ├── ngx
+│   │   ├── ssl
 │   │   └── ssl.lua
+│   ├── rds
+│   │   └── parser.so
+│   ├── redis
+│   │   └── parser.so
 │   ├── resty
-│   │   ├── dns
-│   │   ├── redis.lua
+│   │   ├── http_headers.lua
+│   │   ├── http.lua
 │   │   ├── upstream
 │   │   └── websocket
 │   └── vendor                      -- 第三方Lua库
 │       ├── config.lua
 │       ├── dkjson.lua
 │       ├── helper.lua
-│       └── ip_location.lua
+│       ├── ip_check.lua
+│       ├── ip_location.lua
+│       └── mysql_fun.lua
 ├── public                          -- 公共静态文件
+│   ├── bootstrap
+│   │   ├── css
+│   │   ├── fonts
+│   │   ├── images
+│   │   └── js
 │   ├── data
 │   │   └── location_ip_db.dat
 │   ├── images
 │   │   ├── github
+│   │   ├── tinywan_title.png
 │   │   └── yinzhang.png
-│   ├── upstream
-│   │   ├── html8082
-│   │   └── html8083
+│   ├── video-js
+│   │   ├── videodemo.png
+│   │   ├── video.js
+│   │   └── video-js.swf
 │   └── websocket
 │       └── public
 ├── README.md
-└── template                         -- 模板
+└── template                         -- 静态模板
     ├── index
     │   └── index.html
-    ├── info
-    │   ├── src
-    │   └── wanshaobopdf.pdf
+    ├── live
+    │   ├── 404.html
+    │   ├── crossdomain.xml
+    │   ├── index.html
+    │   ├── videodemo.png
+    │   └── wesocket.html
     ├── product
     │   ├── footer.html
     │   ├── header.html
     │   ├── index2.html
     │   ├── index.html
+    │   ├── item.html
     │   └── product_list.html
     ├── waf
     │   ├── index.html
     │   └── waf.php
     └── websocket
         ├── index.html
-        └── js
+        ├── index.php
+        ├── js
+        └── websocket.html
 ```
 ## Openresty Installation
 +   Prerequisites：  

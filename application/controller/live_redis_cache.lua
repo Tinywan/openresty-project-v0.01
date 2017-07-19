@@ -18,8 +18,6 @@ local exit = ngx.exit
 local ngx_var = ngx.var
 local print = ngx.print
 
-
-
 -- get var id
 local id = ngx_var.id
 local content = read_content(id)
