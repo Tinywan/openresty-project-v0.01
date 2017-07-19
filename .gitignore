@@ -1,3 +1,4 @@
 # commit phirs
 *.log
 *.xml
+*.pid
