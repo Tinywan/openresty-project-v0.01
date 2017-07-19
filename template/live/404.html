@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ content['name'] }}</title>
+    <title>{{title}}</title>
     <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     {*jquery*}
     <!--[if lt IE 9]>
@@ -14,10 +14,51 @@
     <link href="/video-js/video-js.css" rel="stylesheet">
     <script src="/video-js/video.js"></script>
     <script src="/video-js/videojs-contrib-hls.min.js"></script>
-    <script src="https://cdn.bootcss.com/reconnecting-websocket/1.0.0/reconnecting-websocket.min.js"></script>
     <script>
         videojs.options.flash.swf = "/video-js/video-js/video-js.swf"
     </script>
+
+    <script>
+        var ws = null;
+        function connect() {
+            if (ws !== null) return log('already connected');
+            ws = new WebSocket('ws://192.168.18.180:8088/ws/');
+            ws.onopen = function () {
+                log('connected');
+            };
+            ws.onerror = function (error) {
+                log(error);
+            };
+            ws.onmessage = function (e) {
+                log('recv: ' + e.data);
+            };
+            ws.onclose = function () {
+                log('disconnected');
+                ws = null;
+            };
+            return false;
+        }
+        function disconnect() {
+            if (ws === null) return log('already disconnected');
+            ws.close();
+            return false;
+        }
+        function send() {
+            if (ws === null) return log('please connect first');
+            var text = document.getElementById('text').value;
+            document.getElementById('text').value = "";
+            log('send: ' + text);
+            ws.send(text);
+            return false;
+        }
+        function log(text) {
+            var li = document.createElement('li');
+            li.appendChild(document.createTextNode(text));
+            document.getElementById('log').appendChild(li);
+            return false;
+        }
+    </script>
+
     <style>
 
         body {
@@ -120,74 +161,7 @@
             }
         }
     </style>
-    <script language="javascript" type="text/javascript">
-//        var wsUri = "ws://192.168.18.180:8088/lua_ws/";
-        var output;
-        var clientId;
 
-        function init() {
-            output = document.getElementById("output");
-            testWebSocket();
-            websocket.send("hello \n");
-        }
-
-        function testWebSocket() {
-            websocket = new ReconnectingWebSocket(wsUri);
-            websocket.onopen = function (evt) {
-                onOpen(evt)
-            };
-            websocket.onclose = function (evt) {
-                onClose(evt)
-            };
-            websocket.onmessage = function (evt) {
-                onMessage(evt)
-            };
-            websocket.onerror = function (evt) {
-                onError(evt)
-            };
-        }
-        function onOpen(evt) {
-            console.log("CONNECTED");
-        }
-
-        function onClose(evt) {
-            console.log("DISCONNECTED");
-        }
-
-        function onMessage(evt) {
-            writeToScreen('<span style="color: blue;">RESPONSE: '+ evt.data + '</span>');
-        }
-
-        function onError(evt) {
-            console.log('<span style="color: red;">ERROR:</span> ' + evt.data);
-        }
-
-        function writeToScreen(message) {
-            var pre = document.createElement("p");
-            pre.style.wordWrap = "break-word";
-            pre.innerHTML = message;
-            output.appendChild(pre);
-        }
-
-        //添加或者修改json数据
-        function setJson(jsonStr, name, value) {
-            if (!jsonStr)jsonStr = "{}";
-            var jsonObj = JSON.parse(jsonStr);
-            jsonObj[name] = value;
-            return JSON.stringify(jsonObj)
-        }
-
-        function toJson(str) {
-            var json = eval('(' + str + ')');
-            return json;
-        }
-
-        function sub(){
-            var text = document.getElementById('data').value;
-            websocket.send(text+"\n");
-        }
-        window.addEventListener("load", init, false);
-    </script>
 </head>
 
 <body>
@@ -222,7 +196,96 @@
         </div>
     </div>
 </div>
-<p></p>
+
+
+<!-- 广告轮播 -->
+<div id="ad-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#ad-carousel" data-slide-to="1"></li>
+        <li data-target="#ad-carousel" data-slide-to="2"></li>
+        <li data-target="#ad-carousel" data-slide-to="3"></li>
+        <li data-target="#ad-carousel" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="/bootstrap/images/chrome-big.jpg" alt="1 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Chrome</h1>
+
+                    <p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="http://www.google.cn/intl/zh-CN/chrome/browser/"
+                          role="button" target="_blank">点我下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/bootstrap/images/firefox-big.jpg" alt="2 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Firefox</h1>
+
+                    <p>Mozilla Firefox，中文名通常称为“火狐”或“火狐浏览器”，是一个开源网页浏览器。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="http://www.firefox.com.cn/download/" target="_blank"
+                          role="button">点我下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/bootstrap/images/safari-big.jpg" alt="3 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Safari</h1>
+
+                    <p>Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="http://www.apple.com/cn/safari/" target="_blank"
+                          role="button">点我下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/bootstrap/images/opera-big.jpg" alt="4 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Opera</h1>
+
+                    <p>Opera浏览器，是一款挪威Opera Software ASA公司制作的支持多页面标签式浏览的网络浏览器。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="http://www.opera.com/zh-cn" target="_blank"
+                          role="button">点我下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/bootstrap/images/ie-big.jpg" alt="5 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>IE</h1>
+
+                    <p>Internet Explorer，简称 IE，是微软公司推出的一款网页浏览器。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="http://ie.microsoft.com/" target="_blank"
+                          role="button">点我下载</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
+            class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
+            class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+
 <!-- 主要内容 -->
 <div class="container summary">
 
@@ -232,36 +295,10 @@
                controls autoplay preload="auto"
                poster="/video-js/videodemo.png"
                data-setup='{"example_option":true}'>
-            <!--<source src='{{content["play_m3u8_address"]}}' type="application/x-mpegURL">-->
-            <source src='http://ivi.bupt.edu.cn/hls/cctv5hd.m3u8' type="application/x-mpegURL">
+            <source src='http://tinywan.amai8.com/live/4001490605096.m3u8' type="application/x-mpegURL">
         </video>
     </div>
     <hr>
-    <div class="row">
-        <h2>{{ content['name'] }}</h2>
-        <ul>
-            <li>CDN：{{ content['server'] }}</li>
-            <li>活动ID号：{{ content['aliasId'] }}</li>
-            <li>分享图片：{{ content['shareImage'] }}</li>
-            <li>活动名称：{{ content['name'] }}</li>
-        </ul>
-    </div>
-    <h1>dddddddddddddddddddd</h1>
-    <div class="row">
-        <ul>
-            <li>\{{members['Tom']}}</li>
-            <li>{{members['Tom']}}</li>
-        </ul>
-    </div>
-    <div class="row">
-        <h2>{{ title }}</h2>
-        <ul>
-            {% for value, name in pairs(content) do %}
-            <li>{{value}} == {{name}}</li>
-            {% end %}
-        </ul>
-    </div>
-
 
     <footer>
         <p class="pull-right"><a href="#top">回到顶部</a></p>

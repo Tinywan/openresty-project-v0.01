@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 # init gitignore
 *.log
 *.xml
+=======
+# commit phirs
+*.log
+*.xml
+*.pid
+>>>>>>> local_live_test
