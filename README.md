@@ -109,6 +109,7 @@
         └── websocket.html
 ```
 ## Openresty Installation
++   [如何编译一个高性能 OpenResty](https://yq.aliyun.com/articles/228399)
 +   Prerequisites：  
     ```
     apt-get install libreadline-dev libncurses5-dev libpcre3-dev \
